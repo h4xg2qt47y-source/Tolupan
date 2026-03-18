@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aprende Tol — Learn the Tol Language</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/learn.css" />
+</head>
+<body>
+  <div class="app learn-app">
+    <header>
+      <h1><span class="logo-icon">🌿</span> Aprende Tol</h1>
+      <p class="subtitle">¡Aprende el idioma de tus ancestros!</p>
+      <nav class="header-nav">
+        <a href="/" class="nav-link">Translator</a>
+        <a href="/dictionary" class="nav-link">Dictionary</a>
+        <a href="/bible" class="nav-link">Dios Vele</a>
+        <a href="/test" class="nav-link">Grammar Tests</a>
+        <a href="/learn" class="nav-link nav-active">Aprende</a>
+        <a href="/sources" class="nav-link">Sources</a>
+      </nav>
+    </header>
+
+    <main id="learn-main">
+      <div id="learn-loading" style="text-align:center;padding:3rem;color:var(--text-muted)">Cargando...</div>
+    </main>
+
+    <footer>
+      <p>Construido para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline">Fuentes</a>: Language Conservation Project · SIL International · ScriptureEarth · ELAR Archive</p>
+    </footer>
+  </div>
+
+  <script src="/static/learn-app.js"></script>
+</body>
+</html>

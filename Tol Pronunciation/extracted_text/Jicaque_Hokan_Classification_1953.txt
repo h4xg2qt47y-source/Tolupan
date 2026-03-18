@@ -1,0 +1,669 @@
+ 
+ 
+Jicaque as a Hokan Language
+Author(s): Joseph H. Greenberg and  Morris Swadesh
+Source: International Journal of American Linguistics, Vol. 19, No. 3 (Jul., 1953), pp. 216-
+222
+Published by: The University of Chicago Press
+Stable URL: http://www.jstor.org/stable/1263010
+Accessed: 11-07-2017 15:04 UTC
+ 
+REFERENCES 
+Linked references are available on JSTOR for this article:
+http://www.jstor.org/stable/1263010?seq=1&cid=pdf-reference#references_tab_contents 
+You may need to log in to JSTOR to access the linked references.
+ 
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content in a trusted
+digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship. For more information about
+JSTOR, please contact support@jstor.org.
+ 
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at
+http://about.jstor.org/terms
+The University of Chicago Press is collaborating with JSTOR to digitize, preserve and extend access to
+International Journal of American Linguistics
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ JICAQUE AS A HOKAN LANGUAGE
+ JOSEPH H. GREENBERG AND MORRIS SWADESH
+ COLUMBIA UNIVERSITY
+ 1. The problem
+ 2. Phonological note
+ 3. Cognate list
+ 4. Use of lexical statistics
+ 5. Cognates in test vocabulary
+ 6. Hokan-Coahuiltecan relationships
+ 7. Requirements for further study
+ 1. Jicaque of Honduras in the past has
+ been listed as an isolated language or classed
+ with Paya-Lenca and Chibchan,' but we
+ find unmistakable evidence that it is a
+ Hokan language. In this paper we set forth
+ structural and vocabulary correspondences
+ to prove the relationship, along with an
+ analysis of the place of Jicaque within the
+ stock based upon cognate percentages.
+ While the main facts of the linguistic
+ situation stand out clearly, the limited
+ material available for most of the languages
+ prevents a full development of phonological
+ and morphological details at this time.
+ The presence in Jicaque of numerous
+ Hokan-Siouan correspondences was first
+ noted by Greenberg while making a com-
+ parative survey in preparing a paper,
+ Historical Linguistics and Unwritten Lan-
+ guages, for the International Symposium
+ on Anthropology of the Wenner-Gren
+ Foundation.2 The subsequent further study
+ of the problem by both authors was done
+ under the Linguistic Divergence Project
+ sponsored by the Columbia Council for
+ Research in the Social Sciences.
+ 1 See Harry Hoijer, Introduction p. 25, Lin-
+ guistic Structures of Native America (Viking
+ Fund Publication in Anthropology 6, 1946); J.
+ Alden Mason, The languages of South American
+ Indians p. 174 (Handbook of South American
+ Indian, BAE-B 143, vol. 6, 1950.
+ 2 Subsequently published in Anthropology To-
+ day, 265-86 (Chicago, 1951).
+ 2. The phonological equivalences in Hokan
+ have been largely established by Edward
+ Sapir's work.3 The Jicaque agreements are
+ generally obvious. A special point is that
+ xw and x have been replaced by k. Among
+ some local dialects of Jicaque, r and n
+ replace the 1 found elsewhere. Stem-finals
+ have sometimes been changed, presumably
+ by contraction with an added suffix. Because
+ of the sparsity of Jicaque material no
+ attempt has been made to distinguish the
+ dialects. This accounts for variant forms
+ sometimes given and for the fact that there
+ are sometimes two or more distinct equiva-
+ lents.
+ Jicaque and other forms in this paper
+ have been phonemically interpreted and
+ orthographically uniformized; any errors
+ in the phonemic interpretation are surely
+ not of a character that would affect the
+ lexical comparisons.
+ 3. The search for cognates is considerably
+ hampered by the meagerness of the avail-
+ able Jicaque vocabularies and by their
+ emphasis on words, such as plant and
+ animal names, which have little utility for
+ comparison at a remote time depth. And
+ similar problems exist for most of the other
+ Hokan languages with which Jicaque has
+ to be compared.4 The extent of the compara-
+ 3 Especially in The Position of Yana in the
+ Hokan Stock (UCPAAE 13.1-34, 1917); The
+ Hokan and Coahuiltecan Languages (IJAL 1.
+ 280-90, 1917-20); The Hokan Affinity of Subtiaba
+ in Nicaragua AA27. 402-35, 491-527, 1925).
+ 4 The material on Jicaque is taken from two
+ sources: Walter Lehmann, Zentral Amorika
+ (Berlin 1920), pp. 654 ff; Edward Conzemius, The
+ Jicaques of Honduras, IJAL 2.163 ff. (1921-23).
+ The Chontal is mainly from Francisco Belmar,
+ Lenguas Indigenas de Mexico (Mexico 1905), pp.
+ 188-217. Other principal sources: A. M. Halpern,
+ 216
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ JICAQUE AS A HOKAN LANGUAGE
+ tive list should be judged with this in mind.
+ We list more obvious similarities, with
+ emphasis on cases showing relationships of
+ Jicaque, Hokan-Coahuiltecan and Gulf lan-
+ guages.5 Comparison with other language
+ stocks belonging to Sapir's Hokan Siouan
+ grouping, is made in a few instances where
+ the agreement is particularly striking. It is
+ convenient to include also some Hokan
+ comparisons without Jicaque cognates,
+ where we need them for the lexico-statistic
+ counts given farther on.
+ -k adjective suffix, in Jicaque pek white,
+ tek black, wek good, brek many; Yuman
+ milk black, ahotk good, epilk warm; Pomo
+ kedakedak red; Tonkawa makik yellow,
+ maslak white.
+ First person: Jicaque na-p I, na- vestigial
+ prefix my; Yuma nya I; Esselen ene I,
+ nis- my; Karok na, ni- I, na- me, nani-
+ my; Washo le I, lew we; Chimariko no?ut
+ I; Yana ai-?ni- a I; Comecrudo na I;
+ Coahuiltec na- I; Karankawa naayi I;
+ Tunica -ni I.
+ Jicaque ku-p we; Chontal ki- I; Chumash
+ ki- we, our; Tonkawa ka I; Pomo ke we;
+ Karok kin- us; Yana -ni-gi we; Salinan ke
+ I, ka we; Chitimacha -ki I, me.
+ Second person: Chontal i-ma thou, i-
+ manki you; Seri me thou; Yuma ma thou;
+ Salinan mo thou, -m- thy; Pomo ma thou,
+ mi thee, mi- thy; Esselen nemi thou, menis-
+ thy; Yana ai?nu-ma thou; Washo mi thou;
+ Chimariko mamut, mi- thou, m- thy; Shasta
+ mai thou; Achomawi-Atsugewi mi- thy;
+ Karok im thou; Comecrudo em- thou;
+ Yuma IJAL 12.25-33, 147-51, 204-12, 13. 18-30,
+ 92-107, 147-66 (1946-7); Edward Sapir and Morris
+ Swadesh, Yana Dictionary, ms. in American
+ Philosophical Society Library; A. L. Kroeber,
+ The Washo Language of East Central California
+ and Nevada, UCPAAE 4.251-317 (1907); John R.
+ Swanton, Linguistic Material from the Tribes of
+ Southern Texas and Northeastern Mexico (BAE-B
+ 127, 1940).
+ 5 Gulf is Mary R. Haas' term for 'the Musko-
+ gean family of languages plus Natchez, Tunica,
+ Chitimacha and Atakapa.' See The Proto-Gulf
+ Word for Water (IJAL 17.71-79, 1951).
+ Coahuiltec mai- thou, you; Chitimacha him
+ thou; Tunica ma?a thou.
+ Third person: Jicaque hu-p he; Chontal
+ -u-pe- he; Chumash ho that; Salinan ho
+ that; Chitimacha hus he, ha this, ho these;
+ Pomo u that, he (distant).
+ Jicaque na that, nahac there; Yuma
+ nYaa- that, -ny stem of pronouns; Salinan
+ na that; Yana na-gu- therefore; Comecrudo
+ na-ni he, na- stem of pronouns; Tonkawa
+ na?a thus; Chitimacha naat thus; Coahuiltec
+ namo then.
+ Jicaque kiwa here; Washo wa here,
+ widi this; Yuma va6i here, va6a this; Chiti-
+ macha we the, that.
+ Interrogative: Jicaque kanlepa when, kat
+ where; Chontal kana when, kaape where;
+ Washo kunya where, kunyate what; Tunica
+ ka- interrogative; Coahuiltec xat how many,
+ xakat why; Comecrudo xat where, tokom
+ whatever, thing; Chimariko qho- interroga-
+ tive.
+ Yuma av- what; Yana ?aci what, ?ambi
+ who; Pomo am who, what; Chimariko
+ ?awilla who; Chitimacha ?am what, ?ast
+ how, ?ampinki where.
+ Locative: Yuma -k at; Yana gi location,
+ object relationship; Chitimacha ki at, kin
+ with; Atakapa -ki in, on, -ik with.
+ one: Jicaque pani; Chumash paka; Ton-
+ kawa pax; Esselen pek; Yana bai; Chi-
+ mariko p?un; Coahuiltec pil; Comecrudo
+ pek-weten (cp. elek-weten two). Also Yuki
+ pawa, powik.
+ two: Chontal o-keSi; Seri kaxkum; Yuma
+ xavik; Chimariko xoku; Yana ?ux-; Shastan
+ xokwa, hoki; Pomo ko, xo; Esselen xulax.
+ three: Jicaque kont; Chontal a-fan-e;
+ Esselen xulap; Pomo xoxat; Yuma xamok;
+ Chitimacha kaayci; Karankawa kaxayi.
+ Proto form xwa.
+ five: see hand.
+ not: Jicaque kua none; Chontal k-;
+ Chimariko xu-; Pomo kuyi; Yana ku-;
+ Karankawa kom; Natchez koosac no; Ton-
+ kawa ooko no.
+ all: Jicaque put; Yana buiza-.
+ arm-hand: Jicaque pul, pel arm, pus
+ 217
+ NO. 3
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ INTERNATIONAL JOURNAL OF AMERICAN LINGUISTICS
+ shoulder; Chumash pu arm, hand; Chi-
+ mariko hitan-pu arm; Salinan puku arm;
+ Subtiaba pahpu.
+ ashes: Jicaque pe; Chontal X-api.
+ back: Yuma -mak; Yana maki.
+ bad: Jicaque marara; Yana malla-.
+ belly: Jicaque kol belly; Chontal X-ikuu;
+ Pomo koy, xo; Chumash aksu; Washo
+ cigugus; Cotoname kox; Atakapa kom.
+ big: see old.
+ blood: Jicaque kat, ac; Chontal awas
+ (perhaps read awac); Seri avat; Yuma
+ xwat; Chumash axulis; Salinan ekata; Pomo
+ hata; Yana wad?du-wi; Shasta-Achomawi
+ axta; Karok ax; Comecrudo kyal; Coa-
+ huiltec kwas, hac; Subtiaba e?di. Proto
+ form axwat varying with xwat; Jicaque kat
+ from xwat, ac conceivably from axwat-s
+ with weakening of intervocalic x'v but may
+ be unrelated. See red.
+ bone: Jicaque kere; Chontal 1-ekaX; Washo
+ di-bigefi; Natchez ekwel; Creek funi (from
+ xwani); Comecrudo xi. Other languages
+ show reflexes of xwa(n)- in compound with
+ other elements: Chitimacha kaci; Atakapa
+ ci (from kci); Seri itak; Chimariko hitxun;
+ Yuman tyaka; isaka; Chumash se?; Salinan
+ axaak; Pomo ihya; Yana ixdal-la.
+ brother: Jicaque na-pey brother-in-law;
+ Washo peyu younger brother; Chumash pe
+ older brother.
+ child: Jicaque way; Seri ove.
+ chin, beard: Jicaque cek; Shasta cawak;
+ Chumash actis (beard), Yana gawadci.
+ cold: Jicaque coys; Chontal coos; Yuman
+ cuq, Kiliwi axcaq; Yana xaa-cid?-; Chi-
+ mariko xaca; Achomawi asca; Tonkawa
+ hacex; Atakapa akcaw; Alabama kasatka.
+ Proto form perhaps xacaxw.
+ die: Jicaque te-puy; Yuma ?apooy. Per-
+ haps also cp. Tunica lupi; Chitimacha
+ nuupi-.
+ drink: Jicaque mes; Atakapa em; Salinan
+ esim; Yana sii-; Yuman Mohave ioi; Seri
+ k-asi; Karok is; Chontal swa. Perhaps from
+ imasi and isima as metathetized variants.
+ excrement: Jicaque piye; Shasta ipxai
+ (intestines); Yana pa-ci; Salinan pxat; Chi-
+ mariko h-ipxa (intestines); Subtiaba amba
+ (from apa).
+ ear: Chontal ismac; Yuma ismalyka;
+ Chimariko hisam; Pomo sima; Yana mal?gu;
+ Seri islo. Also Yuki cema, sum.
+ earth: Jicaque ma; Chontal X-amac; Seri
+ amt; Yuma amat; Chimariko ama; Pomo
+ ama; Comecrudo kamla. Also Siouan ma.
+ eat: Jicaque te-k; Chontal -ka (bite);
+ Salinan isax; Tonkawa yaxa-; Comecrudo
+ kay; Chitimacha kaht- (bite), ku?t- (eat).
+ eat: Yuma ama; Yana ma-; Chimariko
+ hamma; Shastan -am-; Esselen am; Chu-
+ mash umu; Salinan amo; Muskogi hump-.
+ egg: Jicaque pehey; Chontal X-apik. Also
+ Pawnee lipiku.
+ eye: Jicaque wut; Atakapa wul; Salinan
+ t-uwu (face).
+ fat, grease: Jicaque ponik; Salinan upikit;
+ Chimariko -xu- (obese); Yana pui-; Acho-
+ mawi aphau.
+ fire, hot, firewood: Jicaque awa fire, hot;
+ Yuma a?aw fire; Salinan t-a?aw fire; Yana
+ ?au-na fire; Chimariko ?a?pu fire, h-au-na
+ tinder (-na wood); Shasta awa wood; Sub-
+ tiaba aaguu fire.
+ fly: Chontal -yu; Yuma ayer.
+ foot: Chontal imic; Yuma iime; Washo
+ mayop; Comecrudo emi.
+ hand: Jicaque mas; Comecrudo mapi;
+ Coahuiltec maw; Karankawa ecma (hand),
+ ko-maso-pani (five); Chontal a-mahsi; Yana
+ 4iman-. Also Keresan -amast-; Yuki mee,
+ miipa?t.
+ hand: Yana dal-la; Washo tatu; Yuma
+ isalya-; Achomawi ili (from itli); Chimariko
+ hican; Pomo tana. Chimariko hitan-pu arm
+ and xuli-teni left hand seem to contain the
+ same element but without the change of t
+ to c; this can be explained if we assume
+ two forms, itan and tan, deriving hican from
+ hi-ican but hitanpu from hi-tan-pu, or by
+ assuming variant initial consonants.
+ hear: Jicaque pakas; Yana ga-.
+ heart: Jicaque -has; -hos; Chontal hus?an-
+ cey; Coahuiltec xasaal; Tonkawa yacanan;
+ Seri imos; Washo d-emli.
+ 218
+ VOL. XIX
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ JICAQUE AS A HOKAN LANGUAGE
+ horn: Jicaque seme; Chitimacha ?ims;
+ Comecrudo yemo; Cotoname yomo.
+ hot: Jicaque pe; Chontal epal; Yuma
+ ?apilY
+ house: Jicaque wa; Yuma ?ava; Esselen
+ iwa-no; Chimariko ?awa; Yana wa-wi;
+ Comecrudo wamak; Subtiaba gwa.
+ kill: Jicaque ti-kwaw; Pomo kum; Chi-
+ mariko -ko-; Comecrudo kamaw; Chiti-
+ macha ket-. Also Keresan kaut.
+ leg: Jicaque tek; Chontal itungu.
+ meat: Jicaque pisis; Pomo pete; Yana
+ basi; Salinan 5as (elk); Chitimacha kipi;
+ Muskogean nipu; Chontal l-isik.
+ man: Jicaque kuy; Chontal X-akuy; Di-
+ eguefio iku6; Pomo xak; Coahuiltec xaku;
+ Tonkawa ha?akon; Chumash uxuy; Yuma
+ nYako (father); Chumash gogo (father). Also
+ Yuki kew. Compare old; the word for man
+ may come from the word for adult.
+ mother: Jicaque nee; Shastan ani; Pomo
+ nixa; Yana nii-na; Washo -la.
+ mouth: Jicaque lam, lala; Tonkawa kala;
+ Comecrudo xal; Atakapa kat; Yuma axa?a;
+ Pono xacita; Chumash ik; Chitimacha
+ sa; Tunica ?ohu; Karankawa emi-akoy.
+ Earliest form perhaps xa-la, with develop-
+ ment in two directions as lala and axa, ixa.
+ near: Jicaque nya-pin; Yuma xiipan;
+ Atakapa ipal; Chitimacha paye (proximity);
+ Karankawa pawail.
+ night: Jicaque piste; Yana basii; Cotoname
+ pay; Washo ta-pawit; Yana paawi-sa (night
+ falls); Shasta upxa. Also Keresan ko-pso;
+ Yuchi pato.
+ nose: Jicaque mik (perhaps from m-yik);
+ Seri hif, wuf; Yuma iixuu; Esselen hosis;
+ Chimariko hoxu; Achomawi yammi; Karok
+ yufi; Washo ?uyep; Comecrudo yax; Coto-
+ name ya?x; Atakapa uc (from yuk-s);
+ Chitimacha sis (assimilated from yis);
+ Tunica risi; Muskogi yupo; Subtiaba d-
+ aako. Perhaps yaxu, with various vowel
+ assimilations.
+ old: Jicaque kokoy; Chontal akuy (old),
+ -koy (big); Seri kakox (big); Chumash
+ no-xax (big); Chimariko xawini; Yana
+ xaaba-; Yuma kwora?aka (old man).
+ rain: Jicaque yipa (rain), hipe (it is
+ raining), yupu (water); Seri ipka; Natchez
+ yoba; Muskogean Alabama oyiba, Hitchiti
+ ooba.
+ rain: Chontal ukuy; Yuma ikwe-; Chiti-
+ macha kaya.
+ red: Jicaque ke; Pomo kedakedak; Ata-
+ kapa kuc (from kut-s from ketu); Pomo
+ kava; Yuman koxwat, ecawata, xwat; Yana
+ ba-wad?-; Karok acut; Shasta ikwata; Acho-
+ mawi acte. Possibly the same element as in
+ blood or a different element which has
+ become intertwined in some of the languages.
+ river: Jicaque cew; Tonkawa cakaw;
+ Chitimacha 6a?aat.
+ salt: Jicaque carin; Chitimacha cahca
+ (salty).
+ sing: Chontal sow; Yuma aasvaar.
+ sinew: Jicaque pupuy (vein, nerve) pey
+ (rope); Yana baama; Shastan imme, pim,
+ ippiu.
+ sky: Jicaque mol (cloud); Chontal l-emaa;
+ Seri amime; Yuma ?amay; Yana gabZa;
+ Salinan lem (above, sky).
+ sleep: Jicaque maha; Salinan me; Karan-
+ kawa im; Comecrudo eme-t; Subtiaba ami;
+ Chontal smay; Seri sim; Yuma asma;
+ Pomo sima; Yana samsi-; Chimariko pohmu;
+ Shastan icmas ici; Coahuiltec comoxwam.
+ Also Keresan sipa-.
+ smell: Jicaque kucuway; Chontal -we.
+ stone: Jicaque pe; Chontal apik; Yuma
+ ?avii; Chumash xip; Pomo xape; Esselen
+ sefe; Salinan sxap; Chimariko qha?a (stone),
+ qhaku (arrowpoint); Yana xaga (fl:nt);
+ Pomo xaka (knife, obsidian); Salinan isak
+ (knife), asaka (flint); Achomawi sat (arrow-
+ point). Evidently two elements, pe and
+ qhak, which combine to form a compound
+ in Pomo and some of the other languages.
+ sun: Jicaque laksak; Atakapa lak (sun,
+ glitter); Pomo la (sun), alasa (moon);
+ Comecrudo al; Muskogean Choctaw luwak
+ (fire); Seri sax (sun), isax (moon); Salinan
+ esxay (morning, day); Esselen asaca (day),
+ asi (sun); Chimariko ?asi; Shasta a6ayi.
+ The Jicaque is evidently a compound of
+ 219
+ NO. 3
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ INTERNATIONAL JOURNAL OF AMERICAN LINGUISTICS
+ two elements, perhaps ala-k glowing and
+ sax sun.
+ tongue: Jicaque perao; Chontal X-ipaX;
+ Yuma iipalY; Seri ipl; Pomo pal; Shasta
+ ipli; Chimariko h-ipen; Karok apri; Yana
+ bawal?-la; Yana bal-la (mouth); Comecrudo
+ expel; Atakapa nel; Chitimacha wen.
+ tree: Yuma ?avii; Yana ?i-na; Esselen
+ i?i.
+ wash: Jicaque te-pays; Chontal -pah;
+ Chimariko -pok-; Comecrudo pelepla; Ata-
+ kapa pac (from pak-s).
+ water: Chontal 1-aha; Seri ax; Yuma axa;
+ Pomo xa, ka; Chimariko aqha; Yana xa-na;
+ Karok as; Shastan aca, as, acsi; Salinan
+ t-?a; Esselen asa-nax.
+ white: Jicaque pek; S. Chumash pupu;
+ Chontal fuka; Karankawa peka; Comecrudo
+ pepok; Washo tal-popoy.
+ wind: Chontal X-awa; Washo t-ewesgiw.
+ woman: Jicaque kep, kek (woman), na-
+ kom (wife); Chitimacha kica; Atakapa kis;
+ Comecrudo kem; Seri kmam; Cotoname
+ katam; Tonkawa kwaan; Chimariko punsar
+ (from kwem-sa-r).
+ woman: Jicaque mumuy (female); Yana
+ mari?mi; Washo tamomo (woman), umlaya
+ (wife); Pomo mata; Comecrudo mat
+ (mother).
+ 4. That Jicaque is related to Hokan-
+ Coahuiltecan is clearly evident from the
+ quality and quantity of agreements. The
+ next problem is to determine its exact
+ position in the stock. The most convenient
+ objective method for doing this is that of
+ lexical statistics, based on percentages of
+ cognates in a test vocabulary.6 Using a
+ test list of 200 items, belonging to the
+ sphere of every-day and relatively non-
+ cultural meanings, we match them in each
+ of the languages insofar as our material
+ permits. The number of cognates is con-
+ sidered by reference to the total number of
+ pairs available for comparison.
+ 6See Swadesh, Lexico-Statistic Dating of
+ Prehistoric Ethnic Contacts, APS-P 96.452-63
+ (1952).
+ We give the results of cognate counts
+ for six languages-Jicaque, Chontal, Yuma,
+ Yana, Washo, Comecrudo-taken as a
+ fairly representative selection of the whole
+ stock. Yana is taken as one of the Northern
+ Hokan languages, a substock which also
+ includes Pomo, Chimariko, Karok and
+ Shasta-Achomawi. Yuma is taken as a
+ representative of Seri-Yuman, because th
+ available vocabulary is a little larger than
+ Seri and it was found that both languages
+ give approximately the same cognate per-
+ centages. Esselen, Chumash and Salinan
+ were omitted because of the limited vocabu-
+ laries available. Only one of the Coahuiltecan
+ languages is included, namely Comecrudo,
+ which has the advantage of showing higher
+ percentages of agreement with the Hokan
+ languages than some of the others. We thus
+ avoid the uncertainties of dealing with
+ minimal percentages, approaching the quan-
+ titative area of pure chance.
+ Because of the limited lexical materials
+ available for Jicaque and some of the other
+ languages, we have available in the different
+ pairs of languages as little as 55 pairs in
+ some cases and never more than 89 pairs.
+ It will some day be possible to improve
+ this situation. We are also handicapped by
+ the fact that, even with Sapir's several
+ papers, the study of etymologies is not yet
+ sufficiently developed to guarantee accurate
+ identification of cognates in many cases.
+ In deciding what to include and what to
+ exclude, we believe we have erred somewhat
+ more on the side of overcaution than other-
+ wise.
+ 5. Following the method outlined, we
+ obtained the results indicated below. For
+ each pair of languages, we give the English
+ for the items counted as cognates. The
+ actual forms can be found in the cognate
+ list above (3). To conserve space we do not
+ list the items scored as non-cognates (e.g.
+ Jicaque laksak, Chontal picu day or Jicaque
+ pisis, Chontal lisik meat).
+ For Jicaque-Chontal, there were 79 items
+ 220
+ VOL. XIX
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ JICAQUE AS A HOKAN LANGUAGE
+ of meaning which could be matched in
+ both languages. Of these, we apparently
+ have cognate forms for identical meanings
+ in the following 19 cases: three, ash, belly,
+ blood, bone, cold, earth, eat, egg, leg, man,
+ old, sleep, smell, stone, tongue, when, where,
+ white.
+ For Jicaque-Yuma, there are 17 cognates
+ in 73 pairs: I, here, that, when, three, blood,
+ die, dust, earth, eye, fire, hot, nose, sleep,
+ stone, tongue, woman.
+ For Jicaque-Yana, 12 cognates in 74
+ pairs: I, one, three, all, bad, fire, hear, meat,
+ night, old, rain, tongue.
+ For Jicaque-Washo, 11 cognates in 75
+ pairs: I, here, where, belly, bone, drink, green,
+ head, mother, night, white.
+ For Jicaque-Comecrudo, 13 cognates in
+ 89 pairs: one, blood, bone, earth, hand, hus-
+ band, kill, mother, sleep, tongue, wash, white,
+ women.
+ For Chontal-Yuma, 11 cognates in 48
+ pairs: blood, ear, fly, foot, hot, rain, sky,
+ stone, tongue, water, sing.
+ For Chontal Yana, 13 cognates in 75
+ pairs: thou, two, five, blood, ear, hear, meat,
+ not, salt, sleep, this, tongue, water.
+ For Chontal Washo, 7 cognates in 55
+ pairs: thou, you, two, belly, bone, where,
+ wind.
+ For Chontal-Comecrudo, 15 cognates in
+ 65 pairs: I, we, bird, bone, earth, fall, fish,
+ foot, hear, mouth, not, sleep, tongue, water,
+ white.
+ For Yuma-Yana, 15 cognates in 67 pairs:
+ what, at, two, three, back, blood, drink, ear,
+ eat, fire, hand, sleep, tongue, tree, water.
+ For Yuma-Washo, 7 cognates in 55 pairs:
+ I, here, this, eat, father, foot, nose.
+ For Yuma-Comecrudo, 7 cognates in
+ 56 pairs: blood, earth, foot, nose, sleep, tongue,
+ water.
+ For Yana-Washo, 11 cognates in 92 pairs:
+ I, thou, we, two, dog, eat, hand, mother, night,
+ say, woman.
+ For Yana-Comecrudo, 12 cognates in 84
+ pairs: one, blood, blow, fall, liver, not, rain,
+ skin, sleep, snow, tongue, water.
+ For Washo-Comecrudo, 6 cognates in 61
+ pairs: all, bone, foot, mouth, nose, white.
+ 6. Reducing the foregoing figures to
+ percentages, we find the following relation-
+ ships:
+ Chontal .......
+ Yuma.........
+ Yana..........
+ Washo.........
+ Comecrudo....
+ Jicaque
+ 24
+ 23
+ 16
+ 15
+ 15
+ Co
+ 23
+ 13
+ 14
+ 10
+ Wa
+ 13
+ 13
+ 12
+ Ya
+ 19
+ 21
+ Yu
+ 23
+ Presumably the different degrees of rela-
+ tionship are based on the extent of contact
+ among the Hokan languages when they
+ were first diverging, that is, when they were
+ regional dialects of a single language. The
+ cognate percentages therefore suggest an
+ approximate relative geography of early
+ Hokan.
+ The lowest cognate percentages among
+ these languages, 10%, when interpreted
+ by the lexico-statistic constant of 66%
+ (i4 %) common retention after 1000 years,
+ indicate that they represent the differ-
+ entiated products of what was essentially
+ a single language approximately five thou-
+ sand years ago (calculated as 55 ? 7 cen-
+ turies). Within a few centuries of that time,
+ local dialects must have begun to show
+ differences. Presumably contiguous dialects
+ were largely the same while non-neighboring
+ dialects were already noticeably divergent.
+ Presumably, at that time, Comecrudo's
+ neighbors to the east, the dialect forerunners
+ of the present day Coahuiltecan and Gulf
+ languages, shaded off in the same general
+ way with lexical differences approximately
+ proportional to the relative place of the
+ dialects in the chain. Comecrudo fits into
+ the dialect network of Hokan, since it is
+ not more different from Chontal than the
+ latter is from Jicaque or Yuma. This sug-
+ gests that there is no sharp separation
+ between Hokan and Coahuiltecan, that
+ Hokan and Coahuiltecan and presumably
+ NO. 3
+ 221
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms
+
+ INTERNATIONAL JOURNAL OF AMERICAN LINGUISTICS
+ also Gulf are not discrete stocks or branches
+ but merely three segments of the same
+ continuous chain.
+ 7. The present analysis helps to clarify
+ the internal relationships of Hokan-Coa-
+ huiltecan to some extent, but much remains
+ to be done both in verifying the conclusions
+ reached so far and in extending the analysis
+ to the other languages in the Hokan-Coa-
+ huiltecan-Gulf complex. To facilitate such
+ study, it is clear that we need more complete
+ vocabularies as well as more adequate
+ phonetic and structural analyses. It is also
+ necessary to exploit to the full the possibili-
+ ties of reconstructing phonology and of
+ checking etymologies afforded by the closer
+ subgroupings within the total complex.
+ For example, the study of Shasta-Acho-
+ mawi-Atsugewi or of Seri-Yuman would
+ make it possible to take elements back a
+ thousand or two years in time, filling out
+ the details of the earlier phonetic form, and
+ would therefore greatly increase the as-
+ surance with which we can compare words
+ of totally different subdivisions of Hokan.
+ 222
+ VOL. XIX
+This content downloaded from 12.14.13.130 on Tue, 11 Jul 2017 15:04:26 UTC
+All use subject to http://about.jstor.org/terms

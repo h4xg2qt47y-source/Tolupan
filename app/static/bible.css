@@ -1,0 +1,320 @@
+/* ===== Dios Vele – Bible Browser ===== */
+
+.bible-app { max-width: 1200px; }
+.bible-app main { min-height: 60vh; }
+
+.bible-loading {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* ===== Breadcrumb Navigation ===== */
+.bible-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+  font-size: .85rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.bible-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.bible-breadcrumb a:hover { text-decoration: underline; }
+.bible-breadcrumb .sep { color: var(--border); }
+
+/* ===== Chapter Navigation Bar ===== */
+.chapter-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding: .75rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.chapter-nav-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  flex: 1;
+}
+.chapter-nav-title:hover { color: var(--accent); }
+.chapter-nav-title small {
+  display: block;
+  font-size: .75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: .15rem;
+}
+
+.nav-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.nav-arrow:hover { background: var(--accent-light); color: var(--accent); border-color: var(--accent); }
+.nav-arrow.disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+.nav-arrow svg { width: 20px; height: 20px; }
+
+/* ===== Book List View ===== */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .75rem;
+}
+
+.book-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+.book-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+.book-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: .25rem;
+}
+.book-card-subtitle {
+  font-size: .8rem;
+  color: var(--text-muted);
+}
+.book-card-meta {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .5rem;
+  font-size: .7rem;
+  color: var(--text-muted);
+}
+.book-card-meta .badge {
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: .15rem .5rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* ===== Chapter List View ===== */
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: .5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.chapter-tile {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+.chapter-tile:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* ===== Chapter Reading View – Trilingual Columns ===== */
+.verse-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.verse-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--accent);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: .6rem 1rem;
+  text-align: left;
+  z-index: 2;
+}
+.verse-table thead th:first-child { border-radius: var(--radius) 0 0 0; }
+.verse-table thead th:last-child { border-radius: 0 var(--radius) 0 0; }
+
+.verse-table tbody tr {
+  transition: background var(--transition);
+}
+.verse-table tbody tr:hover {
+  background: var(--accent-light);
+}
+.verse-table tbody td {
+  padding: .6rem 1rem;
+  font-size: .88rem;
+  line-height: 1.65;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+.verse-table tbody td:first-child {
+  border-left: 1px solid var(--border);
+}
+.verse-table tbody td:last-child {
+  border-right: 1px solid var(--border);
+}
+.verse-table tbody tr:last-child td:first-child { border-radius: 0 0 0 var(--radius); }
+.verse-table tbody tr:last-child td:last-child { border-radius: 0 0 var(--radius) 0; }
+
+.verse-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: .65rem;
+  font-weight: 700;
+  margin-right: .4rem;
+  flex-shrink: 0;
+  vertical-align: top;
+}
+
+/* Chapter-level listen button in header */
+.chapter-listen-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .2rem .6rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.4);
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: .65rem;
+  font-weight: 600;
+  margin-left: .5rem;
+  vertical-align: middle;
+}
+.chapter-listen-btn:hover {
+  background: rgba(255,255,255,.3);
+  border-color: rgba(255,255,255,.6);
+}
+.chapter-listen-btn.playing {
+  background: rgba(255,255,255,.3);
+  animation: pulse-anim 1s ease infinite;
+}
+.chapter-listen-btn svg { width: 12px; height: 12px; }
+
+
+.verse-cell-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: .2rem;
+}
+.verse-text { flex: 1; }
+
+/* ===== Copyright Footer ===== */
+.bible-copyright {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: .72rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.bible-copyright h4 {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: .5rem;
+}
+.bible-copyright p { margin-bottom: .35rem; }
+.bible-copyright p:last-child { margin-bottom: 0; }
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .verse-table thead th,
+  .verse-table tbody td {
+    padding: .5rem .6rem;
+    font-size: .82rem;
+  }
+}
+@media (max-width: 640px) {
+  .bible-app { padding: 1rem .75rem; }
+  .book-list { grid-template-columns: 1fr; }
+  .chapter-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); }
+
+  .verse-table,
+  .verse-table thead,
+  .verse-table tbody,
+  .verse-table tr,
+  .verse-table th,
+  .verse-table td {
+    display: block;
+  }
+  .verse-table thead { display: none; }
+  .verse-table tbody tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: .5rem;
+    background: var(--surface);
+  }
+  .verse-table tbody td {
+    border: none !important;
+    padding: .35rem .5rem;
+  }
+  .verse-table tbody td::before {
+    content: attr(data-lang);
+    display: block;
+    font-size: .65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--accent);
+    margin-bottom: .15rem;
+  }
+}

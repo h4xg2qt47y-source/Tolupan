@@ -1,0 +1,2241 @@
+--- PAGE 1 ---
+The Tol language (also known as Jicaque), long considered a member of
+the far-flung Hokan phylum, is spoken by 250-300 speakers in north
+central Honduras.
+Tol is quite complex in terms of both phonology and inflectional
+morphology.
+However, there is very little in the way of productive
+derivational morphology. There are 22 consonant and 6 vowel phonemes
+in Tol, as well as one suprasegmental phoneme of stress. There is a
+three-way contrast among stop consonants (plain, aspirated, and
+glottalized), which is partially neutralized in syllable-final position. There is
+also a pervasive system of vowel-harmony governed by vowel height.
+Morphological processes include vocalic ablaut and apocope, prefixation,
+infixation, and suffixation, as well as shift of stress, and these are
+associated with an extensive set of morphophonemic variations, especially
+within the verbs. In addition to the lexical stem, verb-forms in Tol are
+marked only for subject and tense. Tol tense- and aspect-systems seem
+to be quite rudimentary: only present, past,
+and future have been
+recognized by most researchers. Basic sentence word-order is Subject-
+Object-Verb, but when a pronominal subject is involved the usual order is
+Object-Verb-Subject.
+Many nouns have variant forms as subject and as object. There is a
+separate category of adjectives, which follow their associated nouns.
+There is also a large set of postnominal particles which specify case-
+relationships and express locational notions.
+ISBN 3 89586 277 0
+LINCOM EUROPA
+academic publishers
+LW/M 170
+Dennis Holt: Tol (Jicaque)
+LINCOM EUROPA
+Tol (Jicaque)
+Dennis Holt
+
+--- PAGE 2 ---
+Tol (Jicaque)
+Dennis Holt
+Languages of the World/Materials 170
+1999
+LINCOM EUROPA
+
+--- PAGE 3 ---
+Published by LINCOM EUROPA 1999
+All correspondence concerning Languages of the World/Materials should be
+addressed to:
+LINCOM EUROPA
+Paul-Preuss-Str. 25
+D-80995 Muenchen
+LINCOM.EUROPA@t-online.de
+http://home.t-online.de/home/LINCOM.EUROP/
+All rights reserved, including the rights of translation into any foreign language.
+No part of this book may be reproduced in any way without the permission of
+the publisher.
+Printed in E.C.
+Die Deutsche Bibliothek - CIP-Einheitsaufnahme
+Holt, Dennis:
+Tol (Jicaque) / Dennis Holt. - München ; Newcastle : LINCOM
+Europa, 1999
+(Languages of the World/Materials; 170)
+ISB 3-89586-277-0
+Printed on chlorine-free paper
+Contents
+O. Introduction.
+0.1. Current status of Tol.
+0.2. Genetic classification.
+0.3. Former distribution of Tol speakers.
+0.4. History of Tol studies.
+0.5. Grammatical overview.
+0.6. The present sketch.
+1. Phonology.
+1.1. Phonemes.
+1.1.1. Consonant phonemes.
+1.1.1.1. Inventory.
+1.1.1.2. Allophonic variation.
+1.1.2. Vowel phonemes.
+1.1.2.1. Inventory.
+1.1.2.2. Allophonic variation.
+1.1.3. Practical orthography.
+1.2. Sequence-structure conditions.
+1.2.1. Syllable-structure.
+1.2.2. Consonant-clusters.
+1.2.3. Vowel-harmony.
+1.2.4. Canonical stress.
+1.2.5. Other sequence-structure conditions.
+1.3. Phonological rules.
+1.3.1. Unrestricted rules.
+1.3.2. Morphemically restricted rules.
+1
+5
+5
+5
+5
+6
+6
+7
+8
+8
+9
+9
+10
+11
+11
+12
+13
+13
+14
+14
+14
+15
+15
+16
+
+--- PAGE 4 ---
+2
+2. Morphology.
+2.0. Introduction.
+2.0.1. Morphological processes.
+2.0.2. Word-classes.
+2.0.3. Grammatically conditioned alternation.
+2.0.3.1. Vocalic ablaut.
+2.0.3.2. Other grammatically conditioned alternation.
+2.1. Verb morphology.
+2.1.1. Verb inflection.
+2.1.1.1. Morphology of Class 1 verbs.
+2.1.1.1.1. Non-future tenses.
+2.1.1.1.1.1. Present tense.
+2.1.1.1.1.2. Past/perfect tense.
+2.1.1.1.2. Future tense.
+2.1.1.1.3. Verbs with the iterative prefix la-.
+2.1.1.2. Morphology of Class 2 verbs.
+2.1.1.2.1. Non-future tenses.
+2.1.1.2.1.1. Present tense.
+2.1.1.2.1.2. Past/perfect tense.
+2.1.1.2.2. Future tense.
+2.1.1.3. Imperfect tense.
+2.1.1.4. Irregular verbs.
+2.1.1.5. Imperative mood.
+2.1.2. Infinitives.
+2.1.3. Modal auxiliaries.
+2.1.4. Verb derivation.
+17
+17
+17
+17
+17
+17
+17
+18
+18
+18
+18
+19
+22
+24
+25
+28
+28
+28
+29
+30
+30
+30
+31
+31
+32
+32
+2.2. Noun morphology.
+2.2.1. Noun inflection.
+2.2.1.1. Possession.
+2.2.1.1.1. Possessive pronominal prefixes.
+2.2.1.1.2. Inalienably possessed nouns.
+2.2.1.1.3. Genitive constructions.
+2.2.1.2. Objective case-marking.
+2.2.1.3. Plurality.
+2.2.2. Noun derivation.
+2.2.3. Pronouns.
+2.2.3.1. Personal pronouns.
+2.2.3.1.1. Personal pronominal roots.
+2.2.3.1.2. Subject pronouns.
+2.2.3.1.3. Accusative/direct object pronominals.
+2.2.3.1.4. Dative/indirect object pronominals.
+2.2.3.1.5. Benefactive/comitative pronouns.
+2.2.3.1.6. Relational/"stative" pronominals.
+2.2.3.1.7. "Non-human" pronominals.
+2.2.3.1.8. Possessive pronouns.
+2.2.3.1.9. Obligatory personal pronominals.
+2.2.3.2. Indefinite pronouns.
+2.2.3.3. Demonstrative pronouns.
+2.3. Adjectives.
+2.3.1. Qualitative adjectives.
+2.3.2. Numerals.
+2.3.3. Adjective derivation.
+2.3.4. Intensification of adjectives.
+3
+33
+33
+34
+34
+36
+36
+37
+38
+38
+39
+39
+39
+40
+40
+41
+42
+43
+43
+43
+43
+44
+44
+44
+44
+45
+46
+46
+
+--- PAGE 5 ---
+4
+2.4. Adverbs.
+2.5. Postpositions.
+3. Syntax.
+3.1. The sentence.
+3.1.1. Sentence components.
+3.1.2. Word-order.
+3.1.3. Topic/focus and subject/object emphasis.
+3.1.4. Negation.
+3.2. Coordination.
+3.3. Subordination.
+3.3.1. Finite subordinate clauses.
+3.3.2. Purposive.
+3.4. Relativization.
+3.5. Complementation.
+3.6. Causativization.
+3.7. Comparison.
+3.8. Interrogation.
+3.9. Passivization.
+4. Semantics.
+4.1. Causative verbs.
+4.2. Wanting.
+4.3. Metaphor.
+5. Sample text.
+6. Bibliography.
+46
+47
+48
+48
+48
+49
+49
+49
+50
+50
+50
+51
+51
+52
+52
+53
+53
+54
+54
+55
+55
+56
+56
+58
+5
+O. Introduction.
+0.1. Current status of Tol. Tol (also known as Jicaque) is spoken by
+250-300 speakers in the Departments of Francisco Morazán and Yoro in
+north central Honduras. The great majority of these, about 250 speakers,
+live on an official reservation at Montaña de la Flor in the northern part of
+the Department of Francisco Morazán (Dennis 1990: 7); there were also a
+few vestigial speakers in the Yoro Valley as recently as 1974, but the
+language is no longer a viable medium of daily communication in that area
+(see the accompanying map). There is a close, dialectal relationship
+between these two groups of speakers. Among themselves, the speakers of
+Tol are known as Tolpán, but they are referred to as Jicaques or
+Turrupanes by most of the Spanish-speakers of the region.
+0.2. Genetic classification. The Tol language has long been considered a
+member of the far-flung Hokan phylum of languages and seems to be most
+closely related to Subtiaba, an extinct language of Nicaragua, and to
+Tequistlateco (or Chontal) of the state of Oaxaca, Mexico (Greenberg and
+Swadesh 1953; Oltrogge 1975). A closely related language, Western
+Jicaque, was formerly spoken around El Palmar near Chamelecón in west
+central Honduras but apparently has been extinct for a number of decades.
+Campbell and Oltrogge (1980) discuss the historical relationship between
+these two languages and reconstruct the Proto-Tol sound-system and parts
+of the Proto-Tol lexicon.
+0.3. Early distribution of Tol speakers. At the time of the first
+Spanish contact, speakers of Tol were distributed much more widely than
+at present, occupying much of the territory along the Caribbean coast
+between the Ulúa River to the west and the area around present-day
+
+--- PAGE 6 ---
+6
+Trujillo to the east, and as far inland as the Sulaco River (see the
+accompanying map) (Newson 1986: 35-8). By the early nineteenth century
+most if not all Tol-speakers had moved away from the coastal areas to
+avoid the Spanish. The group now at Montaña de la Flor is made up of
+descendants of a small group of refugees who fled the Yoro Valley in 1865
+to avoid being conscripted into forced labor by the local governor
+(Campbell and Oltrogge 1980: 206; for more information on Tol history and
+culture, see also von Hagen 1943, Chapman 1978).
+0.4. History of Tol studies. The earliest known information about the
+Tol language was gathered in 1788 and published in Fernández (1892: 93-
+103). Somewhat later, additional data was collected by Benigno Sosa and
+published in Membreño (1897: 221-2) along with data from Western
+Jicaque gathered by Antonio S. Madariaga in 1890. Other short
+vocabulary-lists of Tol were gathered in the 19th century by F. Guardia
+and J. F. Ferraz, Carlos Torres, Ephraim Squier, and Karl Sapper; all of these
+lists were published in Lehmann (1920: 631-35, 654-66). Early in this
+century, work was done on Tol language and culture by Edward Conzemius,
+who published a short grammatical discussion and word-list in 1922
+(Campbell and Oltrogge 1980: 205-6). In more recent years Tol has been
+extensively studied by Summer Institute of Linguistics researchers Glen
+and Emily Ager, David and Judith Oltrogge, Ronald and Margaret Dennis,
+and Ilah Fleming.
+0.5. Grammatical overview. Tol is quite complex in terms of both
+phonology and inflectional morphology. Within the corpus of available
+data on the language, however, there seems to be very little in the way of
+productive derivational morphology. There is a three-way contrast among
+7
+stop consonants: plain, aspirated, and glottalized, which is partially
+neutralized in syllable-final position. There is also a pervasive system of
+vowel harmony governed by vowel height. Morphological processes
+include vocalic ablaut, prefixation, infixation, and suffixation, as well as
+shift of
+stress, and these are associated with
+an extensive set of
+morphophonemic variations, especially within the verbs. Tol tense and
+aspect systems seem to be quite rudimentary: only present, past, and
+future have been definitively recognized by most researchers. Basic
+sentence word-order is Subject-Object-Verb, but when a pronominal
+subject is involved the usual order is Object-Verb-Subject. Many nouns
+have variant forms as subject and as object. There is a separate category
+of adjectives, which follow their associated nouns. There is also a large set
+of postnominal particles which specify case-relationships and express
+locational notions.
+0.6. The present sketch. Because my own work directly with Tol has
+been limited to a few short sessions gathering lexical data from vestigial
+speakers in the Yoro Valley in 1974, in order to prepare the following
+grammatical sketch I have had to rely primarily on information and
+analyses developed by other researchers, principally what is contained in
+Fleming and Dennis (1977), Dennis and Dennis (1983), and Dennis (1990).
+In some cases my analyses differ somewhat from the ones presented in
+these studies, and I have tried to indicate these discrepancies in what
+follows. The reader should bear in mind that in many ways this sketch is
+both preliminary and tentative; a number of problems have yet to be
+resolved definitively, and I am sure that there is much additional
+information about the language that has not yet been made available by its
+principal researchers, information that should both prove the analyses
+
+--- PAGE 7 ---
+8
+given here and aid in resolving the remaining mysteries. I wish to thank
+Ron Dennis for having generously provided me with copies of much of his
+published work on Tol and for answering my questions whenever he has
+been able to do so.
+In this sketch, the following conventions have been employed:
+(1) basic or underlying forms are marked with a preceding asterisk (*);
+e.g. *sókhte 'untie", *la-hi-t'ú 'I sprinkle, spatter";
+(2) surface phonetic sequences are indicated with square brackets ([ I);
+eg. [nkukúsh] 'my daughter";
+(3) obligatory phonological changes are denoted with a solid arrow (→);
+e.g. *hi-manúnu-a → myá?na 'she gives birth';
+(4) variable or optional phonological changes are denoted with a broken
+arrow (→>); e.g. Pístaway -→ Pístoway 'for a moment'.
+The following abbreviations have also been employed: ACC accusative;
+ADJ adjective; AUX auxiliary; BEN benefactive; COP copula; FUT future; IMPERF
+imperfect; INTENS intensive; ITER iterative; NEG negative; OBJ object; P plural;
+PERF perfective; PL plural; PRES present; PRO pronominal; PURP purposive;
+QUES question; s singular; SUBJ subject; 1 1st person; 2 2nd person; 3 3rd
+person.
+1. Phonology. The following discussion of Tol phonology is based
+almost entirely on Fleming and Dennis (1977), to which the reader is
+referred for additional information.
+1.1. Phonemes. There are 22 consonant and 6 vowel phonemes in Tol,
+which are specified in the articulatory charts below. There is also one
+suprasegmental phoneme of stress.
+9
+1.1.1. Consonant phonemes.
+1.1.1.1. Inventory. The consonant phonemes of Tol are presented in the
+following chart:
+Bilabial
+Stops, plain
+Alveolar Alveopalatal
+t
+aspirated
+glottalized
+ph
+p'
+Velar
+k
+kh
+k'
+Laryngeal
+?
+Fricatives
+h
+Nasals
+m
+n
+Liquid
+1
+Semivowels
+·
+(c, ch, and c'are alveolar or alveopalatal affricates but are grouped with the
+stops in this table on the basis of structural considerations.)
+There is a close morphophonemic (if not allophonic) relationship
+between B and w, and they are virtually in complementary distribution,
+with B occurring primarily adjacent to front vowels and w before back
+vowels. Campbell (Campbell and Oltrogge 1980: 211) claims that there is
+not enough basis for setting up a separate phoneme B distinct from w,
+basing his claim on considerations of phonological aberrancy and pattern-
+incongruity — B is the only voiced fricative — as well as on the pervasive
+alternations between the two segments and the near complementarity
+mentioned above. Campbell attempts to dismiss certain apparently
+minimal pairs on the basis of the fact that one member of each pair is an
+inalienably possessed form whose possessive infix determines which of the
+two segments occurs. Nevertheless, there do exist a few locally minimal
+pairs which cannot be dismissed on this basis and which seem to disallow
+the assigning of the two phones to the same phoneme; eg. Bin "frog': win
+
+--- PAGE 8 ---
+10
+'you walk'; Bitßíth 'drizzlingly' : wic'il 'bee (sp.)"; Balán 'trap': wa 'house";
+Boyúm 'her husband': wolás 'fruit'.
+1.1.1.2. Allophonic variation.
+Plain stops are voiced following nasals; e.g. t'ánka → [t'ánga] 'it
+breaks; ncíße → [njiße] 'my brain'.
+ph is realized as a voiceless bilabial fricative, [$], before a syllable-
+initial w or B ; eg. hiph Bya → [hi¢ Byal 'your house'. ph may have
+nasalized aspiration before a syllabic nasal; e.g. naph m-ßis →→ [napM m-ßis]
+'my tooth'.
+A glottalized stop has three possible phonetic realizations when initial
+in a stressed syllable. It may be realized as (1) a glottalized stop followed
+by a laryngealized vowel; as (2) a plain stop followed by a lengthened,
+laryngealized vowel; or as (3) a plain stop followed by a short, unstressed
+laryngealized vowel plus a glottal stop followed by a stressed,
+laryngealized vowel. For example, nc'il 'my hair' may be realized as Inc'il],
+Incel], or [ncil.
+When utterance-final or before a non-stop consonant, a glottalized
+stop may have any of three types of release: a voiceless release, a delayed
+release, or a voiced vowel release. The vowel release is typically a short
+front vowel of the same height as the vowel of the last syllable. For
+example, ncoc' my breast' may be realized as [ncoc'], Incoc":], or [ncoc'e].
+The affricates, c, ch, and c', are freely variant as both alveolars and
+alveopalatals, the latter being the more common type when adjacent to a
+front vowel or semivowel; e.g. cach -→ [cačh] or [cach] 'weasel'; chin → [chin]
+"beans'.
+s is followed by aspiration when utterance-final; e.g. [nkukúsh] 'my
+daughter'. It is optionally realized as [s] when immediately adjacent to a
+11
+front vowel or semivowel (e, i, or y). [s] and [z] are freely variant
+allophones of s following nasals.
+1 is realized as [di] when syllable-final, and optionally as [t] when
+utterance-final. Intervocalically, the allophones [!] and [r] are in free
+variation.
+y may optionally be realized as non-syllabic lel when it is the second
+member of a cluster before a in an open syllable; e.g. lyáha - → [leáha] 's/he
+eats'.
+1.1.2. Vowel phonemes.
+1.1.2.1. Inventory. The vowel phonemes of Tol are presented in the
+following chart:
+Front
+Back
+Unrounded
+Rounded
+i
+u
+e
+High
+Mid
+Low
+a
+There is also the suprasegmental phoneme of stress: <).
+1.1.2.2. Allophonic variation.
+Vowels are laryngealized in the immediate vicinity of a glottalized
+stop, whether in the same or an adjacent syllable. Vowels in the same
+syllable are somewhat more strongly laryngealized.
+u has the optional allophone [u] in syllables ending with an alveolar
+fricative or affricate (s, ch, c) or in unstressed open syllables.
+e is realized
+as [e] in closed syllables not ending in n or y, and
+sometimes in open syllables, where it is freely variant with [el. It is
+realized as [e] elsewhere.
+a is optionally realized as [A] in unstressed syllables and as [æ] after a
+
+--- PAGE 9 ---
+12
+Cy cluster, especially when C is an alveolar; e.g. lyáha → [leahs] 's/he
+eats'. Variably, a becomes [o] before w; e.g. Pístaway -→ [ístoway] 'for a
+moment.
+1.1.3. Practical orthography. The Spanish-based practical orthography for
+Tol which has been developed by Summer Institute of Linguistics
+researchers and is employed in Dennis and Dennis (1983) is as follows:
+Phoneme
+Orthographic
+equivalent
+P
+Orthographic
+Phoneme
+equivalent
+m
+m
+ph
+n
+n
+p'
+p'
+n
+t
+t
+th
+h
+ch
+c'
+k
+kh
+k'
+t'
+ts
+tsj
+ts'
+qu before i, e
+c elsewhere
+qju before i, e
+cj elsewhere
+q'u before i, e
+c'elsewhere
+ü
+i
+e
+u
+i
+e
+ü
+u
+a
+a
+?
+Additionally, stress is marked with an acute accent ‹) over the
+vowel of the stressed syllable, but only when the stress is non-canonical,
+i.e. when it falls on the antepenult, on the penultimate syllable in a
+13
+consonant-final word, or on a word-final vowel. (Cf. §1.2.4.)
+1.2. Sequence-structure conditions.
+1.2.1. Syllable-structure. Tol syllables are typically of the form C(S)V(C)
+(where S is a semivowel). Any consonant except y may appear in syllable-
+initial position. There are no vowel-initial syllables. h is infrequent
+syllable-finally.
+A second phonetic syllable-type consists of a single syllabic nasal,
+occurring only in word-initial position, where it is invariably the phonetic
+reflex of a phonemic sequence of the type NV- (either the 1st-person
+possessive prefix na- or the future prefix mV-). Such syllabic nasals do not
+occur before laryngeals (h, 2).
+1.2.2. Consonant-clusters. In underlying forms, initial consonant-clusters
+are limited to those consisting of a true consonant followed by a semi-
+vowel. In surface forms, however, there are some other possibilities. One
+of these occurs with past-tense verb-forms involving verb-stems beginning
+with 1, for example, the-lehén 'they were standing'. In rapid speech this is
+optionally pronounced as [thlehén], thus producing a cluster of the type Cl.
+More complex clusters of this type are also possible, e.g. the-lyawún -→
+[thlyawn] 'they walked'.
+Word-medial consonant-clusters of two (and potentially three
+members may occur; for example, syokhtékh 'we untie (it)", li-silsil 'you
+shake (it)', PumPúm 'soft'. Geminate medial clusters are not permitted,
+however, and in those cases where such clusters would be produced by
+normal morphophonemic vowel-loss in verbs, the first of two like
+consonants is realized as ?; e.g. *hi-manúnu-a → myá?na 'she gives birth';
+*hi-hititt-k → hyt?tikh 'we make baskets' (cf. S2.1.1.1.1.1).
+There are no word-final consonant-clusters.
+
+--- PAGE 10 ---
+14
+1.2.3. Vowel-harmony. Vowel-harmony is a pervasive aspect of Tol
+phonology which is evident in the underlying forms of monomorphemic
+lexical stems and in connection with certain morphological processes
+associated with the conjugation of verbs, the inflection of pronouns, and the
+formation of possessed nouns. In essence, except for compounds, high
+vowels and mid vowels do not occur in the same word. Within lexical
+stems the vowel a is neutral with regard to vowel-harmony and may occur
+with either high vowels or mid vowels; e.g. *sína 'sow, plant"; *páke 'write.
+However, a patterns as a non-high vowel in vowel harmony between
+affixes and stems; e.g. I-e-t'a 'I choose'; 1-o-t'a 'you-all choose'. Certain
+inflectional morphemes have both high-vowel and mid-vowel allomorphs
+in order to insure at least local harmony in the larger constructions of
+which they are a part. In verbal constructions, later phonological or
+morphophonemic processes may produce surface-words which violate this
+principle of vowel-harmony.
+A special case of vowel-harmony exists within lexical stems
+containing sequences of the type VhV or V?V, in that both vowels are
+invariably identical.
+1.2.4. Canonical stress.
+As noted earlier, stress is phonemic in Tol.
+Nevertheless, normally words ending in a consonant are stressed on the
+final syllable, and words ending in a vowel are stressed on the penultimate
+syllable. There are numerous exceptions to this, however, and, accordingly,
+stress is marked on all words of more than one syllable in what follows.
+1.2.5. Other sequence-structure conditions. Plain and
+aspirated stops
+contrast only in syllable-initial position. Syllable-finally the distinction is
+neutralized, with only plain or unreleased stops occurring before stops, and
+only aspirated stops occurring elsewhere. The former condition holds even
+15
+across word-boundaries; e.g. noph phe → [nop' phé] 'corn white'.
+? does not occur word-finally, but does occur syllable-finally
+elsewhere.
+B does not occur before high back vowels or semivowels (t, u, y, W),
+or after back vowels (a, 0, t, u).
+h is rare in syllable-final position (cf. §1.3, phonological rule 2(d)).
+w does not occur syllable-initially before y, nor syllable-finally after
+a front vowel.
+1.3. Phonological rules.
+1.3.1. Unrestricted rules. The following phonological rules (internal sandhi)
+operate word-internally between morphemes in Tol.
+1. B becomes w following a rounded vowel (u, o) or before the central
+semivowel y, e.g. *ho-Belé → *ho-welé → welé 'you-all speak'.
+2. his often lost in various environments, including:
+(a) word-initially as a concomitant of the infixal spreading of a
+following vowel beyond a stem-initial consonant; e.g. *hi-púlu → *pyúl 'I
+fetch water" (cf. rule 4 below).
+(b) between vowels in an unstressed syllable, with concomitant loss
+of the first of the associated vowels; e.g. *hi-láha → *I-yáha → 1-y-á 'I eat';
+*la-hi-t'u → li-t'u 'I spatter, sprinkle (it)'. In some instances h is optionally
+lost between vocalic segments in a stressed syllable; e.g. *thi-hókho → the-
+hypo-→ thyoio 'he cuts (it).
+(c) following a consonant; e.g. *khis-hi-Bóho → *khis-i-Bóho → khes-
+é-Bóho 'we vomit'.
+3. w becomes B before y; e.g. wa 'house' : *hi-wa → *wya → Bya 'your
+house'.
+4. There is a tendency for high vowels to produce residual semi-
+
+--- PAGE 11 ---
+16
+vowels after a following consonant; i participates in this process only
+before back vowels, and u only before a ; e.g. *thi-núku-kh → thi-nyúku-kh
+'we see'; *nu-káph → *nu-kwáph → nu-kóph (cf. rule 5 below) 'for you-all'.
+In most cases the underlying morpheme containing the high vowel is lost,
+leaving the semivowel as an infixal reflex and allomorph of the morpheme;
+e.g. *hi-c'imt → *hi-cym+ → cytm 'I suck (it)' (cf. rule 2(a) above); *thi-sip+
+→ *thi-syip → syp 'I hit (it)' (cf. §2.1.1.1.1.2.). This process can even take
+place stem-internally under certain conditions; e.g. *has-hi-kipáp-a → s-i-
+kipyáp-a 'he dresses himself; *la-hi-chinán-a → 1-i-chinyán-a 'he spreads
+(it) out'.
+5. The sequence wa becomes o, e.g. *hu-chaká → *chwaká → choká
+'you-all prick.
+1.3.2. Morphemically restricted rules. A number of phonological changes
+take place only in association with certain morphemes. Some of these are
+the following:
+1. In 3rd-person-singular verb-forms, an unstressed suffix-vowel
+assimilates to a previous vowel if only h or ? intervenes; e.g. *hi-nih-a → n-
+y-íh-t's/he throws (it)'.
+2. In certain verb-stems, Oh becomes ? when intervocalic; e.g. *hi-
+hokhó-kh → h-y-oló-kh 'we cut (it)'.
+3. In certain verb-stems, a consonant becomes 2 before a consonant;
+e.g. *hi-mánun-a → *m-y-ánn-a → m-y-á?n-a 'she gives birth'.
+4. A non-low prefix-vowel assimilates in height to the first stem-
+vowel (in accordance with principles of vowel harmony).
+These and other changes are further discussed and exemplified as
+part of the discussion of related morphological processes in what follows.
+17
+2. Morphology.
+2.0. Introduction.
+2.0.1. Morphological processes. There is a broad range of morphological
+processes employed in Tol, including prefixation, suffixation, infixation,
+vowel apocope, vocalic ablaut, and shift of stress.
+2.0.2. Word-classes. Tol words fall into five principal categories: verbs,
+nouns, adjectives, adverbs, and postpositions. Each of these is discussed in
+a separate section below. There are also assorted particles with various
+functions, a number of which are discussed in §3 below.
+2.0.3. Grammatically conditioned alternation.
+2.0.3.1. Vocalic ablaut. In Tol there is
+a pervasive set of ablaut-
+phenomena associated with certain verbal prefixes, namely the non-future
+morpheme {hi-): hi-/hu-/ha- and, in a slightly modified form, the past-
+tense morpheme {thi-): thi-/thV-. In association with singular verb-forms
+and 1st-person-plural forms, the allomorph of each of these morphemes
+exhibits the vowel i (before a high vowel in the stem) or e (before a non-
+high vowel); however, with 2nd- and 3rd-person-plural forms, the
+allomorphs of {hi-} contain the vowels u or o, and a, respectively; with
+these same forms the vowel of {thi-} assimilates to the first vowel of the
+stem. For most verb-stems, the ablaut-alternations in the morpheme {hi-}
+are observable only in the infixes which remain as reflexes of the earlier or
+underlying prefix. (See §2.1.1.1.1.1 for a fuller discussion of these changes
+and for examples.)
+2.0.3.2. Other grammatically conditioned alternation. An object-marking
+morpheme that appears as a suffix on most nouns in certain circumstances
+has three allomorphic realizations - - kh, -s, and - m/-n - depending on the
+noun-stem involved. (These phenomena are discussed further in S2.2.1.2.)
+
+--- PAGE 12 ---
+18
+2.1. Verb-morphology.
+2.1.1. Verb inflection. In addition to the lexical stem, verb-forms in Tol are
+marked only for subject and tense. Nevertheless, verb-morphology in Tol
+is rather complex, involving prefixes, suffixes, infixes, ablaut, and vowel-
+harmony in various situations. Verbal subjects are marked for person: 1st,
+2nd, and 3rd; and for number: singular and plural. Tol verb-stems can be
+divided into two major conjugational classes, which, following
+Dennis
+(1990), will be referred to here as Class 1 and Class 2. While Dennis claims
+that the basis for this categorization is arbitrary, there are nevertheless a
+preponderant number of transitive stems among the Class 1 verbs and a
+similar preponderance of intransitive stems among those of Class 2,
+suggesting that, at least historically, there was a grammatical basis for the
+differing conjugational treatment. There are also numerous irregular verb-
+stems, which will be discussed in S2.1.1.3 below.
+2.1.1.1. Morphology of Class 1 verbs. The extremely complex behavior of
+Class 1 verbs is probably best understood through a somewhat abstract
+approach by which the great diversity of conjugational types can be
+systematically explained. Such an explanation may also bear some relation
+to a supposed underlying competence on the part of present-day speakers
+of Tol. Accordingly, I here set up a hypothetical underlying canonical verb
+paradigm and then propose a set of morphophonemic and phonological
+rules which derive the observed synchronic forms primarily on the basis of
+phonological factors within the verbal constructions.
+2.1.1.1.1. Non-future tenses. Non-future forms of Class 1 verbs are marked
+for person and number with the following set of suffixes and stress-
+changes:
+1st-person singular: No change.
+19
+2nd-person singular: Add -n.
+3rd-person singular: Change final stem-vowel to -a if unstressed
+(otherwise no change); then shift stress to first stem-syllable.
+1st-person plural: Shift stress to final stem-syllable; add -kh (or -m).
+2nd-person plural: Shift stress to final stem-syllable.
+3rd-person plural: Add -ph.
+(See below for examples. Note that in the 1st-person-plural forms of both
+verb-classes the person-suffix may optionally be realized as -m instead of
+-kh, but -khis the more common of the two.)
+2.1.1.1.1.1. Present tense. Present-tense forms of Class 1 verbs are formed
+by prefixing the morpheme {hi-} to the personal non-future stem. This
+prefix has three grammatically conditioned allomorphs: hu- with 2nd-
+person-plural forms; ha- with 3rd-person-plural forms; and hi- elsewhere.
+Thus the underlying present-tense paradigm of the regular verb *núku
+'see' is as follows:
+Singular
+Plural
+Ist
+*hi-núku
+*hi-nukú-kh
+2nd
+*hi-núku-n
+*hu-nukú
+3rd
+*hi-núk-a
+*ha-núku-ph
+The following ordered set of phonological rules (some of them
+grammatically conditioned) is now applied to the members of this
+paradigm in order to derive the observed forms:
+1(a). Before a back stem-vowel, hi- is realized as the infix -y- after the
+first consonant of the stem.
+(b). Elsewhere before two or more syllables hi- is deleted.
+2(a). Before the stem-vowel a, hu- is realized as the infix -w- after the
+
+--- PAGE 13 ---
+20
+first consonant of the stem; the sequence wa then
+monophthongizes to o.
+(b). Elsewhere hu- is deleted.
+3(a). A word-final consonant is deleted following an unstressed vowel.
+(b). Except in the 3rd-person singular, a word-final unstressed vowel is
+deleted.
+4. Final unstressed a becomes e following a front vowel in the previous
+syllable.
+5. Following a laryngeal (2 or h), a final unstressed vowel assimilates
+completely to a stressed vowel in the previous syllable.
+6. An unstressed vowel is lost in a stem-medial syllable, and the first
+member of the resulting consonant-cluster is changed to ?.
+7. A final consonant is deleted following a consonant (in accordance with
+the sequence-structure condition prohibiting final clusters).
+8. A non-low prefix-vowel assimilates in height to the first stem-vowel.
+9. A final plain stop is aspirated.
+10. A final his deleted.
+The derived present-tense paradigm of *núku 'see' is then as follows:
+Singular
+Plural
+Ist
+n-y-úkh
+n-y-ukú-kh
+2nd
+n-y-úkh
+nukú
+3rd
+n-y-úk-a
+ha-nukh
+Verb-stems with a front vowel in the first syllable are not subject to
+the application of rule 1, and thus somewhat different forms will result in
+the 1st- and 2nd-person singular; e.g. *hi-sína → hi-sín 'I/you sow'. Rule 4
+also operates with such forms; thus e.g. *hi-sin-a → *sín-e 's/he sows.
+21
+With monosyllabic stems of this type, the 3rd-person-singular form also
+retains the tense-prefix due to the inoperation of rule 1(b); e.g. *hi-ßé →
+he-Bé 's/he swallows.
+Verb-stems with final stress preclude both the addition of the 3rd-
+person-singular suffix -a and the application of rule 3, producing another
+set of types. Following is the present-tense paradigm of *Ponsó 'place, put:
+Singular
+Plural
+1st
+?-y-onsó
+?-y-onsó-kh
+2nd
+?-y-onsó-n
+Ponsó
+3rd
+?-y-ónso
+ha-Ponsó-ph
+Verb-stems of the form *ChV undergo a different set of changes
+due to the operation of the rule h → Ø/V_V (rule 2(b), S1.3.1) in the 2nd-
+person singular and the loss of final h (rule 10 above) in two other forms.
+For example, here is the present-tense paradigm of the verb *láha eat:
+Singular
+Plural
+1st
+I-y-á
+1-y-ahá-kh
+2nd
+1-y-á-n
+lohá
+3rd
+I-y-áh-a
+ha-lá
+In most disyllabic stems of the form *C/CV, Ch becomes ? in those
+surface-forms in which it falls between vowels, namely the 3rd-person
+singular and the 1st- and 2nd-person plural. For example, *hi-hókho-kh →
+h-y-oró-kh 'we are cutting (it). Exceptions to this are the stems *púcha
+'spit' and *pókhe 'pull up'.
+In disyllabic stems of the form *G,VC2C3V, C3 is lost in the 1st- and
+2nd-person singular and the 3rd-person plural through the regular
+operation of rule 7. For example, *hu-Páphta-' → Pophta 'you-all break (it);
+
+--- PAGE 14 ---
+22
+but *ha-Páphta-ph → ha-Páph 'they break (it)'.
+In trisyllabic verb-stems of the form CVCÝCV, rule 6 operates to
+delete the stem-medial vowel in those forms in which it is destressed (the
+3rd-person singular and the 1st- and 2nd-person plural), with concomitant
+modification of resulting C clusters through the change C→ ?/_ C; e.g. *hi-
+t'olóno-a→ *†'-y-óln-a → t'-y-óin-a 's/he closes (it)'; *hi-hatití-kh → *h-y-
+#ti-kh → h-y-ti-kh 'we send (it); *hu-manunú → *m-w-annú → mo?nú
+'you-all give birth'. The other members of the paradigm are realized
+normally. (On the basis of very limited data, it appears that these changes
+do not take place with trisyllabic verb-stems of the form CVCV; e.g. *hi-
+Pumalú → ?-y-umalú 'it shrinks', not 2-y-uPlú.)
+2.1.1.1.1.2. Past/perfect tense. The past tense of Class 1 verbs is formed by
+prefixing the morpheme {thi-) to the non-future personal stems; {thi-} has
+the allomorphs tV- in 2nd- and 3rd-person-plural forms and tV-
+elsewhere. In the 2nd- and 3rd-person-plural forms, the prefix-vowel
+assimilates completely to the first vowel of the stem; e.g. *thV-nukú → thu-
+nukú 'you-all saw (it)'. In the other persons a residual -y- infix appears
+following the first stem-consonant before back vowels (cf. §1.3, rule 4) and
+normal vowel-harmony operates within the prefix; e.g. * thi-Búsa → thi-ß-y-
+ús 'I twisted (rope)'; *thi-phoyé-kh → the-ph-y-oyé-kh 'we disemboweled
+(it)'. Additionally, if the first stem-consonant is a plain stop, the consonant
+of the prefix assimilates to this condition; e.g. *thi-póne → te-p-y-ón 'I
+believed'.
+When the verb-stem begins with an alveolar or alveopalatal stop,
+affricate, or fricative (t, th, t', c, ch, c', or s), the past-tense morpheme is
+deleted, leaving a residual infixal allomorph in those forms in which
+it
+normally develops; e.g. *thi-t'aná-n → t'-y-aná-n 'you shucked corn'.
+23
+Following are the complete past-tense paradigms of the verbs *núku
+'see', *páke 'write', and * sipt 'hit':
+*núku 'see:
+*páke 'write':
+Singular
+Plural
+Singular
+Plural
+1st thi-n-y-ukh
+thi-n-y-ukú-kh
+Ist
+te-p-y-ákh
+te-p-y-aké-kh
+2nd thin-y-ukh
+thu-nukú
+2nd
+te-p-y-ákh
+ta-paké
+3rd thi-n-y-úk-a
+thu-núkh
+3rd
+te-p-y-ák-a ta-pákh
+*sipt 'hit:
+Singular
+Plural
+1st
+s-y-iph
+s-y-tpt-kh
+2nd
+s-y-iph
+stpt
+3rd
+s-y-ip-a
+stph
+The development of the -y- infix here in just those forms in which it
+develops in the present tense suggests that perhaps the hi- allomorph of
+the present-tense morpheme is present underlyingly in these past-tense
+forms also; in fact, Dennis (1990) posits this, a conclusion which is further
+supported by the presence of analogous present-tense infixes in the past-
+tense forms of Class 2 verbs (cf. §2.1.1.2.1.2). The absence of any sign of
+the present-tense prefix in the 2nd- and 3rd-person plural may be due to
+its complete absorption by the past-tense prefix; e.g. *thV-hu-payú → *thV-
+payú → ta-payú 'you-all picked (them) up'. Given such an analysis, the
+coöccurrence of both present- and "past"-tense morphemes in the same
+verbal construction would seem to imply that {thi-} might be better
+interpreted as a perfective aspectual morpheme. There is some additional
+evidence, mostly of a semantic nature, that {thi-} is actually a perfective
+prefix rather than past; e.g. cf.
+
+--- PAGE 15 ---
+24
+n-chícha thi-lyim
+na,
+ka (n-?)sin nap"
+1.s-field PERF?-burn.l.s when FUT plant.1.s 1.S-SUBJ
+'When I have burned my field, I will plant.'
+pis
+thi-Pytma, po
+Pikh s-y-á?ma
+meat PERF?-roast INTENS good t-PRES-aste.3.S
+'Meat that has been roasted tastes very good.'
+(The latter sentence may contain a relative clause with a verb used
+impersonally [cf. S3.9l.)
+2.1.1.1.2. Future tense. The future-tense personal stems of Class 1 verbs,
+which are somewhat different than the corresponding non-future stems,
+are formed with the following set of suffixes. In all persons except the 1st-
+singular, stress is also shifted to the stem-final vowel:
+Singular
+Plural
+1st
+2nd
+3rd
+Ø
+-kh (or -m)
+-n
+stress-shift only
+- S
+-kh (or -m)
+To the resultant stems is added the future prefix m(V), which is
+realized as Ø before m or n; as m plus a vowel homorganic with the first
+stem-vowel before h or ?; and as a syllabic n- before any other consonant.
+The same set of phonological rules described above for present-tense forms
+(§2.1.1.1.1.1) also applies in the future tense.
+Following are the complete future paradigms of the verbs *núku 'see',
+* Púli 'break', and *páchi 'wash":
+25
+*núku 'see":
+Singular
+1st (ka) núkh
+2nd (ka) nukú-n
+3rd (ka) nukú-s
+*páchi wash':
+Plural
+Singular
+Plural
+(ka) nukú-kh
+1st (ka) n-pách
+(ka) n-papí-kh
+(ka) nukú
+2nd (ka) n-palí-n
+(ka) n-palí
+(ka) nukú-kh
+3rd (ka) n-papí-s (ka) n-papí-kh
+*Pulíni 'break corn':
+Singular
+Plural
+1st (ka) mu-Pulín
+(ka) mu-Puní-kh
+2nd (ka) mu-Purní-n
+(ka) mu-Pu?ní
+3rd (ka) mu-Pu?ní-s
+(ka) mu-Puní-kh
+Additionally, as indicated parenthetically in the charts above, an
+optional future emphatic (?) particle, ka, may be added before or after the
+future verb-complex, preposed occurrence being somewhat more common.
+(That the particle ka is not an integral part of the verbal complex is further
+evidenced by the fact that words may intervene between it and the future-
+tense construction proper; e.g.
+pill
+kaßayú ka
+kasá la-n-chi?ná-s
+blanket horse
+FUT over ITER-FUT-spread-3.S.
+'He is going to spread the blanket over the horse'.
+na-thám
+ka n-kaph m-p'a?sá-s
+n-chich la
+Pel
+1.s-brother FUT I.S- BEN
+FUT-help-3.s 1.s-field PURP clean
+'My brother will help me clean my field.)
+2.1.1.1.3. Verbs with the iterative prefix la-. Class 1 verbs can also be
+further subdivided on the basis of their morphophonological behavior into
+
+--- PAGE 16 ---
+26
+those stems which include the preposed prefix (or particle) la- and those
+which do not. The exact semantic or syntactic nature of the prefix la- is not
+yet well understood. The prefix, which occurs obligatorily with certain
+verbs and optionally with others, appears in most cases to have an
+aspectual function with an iterative or sometimes a distributive meaning.
+It seems to be related to the particle la 'time, instance, which occurs in
+such constructions as la kon-t'e 'three times' and la nol 'how many times?'.
+In a few cases in which verb-roots occur both with and without la-, the
+differential semantic effect of the prefix is evident; e.g. cf. *núku 'see, look:
+*la-núku 'wait' (i.e. 'look again and again'?); *Belé 'speak, talk': *la-Belelé
+'argue' (here the additional syllable le is probably a reduplication, also with
+iterative semantic effect); however, with other pairs, such as *pála 'happen,
+become': *la-pála 'look for', the semantic interpretation is not as obvious.
+Certain other verb-roots occur both with and without the prefix with no
+apparent difference in meaning; e.g. *wúku or *la-wúku 'mix"; *im+ or * la-
+Pimt 'burn something'. In these pairs, the stems with la- may involve
+somewhat more explicit or emphatic iterativity.
+Morphologically, la- seems to be part of the larger verbal word since
+it participates in regular morphophonemic processes involving other verbal
+prefixes; thus it is treated as a prefix in this discussion. (Dennis and Dennis
+[1983] and Dennis [1990], however, treat la as a particle separate from the
+verbal word.) In present-tense constructions, la- fuses with the present-
+tense morpheme hi-/hu-/ha- through normal operation of phonological
+rule 2(b) (§1.3) : *la-hi- → li-; *la-hu- → lu-; *la-ha-→ la-. Consequently,
+with such iterative/distributive verbs, hi- and hu- are never realized as
+stem-internal infix and ablaut, respectively, nor does ha- ever occur as a
+separate, recognizable syllable. Normal processes of vowel-harmony also
+27
+operate with these reduced prefixal complexes; e.g. *la-hi-chéke → le-chékh
+'I plow"; *la-hu-?elé → lo-Pelé 'you-all clear brush'. In other tenses la
+retains its basic form; e.g. la-thu-húy 'they whistled'; (ka) la-n-pál 'I will
+look for (it)".
+In addition to the differences just mentioned, for most verbs
+involving la-, the 3rd-person-singular present-tense form is realized
+differently than for verbs without la-. For disyllabic stems, the stress is
+shifted to the final syllable, and the final stem-vowel retains its identity;
+e.g. *la-hi-pála → 1-e-palá 's/he seeks (it)*; *la-hi-Pim+ → 1-i-2tmí 's/he
+burns (it): In 3rd-person-singular forms of CVCCV stems, the stress
+remains on the stem-medial syllable rather than being shifted to the stem-
+initial syllable, and as a result the vowel-loss and cluster-modification
+described above for non-la- stems (§2.1.1.1.1.1, rule 6) do not take place;
+e.g. *la-hi-palán-a → 1-e-palán-a 's/he fights' (not 1-e-pá?n-a). However,
+these changes also do not take place in 1st- and 2nd-person-plural forms,
+even though there is no difference in stress associated with them; e.g. *la-
+hu-palaná → 1-o-palaná 'you-all fight' (not 1-o-pałná). Such phenomena
+might be explainable on the basis of analogy with the 3rd-person-singular
+forms; or there may be a more complex reason involving prosodic factors
+that are not yet explainable. In other tenses, verbs with la- behave just as
+do verbs without la-; e.g. *la-thi-palán-a → la-te-p-y-á?n-a 's/he fought;
+*la-mV-palaná-kh → la-n-pałná-kh 'we will fight'.
+There is some evidence that the prefix la- also occurs with Class 2
+verbs, but the data is incomplete in this area; e.g. lu phytnis naph I'm
+stretching'. Here la- has apparently fused with the underlying prefix, ht-
+(or hu- ?) that gives rise to the Class 2 present-tense infix -- (cf.
+§2.1.1.2.2).
+
+--- PAGE 17 ---
+28
+2.1.1.2. Morphology of Class 2 verbs. A second set of verb-stems, most of
+them grammatically intransitive, is conjugated substantially differently
+from the Class 1 verbs.
+2.1.1.2.1. Non-future tenses. In the present and past tenses, Class 2 verbs
+are marked for person and number with the following set of suffixes:
+Singular
+Plural
+1st
+-S
+-ké-kh (or -ké-m)
+2nd
+-m
+-ké
+3rd
+In addition, stress is shifted to the final stem-syllable in 1st-person and
+3rd-person forms.
+2.1.1.2.1.1. Present tense. Present-tense forms of Class 2 verbs are formed
+by infixing the morpheme -y- after the first consonant of the personal
+stem. This infix has two grammatically conditioned allomorphs:
+-y- in 1st- and 3rd-person-plural forms; and -y- elsewhere. (As with Class
+1 verbs, this infix may have arisen historically from a prefix, but there is
+no direct surface evidence of this; however, cf. §2.1.1.1.3, in which the
+aspectual particle lu < *la-ht- [?] is discussed.)
+The same set of rules associated with Class 1 verb-stems applies to
+Class 2 forms, and the following additional rules of vowel-loss and vowel-
+combination also operate to reduce certain vowel-sequences in these Class
+2 forms:
+(1) + is lost before a non-low back vowel (*, u, o); e.g. *t y-oló-s →
+tolós 'I jump'.
+(2) y is lost before a front vowel (i, e); e.g. *s-y-isi-kekh → sisi-kékh
+'we are getting warm'.
+(3) ·a → ơ; e.g. *?-y-ás?+ → Pós?ł 's/he bathes".
+29
+(4) yo → e in an unstressed syllable preceding a stressed syllable
+(?)(i.e. in 3rd-person plural forms only); eg. *p-y-ohó-i → pehó- 'they
+stumble.
+The derived present-tense paradigm of *Past 'bathe' is then as
+follows:
+1st
+2nd
+3rd
+Singular
+Post-s
+Posti-m
+Pós?+
+Plural
+P-y-asit-kékh
+Posit-ké
+2.1.1.2.1.2. Past/perfect tense. As with Class 1 verbs, the verbs of Class 2
+are marked for past tense with a prefix of the form thy. However, here
+the prefix is added to what is in almost all cases the present-tense form of
+the verb. The only exceptions are those forms in which ya → o in the
+present, which evince no sign of the -y- infix in the past tense. As with
+Class 1 verbs, thv- is not realized before an alveolar or alveopalatal
+fricative or affricate; however, unlike Class 1 verbs, thy - is realized as
+syllabic n- before alveolar stops. In all other cases, the prefix-vowel
+assimilates to the first vowel or semivowel of the stem in accordance with
+the rules presented in $2.1.1.1.1.2 above. Additionally, the prefix-vowel
+becomes + before the infix -y. Following is the complete past-tense
+paradigm of *Past 'bathe":
+Singular
+1st
+2nd
+3rd
+tha-Pasti-s
+tha -Pasti-m
+tha-Pás?+
+Plural
+the-?-y-as?+-kékh
+tha-Past-ké
+the-?-y-ast-n
+
+--- PAGE 18 ---
+30
+2.1.1.2.2. Future tense. The personal endings for future-tense forms of
+Class 2 verbs are identical with those used for non-future forms, except in
+the 3rd-person singular, where the suffix -m appears. With regard to
+future-tense marking, Class 2 verbs behave exactly as do Class 1 verbs,
+employing the prefix m(V) - and the optional emphatic particle ka. For
+example, following is the complete future-tense paradigm of *Pas? 'bathe":
+Singular
+Plural
+1st
+(ka) ma-Past-s
+(ka) ma-Pas?+-kékh
+2nd
+(ka) ma-Pasti-m
+(ka) ma-Pas?t-ké
+3rd
+(ka) ma-Pas?i-m
+(ka) ma-lasit-n
+2.1.1.3. Imperfect tense. The imperfect-suffix -cha can apparently be
+added to any present-tense verb-form (?); e.g. hák-cha 's/he came'; hós-cha
+'s/he wanted'.
+2.1.1.4. Irregular verbs. As with most languages, a number of important
+and commonly used Tol verbs are conjugated irregularly. Space-limitations
+prohibit a complete discussion of these, but two of the most common, those
+meaning 'go' and 'come', are presented below:
+"go"
+Present Singular
+1st hum
+2nd hay
+3rd háma
+Plural
+léke
+lówa
+hil
+Past
+Singular
+Ist thum
+2nd thay
+3rd themey
+Plural
+tléke
+tlówa
+thil
+Future
+Singular Plural
+1st
+ka mis
+ka nláka
+2nd ka mim
+ka nlawú
+3rd ka mim
+ka mal
+31
+'come'
+Present
+Singular Plural
+1st kuwís
+kilákaR
+2nd kuy
+kulá
+3rd hak'
+hikil
+Future
+Past
+1st
+2nd
+3rd
+Singular
+ka nkuwís
+ka nkuwím
+ka nkuwím
+Singular Plural
+1st
+thakuwis
+thikiláka
+2nd
+thakuy
+thukúl
+3rd thak'
+thikil
+Plural
+ka nkuláka
+ka nkulá
+ka nkul
+2.1.1.5. Imperative mood. Verbs are conjugated in the imperative mood in
+both singular and plural. The singular imperative is identical in form with
+the 3rd-person-singular past-tense form, but is distinguished from the
+latter through the use of the pronoun hiph 'you'; eg. tapháka hiph listen
+(you)!' The plural imperative is identical with the 2nd-person-plural form
+of the past tense and is followed by the pronoun nun 'you-all'; eg.
+thapharké nun 'hear ye!'
+There is also an imperative copula, t'as, cf. §2.3.1.
+2.1.2. Infinitives. Certain uninflected verb-forms which seem to function
+as infinitives occur in purposive phrases with the particle la 'in order to';
+eg. la nukh (*núkhu) 'in order to see"; la pach 'in order to wash (it)' (*páchi).
+As in these examples, the infinitive typically consists
+of the underlying
+stem minus its final vowel; however, in some cases the infinitive differs
+somewhat more markedly from the underlying stem; e.g. la capáp 'in order
+to tie (it)': *cupápa; la las 'for eating': *láha.
+
+--- PAGE 19 ---
+32
+2.1.3. Modal auxiliaries. The Spanish infinitives querer 'want and poder
+'be able to' have been borrowed into Tol as invariant verbal auxiliaries,
+kelél Desiderative and polél Capacitative, respectively, which usually occur
+immediately before the main verb with which they are associated; e.g. khul
+kelél lya 'I want to eat fish'; occasionally, however, other words may
+intervene between the auxiliary and the main verb; e.g. ma kelél wa mó?o
+hák-cha (= NEG 'want house LOC come'-IMPERF) 'S/he didn't want to come
+into the house.' When these auxiliaries are employed, person, number, and
+tense continue to be marked on the main verb.
+2.1.4. Verb derivation. On the basis of available data, there appears to be
+very little in the way of productive derivational morphology in Tol.
+Nevertheless, a few morphological relationships can be discerned among
+certain word-pairs that suggest that such processes may have operated in
+the past or may be partially productive in the language at present. For
+example, the suffix -ka is used to create intransitive verb-stems from
+nouns; e.g. cf. mus 'smoke': *mús-ka 'make smoke; smoke"; mol 'cloud':
+*mól-ka 'boil'. Another process which derives verbs from nouns involves
+the suffixation of a vowel identical to the final vowel of the noun-stem plus
+shift of stress to this suffix-vowel; e.g. cf. cincil 'nest': * cincil-í 'make a nest';
+hul 'hole': *hul-ú 'make a hole (in something)'; mul 'ball (for slingshot)":
+*mul-ú 'make balls'; pehéy 'egg: *pehey-é 'lay eggs'; and possibly ham
+"thorn; axe': ham-á 'take care of; send someone' (?). (It seems possible that
+these suffixed vowels are actually historical or underlying stem-vowels
+which were not lost due to the stem-final stress in the verb-stems.
+Historically then, the process would be merely one of stress-shift.)
+There are a number of other non-recurrent relationships discernible
+between certain noun-verb pairs; e.g. cf.
+33
+-kol 'stomach': *kol-koló 'crawl';
+wa 'house': *wá-yi 'get married'
+chohó-ka 'shade': chohó-se '(be?) cold'.
+There are also a few instances of verb-stems derived from adjectives;
+eg. pha 'empty, dry (adi.)': *phá-ha 'dry out (e.g. a river); c'i-c'e 'dry (adj.)'
+: *c'í-ke 'become dry (eg. a plant)"; Pts-is 'good': *is-t 'cause to learn or
+understand'. Other derivational relationships between adjective-verb pairs
+are discussed in $2.3.3 below.
+Reduplication is fairly common among verb-stems and generally
+seems to be associated with inherently iterative activities; e.g. *kol-kolo
+'crawl'; *ten-tené 'roll'; *c-cint 'jump (of a child); *la-sol-sólo 'shake
+(something)"; *t'o-t'ó 'knock at the door'; *wo-wó 'beat, brush off (dust)'; etc.
+In at least one case, the unreduplicated form of the stem also occurs as a
+verb: *t'in V 'grow: *t'in-t'nV! 'swell'.
+A few verbs are accompanied by preposed directional adverbs; e.g.
+*palá yákV 'fall down': palá 'down'
+* palá Pulíni 'harvest corn' (lit. 'down break')
+* pelá t'u 'gargle': pelá 'outward'
+*Bya thilli 'lift, raise": Bya 'up', thili grasp, hold'
+*naláh la-Póthe 'stretch': napáh "(to) there'; la-Póthe also occurs
+in the complex stem *po la-Póthe 'touch'.
+2.2. Noun morphology.
+2.2.1. Noun inflection. Nouns may be inflected for possession, plurality, and
+objective case. Each of these types of inflection is discussed in a separate
+section below.
+
+--- PAGE 20 ---
+34
+2.2.1.1. Possession.
+2.2.1.1.1. Possessive pronominal prefixes.
+Pronominal possession is
+indicated by either a prefix or an infix (when a singular possessor is
+involved) or by a preposed clitic (when a plural possessor is involved). A
+possessed noun may occur alone or may be preceded by a noun or pronoun
+possessor; eg. miste phoc' 'the cat's ear"; huph phoc" or phoc" 'its ear". The
+basic forms of the possessive morphemes are as follows:
+Singular
+Plural
+1st
+2nd
+3rd
+na-
+khis
+hi-
+his
+hu-
+his
+The basic singular forms are in fact the singular personal roots which are
+also used as the basis of many of the personal pronominals (cf. S2.2.3.1).
+The 2nd/3rd-person-plural form his also appears as the underlying form
+of the 3rd-person-plural benefactive/comitative pronominal
+prefix (cf.
+$2.2.3.5).
+There is considerable variation among the singular forms. The 1st-
+person-singular form na- may be realized as an nV- prefix or as a syllabic
+nasal. The nV- form always occurs before h and ?; however, either variant
+may occur before other consonants. When the initial consonant of the
+associated noun is B, m, n, wor y, the nV-form is somewhat more usual.
+In most instances of the nV- prefix, the vowel assimilates to the first vowel
+of the associated noun; eg. na-más 'my hand"; na-Pás 'my blood'; na-wála
+'my face'; ne-mén 'my neck'; no-holól 'my throat"; nu-Pulup'áh 'my upper
+neck'; nt-Płsám 'my sister-in-law (woman's)"; ni-míkh 'my nose'. Such
+vowel-harmony is not totally strict, however, and variant forms are often
+35
+produced; e.g. ne-míkh 'my nose'; na-miste 'my cat'. In the case of nouns in
+initial y, the prefix-vowel assimilates to the high, front quality of this semi-
+vowel, rather than to the following stem-vowel, yielding the allomorph ni-;
+e.g. ni-yóla 'my kidney'. Before other consonants, the prefix is normally
+reduced to a syllabic nasal: n- before kh and k', e.g. n-khéle 'my bone'; m-
+before w, e.g. m-wa 'my house'; a nasal homorganic with the following
+consonant in all other cases; eg. y-kom 'my liver"; n-cípe 'my sibling'; m-
+p'ty 'my skin'. As suggested earlier, however, there is considerable free
+variation among such forms; thus, for example, 'my rock' may be realized
+as m-pé, ne-pé, or na-pé. The syllabic nasal form is more usual when
+preceded by the pronoun naph.
+The 2nd-person-singular possessive morpheme hi- is realized as a
+prefix only before y or when the first vowel of the associated noun-stem is
+a front vowel, i or e; in the latter case, the prefix-vowel assimilates to the
+stem-vowel; e.g. hi-c'íl 'your hair'; he-phél 'your arm'. In all other cases,
+this morpheme is realized as the infix -y-, which appears immediately
+following the initial consonant of the noun-stem; e.g. *hi-fas → ?-y-as
+'your blood'; *hi-khul → kh-y-ul 'your fish'; *hi-kokóy → k-y-okóy 'your
+grandfather"; *hi-phts → ph-y-ts 'your shoulder'.
+Similarly, the 3rd-person-singular possessive morpheme hu- is
+realized as a prefix only before w or when the first vowel of the associated
+noun-stem is high and back, either u or t; here also, the prefix-vowel
+assimilates to the stem-vowel; e.g. hu-c'úl 'its tripe'; ht-c'ikh 'his beard'.
+When the first stem-vowel is front, the morpheme is realized as an infixed
+semi-vowel immediately following the initial stem-consonant; this semi-
+vowel varies in quality according to the initial stem-consonant: w following
+a labial consonant, e.g. *hu-phel → ph-w-el 'his/her arm', *hu-men → m-w-
+
+--- PAGE 21 ---
+36
+en 'his/her neck'; and y following a non-labial consonant; e.g. *hu-c'il → c*-
+y-il 'his/her hair'. In the case of nouns whose first
+stem-vowel is a,
+monophthongization of an earlier or intermediate wa sequence (where w is
+the infixal allomorph) takes place, yielding an ablaut-like result in the 3rd-
+person-singular possessed form; e.g. *hu-Pas → *2-w-as → Pos 'his/her
+blood'. Noun-stems beginning with a sibilant (s, c, ch, or c') followed by e
+are not marked for 3rd-person-singular possession; e.g. setél 'seed, his/her
+seed; in such cases a noun or pronoun possessor must be used to avoid
+ambiguity.
+There are a few vowel-initial (or hV-initial) noun-stems, most of
+them kinship-terms, with which the behavior of possessive prefixes is
+somewhat variant. For example, the possessive paradigm of *-apéy 'man's
+brother-in-law' is as follows:
+1st
+2nd
+3rd
+Singular
+n-apéy
+*hi-apéy → hepéy
+*hu-apéy → hopéy
+Plural
+khis k-apéy
+*nu-hu-apéy → nuhopéy
+*his-apéy → sy-apéy
+Processes of vowel-coalescence are observable in the 2nd-person and 3rd-
+person-singular forms: *i + a → e and *u + a → o. The metathesis in the
+3rd-person-plural form is apparently the result of the same process that
+produces infixes in non-future-tense verb-forms (cf. S1.3.1, rule 4).
+2.2.1.1.2. Inalienably possessed nouns. Certain nouns are inalienably
+possessed and are always marked with a possessive morpheme. These
+include primarily the names of body-parts and kinship-terms, but there
+are a few other nouns of this type; e.g. -la 'name'.
+2.2.1.1.3. Genitive constructions. There is no overt marker of the genitive
+37
+case-relationship in Tol. Genitively associated nouns are merely apposed,
+with the genitive noun in first position; e.g. c'olól wolás 'oak fruit' = 'acorn';
+himíy c'ilikh 'tree (sp.) oil'. (While these are, strictly speaking, syntactic,
+not morphological, facts, it does not seem inappropriate to include them
+here as part of the larger discussion of possession.)
+2.2.1.2. Objective case-marking. In many (but not all) instances in which a
+noun serves as the grammatical object of a sentence, the noun will appear
+with an added object-suffix and sometimes in a phonologically extended
+form. For example, sith : sithí-m 'avocado'-oB]; yukúc' : yukuc'ú-s
+'armadillo'-OBJ. This process generally does not take place with inalienably
+possessed nouns (body-part and kinship terms, etc.) and with a few others.
+With most nouns the phonological extension consists of only a single vowel
+following
+the non-objective stem, as in the examples above. Such vowel
+extensions are usually, but not always, identical to the final stem-vowel;
+those vowel extensions which vary from this principle are apparently the
+resurfacing of underlying or historical vowels which have been lost from
+the non-objective forms of the nouns through normal (historical
+phonological processes. In a very few cases a stem-final vowel changes in
+the objective form; e.g. míste : mistú-s 'cat'-oB). In certain other stems an
+additional s also resurfaces; e.g. wáka : wakasá-s 'cow'-OBJ. In the objective
+forms of certain other noun-stems in initial ?, this ? is replaced by a
+reduplication of the following stem-consonant; e.g. Piphi: phiphi-s 'ashes-
+oBJ; Pamá: mamá-s 'dirt'-oBJ.
+There are three lexically determined forms of the objective suffix -
+-kh, -s, and -m/-n - depending on the particular noun involved. In the
+case of the suffix -m/-n, the -m allomorph occurs following an alveolar
+stop or affricate, and -n occurs elsewhere. With only one exception (pe :
+
+--- PAGE 22 ---
+38
+pe-n 'stone'-oBJ, vowel-final and two-syllable consonant-final noun-stems
+appear with the -s suffix; e.g. chiyó-s 'dog'-oB]; khelé-s 'bone'-oBJ. (For
+further information and examples, see Dennis and Fleming 1975 [both
+versions].)
+2.2.1.3. Plurality. Only animate nouns may be marked for plurality in Tol.
+There are two optional plural suffixes: -thákh, which may be used with any
+animate noun, e.g. chikh-thákh 'children'; and -pán, which may be used only
+with nouns referring to humans and spirits, e.g. hepey-pán 'your brothers-
+in-law'. With some nouns an extended form of the first suffix, wi-thákh,
+appears as a free form following the noun; e.g. Panimál wi-thákh 'animals'.
+There is also a plural prefix, ne-, which apparently occurs only in the
+constructions ne-képh 'women' and ne-yóm 'men'.
+2.2.2. Noun derivation. As with verbs, there are apparently few or no
+widely productive derivational processes for the formation of noun-stems.
+Nevertheless, a number of derivational relationships can be recognized
+among certain sets of words, though in many cases it is not clear whether
+these are vestiges of earlier productive morphological processes or perhaps
+the results of unique instances of compounding.
+A number of derived nouns involve at least one noun component; e.g.
+c'ák "'day' : lo-c'ákh'sun"; yo 'tree': yo-kín 'beam, bridge'; -pi 'buttocks' : pi-
+yára 'excrement'; phí-phe 'pipe' : phi-yá 'tobacco. In at least one case a
+postposition serves as the base for a derived noun: kasá 'upon' : kasá-pha
+'upper part, surface'.
+Reduplication is fairly common in noun-stems; in some cases the
+reduplication is complete, while in others it appears that *CV-CV → CV-C or
+*CVCV-CVCV → cvcv-cvc. There seems to be a semantic basis for this
+reduplication in most cases; many reduplicated nouns refer to things that
+39
+move repetitively, such as birds and insects, or that commonly proliferate,
+such as rabbits and trees. Some examples are:
+tin-tín 'cricket'
+lem-lém 'butterfly"
+syuy-syuy 'rash'
+c'in-c'ín 'oriole'
+-p'oy-p'óy lung'
+c'a-c'á 'gnat sp.'
+su-s 'sand"
+c'o-c' 'milk"
+chu-ch woods"
+koto-kóth 'rabbit'
+c'ulu-c'úl 'bat'
+Bec'e-Béc "weevil'
+Certain types of compound nouns are found among the available data,
+most of them involving a noun and an adjective; eg. pwi-lú = 'his-rump-
+yellow': 'wasp sp."; chu-yúph = 'green-they': 'children'
+2.2.3. Pronouns.
+2.2.3.1. Personal pronouns. There are six sets of personal pronouns in Tol,
+each of which will be discussed in a separate section. Because of their
+syntactic behavior, it is fairly clear that the subject pronominals are free
+forms; however, most of the remaining sets of object pronominals are so
+intimately associated with verb-stems that it seems best to consider them
+bound prefixes or proclitics. (This analysis differs from that of some
+earlier researchers leg. Dennis and Dennis 1983], who present the object
+pronominals as separate particles, morphologically independent of the
+verbal word.)
+2.2.3.1.1. Personal pronominal roots.
+Although there are
+variant/suppletive forms in certain instances, each of the sets is based to
+some extent on the following set of pronominal roots:
+Singular
+Plural
+1st
+2nd
+3rd
+na-~n-
+ku-/khis
+hi-~h-
+nu-
+hu-
+yu-/his
+
+--- PAGE 23 ---
+40
+2.2.3.1.2. Subject pronouns. Subject pronouns are formed by adding the
+suffix -ph to the pronominal root, except in the 2nd-person plural, where
+the suffix is -n. The subject pronouns are as follows:
+Singular
+Plural
+1st
+na-ph
+ku-ph
+2nd
+hi-ph
+nu-n
+3rd
+hu-ph
+yu-ph
+Subject pronouns are optional, but nevertheless seem to be used in
+most cases in which a noun subject is not present. In some cases, a subject
+pronoun is used in addition to a noun subject; e.g. mu piste wína huph (=
+"owl night goes it') "The owl flies at night' (cf. also §3.1.2). Similarly, a
+subject pronoun may be used in addition to a pronominal with another
+case-function as an emphatic; e.g. ne-khéska naph (= 'to-me it-breathes I')
+'I am breathing'. This set of pronouns is also used for pronominal objects
+with certain verbs, e.g. ntht 'shoot (with a rifle): huph niht naph 'he shoots
+me'; as in this case, the semantic basis for this may be the fact that an
+affected object is involved.
+The emphatic/restrictive
+suffix -sá may be used with subject
+pronouns; e.g. na-sá-ph "just I'; hi-sá-ph 'just you'; etc. In the 2nd-person
+plural, the normal subject-suffix appears in the emphatic form: nu-sá-ph.
+2.2.3.1.3. Accusative/direct-object pronominals. The accusative/direct-
+object pronominals, which may also be used reflexively, are formed by
+adding the suffix -in- to the pronominal root in singular forms and -s-in- in
+plural forms. In the 3rd-person plural the pronominal root is realized as
+the zero-morpheme; this is probably a result of the loss of the unstressed
+syllable hi- through normal phonological processes (cf. S1.3.1, rule 2(a)).
+The accusative/direct-object pronominals are as follows:
+41
+1st
+2nd
+3rd
+Singular
+n-in-
+h-in-
+has-/si-
+Plural
+ku-s-in-
+nu-s-in-
+(*hi-)s-in-
+Here and in two other pronominal sets, an irregular, suppletive form,
+si- (se- before a non-high vowel), is used in the 3rd-person singular when
+associated with present-tense verbs. In two of these sets this is apparently
+a morphological complex resulting from the combination of the pronominal
+with the present-tense prefix hi-: *has-hi- ~ *hus-hi-→ si-. This is further
+substantiated by the fact that when such 3rd-person-singular pronominals
+are present, the usual -y- infix associated with present-tense verb-forms
+does not appear, the motivating hi- prefix having been "co-opted" by the
+pronominal; e.g. se-c'om 'I peel it' (but sin-c'yom 'I peel them'). However,
+the hi- prefix does appear in those forms in which the infix -y- does not
+develop; e.g. si-hipís 'I lick it'; in such cases the form of the pronominal
+seems best explainable on the basis of analogy. In addition, when si- is
+associated with the 3rd-person-singular forms of certain verbs, the stress
+is shifted to the stem-final vowel, which retains its identity instead of
+being replaced by the 3rd-person-singular morpheme a (cf. §2.1.1.1.1); e.g.
+se-hamá 'he sends him', but nin-hyáma 'he sends me'. Apparently, the
+same prosodic factors that motivate identical conjugational differences in
+verbs with the iterative/distributive prefix la- (cf. §2.1.1.1.3)
+are also
+operative here.
+2.2.3.1.4. Dative/indirect-object pronominals. The dative/indirect-obiect
+pronominals (or "causative" pronouns (Dennis and Dennis 19831) are as
+follows:
+
+--- PAGE 24 ---
+42
+1st
+2nd
+Singular
+n-
+hi-
+Plural
+khis-
+nu-
+3rd
+his-
+The dative pronominals participate in constructions with many of the
+impersonal or "causative" verbs described in §4.1 below.
+As with the 3rd-person-singular pronominals of other sets, the dative
+pronominals (except for the 3rd-person singular and 2nd-person plural)
+interact with the present-tense prefix to form reduced morphological
+sequences as follows:
+Singular
+1st
+Plural
+*n-hi- → ni-
+*khis-hi- → khis-í-
+2nd
+*hi-hi- → Pi-
+nu-
+3rd
+Ø
+*his-hi- → si-
+The behavior of certain 3rd-person-singular verb-forms associated with
+these reduced pronominals is also like that described in $2.2.3.1.3 above;
+eg. ne-phasá I'm tired' (lit. 'something makes me tired'), but nu-phyása
+'you-all are tired'.
+2.2.3.1.5. Benefactive/comitative pronouns. The benefactive/comitative
+pronouns are formed by adding the suffix -káph to the pronominal root,
+with associated infixing in 2nd-person forms, in which a high vowel
+precedes the suffix. In this set the suppletive 3rd-person-singular form is
+kus. The benefactive/comitative pronouns are as follows:
+Singular
+Plural
+1st
+2nd
+3rd
+y-káph
+khis-káph
+(*hi-)k-y-áph
+nu-k-w-áph
+kus/si-
+his-káph
+43
+Because of the stress associated with most of these forms, they appear to
+be independent words, not prefixal or cliticized sequences. (Analogy may
+be the best explanation for the appearance of the form si in this set also,
+since here si- cannot be explained as the reduction of a sequence of the
+type *hVs-hi-as it was with other sets.)
+2.2.3.1.6. Relational/"stative" pronominals.
+The relational or "stative"
+pronominals are formed by adding the suffix -us- to the pronominal root,
+with concomitant vowel-loss in those forms in which VV sequences would
+otherwise result. The relational pronominals are as follows:
+Singular
+Plural
+1st
+n-us-
+ku-(u)s-
+2nd
+hi-(u)s-
+nu-h-ús-
+3rd
+hus-/si-
+yu-(u)s-
+Relational pronominals occur with certain relational verbs such as
+*núku 'see'; eg. huph nus-nyúka 'he sees me".
+2.2.3.1.7.
+"Non-human" pronominals. A defective set of 3rd-person
+accusative pronominals - hay- singular, sey- plural — occurs with certain
+verbs that never involve human objects and thus never take 1st- or 2nd-
+person pronominals; e.g. naph sey-hyókh 'I cut them (trees) down'. These
+forms seem to be related phonologically to the 3rd-person accusative
+pronominals listed above, has-and sin-.
+2.2.3.1.8. Possessive pronouns. The possessive pronouns are formed
+regularly by the addition of the suffix -c'alá to the pronominal root; e.g. na-
+c'apá 'mine'; yu-c'alá 'theirs'; etc.
+2.2.3.1.9. Obligatory personal pronominals. With certain inherently
+transitive verb-stems, object pronominals are required even when an overt
+noun object is present; e.g. chikh se-khól naph (lit. 'child PRO I-uncover I) 'I
+
+--- PAGE 25 ---
+44
+uncover the child'; Páwa se-wat'áth (lit. 'fire PRO I-put-out') 'I put out the
+fire'. Such verb-stems constitute a syntactic class distinct from the class of
+transitive verb-stems that can occur without overt objects.
+2.2.3.2. Indefinite pronouns.
+len 'no one'
+nepenowá 'someone, some (human)'
+phaní 'something, some (non-human)'
+2.2.3.3. Demonstrative pronouns.
+There appear to
+be only two
+demonstrative pronouns in Tol, nempe and nenem 'this, that, these, those',
+which seem to be in free variation. In Tol there is apparently no
+distinction made between proximal and distal meanings.
+Whatever
+semantic or pragmatic differences that may exist between the two words
+are not discernible from the available data.
+There is also an indefinite demonstrative pronoun, niná 'this, these,
+that, those' (?), which occurs in questions; eg. chan niná 'what's this?'
+2.3. Adjectives. All adjectives follow the nouns they modify.
+2.3.1. Qualitative adjectives. Qualitative adjectives are invariant; e.g. yom
+malála 'man bad'; yokín nepnéph 'bridge weak'; namás ni?nyámpa (= 'my-
+hand right) 'my right hand'. Dennis and Dennis (1983) treat adjectival
+stems as adjectives when used attributively but as stative verbs when
+used predicatively. I have found no sufficient reason for the latter
+approach and have not adopted it here.
+Adjectival complements are expressed using the copular forms way
+(present), and n-sem (future); e.g.
+wáka hóskha way
+cow reddish COP
+"The cow is reddish,
+Pamá k'a
+ka
+n-sem
+land hard FUT FUT-COP
+"The soil will be hard.
+45
+There is probably also a past-tense copula, but it does not appear to be
+among the available data (the-way?).
+There is also a negative copula, kustháy; eg. kormiy kusthay 'It is not
+old'; and also an imperative copula, t'as; eg. lyáhasa t'as 'Be quiet!'
+2.3.2. Numerals. The adjectival numerals from 1 to 4 are as follows:
+phaní 'one'
+kón-t'e 'three'
+má-t'e 'two'
+yuluphána 'four'
+Above 'four", Spanish numerals are used. The adoption of Spanish words
+for the higher numerals seems to have been relatively recent, as both
+Conzemius (1922) and von Hagen (1943: 94) give native Tol words for
+numerals above four. Von Hagen lists the following additional forms (in his
+own, non-phonemic transcription):
+(komasopani) 'five'
+(tsenam pani) 'twenty'
+(kuspi) 'six'
+(tsenam mata) 'forty'
+(kus panikuö) 'seven'
+(tsenam contis) 'sixty"
+(kamayarö) 'eight'
+(tsenam yurupa) 'eighty'
+(komaspö) 'ten'
+(tsenam komas) 'hundred'
+phaní 'one' can also be used as an indefinite article: yo phaní 'some
+trees'. The stems for "two' and 'three' also may be combined with the suffix
+-nás to form demonstrative pronouns: ma-nás 'the two of them'; *kon-nas
+→ ko-nás 'the three of them'. Whether or not this is also possible with
+higher numerals cannot be determined from the available data. In some
+instances the suffix -ya is added to numerals when used adjectivally:
+p'is
+má-t'e-ya y-us
+thi-nyúk
+deer
+two-?-ADJ 3.P-ACC PAST-see.1.s
+'I saw the two deer".
+
+--- PAGE 26 ---
+46
+I have found only one ordinal numeral within the available data:
+mwalá 'first'.
+2.3.3. Adjective derivation. Reduplication is a very common morphological
+process among qualitative adjectives. In most cases the reduplication is
+complete; e.g. Pum-Púm 'soft'; Pú-fu 'unripe, immature'; wina-wina 'shaky,
+wobbly"; ttl-til 'soft, tender'; chey-chéy 'dry, toasted"; t'in-t'in 'fat"; p'om-
+p'óm 'thick'; tan-tán 'tight"; etc. However, in some cases the reduplication is
+only partial; e.g. Pts-is 'good"; lu?-lúy 'soft"; cha-ch "thin' (probably from
+earlier *chá-cha ?).
+Very few additional conclusions about derivation of adjectives can be
+drawn on the basis of the available data. Nevertheless, there are a few
+pairs that indicate a derivational relationship between certain adjectives
+and verb-stems; cf. t'inV 'grow" : t'n-t'in 'fat'; Píc'V 'wet (v.)' : Pic'-íc' 'wet
+(adj.)'; tan-taná 'stop (v.i.)' : tan-tán 'tight, stuck' In such pairs, however,
+the direction of derivation does not seem to be incontrovertibly
+determinable.
+2.3.4. Intensification of adjectives. Various intensificational particles, all
+translatable as 'very', may be used before adjectives: chay, pahál, pasál, po,
+po Pin; e.g. pahál he 'very red'. pahál may also be used adverbially (cf.
+§2.4).
+2.4. Adverbs. Temporal adverbs normally occur first in the sentence; e.g.
+t'an noph thelyahákh (lit. 'yesterday corn we-ate') 'yesterday we ate corn';
+manner and locative adverbs, however, typically immediately precede the
+verbs that they modify; e.g. Páwa pahál múska (lit. 'fire much smokes')
+"The fire is smoking a lot'; chiyó phelá pi?t huph (lit. 'dog outside lies he")
+"The dog is outside'. There are exceptions to both of these principles,
+however.
+47
+2.5. Postpositions. Various case-relationships are expressed through the
+use of a wide assortment of postpositions. Among these are the following:
+Palá 'under, beneath'; e.g. yokín Palá 'under the bridge'
+hay 'in, on"; e.g. yo hay 'in the tree'
+kasá 'on, upon (a horizontal surface)"; e.g. mésa kasá 'on the table'
+khyiphaßá 'behind'; e.g. wa khyipha á 'behind the house'
+lal 'with (comitative)"; e.g. mpapáy lal 'with my father"
+mó?o 'in, into (an enclosed space)'; e.g. hok' móro 'in/into the
+mountains'
+mpes 'for, as; with (instrumental); because of; e.g. chikís mpes 'for
+children'; michích mpes 'with his machete"; mol mpes 'because of clouds"
+napé (or mpe) 'from'; e.g. hok' napé 'from the mountain"
+nt'a 'to; by, near"; e.g. Piyó kampánya nt'a 'to the tall pine-tree"; Płsí
+piné nt'a 'near the river'
+phyápha 'behind'; e.g. popáy phyápha 'behind his father"
+póro 'to; in (a time-period)'; e.g. enélo póro 'in January".
+There is some evidence that postpositions may be chained; cf. yo hay
+nt'a 'in the trees".
+Normally, postpositional phrases of the locational type appear either
+immediately before or immediately after the main verb in a Tol sentence;
+e.g.
+keph
+mésa kasá kh-y-ókh-a
+woman table on
+g-PRES-rind-3.S
+"The woman is grinding on top of the table.'
+Non-locative postpositional phrases, on the other hand, normally
+follow the verb; however, in situations where no overt subject is present,
+they may precede the verb; e.g.
+
+--- PAGE 27 ---
+48
+m-papáy
+Piyo
+the-hyókh-a ham mpes
+my father
+tree PAST-cut-3.s axe
+with
+'My father cut down the tree with an axe.'
+halékh mpes
+p'ts
+thi-nytht
+bow
+with
+deer PAST-3.S.shoot (at)
+'He shot (at) the deer with a bow.'
+Sequential priorities among postpositional phrases are suggested by
+the following sentence:
+ne-yóm mát'e-ya thi-kíl
+na-wá
+PI-man
+tWo-ADJ PAST-come.3.s my-house to
+'Two men came to my house for medicine.'
+nt'a leméliyu
+medicine
+mpes
+for
+3. Syntax.
+3.1. The sentence.
+3.1.1. Sentence components. The most common basic sentence-types in Tol
+consist of the following sets of components (given here in approximate
+order of complexity):
+1. A finite intransitive verb; e.g. híße 'It's raining.'
+2. A subject noun-phrase plus an appositive noun or adjective; eg.
+t'ol c'olól The post is (of) oak'; pe piné The rock is big.'
+3. A subject noun-phrase plus a finite intransitive verb; e.g. yuc'
+háma "The lizard (sp.) goes.'
+4. A subject noun-phrase plus an adjective plus a copular verb; e.g.
+polomáy Pumúl way "The machete is short.'
+5. A subject noun-phrase plus an object noun-phrase plus a finite
+transitive verb; e.g. chikh tóro c'yt?cha 'The child pinched his/her sister.'
+49
+3.1.2. Word-order. In transitive sentences, when a noun subject is present
+the normal sentence word-order in Tol is Subject-Object-Verb; e.g.
+Bec'eßéc' noph halá (= 'weevil(s) corn eat') 'Weevils eat corn'. However,
+with a pronominal subject the word-order is optionally and quite
+commonly Object-Verb-Subject; e.g. Wit' t'y+ naph (= 'wood cut I) 'I cut/am
+cutting wood'. Noun subjects may also occur at the end of sentences,
+though the precise pragmatic effect of this is not yet clear; e.g. neláh pwéla
+chikí-s (= 'there plays child') "The child is playing there.' (For some still
+unexplained reason, the subject noun in this sentence appears to be in the
+objective form.)
+In sentences with noun subjects, often a pronoun copy of the subject
+noun appears following the verb; e.g. lakasáy malála way yuph (= 'ants bad
+are they') 'Ants are bad'. This practice serves to indicate number for
+subject nouns that are not already so marked, and this may be part of its
+underlying rationale. Similarly, clarificational tags may be added at the
+end of sentences; eg.
+hu-n c'ilín
+kámpa way chikí-s
+3.S-eye lash(es) long
+COP child-OBJ
+'The child's eyelashes are long.'
+3.1.3. Topic/focus and subject/object emphasis. There is little discernible
+about topic/focus and subject/object emphasis from the available data.
+The emphatic/restrictive suffix -sá- has already been discussed
+(§2.2.3.1.2). The sentence given in §3.1.2. above, nefáh pwéla chikí-s (=
+'there plays child') "The child is playing there', may involve a pragmatic
+shift of word-order. However, little else can even be surmised at present.
+3.1.4. Negation. The negative particle ma always appears immediately
+
+--- PAGE 28 ---
+50
+before the verbal complex, which may consist solely of a conjugated verb
+or may involve a modal auxiliary or other immediately associated
+elements; eg.
+kaphé ma mifts
+na-ph
+coffee NEG drink.l.s I-SUBJ
+'I don't drink coffee.'
+ma polél
+th-y-am
+NEG AUX: can c-PRES-arry.1.s
+'I can't carry anything!
+ma kelél
+wa
+móro hák-cha
+NEG AUX: want house into
+3.S.PRES.come-IMPERF
+'She didn't want to come into the house.'
+3.2. Coordination. Sentence coordination may be effected through the
+use of the coordinating conjunction ne 'and' or by simple apposition; e.g.
+chikh c'y-ísa
+ne Beh
+pé?e
+child PRes-be.poor.3.s and hunger have.3.S
+"The child is poor and he is hungry.'
+cheß
+thi-nyth+
+po
+B-y-áha
+scorpion
+PAST-Sting
+INTENS PRES-hurt
+'A scorpion stung (me) and it hurts a lot.'
+I have not found a corresponding disjunctive particle in the available data.
+3.3. Subordination.
+3.3.1. Finite subordinate clauses. Subordinating conjunctions and adverbs
+usually appear at the end of the subordinate clause; e.g. huph hya na (lit.
+'he sleeps when') 'when he sleeps'. There are exceptions, however: yas
+thehyáwka 'when it became morning'.
+The particle mpes, which functions as a preposition ('because of, for"),
+can also be used either as a subordinating conjunction meaning 'because' or
+51
+as an adverb meaning 'so, thus', depending on whether it occurs at the
+beginning or the end of its associated clause; note that in the examples
+below, the only difference between sentences in which it is used as an
+adverb and those in which it functions as a conjunction is the fact that
+there is a pause before mpes in the latter case but no pause in the former;
+eg.
+wit
+khuwa
+mpes
+te-kéth
+na-ph
+firewood there.wasn't because PAST-1.S.bring I-SUBJ
+'Because there wasn't any firewood, I brought some.'
+Pamá k'a way ma híße
+mpes
+land dry CoP NEG PRES.rain.3 because
+"The land is dry because it doesn't rain.'
+phe ma kelél th-il,
+all NEG want PAST-gO.3.P. SO
+mpes na-sá-ph
+th-um
+I -EMPH-SUBJ PAST-gO.1.S.
+'No one wanted to go, so I went alone.'
+piste
+ma the-hyá
+last night NEG PAST-sleep.1.s I-SUBJ SO
+'I didn't sleep last night, so I'm tired today:
+na-ph, mpes ha ni-ße yakháh
+I'm tired today
+3.3.2. Purposive. Non-finite purposive phrases consist of the purposive
+particle la followed by a verbal infinitive; eg. mángo Pists way la las
+'Mangoes are good to eat' (cf. S2.1.2).
+3.4. Relativization. There is very little evidence of relativization in Tol.
+I have been unable to find anything that functions like a relative pronoun
+in the available data.
+Nevertheless, a few sentences suggest that
+relativization may be possible in certain circumstances when a copular
+sentence is involved; e.g.
+
+--- PAGE 29 ---
+52
+pháha he way kol
+c-y-ú?pa
+belt
+red COP his.stomach
+t-PRES-ie.3.S
+'He ties a belt that is red (?) onto his stomach.
+hu-ph
+he-sUBJ
+híße
+mpes
+noph Pests
+way t'-y-ina
+PRES.rain.3 because
+corn good COP gr-PRES-OW.3.S
+'Because it rains, corn that is good (?) grows.'
+These relative clauses, if that is what they are, are identical with copular
+sentences, but their association in a sequence that contains a verb in
+addition to the copula suggests the relative-clause interpretation. I have
+not yet found any sentence in which a non-copular verb seems to be part
+of a relative clause.
+3.5. Complementation. Embedded sentential complements precede the
+higher verb; eg.
+kláse nt'a líßro
+• móro Béle
+class in
+books in
+Si
+PRES.speak.3.S 3.S.ACC
+PAst
+PRES.better.3.S
+"In class he learns to read books.'
+leßél 1-e-hay
+n-o?
+te-pére
+debt ITER-PRES-make.1.S 1.S(?)-? PAST-die.3.S
+'I forgot that I owe (him something)
+3.6. Causativization. In addition to the "causative verbs" discussed in
+§4.1 below, there is also some evidence for non-morphological causative
+sequences involving the irregular factitive verb la-hay 'do, make'; eg.
+hu-ph
+n-in
+thi-Pytsa
+la-thí-hi
+3.S-SUBJ 1.S-ACC PAST-better (v.).3.S ITER-PAST-make.3.S
+'He taught me.' (lit. 'He made it better me.')
+53
+thi-Pyilsa
+la-thí-hi
+PAST-3.S.get.well
+ITER-PAST-3.S.make
+'It healed him.' (lit. 'It made him get well.')
+3.7. Comparison. Information on comparative constructions is rather
+spotty in the available data. The following examples involve the
+comparative phrase hin hústa, lit. 'thus is.like':
+pưá chiyó hin hústa
+puma dog thus is.like
+'The puma is like a dog.'
+In some cases the additional particle wa 'also' appears; eg.
+sipíph
+c'illl
+hin
+wa husta
+dove.sp. bird.sp. thus also islike
+'The dove is similar to the c'ili!
+The Spanish intensive adverb más 'more' has been borrowed into Tol,
+where it occurs in comparative constructions; e.g. mas Pin kámpa (lit. 'more
+little long) 'a little longer'.
+3.8. Interrogation. The interrogative particles and phrases are as
+follows:
+phakh who?'
+karáh 'where?'
+chan 'what? which?'
+chan mpes 'for what? why?
+Póna 'when?'
+Ponin ne 'why?'
+Poyn 'how? (what?)'
+
+--- PAGE 30 ---
+54
+nol 'how many?'
+These normally appear at the beginning of an interrogative sentence,
+with the subject following the verb; eg.
+kaPáh
+the-mey
+wakasás
+Poyn chi
+hu-ph
+where? PAST-gO.3.S cow
+how? PAST.say.3.S 3.S-SUBJ
+'Where did the cow go?"
+'What did she say?
+Apparently, yes-no questions are formed by placing the interrogative
+particle nku 'if, whether' after the topic of the sentence; e.g.
+Be
+nku t-y-ath
+hi-ph
+tamale QUES h-PRES-ave.2.S 2.S-SUBJ
+'Do you have tamales?'
+There is, however, a paucity of data in this area, which makes further
+elucidation impossible here.
+3.9. Passivization. No evidence of passive constructions has been found
+in the available data. However, the 3rd-person-singular form of a verb can
+be used impersonally with a sort of "agentless passive" meaning; e.g.
+pill syása ?-y-umalú
+pére
+na
+cloth new shr-PRES-ink.3.s wash.3.S when
+"New cloth shrinks when it is washed.'
+4. Semantics. While limitations in both data and space prevent any
+extensive discussion of semantic phenomena here, a few interesting facts
+do present themselves within the available data. Additional semantic
+information about Tol can be found in Oltrogge 1976 and Oltrogge and
+Neuenswander 1976.
+55
+4.1. Causative verbs. A small but important subset of defective verb-
+stems, called "causative verbs" by Dennis and Dennis (1983), are
+conjugated only in the 3rd-person singular and are used to refer to
+involuntary, impersonal processes that can affect animate grammatical
+objects; eg. ne-phasá 'I am tired' (i.e. 'Something makes me tired'); nu-
+khéska 'you-all breathe' (i.e. 'Something makes you breathe'). As in these
+examples, the affected objects of such verbs are usually expressed
+indirect/dative objects when in pronominal form; however, with
+a few
+verbs the accusative pronouns are used; e.g. nin-?yisa 'I learn' (i.e.
+'Something improves me'). Emphatic pronouns (cf. $2.2.3.1.2) are also
+commonly used with such verbs; eg. t'yúnka huph 'He has hiccups' (i.e.
+'Something gives him the hiccups'). Verbs of this type in the available
+corpus are the following:
+Dative stems:
+khéska 'cause to breathe"
+tantaná 'cause to stop walking'
+tili 'cause to fall'
+t'únka 'cause hiccups
+phasá 'cause to be tired'
+ciltmí 'wake, cause to awaken'
+Accusative stems:
+kakay! 'cause to shiver from
+the cold'
+túla 'tire, cause to become tired'
+PAst! Cause
+to
+learn or
+understand,
+improve'
+Pálc'a 'cause to belch, burp'
+Be 'cause to need'
+Bóho 'cause to vomit'
+máyka 'hurt, cause to hurt'
+4.2. Wanting. As was discussed in §2.1.3, the verbal auxiliary kelél is
+used to encode the desiderative mood in association with another verb.
+
+--- PAGE 31 ---
+56
+However, when the object of wanting is not expressed as a verbal
+construction but as a noun object, then a different means is employed,
+namely, the inalienably possessed noun -has 'heart', which for this special
+function behaves semantically (though not morphologically) like a verb. In
+such cases, the pronominal possessive morphemes are equivalent to
+subject-markers; e.g. *hu-has → *h-w-as → hos (lit. 'his-heart') 'he wants'.
+There is a rather broad range of semantic interpretations associated with
+such usage, including 'want", 'need", and 'ike' in various situations. Fol
+example, híla na-hás la lul (lit. 'thread my-heart for sew') 'I need thread in
+order to sew; keph pill syása hos huph (lit. 'woman cloth new her-heart'
+"she') "The woman wants new cloth.' Despite the absence of normal verb-
+morphology in most cases, the imperfect suffix -cha can occur with these
+constructions; e.g.
+lemeliyú hos-cha
+huph mpes
+th-ak'
+medicine his.heart-IMPERF he because
+PAST-come.3.S.
+'He came because he wanted medicine.'
+Negation is effected as with normal verbs; e.g. Pipí t'iktíkh ma na-hás (lit.
+'rope weak' NEG 'my-heart") 'I don't want a weak rope.'
+4.3. Metaphor. There are a few interesting metaphorical constructions in
+the available data; e.g.:
+ne-mén c'-y-úskha lit. 'my-throat (something) stings' = 'I cough';
+hi-míkh sína lit. 'your-nose (something) sows' = 'your nose is running";
+n-káph t'-y-áha lit. 'for-me it.became.night' = 'I fainted'.
+5. Sample text. The following short text was collected by Margaret
+Dennis at Montaña de la Flor in 1982. For comparative purposes it is given
+57
+here in both orthographic and phonemic transcription; it is followed by an
+English translation.
+Müts'üy
+1. Müts'üy püste lyawün yupj. 2. Jun ta'á wine. 3. 'Amá jul pü'ü.
+4. Tsjicj way jupj müts'is. 5. Newa malala li ji. 6. Jonopj lyaja jupj lovin. 7.
+Püste wine mpes 'ücj jonopj lyaja. 8. Malala nin napj lal. 9. Nin mpes mas
+'ücj 'yünan. 10. Mas 'amá jul tsjacjam müts'üy mpes.
+Micty
+1. mic'ty piste lyawin yuph. 2. hun talá wíne. 3. Pamá hul pi?t.
+4. chikh way huph mic'is. 5. néwa malála li hi. 6. honóph lyáha huph loßín.
+7. piste wíne mpes Pikh honóph lyáha. 8. malála nin naph lal. 9. nin mpes
+mas Pikh Pytnán. 10. mas Pamá hul chakhám mic'ty mpes.
+Mice
+1. Mice roam around at night. 2. He roams everywhere. 3. He lives in
+a hole in the ground. 4. The mouse is small. 5. And he also does bad
+things. 6. He always eats corn. 7. Because he walks around at night, he is
+able to eat the corn. 8. This is bad as far as I am concerned. 9. Therefore it
+is best that I kill them. 10. Let's go poke around in holes in the ground for
+mice.
+
+--- PAGE 32 ---
+58
+6. Bibliography.
+Campbell, Lyle. 1976. The Linguistic Prehistory of the Southern
+Mesoamerican Periphery. In Las fronteras de Mesoamérica 1: 157-83.
+Campbell, Lyle, and David Oltrogge. 1980. Proto-Tol
+(Jicaque).
+International Journal of American Linguistics 46: 205-23.
+Chapman, Anne. 1978. Les Enfants de la Mort: Univers Mythique des
+Indiens Tolupan (Jicaque). Mexico: Mission Archaeologique et
+Ethnologique Français Au Mexique.
+Conzemius, Edward. 1922. The Jicaques of Honduras.
+International
+Journal of American Linguistics 2: 163-70.
+Dennis, Ronald K. 1990. Conjugación de los verbos en idioma tol (jicaque).
+Estudios Antropológicos e Históricos, no. 8. Tegucigalpa: Instituto
+Hondureño de Antropología e Historia and Instituto Lingüístico de
+Verano.
+Dennis, Ronald K., and Margaret Royce de Dennis. 1983. Diccionario Tol
+(Jicaque)- Español y Español-Tol (Jicaque). Tegucigalpa: Instituto
+Lingüístico de Verano.
+Dennis, Ronald K., Margaret Royce de Dennis, and Ilah Fleming. 1975. El
+alfabeto tol (jicaque). Yaxkin I: 1.12-18.
+_. 1975. Vocabulario comparativo del tol (jicaque). Yaxkin I: 1.19-
+22.
+Dennis, Ronald K., and Ilah Fleming. 1975. Tol (Jicaque): Nouns. Ms.
+Summer Institute of Linguistics.
+_. 1975. La lengua tol (jicaque): Los sustantivos. Yaxkin I: 3.2-7.
+Rot. in Las fronteras de Mesoamérica 2: 375-80.
+Fernández, León, ed. 1892. Lenguas indígenas de Centro América en el
+Siglo XVIII. San José.
+59
+Fleming, Ilah, and Ronald K. Dennis. 1977. Tol (Jicaque) Phonology.
+International Journal of American Linguistics 43: 121-7.
+Greenberg, Joseph H., and Morris Swadesh. 1953. Jicaque as a Hokan
+Language. International Journal of American Linguistics 19: 216-22.
+Las fronteras de Mesoamérica. 1976. 2 vols. XIV Mesa Redonda. México:
+Sociedad Mexicana de Antropología.
+Lehmann, Walter. 1920. Zentral-Amerika, pt. 1: Die Sprachen Zentral-
+Amerikas. Berlin: Dietrich Reimer.
+Membreño, Alberto.
+1897.
+Hondureñismos: Vocabulario de los
+provincialismos de Honduras. 2nd ed. Tegucigalpa: Tipografía
+Nacional.
+Newson, Linda. 1986. The Cost of Conquest: Indian Decline in Honduras
+Under Spanish Rule. Dellplain Latin American Studies, no. 20. Boulder,
+Colorado: Westview Press.
+Oltrogge, David.
+1977.
+Proto Jicaque-Subtiaba-Tequislateco: A
+Comparative Reconstruction. In Two Studies in Middle American
+Comparative Linguistics. Summer Institute of Linguistics Publications
+in Linguistics, no. 55. Arlington, Texas: Summer Institute of Linguistics
+and University of Texas at Arlington. 1-52.
+_. 1976. La etnoentomología de algunas categorías de la orden
+himenóptera entre los jicaques. In Las fronteras de Mesoamérica
+1:379-91.
+Oltrogge, Judith, and Helen Neuenswander. 1976. La colinearidad en el
+parentesco de los jicaques y su reflejo en las estructuras cosmológicas
+y sociopolíticas. In Las fronteras de Mesoamérica 1:367-77.
+Shaw, Mary, ed. 1971. According to Our Ancestors: Folk Texts from
+Guatemala and Honduras. Norman, Oklahoma: Summer Institute of
+
+--- PAGE 33 ---
+60
+Linguistics.
+von Hagen, V. Wolfgang. 1943. The Jicaque (Torrupan) Indians of
+Honduras. Indian Notes and Monographs, no. 53. New York: Museum
+of the American Indian, The Heye Foundation.
+BELIZE
+CARIBBEAN
+SEA
+Trujille
+GUATEMALA
+San Pedr
+Sula
+→ La Ceiba
+Aguán R
+/El Progreso
+• Yoro
+• Montaña de la F
+Comayagua
+HONDURAS
+•Tegucigalpa l
+EL SALVADOR
+NICARAGUA
+Probable former extent of Tol territory.

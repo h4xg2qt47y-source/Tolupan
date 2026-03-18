@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources — Tol Language Project</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .sources-page { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    .source-section { margin-bottom: 2.5rem; }
+    .source-section h2 {
+      font-size: 1.3rem; font-weight: 700; color: var(--primary);
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: .4rem; margin-bottom: 1rem;
+    }
+    .source-section h3 {
+      font-size: 1rem; font-weight: 600; color: var(--text);
+      margin-top: 1.5rem; margin-bottom: .6rem;
+    }
+    .source-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: .8rem;
+      transition: box-shadow .2s;
+    }
+    .source-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+    .source-card .title { font-weight: 600; font-size: .95rem; color: var(--text); }
+    .source-card .meta { font-size: .8rem; color: var(--text-muted); margin-top: .2rem; }
+    .source-card .desc { font-size: .85rem; color: var(--text-secondary); margin-top: .4rem; line-height: 1.5; }
+    .source-card a.pdf-link {
+      display: inline-flex; align-items: center; gap: .3rem;
+      font-size: .8rem; font-weight: 600; color: var(--primary);
+      text-decoration: none; margin-top: .5rem;
+      padding: .25rem .7rem; border-radius: 6px;
+      background: var(--primary-faint, rgba(46,125,50,.08));
+    }
+    .source-card a.pdf-link:hover { background: var(--primary-light); color: #fff; }
+    .source-card .unavailable {
+      display: inline-block; font-size: .75rem; color: var(--text-muted);
+      margin-top: .5rem; font-style: italic;
+    }
+    .web-sources { list-style: none; padding: 0; }
+    .web-sources li {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 10px; padding: .8rem 1.2rem; margin-bottom: .6rem;
+    }
+    .web-sources li .ws-name { font-weight: 600; font-size: .9rem; color: var(--text); }
+    .web-sources li .ws-desc { font-size: .82rem; color: var(--text-secondary); margin-top: .2rem; }
+    .web-sources li a { color: var(--primary); font-size: .8rem; word-break: break-all; }
+    .category-tag {
+      display: inline-block; font-size: .65rem; font-weight: 600; text-transform: uppercase;
+      padding: .15rem .5rem; border-radius: 4px; margin-left: .5rem; vertical-align: middle;
+      background: rgba(46,125,50,.1); color: var(--primary);
+    }
+    .category-tag.historical { background: rgba(136,82,42,.1); color: #88522a; }
+    .category-tag.dictionary { background: rgba(30,100,180,.1); color: #1e64b4; }
+    .category-tag.bible { background: rgba(128,50,128,.1); color: #803280; }
+    .category-tag.audio { background: rgba(200,80,40,.1); color: #c85028; }
+    .back-link { display: inline-block; margin-bottom: 1rem; font-size: .85rem; color: var(--primary); text-decoration: none; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1><span class="logo-icon">🌿</span> Sources</h1>
+      <p class="subtitle">Data sources for the Tol Language Project</p>
+      <nav class="header-nav">
+        <a href="/" class="nav-link">Translator</a>
+        <a href="/dictionary" class="nav-link">Dictionary</a>
+        <a href="/bible" class="nav-link">Dios Vele</a>
+        <a href="/test" class="nav-link">Grammar Tests</a>
+        <a href="/learn" class="nav-link">Aprende</a>
+        <a href="/sources" class="nav-link nav-active">Sources</a>
+      </nav>
+    </header>
+
+    <main class="sources-page" id="sources-main">
+      <div id="loading" style="text-align:center;padding:3rem;color:var(--text-muted)">Loading sources...</div>
+    </main>
+
+    <footer>
+      <p>Built to preserve and share the Tol (Tolupan) language of Honduras</p>
+      <p class="small">Data sources: Language Conservation Project · SIL International · ScriptureEarth · ELAR Archive</p>
+    </footer>
+  </div>
+
+  <script>
+    const WEB_SOURCES = [
+      {
+        category: "Bible / Scripture",
+        sources: [
+          { name: "ScriptureEarth — Tol Audio Bible", url: "https://scriptureearth.org/data/jic/audio/",
+            desc: "Complete Tol New Testament audio recordings (MP3) read aloud by native speakers. Chapter-level recordings covering all 27 books." },
+          { name: "eBible.org — Tol New Testament", url: "https://ebible.org/find/details.php?id=jicNT",
+            desc: "Tol New Testament text in HTML, PDF, and ePub formats. Source for the 317 chapter HTML files used in the trilingual Bible reader." },
+          { name: "eBible.org — English WEB Bible", url: "https://ebible.org/eng-web/",
+            desc: "World English Bible audio and text used for the English column and audio playback in the Dios Vele reader." },
+          { name: "Bible.is / YouVersion", url: "https://www.bible.is",
+            desc: "Online Tol Bible reading (search 'JICNT' or 'Tol')." },
+        ]
+      },
+      {
+        category: "Linguistic Research",
+        sources: [
+          { name: "Language Conservation Project — Tol", url: "https://languageconservation.org/index.php/projects/tol",
+            desc: "ELAN transcripts providing 752 Tol-Spanish parallel sentence pairs from elicitation sessions, ghost stories, and bee-keeping conversations." },
+          { name: "ELAR Archive — dk0118", url: "https://www.elararchive.org/dk0118/",
+            desc: "25+ recordings including sociolinguistic interviews, narratives, and elicitation sessions. Deposited by Steffen Haurholm-Larsen, University of Zurich. Free registration required." },
+          { name: "SIL International — Tol Resources", url: "https://www.sil.org/resources/archives/26210",
+            desc: "SIL-published Tol resources including the Dennis & Dennis dictionary (1983), school dictionary (2001), alphabet guide (1975), and phonology study (1977)." },
+          { name: "Smithsonian — Anne Chapman Papers", url: "https://sova.si.edu/record/naa.1996-15",
+            desc: "30 sound recordings with transcripts (1955–1994) in the National Anthropological Archives. Contact: naa@si.edu" },
+        ]
+      },
+      {
+        category: "Lexical / Dictionary",
+        sources: [
+          { name: "MUSE Bilingual Dictionaries (Meta)", url: "https://github.com/facebookresearch/MUSE",
+            desc: "English-Spanish and Spanish-English word embeddings and bilingual dictionaries used for bridging En↔Es↔Tol translation chains." },
+          { name: "Wiktionary Spanish-English (doozan)", url: "https://github.com/doozan/spanish_data",
+            desc: "Spanish-to-English dictionary data extracted from Wiktionary." },
+          { name: "nhershy Spanish Dictionary", url: "https://github.com/nhershy/SpanishDictionaryCreator",
+            desc: "49K-entry Spanish dictionary with part-of-speech annotations." },
+        ]
+      },
+      {
+        category: "Reference / Academic",
+        sources: [
+          { name: "Glottolog — Jicaque", url: "https://glottolog.org/resource/languoid/id/jica1245",
+            desc: "Language classification and bibliographic information for Jicaque (Tol)." },
+          { name: "Endangered Languages Project", url: "https://endangeredlanguages.com/lang/2055",
+            desc: "Status overview and resources for Tol as a critically endangered language (~200–600 speakers)." },
+          { name: "OLAC Language Archive", url: "http://www.language-archives.org/language/jic",
+            desc: "Open Language Archives Community catalog for Jicaque (ISO 639-3: jic)." },
+          { name: "Culture in Crisis — Tol Documentation", url: "https://cultureincrisis.org/projects/survey-description-and-documentation-of-tol-jicaque-of-honduras",
+            desc: "Project page for the survey, description and documentation of Tol (Jicaque)." },
+          { name: "ScriptureEarth — Tol Videos", url: "https://www.scriptureearth.org/00spa.php?idx=69&iso=jic",
+            desc: "13 general Scripture videos + 42 Gospel of John videos in Tol with Spanish subtitles." },
+        ]
+      }
+    ];
+
+    async function loadSources() {
+      const main = document.getElementById("sources-main");
+      let pdfs = [];
+      try {
+        const resp = await fetch("/api/sources");
+        const data = await resp.json();
+        pdfs = data.pdfs || [];
+      } catch (e) { console.error(e); }
+
+      let html = "";
+
+      html += `<section class="source-section">
+        <h2>📄 Downloadable Documents (PDFs)</h2>
+        <p style="font-size:.85rem;color:var(--text-secondary);margin-bottom:1rem;">
+          Local copies of linguistic, grammatical, and biblical reference materials.
+        </p>`;
+
+      const categories = {};
+      for (const p of pdfs) {
+        if (!categories[p.category]) categories[p.category] = [];
+        categories[p.category].push(p);
+      }
+
+      for (const [cat, items] of Object.entries(categories)) {
+        const tagClass = cat.includes("Histor") ? "historical"
+          : cat.includes("Dict") ? "dictionary"
+          : cat.includes("Bible") ? "bible" : "";
+        html += `<h3>${cat}</h3>`;
+        for (const p of items) {
+          html += `<div class="source-card">
+            <div class="title">${esc(p.title)}</div>
+            <div class="meta">${esc(p.author)}${p.pages ? ` · ${p.pages} pages` : ""}</div>
+            <div class="desc">${esc(p.description)}</div>
+            ${p.available && p.url
+              ? `<a class="pdf-link" href="${p.url}" target="_blank">📄 View PDF</a>`
+              : `<span class="unavailable">PDF not yet downloaded</span>`}
+          </div>`;
+        }
+      }
+      html += `</section>`;
+
+      for (const group of WEB_SOURCES) {
+        const tagClass = group.category.includes("Bible") ? "bible"
+          : group.category.includes("Lingui") ? ""
+          : group.category.includes("Dict") ? "dictionary"
+          : group.category.includes("Audio") ? "audio" : "";
+
+        html += `<section class="source-section">
+          <h2>🌐 ${esc(group.category)}</h2>
+          <ul class="web-sources">`;
+
+        for (const s of group.sources) {
+          html += `<li>
+            <div class="ws-name">${esc(s.name)}</div>
+            <div class="ws-desc">${esc(s.desc)}</div>
+            <a href="${s.url}" target="_blank" rel="noopener">${s.url}</a>
+          </li>`;
+        }
+        html += `</ul></section>`;
+      }
+
+      html += `<section class="source-section">
+        <h2>🗄️ Database Sources</h2>
+        <p style="font-size:.85rem;color:var(--text-secondary);margin-bottom:1rem;">
+          Data integrated into the Tol language database from multiple source types.
+        </p>
+        <ul class="web-sources">
+          <li>
+            <div class="ws-name">Parallel Sentences</div>
+            <div class="ws-desc">~7,800 bible verse alignments, 752 ELAN transcript pairs, 1,627 SIL dictionary examples, 425 ghost story pairs, 156 bee-keeping pairs, 82 grammar examples, and 16 elicited grammar entries.</div>
+          </li>
+          <li>
+            <div class="ws-name">Dictionary</div>
+            <div class="ws-desc">Entries from ELAN transcripts, SIL dictionary OCR, grammar PDF extraction, and NT bible alignment processes.</div>
+          </li>
+          <li>
+            <div class="ws-name">Direct English→Tol</div>
+            <div class="ws-desc">Entries built via En→Es→Tol translation chains, grammar PDF extraction, dictionary bridging, and NT statistical alignment.</div>
+          </li>
+        </ul>
+      </section>`;
+
+      main.innerHTML = html;
+    }
+
+    function esc(s) {
+      if (!s) return "";
+      return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    }
+
+    loadSources();
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* ===== Tol Dictionary ===== */
+.dict-app { max-width: 800px; }
+
+/* ── Stats row ── */
+.dict-stats {
+  display: flex; flex-wrap: wrap; gap: .4rem 1.2rem;
+  justify-content: center; padding: .6rem 1rem; margin-bottom: 1rem;
+  background: var(--accent-light); border: 1px solid var(--border);
+  border-radius: var(--radius); font-size: .75rem;
+}
+.ds { display: flex; align-items: center; gap: .25rem; }
+.ds b { font-size: .9rem; color: var(--accent); }
+.ds span { color: var(--text-muted); font-size: .65rem; }
+
+/* ── Search bar ── */
+.search-bar { margin-bottom: 1.25rem; }
+.search-box { position: relative; display: flex; align-items: center; }
+.search-box .search-icon {
+  position: absolute; left: .9rem; color: var(--text-muted); pointer-events: none;
+}
+.search-box input {
+  width: 100%; padding: .9rem 2.5rem .9rem 2.7rem;
+  border: 2px solid var(--border); border-radius: var(--radius);
+  font-family: inherit; font-size: 1rem; background: var(--surface);
+  outline: none; transition: var(--transition);
+}
+.search-box input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(74,124,40,.1); }
+.clear-btn {
+  position: absolute; right: .7rem; background: none; border: none;
+  font-size: 1.4rem; color: var(--text-muted); cursor: pointer;
+  line-height: 1; display: none;
+}
+.clear-btn.show { display: block; }
+.clear-btn:hover { color: var(--text); }
+
+/* ── Results info ── */
+.results-info {
+  font-size: .75rem; color: var(--text-muted); margin-bottom: .5rem;
+}
+.results-info strong { color: var(--text); }
+
+/* ── Empty / Welcome state ── */
+.welcome {
+  text-align: center; padding: 3rem 1rem; color: var(--text-muted);
+}
+.welcome-icon { font-size: 2.5rem; margin-bottom: .5rem; display: block; }
+.welcome h2 { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: .35rem; }
+.welcome p { font-size: .85rem; max-width: 400px; margin: 0 auto .5rem; line-height: 1.5; }
+.welcome-hints {
+  display: flex; flex-wrap: wrap; gap: .35rem; justify-content: center; margin-top: .75rem;
+}
+.hint-chip {
+  background: var(--surface); border: 1px solid var(--border);
+  padding: .35rem .7rem; border-radius: 20px; font-size: .75rem;
+  cursor: pointer; transition: var(--transition); color: var(--text);
+}
+.hint-chip:hover { background: var(--accent-light); border-color: var(--accent); color: var(--accent); }
+
+/* ── Dictionary card ── */
+.d-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: .8rem 1rem;
+  margin-bottom: .5rem; cursor: pointer; transition: var(--transition);
+}
+.d-card:hover { border-color: var(--accent); box-shadow: 0 2px 10px rgba(74,124,40,.08); }
+.d-head { display: flex; align-items: baseline; gap: .6rem; margin-bottom: .2rem; }
+.d-hw { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+.d-cat {
+  font-size: .6rem; background: var(--surface-alt); color: var(--text-muted);
+  padding: .1rem .45rem; border-radius: 3px;
+}
+.d-defs { font-size: .82rem; color: var(--text); line-height: 1.5; }
+.d-lang { font-size: .55rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-right: .2rem; }
+
+/* ── Detail panel (modal) ── */
+.word-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.35);
+  z-index: 100; justify-content: center; align-items: flex-start;
+  padding: 2.5rem 1rem; overflow-y: auto;
+}
+.word-overlay.open { display: flex; }
+.word-panel {
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: var(--shadow-lg); max-width: 640px; width: 100%;
+  padding: 1.5rem 1.75rem; position: relative;
+  animation: panelIn .15s ease;
+}
+@keyframes panelIn { from { opacity: 0; transform: translateY(-16px); } }
+.panel-close {
+  position: absolute; top: .6rem; right: .9rem; background: none;
+  border: none; font-size: 1.5rem; color: var(--text-muted); cursor: pointer;
+}
+.panel-close:hover { color: var(--text); }
+
+.p-hw { font-size: 1.5rem; font-weight: 700; color: var(--accent); margin-bottom: .15rem; }
+
+.p-section { margin-top: 1.1rem; }
+.p-section-title {
+  font-size: .65rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--text-muted); padding-bottom: .3rem;
+  border-bottom: 1px solid var(--border); margin-bottom: .4rem;
+}
+.p-def {
+  display: flex; align-items: baseline; gap: .5rem;
+  padding: .35rem 0; border-bottom: 1px solid var(--border); font-size: .85rem;
+}
+.p-def:last-child { border-bottom: none; }
+.p-num {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--accent-light); color: var(--accent);
+  font-size: .6rem; font-weight: 700; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.p-en { font-weight: 500; flex: 1; }
+.p-es { color: var(--text-muted); flex: 1; }
+.p-cat-tag {
+  font-size: .55rem; background: var(--surface-alt); color: var(--text-muted);
+  padding: .1rem .35rem; border-radius: 3px;
+}
+
+.p-sample {
+  background: var(--surface-alt); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: .65rem .85rem; margin-bottom: .4rem;
+}
+.p-s-label {
+  font-size: .5rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .04em; color: var(--text-muted); margin-bottom: .05rem;
+}
+.p-s-text { font-size: .82rem; line-height: 1.45; margin-bottom: .2rem; }
+.p-s-tol { color: var(--accent); font-weight: 600; }
+.p-s-src { font-size: .55rem; color: var(--text-muted); }
+.p-empty { color: var(--text-muted); font-size: .82rem; font-style: italic; padding: .4rem 0; }
+
+/* ── Pagination ── */
+.pagination {
+  display: flex; justify-content: center; align-items: center;
+  gap: .25rem; padding: .6rem 0;
+}
+.pg {
+  min-width: 32px; height: 32px; border: 1px solid var(--border);
+  border-radius: 6px; background: var(--surface); font-family: inherit;
+  font-size: .8rem; color: var(--text-muted); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition);
+}
+.pg:hover { background: var(--accent-light); color: var(--accent); border-color: var(--accent); }
+.pg.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pg:disabled { opacity: .35; cursor: default; }
+.pg:disabled:hover { background: var(--surface); color: var(--text-muted); border-color: var(--border); }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .word-panel { padding: 1.25rem 1rem; }
+  .d-card { padding: .65rem .75rem; }
+  .p-def { flex-wrap: wrap; }
+}

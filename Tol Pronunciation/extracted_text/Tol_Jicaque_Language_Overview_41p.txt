@@ -1,0 +1,4517 @@
+ 
+1 
+Tol (Jicaque) [draft] 
+ 
+Steffen Haurholm-Larsen, University of Bern and Jeff Pynes, The University of Utah 
+ 
+1 Introduction ....................................................................................................................................... 1 
+2 Jicaquean ........................................................................................................................................... 1 
+2.1 
+Tol speakers: Location, social context and writing ............................................................................... 3 
+2.2 
+Existing publications and proposed classifications ............................................................................... 5 
+3 Noun morphology ............................................................................................................................. 7 
+3.1 
+Number ....................................................................................................................................................... 7 
+3.2 
+Possession ................................................................................................................................................ 11 
+3.3 
+Focus suffixes .......................................................................................................................................... 13 
+4 Syntax .............................................................................................................................................. 15 
+4.1 
+The noun phrase ...................................................................................................................................... 15 
+4.2 
+The postpositional phrase ....................................................................................................................... 19 
+4.3 
+Main clause ............................................................................................................................................. 24 
+4.4 
+Subordinate clauses ................................................................................................................................. 27 
+4.5 
+Negation ................................................................................................................................................... 29 
+4.6 
+Information structure .............................................................................................................................. 30 
+4.7 
+TAM clitics .............................................................................................................................................. 36 
+ 
+ 
+1 
+Introduction 
+ 
+The Tol language has been treated in a small number of journal articles and book length 
+publications, some areas in more depth than others. In the present chapter we aim to enhance 
+available information about this language, focusing particularly on the areas in which 
+information is sparse, while at times engaging in a discussion with earlier analyses. Due to 
+confines of space and to the particular focus of our own research, some areas will necessarily 
+receive more attention than others. We will not deal at any length with phonology, verb 
+morphology or historical reconstruction, and for the most up-to-date information on these topics 
+we refer the reader to Holt (1999), and specifically on historical reconstruction to Campbell and 
+Oltrogge (1980). See section 2.2 for our presentation and assessment of existing publications. 
+The chapter is structured as follows: An introduction to the Jicaquean language family, 
+demographic data on speakers and history of research, noun morphology (number, possession 
+and focus), syntax (phrase types, clause types, negation, information structure and TAM clitics). 
+ 
+ 
+2 
+Jicaquean 
+ 
+Jicaquean is a small language family with only two members: Western Jicaque, a language 
+formerly spoken in north-western Honduras and of which only short word lists are known, and 
+Eastern Jicaque spoken until recently across the Department of Yoro. One variant of Eastern 
+
+ 
+2 
+Jicaque, today more commonly known as Tol, is still spoken today in Central Honduras in the 
+north of the Department of Fransisco Morazán towards the borders with Yoro and Olancho 
+(Campbell and Oltrogge 1980, 205). The map in Figure 1 shows the Tol speaking area and select 
+settlements with highest numbers of speakers. 
+ 
+ 
+Figure 1: Map of Tol speaking area (by Haurholm-Larsen). 
+ 
+We find the term Jicaque, also written Xicaque, mostly in older sources, while the speakers’ own 
+term, the autoethnonym Tol or Tolpan, is more commonly used in the more recent literature. The 
+word Jicaque was used in colonial times by people coming from the western part of the Spanish 
+empire (know in Spanish as Nueva España ‘New Spain’). The term applied not only to the 
+modern day Tolpan (or variants tolupan/torupan1 both containing the plural suffix -pan) but also 
+to various other non-sedentary peoples in the less explored regions of the empire, including 
+modern day Honduras. One previously proposed etymology for Jicaque derives it from a Nahuatl 
+word chicahuacquê, chicacquê or chicàtic meaning ‘old; robust; strong; valiant’ (Chapman 
+                                                
+1 Variation between [l] and [r] is rampant (see the phonology section) and a vowel [u] or [ə] is inserted to break up 
+the unlicensed consonant cluster. 
+
+ 
+3 
+1992, 13). There can be no doubt of the Nahuatl origin of Jicaque. Nahuatl was the lengua franca 
+of the Aztec empire and continued in use during the subsequent centuries, even outside of the 
+area where Nahuatl is spoken today (Von Hagen 1943, 2). However, the proposed etymology is 
+unlikely because Nahuatl [ch] would probably not have been borrowed into Spanish as the 
+voiceless postalveolar fricative [x] (which in Honduran Spanish has subsequently become [h]) 
+but instead simply as [ch] as it was in cases such as chacalin ‘a freshwater crustacean sp.’ from 
+Nahuatl chacalin or chilate ‘a kind of atol’ from Nahuatl chilatl. More likely, the source was /sh/ 
+(generally written <x> in older documents), as in the cases of jicara ‘drinking gourd’ from 
+Nahuatl xicalli and jilote ‘tender maiz’ from Nahuatl xilotl. This suggests a possible etymology 
+from xiccaua ‘perder algo por su culpa y negligencia, o no curar de su persona, o no hacer cuenta 
+de si’ [lose something by one’s fault and negligence, or not take care of one’s person, or not look 
+out for oneself] (Molina et al. 1571, 159r). A plural participial form of xiccaua might be 
+xiccauhquê, a likely source for Spanish jicaque. In addition to the phonological evidence, the 
+etymology proposed here is also consistent with the tendency for exonyms to be derogatory. In a 
+modern Honduran context Jicaque refers mainly to the ethnically Tolpan people living in Yoro, 
+who no longer speak Tol. However, according the Real Academia Española, it is also used more 
+generally to refer to somebody who is “huraña, retraída y poco sociable” [shy, withdrawn, and 
+unsociable]. In addition, Oltrogge reports of a “limited modern usage meaning ‘wild’ or 
+‘uncivilized’” (1977b, 8). 
+ 
+2.1 
+Tol speakers: Location, social context and writing 
+ 
+2.1.1 Migratory history 
+The Tolpan are said to have migrated from the north coast of Honduras due to pressure from the 
+Spanish colonists until settling in Montaña de la Flor in Central Honduras, where they are 
+located today (Von Hagen 1943; Lehmann 1920; Chapman 1992). However, the extent of the 
+Tolpan homeland is extremely uncertain; we refer readers to the discussions by Campbell and 
+Oltrogge (1980) and Chapman (1992) for the a full account of the founding of the Montaña de la 
+Flor communities by people fleeing from Yoro in the mid 19th century, as well as to Chapman 
+(1992) and Holt (1999) for grounded speculation about the possible prehistoric extent of Tolpan 
+territory. 
+ 
+2.1.2 Political organization 
+The modern-day Tolpan are organized into 6 tribes with most speakers belonging to San Juan 
+tribe, and lesser numbers to La Ceiba and La Guaruma tribes. The main settlement of San Juan 
+tribe is the village of the same name, located nearest to main road that falls in from the nearest 
+Ladino village, San Fransisco Ocote, connecting the Montaña de la Flor to the rest of the country 
+(see map in Figure 1). Tribes are traditional units of government headed by a cacique, the holder 
+of a patrilineally hereditary office who oversees all matter of public administration (see 
+Chapman (1992, 37) for more information). While the traditional system still exists today, it now 
+co-exists, and for many purposes has been replaced by, a Ladino style local government known 
+as a consejo [council], which has taken over most of the administrative and decision-making 
+duties of the cacique, particularly those pertaining to citizen registration, marriage and legal 
+disputes. 
+ 
+
+ 
+4 
+2.1.3 Socio-linguistic context 
+According to a recent survey, there are almost 600 speakers of Tol (Haurholm-Larsen 2012). The 
+main objective of the survey was to uncover the current number of speakers and their attitudes 
+towards the language in order to assess its level of endangerment. The survey took the form of 31 
+interviews with speakers from a handful of different communities, but most of them from the 
+village of San Juan (see map Figure 1). A community member was trained to form part of the 
+survey as interviewer and contact person responsible for arranging interviews with speakers. 
+Results indicated that most speakers are either highly tolerant towards inclinations of Tolpans to 
+speak Spanish, or nearly indifferent towards such practices, while most opinions about the Tol 
+language encountered in the survey can best be described as neutral. In some households all 
+adults speak Tol as their first language. Households with non-Tol speaking mothers, however, 
+tend to be dominated by Spanish among both adults and children. Outside of the home, the use of 
+Spanish is more widespread, since doctors, nurses, shop keepers, coffee buyers, police officers, 
+court personnel, municipal authorities, and most school and high school teachers are 
+monolingual Spanish speakers. 
+Contact between the Tolpan and the outside world has greatly increased over the past 30 
+years mainly due to an influx of outsiders interested in coffee growing land. This has in turn 
+motivated an expansion and improvement of the roads into the Montaña. As a result of this 
+increased contact, Tol-Spanish bilingualism is quickly becoming the rule, with most adults 
+speaking Spanish as their second language, and children growing up bilingually. The few 
+monolingual speakers left live in the remotest and most inaccessible hamlets.  
+ 
+2.1.4 Writing and orthography 
+Literacy is on the rise among young adults and children since the introduction of schools in the 
+past 20 years. However, literacy is almost entirely limited to Spanish with the exception that a 
+handful of adults who have been involved in a Bible translation project carried out by linguists 
+affiliated with SIL International (formerly know as the Summer Institute of Linguistics), have 
+learned to write in Tol. The orthography introduced by SIL linguists was based largely on 
+Spanish (see for instance Dennis and Dennis 1983). The orthography used in the present chapter 
+is given in Table 1 (for consonants) and Table 2 (for vowels) next to the SIL orthographic 
+symbols (parentheses).  
+ 
+Table 1: 
+Consonants 
+ 
+Labial 
+Alveolar 
+Alv. palatal 
+Velar 
+Glottal 
+Plain stop 
+p 
+t 
+c (ts) 
+k (c/q) 
+ 
+Asp. Stop 
+ph (pj) 
+th (tj) 
+ch (tsj) 
+kh (cj/quj) 
+ 
+Glot. Stop 
+p’ 
+t’ 
+c’ (ts’) 
+k’ (c’/qu’) 
+ 
+Nasal 
+m 
+n 
+ 
+ng (ñ) 
+ 
+Glide 
+w (v/u) 
+ 
+ 
+y 
+ 
+Fricative 
+v 
+ 
+ 
+ 
+h (j) 
+Sibilant 
+ 
+s (s/c) 
+ 
+ 
+ 
+Liquid 
+ 
+l / r 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+5 
+Table 2: 
+Vowels 
+i 
+ü [ɨ] 
+u 
+e [ɛ] 
+ 
+o [ɔ] 
+ 
+a 
+ 
+ 
+The new orthography was adopted in order to reduce the use of digraphs and eliminate bivalent 
+graphemes such as both <s> and <c> for [s] and <qu> and <c> for [k], while also ensuring 
+maximum accessibility in mainstream computer fonts. Stress falls on the penultimate syllable of 
+words ending in a vowel, and on the final syllable on words ending in a consonant, unless 
+otherwise marked. While primary word stress is generally restricted to the final or penultimate 
+syllable of a word, it is important to include its representation in the orthography for three 
+reasons: first, stress is phonemically contrastive in Tol; second, stress manipulation plays an 
+important part of the complex verbal agreement patterning; and third, unstressed vowels in Tol 
+show a pronounced tendency toward articulatory reduction. These reduction patterns, described 
+in part by Holt (1999), include centralization, vowel harmony-like influence from surrounding 
+vowels, and reduction in length. Consonants, especially stops, also seem to show a relatively 
+high degree of variation in realization; glottalized stops may be realized only as creak on 
+adjacent vowels, and the particular acoustic cues signalling the plain versus aspirated stop 
+contrast are not entirely clear in all contexts. We suspect that a significant and mostly 
+undiscussed obstacle in Tol studies so far arises from this wide range of variation and the 
+apparent differences that it seems to create between phonetically-oriented transcriptions and 
+phonologically-oriented orthographic representations. Because this chapter departs from the 
+diachronic and (morpho)phonological focus of most of the past literature, we have attempted to 
+represent most of our data orthographically at the level of phonology; in a few cases, it is 
+difficult to determine whether some variation is phonetic or morphological in nature, as in the 
+case of possessive marking discussed below. There are a number of phonotactic rules that are 
+incompletely understood and that complicate orthographic choices, such as a series of apparent 
+vowel harmony and neutralization rules, notably the apparent lack of contrast in word-final 
+position between plain and aspirated stops. 
+ 
+2.2 
+Existing publications and proposed classifications 
+ 
+In an overview article such as the present it would not normally be possible to mention all of the 
+existing literature even on a single language. However, given that Tol is as poorly described as is 
+the case, the following literature review will be nearly exhaustive.  
+Publications on Tol can be divided into three groups based partly on their chronology and 
+partly on the nature of their contribution.  
+ 
+Stage 1: Early descriptive work 
+The early discriptive work is found mainly in Membreño (1897), which is also the only surviving 
+source for Western Jicaque of El Palmar. Lehmann (1920) is a reproduction of earlier sources 
+including Membreño’s data, while Conzemius (1923) is a mix of new data collected by the 
+himself and what seems like reproduction from Membreño (Campbell and Oltrogge 1980). The 
+above-cited works consist almost exclusively of word lists with almost no information on 
+morphology and syntax. 
+ 
+
+ 
+6 
+Stage 2: Diachronic proposals 
+The second stage of Tol scholarship saw the first attempts at linking the language genealogically 
+to other languages in the area. Prior to 1953, Tol had mostly been considered an isolate. This 
+changed with Greenberg and Swadesh’s (1953) classification of Tol as a Hokan language, 
+building on the Hokan hypothesis developed by Dixon and Kroeber (1913). This would make 
+Tol one of the southernmost outposts of a southward migration starting in the south of the 
+modern-day United States. Later this was complemented by Oltrogge, who suggested a sub-
+classification by tying Tol to Chontal of Oaxaca (also known as Tequistlateco) in Mexico and to 
+the extinct Subtiaba in Nicaragua (1977b). By implication, this would also tie Tol-Tequistlatec-
+Subtiaba to Oto-Manguean according to Oltrogge. 
+Campbell and Oltrogge (1980) offer some reconstructions of the shared ancestor of the 
+two Jicaquean varieties, Western and Eastern Jicaque (Tol), presenting a reconstructed phoneme 
+inventory and some cognate sets. In a short note towards the end of the paper, Campbell and 
+Oltrogge express mild support for the connection with Chontal of Oaxaca connection, making no 
+mention of Subtiaba. They strongly doubt any Hokan affiliation, as well as the validity of Hokan 
+itself. 
+The external classification of Jicaquean remains in dispute today. Among the supporters 
+of the Hokan hypothesis are Dennis and Fleming (1976), who compare Tol and Hokan noun 
+suffixes looking for similarities, as well as Jorge Suarez (1983), who supports the Tol-
+Tequistlatec-Subtiaba grouping. Yasugi (1995), on the other hand, doubts the Tol-Tequistlateco 
+connection but hints at other possible connections. Campbell (1997) believes in the possibility of 
+Jicaque-Tequistlatec while recommending that the Subtiaba proposal be abandonded and also 
+strongly rejects Hokan in general. Kaufman (2006) firmly believes in Tol as a Hokan language 
+but not in a Tequistlatec-Jicaque connection.  
+ 
+Stage 3: Later description and texts 
+The latest stage of Tol scholarship has made substantial progress in the area of language 
+description, work which is to a large extent attributable to members of SIL International. 
+Fleming et al. (1975) propose an orthography for writing Tol and Dennis and Fleming (1976) is a 
+first analysis of the phonology, setting the stage for work on the morphology and syntax. That 
+paper also offers a brief account of the principal inflectional attributes of nouns, while Dennis 
+(1990) offers an overview of the complex system of verb inflection. The first, and to date only, 
+dictionary of Tol is Dennis and Dennis (1983) which contains around 1000 entries with example 
+sentences, a section on nominal and verbal inflectional paradigms, and a Spanish reverse index. 
+Published textual material includes a handful of short texts with translation in Shaw (1971), a 
+translation of the New Testament in Wycliffe Bible Translators (2010), and a database of 
+annotated texts and elicited material were collected by Haurholm-Larsen and is available at the 
+Endangered Languages Archive at http://elar.soas.ac.uk/deposit/01182. Oltrogge (1977a) is a 
+description of tradtional Tolpan bee-keeping and how this is reflected in the language, and Lentz 
+(1986) describes the way the Tolpan classify the natural environment. Although the contribution 
+of these two publications is mainly lexical in nature, they are of high cultural importance and 
+will prove of great value to the understanding of the language, the primary vehicle of cultural 
+transmission. Finally, Holt (1999) provides a summary of previous descriptive literature in the 
+                                                
+2 Citations of the Haurholm-Larsen Database in our examples are given in the format ”Bundle name”>”begin time”, 
+e.g. “HT-2-1>00:16:04” referring to an annotated mp4-file named “HT-2-1” (short for Habla Tol, session 2, file 1) 
+and the cited example starts at 00 hours, 16 minutes and 04 seconds.    
+
+ 
+7 
+shape of a grammatical sketch with minor additions from the author’s own fieldwork (1999: 7). 
+Holt also adds a deep structure perspective, particularly on verb inflection, in an attempt to 
+derive a regular pattern from the observed verb forms, which are highly irregular. Holt’s 
+underlying forms might also serve as a hint at possible historical developments that may account 
+for the synchronic irregularities. 
+ 
+3 
+Noun morphology 
+ 
+Nouns having inanimate referents, including plants and trees, are not marked for number. Nouns 
+with human referents can be inflected for plural number, while other animate nouns can be 
+pluralized by adding a nominal modifying word. While all nouns are may inflect for possession, 
+using markers that agree with the possessor, nouns referring to kinship terms and body parts, 
+obligatorily take such marking. The most elusive category of noun inflection consists of suffixes 
+which past investigators have analyzed as optional case markers. We consider this analysis 
+problematical and offer an alternative below. 
+ 
+3.1 
+Number 
+ 
+The ability for nouns to inflect for number in Tol is determined by degree of prominence, partly 
+conditioned by animacy, where divine beings, such as angels and the gods of the East and the 
+West, are at the top, together with adult humans. They are followed by children, stars, and large 
+animals, which are in turn followed by small animals and everything else at the bottom, cf. Table 
+3. Examples of the number markers in Table 3  are given in individual sections below. 
+ 
+Table 3: 
+Prominence scale according to number marking 
+ 
+High animacy 
+Medium animacy 
+Low animacy 
+Category 
+divine creatures, 
+adult humans 
+children, large 
+animals, stars  
+small animals, 
+all other things 
+Plural marking 
+-pan, (ne- / no-) 
+-thakh 
+- 
+ 
+  
+3.1.1 Plural suffix -pan 
+The plural suffix -pan is used to pluralize human and divine entities with high prominence such 
+as those listed in (1). 
+ 
+(1) 
+tol 
+ 
+‘Tol person’  
+tol-pan  
+ 
+‘Tol people’ 
+ 
+pwekeph 
+‘thief’  
+ 
+pweka-pan  
+ 
+‘thieves’  
+ 
+lapanen3 
+‘demon’ 
+ 
+lapanen-pan  
+‘demons’ 
+ 
+ 
+ 
+ 
+ 
+ 
+ne’es-pan4 
+ 
+‘the Magi’ 
+                                                
+3 This can most likely be analyzed further, (perhaps as la pal nen ‘who looks for demons’) because Dennis and 
+Dennis (1983) have an entry nen ‘demonio específico’. However, in Wycliffe Bible Translators (2010) we find 
+singular  lapanen and plural lapanenpan. Dennis and Fleming (1976) give napanenpan; perhaps not particularly 
+surprising in light of the distributional relationship in Tol between [n], [l], [d] and [r]. According to Shaw (1971) 
+napanenpan must appear with the plural suffix even when used with a singular meaning, but this is not what we 
+have found in our data. 
+
+ 
+8 
+The use of -pan is not limited to native Tol vocabulary as evidenced by its use in the Spanish 
+loans in (2), many of which are from the Bible translation (Wycliffe Bible Translators 2010).  
+ 
+(2) 
+ 
+ángel-pan 
+‘angels’ 
+ 
+mózo-pan 
+ 
+‘workers’ 
+ 
+ 
+judío-pan 
+‘Jews’  
+ 
+enemígo-pan  
+‘enemies’ 
+ 
+ 
+fariséo-pan 
+‘Pharisees’ 
+ 
+discípulo-pan  
+‘disciples’ 
+          
+saducéo-pan ‘Sadducees’ 
+ 
+proféta-pan 
+ 
+‘profets’ 
+ 
+ 
+militár-pan 
+‘soldiers’ 
+ 
+sacerdóte-pan ‘priests’ 
+ 
+ 
+família-pan 
+‘family members’ 
+ 
+This supports the notion that the use of -pan is semantically tied to animacy or prominence of the 
+referent in a productive way rather than being lexically determined. 
+The suffix is also used for pluralizing possessed nouns as shown in (3). Adding –pan 
+does not affect the stress pattern of the stem, but –pan often seems to carry its own stress. 
+ 
+(3) 
+ha-chom-pan   
+‘their wives (of people)’ 
+ 
+(HT-2-1>00:16:04) 
+ 
+na-tham-pan   
+‘my brothers’   
+ 
+ 
+(Mateo 20:21) 
+ 
+he-pey-pan  
+ 
+‘your brothers-in-law’  
+ 
+(Lucas 14:12) 
+ 
+ho-mika-pan   
+‘his friends’ 
+ 
+ 
+ 
+(Mateo 5:24) 
+ 
+hu-kukus-pan   
+‘his daughters’ 
+ 
+ 
+(Mateo 5:9) 
+ 
+n-ta’a-pan / to’o-pan  ‘my sisters / his sisters’ 
+        
+(Mateo 12:50/ 13:56) 
+ 
+n-kokoy-pan   
+‘the thunder claps; my grandfathers; my forefathers’5 
+(HT-5-1>00:15:21) 
+ 
+Note that -pan can also be used to derive nouns. Thus from the adjective pülükh ‘a lot; many’ is 
+derived a noun pülükh-pan ‘multitude; family’ which is usually possessed6 as in (4) (All 
+examples from the New Testament in Tol are from Wycliffe Bible Translators (2010)). 
+ 
+(4) 
+hü-pülükh-pan  
+ 
+3.SG-many-PL 
+ 
+‘his multitude; his brothers’ (Mateo 1:2) 
+ 
+Likewise, the adjectives ‘üsüs ‘good’ and malala ‘bad’ can be pluralized with –pan as in (5). 
+ 
+(5) 
+hyawka 
+wa 
+malala-pan 
+mpes 
+ 
+dawn  
+also 
+bad-PL  
+on 
+ 
+‘it also dawns on the bad ones’ (Mateo 5:45) 
+ 
+The main difference between the nominalized form with pülükh, which looks much like the other 
+possesseable nouns, versus the other adjectives used with -pan is that the former is possessable 
+and the latter seem not to be as far as we can observe in the available data. 
+                                                                                                                                                       
+4 We have not attested a singular form. 
+5 Kokoy means ‘sun’, ‘thunder clap’, ‘grandfather’ and ‘forefather’. In Tol cosmology natural phenomena associated 
+with light, such as sun and thunder, are thought of as divine beings:  “The First Nation lived with the Tomams: Tata 
+Dios, Grandfather Thunder, Noventa [brother of Tata Dios], the Stars, the Sun, the Moon” (Chapman 1992: 104). 
+6 Pülükh also forms part of a derived adverb la pülükh ‘many times’. 
+
+ 
+9 
+It is also possible to pluralize some pronouns which are already plural. This is shown in (6). 
+ 
+(6) 
+nun-pan 
+malala-pan 
+ 
+2.PL-PL 
+bad-PL 
+ 
+‘you all who are evil’ (Mateo 7:11) 
+ 
+However, this seems marginal and is only attested in our corpus with a few instances of the 
+second person plural pronoun. A similar situation is discussed briefly below in the section on –
+thakh. 
+ 
+3.1.2 Plural prefix ni-7 
+A plural prefix ni- is only found with the two lexemes shown in (7). In focus constructions the 
+plural prefix changes to no- and the focus suffix changes as well, as discussed below in section 
+4.3. 
+ 
+(7) 
+ 
+yom 
+‘man’  
+ni-yom  
+‘men’ 
+ 
+ 
+keph 
+‘woman’ 
+ne-keph 
+‘women’ 
+ 
+While ni- as pluralizer is restricted to these two lexemes, the opposite is true for -pan which 
+cannot be used here—thus *yom-pan and *kep-pan are ungrammatical.  
+ 
+Also, yom and keph are the only two nouns which can take focus suffixes and have human or 
+divine referents. Otherwise focus suffixes are found exlusively on nouns with lower animacy 
+referents (cf. the section below on focus suffixes.) 
+ 
+3.1.3 Plural marker (wi)-thakh 
+A plural suffix –thakh or particle wi-thakh is used to pluralize items of medium prominence such 
+as children, large animals of cultural importance and stars; examples are shown in (8).8 
+ 
+(8) 
+a. 
+siete-ya 
+phul 
+withakh 
+mos 
+ 
+nt’a 
+tha-tha 
+ 
+ 
+seven-DEF 
+star 
+PL 
+ 
+3.SG:hand 
+in 
+PST-LOC.sit:3.PL 
+ 
+ 
+‘in his (right) hand he had seven stars’ (Apocalipsis 1:16) 
+ 
+ 
+b. 
+gente ha-kuman 
+ 
+animal withakh 
+hiph 
+mpes 
+ 
+ 
+people 3.PL-lead:3.PL  
+animal PL 
+ 
+2.SG 
+because 
+ 
+‘people sacrifice animals for your sake’ (Hebreos 10:5) 
+ 
+ 
+ 
+                                                
+7 The /i/ indicates a front high [i] or front close-mid vowel [ɛ], the quality of which is determined by vowel harmony 
+with the noun stem. 
+8 While withakh seems to be a single unit today, historically it can probably be analyzed as wi-thakh, where wi- 
+would have been a derivational prefix meaning ‘posessing X feature’, where ‘X’ stands for the feature expressed by 
+the word to which wi- attaches. It is possible, then, that withakh literally means ‘it is many’, provided that thakh, 
+which is synchronically not attested in isolated form, means ‘many’. Supporting this is the pair chikh ‘small’:chikh-
+thakh ‘children’.. Evidence to support this analysis of wi- can be found in such word pairs as chokh ‘soft’ (this word 
+from Efesios 6:14):wichokh ‘bird (sp.)’, c’il ‘hair’:wic’il ‘bee (sp.)’.   
+
+ 
+10 
+c. 
+nasa 
+thü-’ünan 
+vaka 
+withakh 
+  
+now 
+PST-kill:1.SG cow 
+PL 
+ 
+ 
+‘now I have killed cows’ (Mateo 22:4) 
+ 
+The borrowed lexeme (h)animal9 is used to refer only to larger animals with importance for the 
+Tolpan people e.g. cows and horses. This means that it does not apply to fish or bees even 
+though these smaller animals are also important sources of food (cf. (Oltrogge 1977a)).  
+Note that, while withakh is not found with nouns with human adult referents, it can be 
+used with yom ‘man’ in its meaning ‘male child / son‘ as shown in (9). 
+ 
+(9) 
+ni-yom  
+siete 
+withak=cha 
+yuph 
+ 
+PL-man 
+seven PL=IPFV 
+3.PL 
+‘There were seven boys’ (Hechos 19:14) 
+ 
+Withakh can also function as a plural pronoun in NPs that contain adjectives—an example is 
+shown in (10). 
+ 
+(10) 
+a. 
+khul 
+‘üsüs way 
+ 
+ha-püntü10-ph  
+ 
+kiliyü  
+mo’ó 
+ 
+ 
+fish 
+good 3.SG:COP 
+NONPST-LOC.place-3.PL 
+basket  
+in 
+ 
+ 
+‘the fish that were good they gathered in baskets’ 
+ 
+ 
+b. 
+malala withakh 
+na’ah  
+la 
+c’i 
+ 
+yuph 
+ 
+bad 
+PL 
+ 
+over.there 
+AUX 
+3.PL:throw 
+3.PL 
+ 
+‘the bad ones they threw away’ (Mateo 13:48) 
+ 
+In (10a) the P argument ‘fish’ is expressed explicity by a noun and therefore needs no plural 
+marking, but in (10b), which is parallel to the previous sentence, the noun is left out and here 
+withakh is used in its place to make explicit the plurality of the referent.  
+There is a single lexeme in which we find what looks like the second part of withakh used 
+as a plural suffix, cf. (11). 
+ 
+(11) 
+chikh  
+‘child; small one’ 
+ 
+chikh-thakh 
+‘children; small ones’11 
+ 
+This deficient plural suffix can possibly be explained historically as a contraction of tshikh and 
+withakh. The reason for the change to occur in this particular item would be a high frequency of 
+its plural, which is in turn explained by the fact that Tol speakers traditionally have more than 
+one child. 
+Another limited context where we find -thakh is on the pronoun his as in (12). 
+ 
+                                                
+9 Vowel initial Spanish loans are variably subject to epenthetic [h]. 
+10 This verb is one of a small class of causatives derived from locative verbs not currently described explicitly in the 
+literature that correspond to sit, stand and lie. In each case, a change of verb class and the infixation of [n] in the 
+coda of the first syllable plus the addition of a stressed final syllable copied from the root vowel creates causative, in 
+this case producing the meaning ‘place something such that it is lying down’.  
+11 Chikh witakh ‘the small ones’ (E-28-1>00:05:43) is also attested but only marginally. 
+ 
+
+ 
+11 
+(12) 
+woway  
+his-thakh 
+his-papay 
+pahal c’I 
+thi-’ina 
+ 
+child  
+3.PL-PL 
+3.PL-father 
+a.lot 
+anger PAST-get.angry:3.SG 
+‘the father of the girls became very angry’ (HT-1-1>00:05:27) 
+ 
+ 
+3.2 
+Possession 
+ 
+Some nouns are obligatorily possessed, i.e. they are never found without possessive morphology. 
+These include parts of a whole and kinship terms. Parts of a whole include parts of the human 
+body, parts of animals, and of other things such as branches of trees. At least a few of these 
+nouns with obligatory possession refer to non-physical relationships, for example, -(h)ola 
+‘thought, feeling, memory’, -la ‘name’ and –tin ‘language’. The common metaphorical use of the 
+possessed form –has ‘heart’ as a predicate meaning ‘to want’ suggests a possible historical 
+derivation for some of these terms from body parts, but they are not attested with reference to 
+physical body parts in existing texts. 
+Possession is expressed as bound morphology on the possessed noun indexing the 
+possessor, either as a prefix or a proclitic. Free pronouns can sometimes be used in conjunction 
+with bound morphology or on their own. The possessive marking paradigms are shown in Table 
+4. 
+Table 4: 
+Possessive marking paradigms 
+ 
+Bound 
+Free 
+ 
+Prefixes 
+Proclitics 
+ 
+1.SG 
+m-, n-, na-, ne-, ni-, no-, nu-, nü-12 
+ 
+naph 
+2.SG 
+he-, hi-, -y- 
+ 
+hiph 
+3.SG 
+ha-, ho-, hu-, -w-, -o-, -ü- 
+ 
+huph 
+1.PL 
+ka- 
+khis 
+khuph 
+2.PL 
+nuho- 
+his 
+nun 
+3.PL 
+sya- 
+his 
+yuph 
+ 
+There are three possible combinations of the bound and free possessive markers shown in Table 
+4; these three possibilities are exemplified in (13a-c) with the obligatorily possessed noun tin 
+‘language’. 
+ 
+(13) 
+a. 
+n-tin 
+ 
+ 
+way 
+ 
+velé 
+ 
+muekh  
+ke’am 
+ 
+ 
+1.SG-language  
+COP 
+ 
+speak:1.SG 
+MUEKH 
+here 
+ 
+ 
+‘I only speak in my language here’ (HT-3-1>00:02:25) 
+                                                
+12 Note that much of this variation is parallel to the sorts of attested variation in vowel and consonant realization as 
+discussed above in relation to orthographic challenges. It is thus somewhat unclear which, if any, of these forms 
+represent morphosyntactic alternatives as opposed to simply a range of transcription practices across variable 
+phonetic realizations.  
+
+ 
+12 
+ 
+b. 
+naph n-tin 
+ 
+ 
+vele 
+ 
+muekh  
+po=kinam 
+ 
+1.SG 
+1.SG-language  
+speak:1.SG 
+MUEKH 
+EMPH=now 
+ 
+‘I am speaking in my language right now’ (HT-3-1>00:03:59) 
+ 
+c. 
+naph tin 
+ 
+velé 
+ 
+ 
+1.SG 
+language 
+speak:1.SG 
+ 
+ 
+‘I speak in my language’ (HT-4-1>00:05:10) 
+ 
+As is evident from the table there is quite a bit of variation, particularly in the singular prefixes, 
+and it does not seem possible to establish strict rules conditioning this variation. However, there 
+is a tendency for prefix vowels to exhibit harmony with the first vowel of noun stems, as 
+illustrated in (14). 
+ 
+(14) 
+a. 
+nu-’ulap’ah 
+ 
+‘my neck’ 
+ 
+ 
+nü-’üsam 
+ 
+‘my sister-in-law’ 
+ 
+ 
+na-has  
+ 
+‘my heart’ 
+ 
+ 
+b. 
+hu-’ulap’ah 
+ 
+‘his neck’ 
+ 
+ 
+hü-’üsam 
+ 
+‘his sister-in-law’ 
+ 
+ 
+hu-khul 
+ 
+‘his fish’ 
+ 
+There is also a rather strong tendency for 1st person singular NV- (with a vowel) to appear 
+before a weak consonant such as /m/, /n/, /h/, /’/ whereas strong consonants such as plosives and 
+affricates yield N- as illustrated in (15). 
+ 
+(15) 
+a. 
+na-’as  
+ 
+‘my blood’ 
+ 
+ 
+na-has  
+ 
+‘my heart’ 
+ 
+ 
+na-mas 
+ 
+‘my hand’ 
+ 
+ 
+na-wala 
+ 
+‘my face’ 
+ 
+ 
+b. 
+n-kelew 
+ 
+‘my nephew’ 
+ 
+ 
+m-p’üy  
+ 
+‘my skin’ 
+ 
+ 
+n-t’alaph 
+ 
+‘my sister’ 
+ 
+ 
+n-ciwe  
+ 
+‘my brain’ 
+ 
+A similar, yet more limited tendency can be found with the 3rd person marker. This appears as a 
+prefix before weak consonants, and as an infix with strong initial consonants13; this is illustrated 
+in (16). 
+ 
+(16) 
+a. 
+hü-’üsam 
+‘his sister-in-law’ 
+ 
+ 
+ho-maph 
+‘his aunt’ 
+ 
+ 
+ho-way 
+‘his son-in-law’ 
+ 
+ 
+                                                
+13 For a different and more complex account for these alternations see Holt (1999, 34–36). 
+
+ 
+13 
+ 
+b. 
+p-w-isam 
+‘his mother-in-law’ 
+(m-pisam ‘my mother-in-law’) 
+ 
+ 
+ch-ü-icha 
+‘his corn field’ 
+(n-chicha ‘my corn field’) 
+ 
+ 
+polomay 
+‘his machete’  
+(m-polomay ‘my machete’) 
+ 
+ 
+hos 
+ 
+‘his heart’ 
+ 
+(na-has ‘my heart’) 
+ 
+Note that a third person singular infix, which would be realized as -o-, -ü- or -w-, is deleted when 
+the first stem vowel is /o/ or /u/, with very few exceptions, as exemplified by polomay in (16-b). 
+In other contexts -o- replaces the first vowel as in hos ‘his heart’ from has ‘heart’. 
+The above description accounts for the broad and most frequently encountered situations. 
+But in rare cases we find variation between possessive strategies with a single lexeme as 
+illustrated in (17) and (18). 
+ 
+(17) 
+a. 
+naph m-wa  
+nt’a 
+nin 
+the-pyala 
+ 
+ 
+1.SG 
+1.SG-house 
+in 
+thus 
+PST-3.SG:happen 
+ 
+ 
+‘this happened in my house’ (HT-1-1>00:02:32) 
+ 
+ 
+b. 
+na-wá  
+na 
+muekh ke’am  
+ne 
+nin 
+ 
+ 
+1.SG-house 
+NA 
+MUEKH here 
+ 
+and 
+thus 
+ 
+ 
+‘this is my house, and that is that’ (HT-3-1>00:11:36) 
+ 
+ 
+c. 
+mpes  
+naph wa 
+nt’a 
+yawá 
+ 
+because 
+1.SG 
+house in 
+3.SG:come 
+ 
+‘is that why he came to my house?’ (HT-3-1>00:06:58) 
+ 
+(18) 
+a.  
+m-papay   
+‘my father’ 
+ 
+ 
+(Dennis and Dennis 1983:2) 
+ 
+b.  
+na-papay  
+‘my father’ 
+ 
+ 
+(Dennis and Fleming 1976:5) 
+ 
+The variation between (17b) and (17c) in fact constitutes variation among two speakers who are 
+brother and sister. The variant in (18b) is only marginally attested. 
+ 
+3.3 
+Focus suffixes 
+ 
+Nouns with low prominence referents have the ability to take a focus suffix, which has three 
+suppletive allomorphs, -(sV)s, -VN, -Vkh, depending on the lexeme. Focus suffixes are always 
+accompanied by shift of stress to the right, as illustrated in (19). 
+ 
+(19) 
+a. 
+wá 
+ 
+wo-sís  
+‘house’ 
+ 
+ 
+‘áwa  
+‘owú-s  
+‘fire’ 
+ 
+ 
+wáka  
+woko-sás 
+‘cow’  
+ 
+ 
+b. 
+síth 
+ 
+sith-ím  
+‘avocado’ 
+ 
+yóm 
+ 
+yom-én 
+‘man’ 
+ 
+pé 
+ 
+pé-n 
+ 
+‘stone’ 
+ 
+ 
+ 
+
+ 
+14 
+ 
+c. 
+khán 
+ 
+khon-íkh 
+‘bed’ 
+ 
+ 
+phúl 
+ 
+phul-ákh 
+‘star’ 
+ 
+ 
+mác’  
+mac’-íkh 
+‘pozol’ 
+ 
+The shape of the focus suffix is conditioned by the shape of the stem; after a final vowel the 
+suffix appears either as -C or -CVC while after a consonant it apears as -VC. As shown in (19), 
+the stem vowel can change and seems to interact with the quality of the suffix vowel, but not in 
+an obvious and systematic way. 
+Earlier researchers have analyzed this suffix as a case marker. Dennis and Fleming 
+(1976) say that the suffix “marks syntactic relations which are not yet well understood” (our 
+translation) while alluding to a non-S/A function which is not always marked. Similarly, Holt 
+(1999) calls the suffix an “objective case marker” which is not always used. It does not take 
+much investigation, however, to find evidence that this suffix does not express the argument role 
+of the noun as both short and long noun forms are generally found in both S, A and P function. 
+Some examples of suffixed nouns in S function are given in (20), while examples with P 
+function are given in (21). 
+ 
+(20) 
+a. 
+ka’ah ha’sa  
+niná 
+yom-en 
+ 
+ 
+where LOC.sit:3.SG 
+DEM 
+man-FOC 
+ 
+ 
+‘where is this man?’ (Juan 7:11) 
+ 
+ 
+b. 
+phul-akh 
+ka 
+palá 
+his 
+n-tünkü-s 
+chun 
+mpe 
+ 
+ 
+star-FOC 
+IRR 
+down 3.PL 
+FUT-fall-3.PL sky 
+from 
+ 
+ 
+‘the stars will fall down from the sky’ (Mateo 24:29) 
+ 
+ 
+c. 
+the-mey 
+woka-sas 
+pero 
+la 
+nühusü  
+huph 
+ 
+ 
+PST-go:3.SG 
+cow-FOC 
+but 
+AUX 
+find:3.SG 
+3.SG 
+ 
+ 
+‘the cow ran away, but he found it’ (Dennis and Dennis 1983: 15) 
+ 
+(21) 
+a. 
+ma=polel 
+nyukuk=cha phul-akh 
+ 
+ 
+NEG=be.able see:1.PL=IPFV star-FOC 
+ 
+ 
+‘we couldn’t see the stars’ (Hechos 27:20) 
+ 
+ 
+b. 
+naph kyawaha 
+le 
+hay 
+woka-sas 
+ 
+ 
+ 
+1.SG 
+be.gone:3.SG AUX 
+do 
+cow-FOC 
+ 
+ 
+‘I am losing the cow’ (field notes) 
+ 
+The suffix-carrying yom-en ‘man’ is never found in P function. Unsuffixed nouns are found in 
+either S, A or P function. From this we can at least ascertain that indicating a non-S/A role 
+cannot be the function of suffixed nouns. 
+Another interesting aspect of focus suffixes is the way they interact with plural marking 
+in a few lexemes. As mentioned above, yom ‘man’ and keph ‘woman’ pluralize with the prefix 
+ne-. Their suffixed focus forms in the singular are yom-én and kep-án, respectively. But focused 
+plural forms are as shown in (22a), although some speakers prefer the variant shown in (22b). 
+ 
+ 
+
+ 
+15 
+(22) 
+a. 
+no-yom-és 
+‘men’ (Wycliffe Bible Translators 2010) 
+no-kepy-ás 
+‘women’ 
+(ET-28-1>00:17:59, 
+ET-30-1>00:10:41, 
+HT-2-
+1>00:05:38) 
+ 
+ 
+b. 
+ma=ke  
+thi-kil  
+tha-wele-ph 
+no-khep-an 
+ 
+ 
+NEG=want 
+PAST-come 
+PAST-talk-3.PL PL-woman-FOC 
+ 
+ 
+‘the women don’t want to come and talk’ (HT-2-1>00:05:35) 
+ 
+ 
+In the next section, on syntax, we will look more at focus suffixes along with their distribution 
+and their function in discourse organization. 
+ 
+ 
+4 
+Syntax 
+ 
+4.1 
+The noun phrase  
+ 
+The noun phrase in Tol consists minimally of a pronoun or a noun which may be accompanied 
+by no more than one modifier or one specifier as illustrated in the NP template in (23). 
+ 
+(23) 
+NP template:  
+(pro)noun 
+ 
+modifier / specifier 
+ 
+ 
+Examples of this are given in (24). 
+ 
+(24) 
+a. 
+ca’as malala 
+ 
+ 
+spirit bad 
+ 
+ 
+‘evil spirit’ (HT-6-1>00:03:16) 
+ 
+b. 
+ne-keph 
+mat’e-ya 
+ 
+ 
+PL-woman 
+two-DEF 
+ 
+ 
+‘the two women’ (Dennis and Dennis 1983: 35) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tol does not concatenate modifiers and specifiers into chains such as the five big red cars. 
+Constructions that add two or more modifiers or specifiers to a referent must be expressed 
+predicatively with two conjoined clauses as shown in (25). 
+ 
+(25) 
+a. 
+ni-yom  
+matꞌe hümükh 
+la 
+nt’a 
+hatha=cha 
+ 
+ 
+PL-man 
+two 
+road 
+ 
+AUX? at 
+sit:3.PL=IPFV 
+ 
+ 
+ 
+yun 
+ 
+tuluk=cha 
+yuph 
+manas 
+ 
+ 
+3.PL:eye 
+NEG=IPFV 
+3.PL 
+both 
+ 
+ 
+‘two men were sitting at the side of the road, both were blind’ (Mateo 20:30) 
+ 
+ 
+ 
+ 
+ 
+
+ 
+16 
+ 
+b. 
+the-mey 
+na 
+ni-yom  
+matꞌe khüil thil 
+ 
+wa 
+ 
+ 
+PST-pass:3.SG when PL-man 
+two 
+after 
+PST:go:3.SG 
+also 
+ 
+manas yun 
+ 
+tuluk=cha 
+yuph 
+ 
+ 
+both 
+3.PL:eye 
+NEG=IPFV 
+3.PL 
+ 
+ 
+‘when he passed, two men followed him, both were blind’ (Mateo 9:27) 
+ 
+c. 
+mantha  
+pethel chikh  way  
+te  
+way 
+ 
+ 
+mantha  
+wasp  small  COP  
+black  COP 
+ 
+ 
+‘the mantha wasp is small, it is black’ (Dennis and Dennis 1983: 20) 
+ 
+4.1.1 Adjectives 
+Adjectives in Tol need the copula verb way seen in (25c) in order to form clauses, i.e., they are 
+not able to function as predicates on their own, pace the analysis in Dennis and Dennis (1983) 
+where adjectives are claimed to be able to function as stative verbs in addition to their function 
+as nominal modifiers. 
+ 
+Tol has borrowed the Spanish más ‘more’ for creating comparative constructions. Com-
+paratives of the ‘greater-than’ type use the template in (26). 
+ 
+(26) 
+N1  
+mas  
+ADJ  N2  
+lal  
+ 
+Examples of comparative constructions are shown in (27). 
+ 
+(27) 
+a. 
+chun 
+kokoy mas 
+püné 
+mümüy  
+lal 
+ 
+ 
+turkey male 
+more large female  
+with 
+ 
+ 
+‘the male turkey is larger than the female’ (Dennis and Dennis 1983: 2) 
+ 
+b. 
+mas 
+’in 
+püné 
+thamakhas14  
+cüipe  
+lal 
+ 
+ 
+more ’IN 
+large adolescent.male 
+3.SG:brother 
+with 
+ 
+ 
+‘the youngster is larger than his brother’ (Dennis and Dennis 1983: 20)  
+ 
+c. 
+tul 
+mas 
+chikh sipiph lal 
+ 
+ 
+pigeon more small sipiph with 
+ 
+ 
+‘the pigeon is smaller than the sipiph’ (Dennis and Dennis 1983: 39) 
+ 
+Comparatives of the ‘equal-to’ type are different, using the template in (28). 
+ 
+(28) 
+ 
+N1  
+N2  
+hin  
+(wa)  husta 
+ 
+Examples are shown in (29). 
+ 
+(29) 
+a. 
+pü’á 
+chiyó hin 
+husta 
+ 
+ 
+puma dog 
+like 
+appear:3.SG 
+ 
+ 
+‘the puma is like the dog’ (Dennis and Dennis 1983: 7) 
+ 
+                                                
+14 This may represent a suffixed form. 
+
+ 
+17 
+b. 
+walam a 
+miste=cha 
+hin 
+huste=cha 
+ 
+lokopyaya 
+keph 
+ 
+ 
+first 
+A 
+cat=IPFV 
+like 
+appear:3.SG=IPFV 
+afterwards 
+woman 
+ 
+ 
+‘at first it was like a cat, afterwards like a woman’ (HT-2-1>00:30:54) 
+ 
+Adjectives can also serve as proforms for NPs such as in (30). 
+ 
+(30) 
+a. 
+phü 
+’ükh 
+la 
+tha-hay 
+ 
+ 
+all 
+good 
+AUX 
+PST-do:3.PL 
+ 
+ 
+‘they did all the good (deeds)’ (Mateo 27:55) 
+ 
+b. 
+chan 
+malala ka 
+nakh 
+ 
+hin 
+n-ola  
+ 
+ 
+ 
+ 
+what 
+bad 
+IRR 
+could.be 
+like 
+1.SG-thought 
+ 
+mpes  
+ma 
+ke 
+vele 
+because 
+NEG 
+want 
+3.SG:speak 
+‘perhaps it’s something bad, I think, because she doesn’t want to speak’ (HT-2-
+1>00:20:45) 
+ 
+As was discussed above in section 3.1 on the noun, number is not formally expressed for 
+nominal entities of low animacy or promimence. A rather peculiar exception to this is in the 
+adjectival meaning ‘large’ which may be expressed either with püné, which is used in all 
+contexts both singular or plural, or with noypan ‘large.PL’ which is only used for plural referents 
+that are either human beings or body parts of humans or animals, as illustrated in (31). 
+ 
+(31) 
+a.  
+po’om ham 
+püné 
+tya’a  
+huph 
+ 
+ 
+po’om spike  large  have:3.SG  
+3.SG 
+ 
+ 
+‘the po’om tree has large spikes’ (Dennis and Dennis 1983: 29) 
+ 
+b. 
+nol 
+ 
+wa 
+ni-yom? 
+ni-yom  
+noypan 
+mat’é 
+ 
+ 
+how.many 
+also 
+PL-man 
+PL-man 
+large.PL 
+two 
+ 
+ 
+‘how many men are there? there are two grown men’ (ET-22-1>00:16:49) 
+ 
+c. 
+choc’ noypan 
+ 
+ 
+breast large.PL 
+ 
+ 
+‘they had large breasts’ (HT-2-1>00:30:58) 
+ 
+d. 
+c’asvoch 
+peph 
+ 
+noypan 
+ 
+ 
+tayra15  
+3.SG:claw 
+large.PL 
+ 
+ 
+‘the claws of the parrot are large’ (Dennis and Dennis 1983: 26) 
+ 
+Interestingly, the body part criterion does not extend to part-of-whole such as the spikes of a tree, 
+as shown in (31a), making the noun classification employed by noypan more restrictive than that 
+of the focus noun suffixes, which apply to all nouns with inanimate referents, as discussed in 
+section 3.1. 
+                                                
+15 A weasel-like mammal of Central America, in local Spanish perico ligero. 
+
+ 
+18 
+ 
+Note that NPs with noypan may be the only context where a modifier and a specifier can 
+appear next to each other in a single NP, as in (31b), where noypan is succeeded by a numeral. 
+Historically noypan would seem to contain the plural suffix -pan but synchronically there 
+is no evidence of a word noy meaning ‘large’.16 
+ 
+4.1.2 Adverbs 
+An adjective or a verb can be modified by preposing an adverb. Commonly occurring adverbs 
+include po, chay, pahal or pasal which can all be translated roughly as ‘very’; examples are 
+shown in (32). 
+ 
+(32) 
+a. 
+chay 
+üsüs 
+muk-usus 
+mo’o 
+ 
+ 
+very 
+good ladino-FOC 
+with 
+ 
+ 
+‘it is very good (to be) with the ladinos’ (HT-5-1) 
+ 
+b. 
+pahal  c’a’in  
+the-pyala 
+ 
+ 
+very  get.angry 
+PST-happen:3.PL 
+ 
+ 
+‘they were very angry’ (HT-1-1>00:06:04) 
+ 
+c. 
+pahal  püne=cha? 
+ 
+ 
+very  large=IPFV 
+ 
+ 
+‘was it very large?’ (HT-7-1>00:02:19) 
+ 
+The adverb pahal can be used to modify pülükh, which in turn can be used as an adverb itself, 
+and the same is true for chay ‘very’, as shown in (33a-b) below, both from the same text. 
+ 
+(33) 
+a. 
+pahal pülükh wikh 
+ 
+si 
+naph the-vele 
+ 
+naph 
+ 
+ 
+very  much  laugh:2.SG  
+3.SG  1.SG  
+PST-speak:1.SG 
+1.SG   
+ 
+ 
+‘don’t laugh (so) very much, I said’ (HT-3-1>00:00:44) 
+ 
+b. 
+chay 
+pülükh wi’i 
+ 
+ 
+very 
+much laugh:3.SG 
+ 
+ 
+‘he laughs very much’ (HT-3-1>00:02:41) 
+ 
+However, to judge from the available data pahal is more often used as a verbal modifier than as 
+an adjectival modifier17. 
+Finally, a different type of adverb ükh ‘good’ is used to qualify an action or state as 
+agreeable or acceptable – examples are found in (34). 
+ 
+(34) 
+a. 
+le 
+mon 
+ 
+ükh 
+la 
+velé-s 
+ 
+ 
+AUX 
+ask.for:1.SG 
+well 
+AUX 
+speak-?18 
+ 
+ 
+‘I ask permission to speak’ (ET-14-1>00:00:30) 
+                                                
+16 Alternatively, it is possible that the element noy is comparable to the no- plural cited in (22) a. above and that the 
+pan is a variant of püné ‘big’. 
+17 The historical source may be pasal which is a variant form, since /s/ is often pronounced as [h]. 
+18 This and similar forms consisting of la plus a modified verb root generally indicate purpose; while they have not 
+yet been studied extensively, one possible interpretation that seems compatible with available data is that they may 
+be nominalized verbs with focus suffix morphology. 
+
+ 
+19 
+ 
+b. 
+m-papay 
+na-may 
+mas 
+ükh 
+ha-vele-ph 
+ 
+tol 
+ 
+ 
+1.SG-father 
+1.SG-mother 
+more good 3.PL-speak-3.PL 
+Tol 
+ 
+ 
+‘my father and my mother speak well in Tol’ (ET-3-1>00:08:07) 
+ 
+4.1.3 Numerals 
+The modern Tol language has numerals from one through four, but the existence of higher 
+numerals historically is known from various sources (Conzemius 1923; Von Hagen 1943: 94) 
+and are also found reproduced in Holt (1999: 45). These higher numbers have been replaced by 
+Spanish ones in the modern language. 
+The current numerals are displayed in table 5. The suffix -ya is a marker of definiteness. 
+Numerals with -ya count referents which are regarded as definite, and those without count 
+referents that are indefinite. A suffix –nas renders an inclusive meaning ‘both, all three, all four’. 
+The preposed particle la, which often occurs when the numeral precedes a verb, is used to count 
+the number of times an action or event takes place, e.g. ‘once, two times’ etc. There are no 
+ordinal numbers, but mwalá ‘in front, at first’ can be used to express ‘the first one’. The numeral 
+phaní ‘one’ can be used as an indefinite quantifier meaning ‘a bit, a few’. 
+ 
+Table 5: Numbers 
+ 
+ 
+Definite 
+Inclusive 
+Times 
+Ordinal 
+1 
+phaní 
+phaní-ya 
+ 
+la phaní 
+mwalá 
+2 
+mat’e 
+mat’e-ya 
+ma-nas 
+la mat’e 
+- 
+3 
+kont’e 
+kont’e-ya 
+ko-nas19 
+la kont’e 
+- 
+4 
+yuluphana 
+yuluphana-ya 
+yulupha-nas20 
+la yuluphana 
+- 
+ 
+4.2 
+The postpositional phrase 
+ 
+Most postpositions are primarily used in the expression of spatial relations, while a few of them 
+are more commonly employed in the expression of such oblique arguments as instruments and 
+causers. A postpositional phrase consists of an NP followed by a postposition.  
+A relative clause (35a), a proper name (35b-c) or an adjective (35d) can all serve as the 
+object of a postposition as shown below. 
+ 
+(35) 
+a. 
+poyom  
+tü-nin  
+ 
+nt’a=cha 
+ 
+ 
+paca21   
+PST-shoot:PST:2.SG 
+in=IPFV 
+ 
+ 
+the-pala=cha  
+ 
+püna 
+PST-happen:3.SG=IPFV 
+long.ago 
+ 
+ 
+‘what happened to you where you shot the paca ?’ (HT-2-1>00:11:39) 
+ 
+b. 
+Pedro pü’ü 
+ 
+nt’a 
+ka 
+nakh 
+ 
+ma=sele 
+ 
+ 
+P. 
+live:3.SG 
+in 
+IRR 
+could.be 
+NEG=know:1.SG 
+ 
+ 
+‘it could be where Pedro lives, I don’t know’ (HT-2-1>00:06:09) 
+                                                
+19 Ko-nas comes from Holt (1999: 45). 
+20 Yuluphanas we have only found in Apocalipsis 19:4 (Wycliffe Bible Translators 2010). 
+21 Herbivorous rodent. 
+
+ 
+20 
+ 
+c. 
+Jaime nt’a 
+ke 
+pü’üs=cha 
+naph 
+ 
+ 
+J. 
+in 
+want 
+live:1.SG=IPFV 1.SG 
+ 
+ 
+‘I wanted to live at Jaime’s’  
+ 
+ 
+ 
+(HT-2-1>00:17:04) 
+ 
+d. 
+n-kokoy 
+ 
+has 
+tula 
+ 
+huph ko’müy 
+mpes 
+ 
+ 
+1.SG-grandfather 
+REFL 
+be.tired:3.SG 3.SG 
+old 
+ 
+because 
+‘my grandfather is tired because [he is] old’ (Dennis and Dennis 1983: 3) 
+ 
+An overview of the most common postpositions is given in Table 6. 
+ 
+Table 6: 
+Postpositions 
+‘alá 
+‘under’ 
+mpe(s)22 
+‘because of’  
+‘in order to’ 
+‘with’ (instrument) 
+‘from’ 
+hay 
+‘on top of’ 
+napé 
+‘from’ 
+kasá 
+‘on top of’ 
+nt’a 
+‘to, in, on’ 
+khüil 
+‘after’ 
+phyapha(’a) 
+‘behind’ 
+khüipha’á23 
+‘behind’ 
+po’o 
+‘in (temporal) to’ 
+lal 
+‘with’ 
+t’asiyú 
+‘around’ 
+mo’ó 
+‘in(side); on’ 
+ 
+ 
+ 
+In what follows we will look closer at the most commonly found postpositions with regards to 
+distributions and functions. 
+ 
+4.2.1 lal ‘with’ 
+The prototypical spatial function of lal is comitative as in (36). 
+ 
+(36) 
+a. 
+m-papay 
+lal 
+pü’üs  
+naph 
+ 
+ 
+1.SG-father 
+with 
+live:1.SG 
+1.SG 
+ 
+ 
+‘I live with my father’ (Dennis and Dennis 1983: 30) 
+ 
+ 
+b. 
+loktol lal 
+wa 
+chan 
+his-tin  
+vele-n? 
+ 
+ 
+doctor with 
+TOP 
+what 
+3.PL-language speak-2.SG 
+ 
+ 
+‘what language do you speak with the doctor?’ (ET-8-1>00:06:15) 
+ 
+ 
+c. 
+phaní way 
+khis 
+mat’e-ya 
+naph lal 
+ 
+ 
+one 
+COP 
+1.PL 
+two-DEF 
+1.SG 
+with 
+ 
+ 
+‘there is one, with me we’re two’ (ET-15-1>00:14:44) 
+ 
+Examples of non-spatial functions of lal are given in (37). In these examples the postposition is 
+used to introduce a non-core argument into the clause. 
+                                                
+22 It is not entirely clear whether mpe(s) and napé are distinct postpositions. 
+23 There is some reason to believe that pha’a acts as a separate morpheme based on several forms in this table and a 
+few additional forms. It does not seem to be attested as a free morpheme in the available data, though. 
+
+ 
+21 
+ 
+(37) 
+a. 
+nin 
+vele=cha 
+ 
+naph lal 
+ 
+ 
+DEM 
+speak:3.SG=IPFV 
+1.SG 
+with 
+ 
+ 
+‘that is what he used to say to me’ (HT-2-1>00:31:50) 
+ 
+b. 
+kastilla 
+tulukh naph lal 
+ 
+ 
+bee.sp.  
+NEG 
+1.SG 
+with 
+ 
+ 
+‘it was not castilla as far as I could tell’ (HT-7-1>00:06:21) 
+ 
+c. 
+ükh 
+hyas 
+ 
+Jesus lal 
+ka 
+n-velé 
+ 
+ 
+good want:2.SG 
+J. 
+with 
+IRR 
+FUT-speak:1.SG 
+ 
+ 
+‘let us thank Jesus, I will say’ (HT-8-1>00:07:41) 
+ 
+4.2.2 nt’a ‘to, in, on’ 
+The postposition nt’a marks two types of spatial relations; on the one hand it serves to express 
+movement towards a location, as exemplified in (38a). On the other hand it expresses 
+containment or vertical contact, as shown in (38b-c). 
+ 
+(38) 
+a. 
+pueblo nt’a 
+the-mey 
+ 
+ 
+village to 
+PST-go:3.SG 
+ 
+ 
+‘he went to the village’  (Dennis and Dennis 1983: 1) 
+ 
+b. 
+püste kalaca  
+pülükh lyawung 
+na-wá  
+nt’a 
+ 
+ 
+night cockroach 
+many go:3.PL 
+1.SG-house 
+in 
+ 
+ 
+‘at night there are many cockroaches in my house’ (Dennis and Dennis 1983: 1) 
+ 
+c. 
+paká 
+nt’a 
+kampa way 
+thi-nyukh 
+naph 
+ 
+ 
+hill 
+on 
+far 
+COP 
+PST-see:1.SG 1.SG 
+ 
+ 
+‘from on top of the hill I saw far away’ (Dennis and Dennis 1983: 27) 
+ 
+As far as the available data show, nt’a does not include any non-spatial relations in its possible 
+meanings. 
+ 
+4.2.3 mo’o ‘in(side); on’ 
+In the examples below mo’o is used in different senses including containment as in (39a), loose 
+containment as in (39b) and vertical contact as in (39c). 
+ 
+(39) 
+a. 
+muc’i wa 
+mo’o pü’ü 
+ 
+ 
+ 
+mouse house in 
+live:3.SG 
+ 
+ 
+‘the mouse is living inside the house’ (HT-2-1>00:09:26) 
+ 
+b. 
+kisyas  
+mo’o tho-’os  
+ 
+mo 
+th-ive 
+ 
+ 
+wilderness 
+in 
+PST-LOC.sit:1.SG 
+MO 
+PST-rain 
+ 
+ 
+‘I was standing24 in the wilderness when it was raining’ (HT-1-1>00:00:46) 
+ 
+                                                
+24 In its locative use, this verb implies temporary or transitory location, rather than a sitting posture. 
+
+ 
+22 
+c. 
+carreta-s 
+ 
+nina 
+ha’sa  
+mo’o te-ket=cha 
+ 
+ 
+wheelbarrow-FOC 
+DEM 
+LOC.sit:3.SG 
+on 
+PST-bring:1.SG=IPFV 
+ 
+ 
+‘I brought it on that wheelbarrow’ (HT-7-1>00:03:45) 
+ 
+This postposition is always included in place names when mentioned in a non-locative sense; in 
+the corpus this usually happens as the answer to the question chan lo ke’a ‘what is the name of 
+this place?’ – examples of answers to that question are shown in (40).  
+ 
+(40) 
+a. 
+Linkon mo’o kinam 
+ 
+ 
+Rincon on 
+here 
+ 
+ 
+‘(it is called) El Rincón here’ (ET-28-1>00:01:13) 
+ 
+ 
+b. 
+Hok’  
+C’utus mo’o  
+ 
+ 
+mountain 
+flower on 
+ 
+‘(it is called) Montaña de la Flor’ (ET-20-1>00:05:49) 
+ 
+Mo’o can also be used in an abstract sense referring to time rather than space, as shown in (41). 
+ 
+(41) 
+a. 
+kuchay Maria-s 
+ükh 
+ükh 
+th-a’sa  
+ 
+mo’o p’in 
+ 
+ 
+still 
+M.-FOC? 
+good good 
+PST-LOC.sit:3.SG 
+in 
+just 
+ 
+ 
+‘that was when Maria was still in good health’ (HT-6-1>00:11:39) 
+ 
+b. 
+ükh 
+wa 
+lyol=cha 
+ 
+niná 
+mo’o 
+ 
+ 
+good also 
+smoke:2.SG=IPFV 
+DEM 
+in 
+ 
+ 
+‘you used to smoke back then’ (HT-6-1>00:15:11) 
+ 
+c. 
+chikh way 
+mo’o m-wala 
+tho-wele-ph 
+ 
+ 
+small COP 
+in 
+1.SG-face 
+PST-speak-3.PL 
+ 
+ 
+‘they told me when I was a child’ (HT-6-1>00:25:38) 
+ 
+4.2.4 mpes ‘CAUSE, PURPOSE, INSTRUMENT’ 
+The postposition mpes is perhaps the most abstract of all, encoding as it does the allocation of 
+responsability or causation whether it be with or without intent – this is exemplified in (42). 
+ 
+(42) 
+a. 
+nin 
+mpes  
+ma=polel 
+the-lya 
+ 
+ 
+DEM 
+because 
+NEG=be.able 
+PST-eat:1.SG 
+ 
+ 
+‘that is why I couldn’t eat’ (HT-1-1>00:00:32) 
+ 
+b. 
+aguacate 
+mpes  
+la 
+phalan  
+way 
+hin 
+ 
+ 
+avocado 
+because 
+AUX 
+fight:3.PL 
+COP 
+thus 
+ 
+ 
+‘they were fighting over an avocado, it seems’ (HT-2-1>00:20:14) 
+ 
+c. 
+pülül mpes  
+lyawung 
+phakh 
+ 
+ 
+clothes because 
+go:3.PL 
+sound:3.SG 
+ 
+ 
+‘it sounds like they are going (in order to wash) clothes’ (HT-3-1>00:07:44) 
+ 
+
+ 
+23 
+d. 
+mas 
+ 
+mpes  
+m-vu?  
+ 
+myas  
+mpes 
+ 
+ 
+1.SG:hand 
+because 
+FUT-measure:1.SG 
+2.SG:hand 
+because 
+ 
+ 
+‘I measure with my hand? with you hand’ (HT-4-1>00:00:43) 
+ 
+Some uses can perhaps be construed as spatial as in (43), where a ship comes into contact with 
+large rocks, something which is encoded using mpes. 
+ 
+(43) 
+yola=cha 
+ 
+barco pe 
+püné 
+mpes  
+ka 
+n=chaka-s 
+ 
+think:3.PL=IPFV 
+ship 
+rock 
+large because 
+IRR 
+FUT-hit-3.SG 
+ 
+‘they thought that the ship would hit large rocks’ (Hechos 27:29) 
+ 
+However, an instrumental reading of mpes in (43) is also possible. 
+In addition to its function as a postposition, mpes has been reanalyzed as a subordinating 
+conjunction located at the beginning of the subordiante clause. Examples of this are shown in 
+(44). 
+ 
+(44) 
+a. 
+ma=selé 
+ 
+t’i’i 
+naph kem 
+ 
+ 
+NEG=1.SG:know 
+cut 
+1.SG 
+this 
+ 
+ 
+‘I don’t know how to cut this’ (HT-4-1>00:04:28) 
+ 
+b. 
+mpes  
+ke 
+hin 
+‘yüsü-cha 
+ 
+ 
+therefore 
+want 
+2.SG 
+3.PL:improve-IRR 
+ 
+ 
+‘that is why you want to learn’ (HT-4-1>00:04:31) 
+ 
+We can imagine that mpes used to be located at the right edge of clauses like the one in (44a) 
+which would be a subordinate clause meaning ‘since I don’t know how to cut’. It was then 
+reanalyzed placing mpes at the left edge of the main clause (44b) which then turned into a left 
+headed subordinate clause headed by the subordinator, something atypical for Tol. The main 
+support for the above analysis is the fact that mpes is now prosodically at the left edge in clauses 
+like (44b) and in this particular instance the fact that (44a) and (44b) were uttered by two 
+different people in a dialogue lends extra support to the analysis of where one clause ends and 
+the other begins. 
+When the object of a postposition is a pronoun, and a full NP representing the P argument 
+also occurs, the latter must come after the verb as in (45). 
+ 
+(45) 
+chan 
+his 
+tin 
+ 
+wa 
+his 
+lal 
+ 
+ 
+what 
+2/3..PL language 
+also 
+3.PL 
+with 
+ 
+ 
+ha-vele-ph 
+ 
+hi-chuyuph 
+escuela 
+mo’ó? 
+ 
+3.PL-speak-3.PL 
+2.SG-child 
+school  
+in 
+‘what language do they speak with your children at school?’ (ET-21-1>00:08:57) 
+ 
+This state of affairs is an exception to the general SOV constituent order in Tol. 
+ 
+ 
+
+ 
+24 
+4.3 
+Main clause 
+ 
+The basic constituent order of a main clause is SOV and the identification of the core arguments 
+of the clause is aided by a combination of constituent order, verb morphology – both linear 
+(concatenative) and non-linear (infixation, ablaut and stress shift) – as well as by phonologically 
+autonomous pronouns. All verbs are marked for person and number of the S/A argument but 
+widespread homonymy in the paradigms of most verb classes necessitates the frequent use of 
+pronouns for disambiguation. P arguments may be represented by a pronoun, a noun or both 
+depending on information structure, emphasis and focus. The examples in (46) illustrate these 
+observations. 
+ 
+(46) 
+a. 
+po 
+kuph 
+malana 
+thi-’i’na-n 
+la 
+la-s 
+ 
+ 
+EMPH 1.PL 
+pig 
+ 
+PST-kill-1.PL 
+AUX 
+eat-? 
+ 
+ 
+‘we killed a pig in order to eat’ (HT-1-1>00:00:20) 
+ 
+ 
+b. 
+ka’ah wa 
+si 
+nukh 
+ 
+ 
+where also 
+3.SG 
+see:2.SG 
+ 
+ 
+‘where did you find it (the bee hive)?’ (HT-7-1>00:00:12) 
+ 
+ 
+c. 
+m-papay 
+‘iyó 
+the-hyokh-a 
+ham 
+mpes  
+ 
+ 
+1.SG-father 
+pine 
+PST-split-3.SG axe 
+with 
+ 
+ 
+‘my father split the pine log with the axe’ (Dennis and Dennis 1983: 5) 
+ 
+In (46a) the A argument pronoun kuph is necessary because of ambiguity between 1.SG, 2.SG, 
+3.SG and 1.PL in this particular context. As the paradigm in (47) shows, there is complete 
+homophony between 1.SG and 2.SG, and the presence of the nasal variant of the first person 
+plural marker and the low perceptual salience of the glottal stop in the context of another glottal 
+stop (both are generally realized as nonmodal phonation on adjacent vowels), the 1.PL form 
+becomes nearly homophonous as well. Presumably this high degree of homophony or near 
+homophony across many instances of the verbal paradigm are the motivation for the frequent use 
+of independent pronouns throughout our data. 
+ 
+(47) 
+ 
+malana  
+thi-’inan 
+‘I killed the pig’ 
+ 
+ 
+malana 
+thi-’inan 
+‘you killed the pig’ 
+ 
+ 
+malana  
+thi-’i’na 
+‘(s)he killed the pig’ 
+ 
+ 
+malana  
+thi-’i’na-kh/n ‘we killed the pig’ 
+ 
+ 
+malana  
+thü-’ü’na 
+‘you all killed the pig’ 
+ 
+ 
+malana  
+thü-’ünan 
+‘they killed the pig’ 
+ 
+In (46b) there is homonymy between 1.SG and 2.SG but no pronoun is necessary because the 
+intended meaning is inferrable from the context (the default interpretation would not be ‘where 
+did I find it?’ when uttered in the presence of somebody else). As for P argument marking, it is 
+true for all of the examples in (46) that when a P argument NP is present, no pronoun is 
+necessary. It is possible, however, to include a P argument pronoun alongside a full NP as in 
+(48). 
+ 
+
+ 
+25 
+(48) 
+hu-kukus 
+hus25 thi-nyuk-a 
+khan 
+kasá 
+püꞌü=cha 
+ 
+3.SG-daughter 3.SG.O PST-see-3.SG bed 
+in 
+lying=IPFV 
+ 
+‘she saw her daugter lying in the bed’ (Marcos 7:30) 
+ 
+This is mainly done for disambiguation when both A and P arguments are in the third person 
+singular. 
+ 
+4.3.1 Interrogative  
+4.3.1.1 Polar questions 
+In order to form polar questions the interrogative particle nku is attached to the left edge of the 
+clause as shown in (49). 
+ 
+(49) 
+a. 
+nku 
+wa 
+phe’a nt’a 
+t-hay  
+chi’i 
+la 
+the-hay=cha? 
+ 
+ 
+Q 
+also 
+outside to 
+PST-go:2.SG 
+say? 
+AUX 
+PST-do=IPFV 
+ 
+ 
+‘did you ever go and work outside (the village)?’ (ET-4-1>00:13:08) 
+ 
+ 
+b. 
+nku 
+püs 
+ 
+way 
+la 
+vele-s? 
+ 
+ 
+Q 
+long.time 
+COP 
+AUX 
+speak-? 
+ 
+ 
+‘can I speak for a long time?’ (HT-6-1>00:01:10) 
+ 
+ 
+ 
+c. 
+nku 
+pahal kosto  
+way 
+le 
+hay 
+niná? 
+ 
+ 
+Q 
+very 
+difficult 
+COP 
+AUX 
+do 
+that 
+ 
+ 
+‘is it very difficult to make that?’ (HT-4-1>00:08:01) 
+ 
+The observation that the interrogative marker is always clause-initial counters Holt (1999: 54), 
+who says that it immediately follows the topic of the sentence. Elsewhere Holt says that “There 
+is little discernible about topic/focus” (1999, 49); see section 1.5 below for a discussion of 
+information structure in Tol. 
+ 
+In some contexts it is possible to ask polar questions without usin the interrogative 
+marker, as shown in (50). 
+ 
+(50) 
+a. 
+mas 
+ 
+mpes  
+n-vú? 
+ 
+ 
+1.SG:hand 
+because 
+FUT-measure:1.SG 
+ 
+ 
+‘do I measure with my hand?’ (HT-4-1>00:00:43) 
+ 
+b. 
+kina 
+n-t’ü? 
+ 
+ 
+now 
+FUT-cut:1.SG 
+ 
+ 
+‘should I cut now?’ (HT-4-1>00:00:58) 
+ 
+ 
+c. 
+ne 
+ke’a 
+mwala n-tü? 
+ 
+ 
+and 
+here 
+first 
+FUT-cut:1.SG 
+ 
+ 
+‘and I cut here first?’ (HT-4-1>00:02:36) 
+                                                
+25 This is one of several series of preverbal object markers; verbs tend to appear with only one of the series, and 
+there is some indication that different object pronouns may correspond to different cases, but no thorough study of 
+the matter has settled the issue so far, in part because a number of largely opaque alternations, possibly related to 
+prosodic structure, lead to a significant amount of homophony across the sets in most of the available data. 
+
+ 
+26 
+ 
+The above clauses rely on intonation in order to be identified as questions, all being pronounced 
+with a rising intonation from beginning to end, but they also rely to a large extent on the context 
+in which they appear. The clauses in (50) were uttered in a teacher-student situation and the 
+student asks an array of questions about the task at hand.  
+ 
+4.3.1.2 Content questions 
+When forming content questions one of the interrogative pronouns in (51) must be used. 
+ 
+(51) 
+ 
+chan 
+ 
+‘what?’ 
+ 
+ 
+chanmpes 
+‘why?’ 
+ 
+ 
+ka’ah  
+‘where?’ 
+ 
+ 
+phakh  
+‘who?’ 
+ 
+ 
+’ona 
+ 
+‘when?’ 
+ 
+ 
+’oyn 
+ 
+‘how?’ 
+ 
+ 
+nol 
+ 
+‘howmany?’ 
+ 
+Question words appear at the left edge of the clause regardless of which part of it is questioned, 
+as shown in (52). 
+ 
+(52) 
+a. 
+phakh mas 
+ükh 
+ha-vele-ph 
+ 
+ke’a? 
+ 
+ 
+who 
+COMP good 1.PL-speak-1.PL 
+here 
+ 
+ 
+‘who speaks best here?’ (ET-9-1>00:09:51) 
+ 
+ 
+b. 
+nol 
+ 
+wa 
+poteké  
+ke’a 
+wo-sis  
+mo’ó? 
+ 
+ 
+how.many 
+also 
+live:2.PL 
+here 
+house-FOC 
+in 
+ 
+ 
+‘how many do you live here in the house?’ (ET-14-1>00:18:09) 
+ 
+ 
+c. 
+chan thi-nyukh? 
+ 
+ 
+what 
+PST-see:2.SG 
+ 
+ 
+‘what did you see?’ (HT-2-1>00:13:48) 
+ 
+ 
+ 
+ 
+d. 
+chan la 
+the-hay=cha? 
+ 
+ 
+what 
+AUX 
+PST-do=IPFV 
+ 
+ 
+‘what did you do?’ 
+ 
+ 
+ 
+kaphé thi-vüla=cha 
+ 
+ 
+coffee PST-harvest=IPFV 
+ 
+ 
+‘I was harvesting coffee’ (ET-4-1>00:13:16) 
+ 
+In (52a-b) the S argument is questioned, in (52c-d) it is the P argument. 
+When asking an interlocutor to choose between a finite number of options, the NP that is 
+questioned comes right after the question word, as in (53). 
+ 
+ 
+ 
+
+ 
+27 
+(53) 
+a. 
+chan 
+histin  
+wa 
+his 
+lal 
+ 
+ 
+what 
+language 
+also 
+3.PL 
+with 
+ 
+ 
+ 
+ha-vele-ph 
+ 
+hi-chuyuph 
+escuela 
+mo’ó? 
+ 
+ 
+3.PL-speak-3.PL 
+2.SG-child 
+school  
+in 
+‘what language do they speak with your children at school?’ (ET-21-1>00:08:57) 
+ 
+ 
+b. 
+nol 
+ 
+kiliyú ti-pit’a  
+la 
+thü-hí  
+ 
+ 
+how.many 
+basket PST-fill  
+AUX 
+PST-do:2.SG 
+ 
+pan 
+ 
+chikh-thakh 
+mpes? 
+bread  
+small-PL 
+with 
+ 
+ 
+‘how many baskets did you fill with pieces of bread?’ (Marcos 8:19) 
+ 
+The Tol language has no word for ‘year’ and when asking about what year something happened, 
+the question word chan ‘what’ is used as the object of the temporal postposition po’o ‘in’ as in 
+chan po’o tha-manün? ‘what year were you born?’. 
+ 
+4.4 
+Subordinate clauses 
+ 
+4.4.1 Adverbial clause 
+The most frequent adverbial subordinator in Tol is na ‘when’, which appears at the end of the 
+subordinate clause, as shown in (54). 
+ 
+(54) 
+a. 
+“ne 
+chan 
+ki?” 
+kus 
+mas 
+ 
+hus 
+thi-nyuka 
+na 
+ 
+ 
+and 
+what 
+DEM 
+3.SG 
+say:3.SG 
+3.SG 
+PST-see:3.SG when 
+ 
+ 
+‘“and what is this?” he’ll say when he sees it’ (HT-2-1>00:09:32) 
+ 
+b. 
+’yoc’  
+na 
+’oyn 
+le 
+hay? 
+ 
+ 
+extract:2.SG 
+when how 
+AUX 
+do:2.SG 
+ 
+ 
+‘when you extract (honey), how do you do it?’ (HT-7-1>00:04:24) 
+ 
+c. 
+the-hyawka 
+na 
+ya 
+th-um  
+the-ket=cha 
+ 
+ 
+PST-dawn 
+when YA 
+PST-go:1.SG 
+PST-bring:1.SG=IPFV 
+ 
+ 
+‘when the sun came up I went to get it’ (HT-7-1>00:03:41) 
+ 
+As the examples show, adverbial subordinate clauses can be located on either side of the main 
+clause, but always with the subordinator at the right edge of the subordinate clause. 
+ 
+4.4.2 Conditional clause 
+Conditional sentences are made up of a conditional subordinate clause or protesis, followed by 
+its main clause, the apodosis, as shown in (55). 
+ 
+(55) 
+a. 
+ma=kuy 
+ 
+ma=ke  
+velé 
+ 
+ 
+NEG=come:2.SG 
+NEG=want 
+speak:3.SG 
+ 
+ 
+‘if you hadn’t come, he wouldn’t have wanted to speak’ (HT-2-1>00:14:50) 
+
+ 
+28 
+ 
+b. 
+n-ka 
+ 
+pa’in  
+po 
+ka 
+phaham=cha 
+ 
+ 
+FUT-IRR 
+wash:2.SG 
+EMPH IRR 
+dry:3.SG=IPFV 
+‘if you had washed, it would have dried’ (HT-3-1>00:07:30) 
+ 
+c. 
+nyas 
+t’in 
+ 
+ka 
+malala nakh 
+ 
+ 
+IRR 
+cut:2.SG 
+IRR 
+bad 
+could.be 
+ 
+ 
+‘if you cut yourself, it is bad’ (HT-4-1>00:07:43) 
+ 
+ 
+d. 
+mwen  
+t’um 
+way 
+thi’la  
+po’o 
+ma=ka  
+las 
+ 
+ 
+3.SG:neck 
+joint 
+COP 
+grab:2.SG 
+on 
+NEG=IRR 
+eat:FUT 
+ 
+ 
+‘if you grab it by the neck, it won’t bite’ (HT-6-1>00:23:03) 
+ 
+Note that there is no overt subordinator or conditional marker, leaving it purely to the semantics 
+and pragmatics to distinguish conditional constructions from conjoined main clauses. 
+ 
+4.4.3 Complement clause 
+A subordinate clause can act as complement of a main clause, often as a P argument, as 
+illustrated in (56). 
+ 
+(56) 
+a. 
+yóla=cha 
+ 
+barco pe 
+püné 
+mpes  
+ka 
+n-chaka-s 
+ 
+ 
+think:3.PL=IPFV 
+ship 
+stone large because 
+IRR 
+FUT-hit-3.SG 
+ 
+ 
+‘they thought that the ship would hit large rocks’ (Hechos 27:29) 
+ 
+b. 
+huph the-vele 
+ 
+ke’a 
+San 
+Juan 
+mo’ó 
+ 
+ 
+3.PL 
+PST-speak:3.SG 
+here 
+S. 
+J. 
+in 
+ 
+ 
+‘he said (that he was born) here in San Juan’ (ET-18-1>00:04:17) 
+ 
+c. 
+ma=selé 
+ 
+pi’c’e  
+p’iya ükh 
+nakh 
+ 
+ 
+ 
+NEG=know:3.SG 
+make.basket just 
+good maybe 
+ 
+si’i=cha 
+nowaha’am 
+say=IPFV 
+last.time 
+ 
+ 
+‘last time he said that it was best with someone who doesn’t know how to   
+ 
+ 
+make baskets’ (HT-6-1>00:00:08) 
+ 
+There is no overt subordinator and the complement clause can also appear on the left side of the 
+main clause for emphasis, as shown by the difference between (56a-b) on the one hand and (56-
+c) on the other.  
+ 
+4.4.4 Relative clause 
+Relative clauses appear after their head noun as shown in (57a-b), but the head noun can also be 
+left unexpressed as in (57c-d).  
+ 
+ 
+ 
+
+ 
+29 
+(57) 
+a. 
+phakh choyo-s 
+p’in 
+no’ó 
+mpe 
+ 
+[hak’]  
+ha’a’? 
+ 
+ 
+who 
+dog-FOC 
+just 
+there because 
+3.SG:come 
+INTERR.TOP 
+ 
+ 
+‘to whom might that dog that is coming belong?’ (HT-8-1>00:02:44) 
+ 
+b. 
+chan 
+sele-n  
+hiph 
+nepenowá 
+tolpan 
+ 
+ 
+what 
+think:2.SG 
+2.SG 
+some  
+Tol 
+ 
+[ma=ha-vele-ph 
+c’ekh?] 
+NEG=3.PL-speak-3.PL Spanish 
+‘what do you think of the Tol who don’t speak Spanish? (ET-14-1>00:13:46) 
+ 
+ 
+c. 
+[maysa  
+vele]  
+ma=nin 
+‘yüsa  
+ 
+naph 
+ 
+ 
+stuttering 
+speak:3.PL 
+NEG=DEM 
+understand:1.SG 
+1.SG 
+ 
+ 
+‘I don’t understand (people) who stutter’ (Dennis and Dennis 1983: 20) 
+ 
+d. 
+pülükh ka 
+nakh 
+ 
+[tol 
+ha-vele-ph] 
+ 
+ 
+many IRR 
+could.be 
+Tol 
+3.PL-speak-3.PL 
+ 
+ 
+‘they might be many, those who speak tol’ (ET-3-1>00:05:05) 
+ 
+Again, there is no overt relativizer, and our analysis rests entirely on the reading.  
+ 
+4.5 
+Negation 
+ 
+Main clauses as well as subordinate clauses which contain a verbal predicate are negated by 
+adding the proclitic ma= to the left edge of the negated clause, as shown in (58). 
+ 
+ (58) 
+a. 
+ma=nola=cha  
+nin 
+ 
+ 
+NEG=think:1.SG=IPFV that 
+ 
+ 
+‘I didn’t worry about it’ (HT-6-1>00:07:54) 
+ 
+b. 
+ma=ké  
+thi-khil  
+tha-vele-ph 
+no-khep-an 
+ 
+ 
+NEG=want 
+PST-come 
+PST-speak-3.pl PL-woman-FOC 
+ 
+ 
+‘the women didn’t want to come and chat’ (HT-2-1>00:05:35) 
+ 
+c. 
+ma=wa 
+pwe 
+ 
+n-küwüc’ü-n 
+ 
+ 
+NEG=TOP 
+be.able  
+FUT-scrape.2.SG 
+ 
+ 
+‘you can’t scrape’ (HT-4-1>00:12:53) 
+ 
+The negator ma= attaches to whatever element happens to come first in the clause as evidenced 
+by (58), where it attaches to verbs (58a-b) as well as the topicalizer wa as in (58c). 
+Adjectives are negated with the negative copula tulukh, the negative counterpart of the 
+copula way; compare (59-a) and (59-b). 
+ 
+(59) 
+a. 
+pülül  
+pül 
+napnap’ 
+way 
+huph 
+ 
+ 
+clothes  
+old 
+soft 
+ 
+COP 
+3.SG 
+ 
+ 
+‘the old fabric is soft’ (Dennis and Dennis 1983: 23) 
+
+ 
+30 
+ 
+ 
+b. 
+azulón syasa napnap’ 
+tulukh 
+ 
+ 
+hoe 
+new 
+soft 
+ 
+NEG 
+ 
+ 
+‘the new hoe is not soft’ (Dennis and Dennis 1983: 1) 
+ 
+Nominal predicates are also negated with tulukh, as shown in (60). 
+ 
+(60) 
+a. 
+gente tulukh a’ 
+cham yuluphana 
+hun 
+huste 
+ 
+ 
+human NEG 
+A’ 
+foot 
+four 
+ 
+like 
+seem 
+ 
+ 
+‘he is not a human being, he has four feet, it seems’ (HT-6-1>00:09:22) 
+ 
+ 
+b. 
+h-un 
+ 
+tulukh=cha 
+yom-en 
+ 
+ 
+3.SG-eye 
+NEG=IPFV 
+man-FOC 
+ 
+ 
+‘the man was blind’ (lit. his eyes were not) (Mateo 12:22) 
+ 
+ 
+c. 
+zapato tulukh 
+ 
+ 
+shoe 
+NEG 
+ 
+ 
+‘he has no shoes’ (Dennis and Dennis 1983: 27) 
+ 
+ 
+d. 
+na-tham 
+tulukh 
+ 
+ 
+1.SG-son 
+NEG 
+ 
+ 
+‘he is not my son’ (Dennis and Dennis 1983: 39) 
+ 
+In certain contexts tulukh can also be used to negate a verbal predicate as in (61).26 
+ 
+(61) 
+c’ekh  
+la 
+vele-s  
+tulukh si 
+naph lal 
+ 
+Spanish 
+AUX 
+speak-? 
+NEG 
+say 
+1.SG 
+with 
+ 
+ 
+tol 
+se 
+la 
+vele-s 
+ 
+tol 
+3.SG 
+AUX 
+speak-? 
+‘you should not speak Spanish, he said to me, you should only speak Tol’ (HT-2-
+1>00:19:02) 
+ 
+This would seem to be limited to participial-like clauses. The case of (61) could be paraphrased 
+along the lines of ‘(your) speaking of Spanish should not be’. 
+The language lacks a negative interjection that can be the sole answer to a polar question. 
+However, there is a demonstrative pronoun nin ‘(it is) thus’ which is also used affirmatively to 
+mean ‘yes’, and tulukh is used to negate the positive interjection, producing nin tulukh ‘no; it is 
+not the case’ (HT-2-1>00:03:15). 
+ 
+4.6 
+Information structure 
+ 
+In our discussion of information structure in Tol we will only need a very general definition of 
+focus and topic, such as the one offered by Lambrecht: 
+                                                
+26 Alternatively, this construction for expressing purpose (la + verb + suffix) might be interpreted as a 
+nominalization, as suggested in footnote 14 above. 
+
+ 
+31 
+ 
+The focus is that portion of a proposition which cannot be taken for granted at the time of 
+speech. It is the UNPREDICTABLE or pragmatically NON-RECOVERABLE element in 
+an utterance. (Lambrecht 1994: 207) 
+ 
+Topic, by implication, can be defined as the part of an utterance which is predictable or 
+pragmatically recoverable. In what follows we will look at the morpho-syntactic means 
+employed in Tol for marking focus and topic (continuity). 
+ 
+4.6.1 Focus 
+ 
+4.6.1.1 Noun suffixes 
+ 
+As was discussed in section 4.6.1.1 on noun suffixes above, a great number of nouns take a 
+suffix, -(sV)s, -(V)kh or -(V)N, the shape of which is lexically determined. In previous literature it 
+was analyzed as a non-S/A argument case marker, but as we argued above, this analysis does not 
+stand up to close scrutiny. Here we will give evidence that leads us to analyze the noun suffix as 
+a marker of information prominence, or focus. Consider the examples in (62). 
+ 
+(62) 
+a. 
+A: 
+lekh 
+heya 
+ 
+ 
+ 
+ 
+fear 
+be.afraid:3.SG 
+ 
+ 
+ 
+‘it is afraid’ 
+ 
+ 
+ 
+B: 
+huh? 
+ 
+ 
+ 
+‘huh?’ 
+ 
+ 
+ 
+A: 
+lekh 
+heya 
+ 
+ka 
+nakh 
+woko-sas 
+ 
+ 
+ 
+fear 
+be.afraid:3.SG IRR 
+maybe cow-FOC 
+ 
+ 
+ 
+‘maybe it is afraid, the bull’ (HT-2-1>00:00:23) 
+ 
+ 
+b. 
+huph hus 
+thi-nyuka 
+yom 
+hun 
+ 
+tulukh 
+ 
+ 
+3.SG 
+3.SG 
+PST-see:3.SG man 
+3.SG:eye 
+NEG 
+ 
+ 
+‘he saw a man who couldn’t see’ (Juan 9:1) 
+ 
+ 
+c. 
+the-mya’na 
+ 
+pepes hun 
+ 
+tulukh=cha 
+yom-en 
+ 
+ 
+PST-be.born:3.SG 
+since 3.SG:eye 
+NEG=IPFV 
+man-FOC 
+ 
+ 
+‘since he was born he has been blind, the man’ (Juan 9:3) 
+ 
+In (62a) two men, A and B, are sitting watching a group of men trying to catch some bulls that 
+have escaped them. At first B does not hear what A is saying causing A to repeat his comment 
+but now making explicit the S argument with a focused NP woko-sas ‘the bull’. The other 
+examples (62b) and (62c) belong to one and the same Bible verse describing how Jesus and his 
+disciples encounter a blind man. In (62b) the relative clause yom hun tuluhk ‘a man who is blind’ 
+simply describes an attribute of the man, who in the main clause in (62b) is represented with the 
+pronoun hus. In (62c), on the other hand, we find a main clause hun tulukh=cha ‘he had been 
+blind’ followed by the focused NP yom-en ‘the man’. 
+
+ 
+32 
+ 
+Supporting our focus analysis is the fact that suffixed nouns never appear in canonical 
+constituent order; rather, NPs headed by a suffixed noun is moved to postverbal focus position – 
+this is discussed in the next section. 
+ 
+4.6.1.2 NP movement 
+We recall that Tol is a head-final language with canonical SOV constituent order. However, S or 
+O arguments may be moved to postverbal position for focus, as we have already seen in the 
+examples in the section above. Example (63) further illustrates that an NP can occur in that 
+position even without containing a suffixed noun. 
+ 
+(63) 
+a. 
+A: 
+cha’as malala la 
+hüsü 
+ 
+sekh 
+ 
+’e? 
+ 
+ 
+ 
+spirit bad 
+AUX 
+encounter 
+nothing 
+’E 
+ 
+ 
+ 
+‘did you never encounter any evil spirits?’ 
+ 
+ 
+ 
+B: 
+huh? 
+ 
+ 
+ 
+‘huh?’ 
+ 
+ 
+ 
+A: 
+la 
+hüsü 
+ 
+sekh 
+ 
+ca’as malala? 
+ 
+ 
+ 
+AUX 
+encounter 
+nothing 
+spirit bad 
+ 
+ 
+ 
+‘did you ever encounter them, evil spirits?’ (HT-6-1>00:03:16) 
+ 
+b. 
+nin 
+vele 
+ 
+m-papay 
+naph lal 
+püna  
+ 
+ 
+thus 
+say:3.SG 
+1.SG-father 
+1.SG 
+with 
+long.ago 
+ 
+ 
+‘that is what he said to me, my father, long ago’ (HT-2-1>00:31:08) 
+ 
+Note that in (63b) m-papay is moved to postverbal position for focus, but the oblique argument 
+‘to me’ has not been moved as postpositional phrases usually appear in this position. 
+ 
+4.6.2 Topic continuity 
+Topic NPs in Tol are not marked morpho-syntactically as topics, but there are clausal means of 
+marking the continuation of an already present topic as we will see below. 
+ 
+4.6.2.1 Topic continuity: wa 
+In its adverbial use, the particle wa can be translated as ‘also’ and is used to refer back to an 
+antecedent either in the discourse or in the shared knowledge of the interlocutors. Exampes are 
+shown in (64). 
+ 
+(64) 
+a. 
+kelel 
+hum 
+ 
+wa 
+naph pueblo nt’a 
+ 
+ 
+ 
+want 
+go:1.SG 
+also 
+1.SG 
+village to 
+ 
+ 
+‘I want to go the village as well’ (Dennis and Dennis 1983: 50) 
+ 
+ 
+b. 
+lal 
+the-mey 
+wa 
+chikh-is 
+chikh ha-may 
+lal 
+wa 
+ 
+ 
+with 
+PST-go  
+also 
+child-FOC 
+child 3.SG-mother 
+with 
+also 
+ 
+ 
+‘he left with the child, (and) with the child’s mother as well’ (Mateo 2:21) 
+ 
+The negative form of the construction is ma wa ‘also not’ as in (65). 
+
+ 
+33 
+ 
+(65) 
+a. 
+A: 
+ne 
+chan 
+wa 
+lo 
+ 
+c’ekh  
+ke’a? 
+ 
+ 
+ 
+CONJ what 
+also 
+3.SG:name 
+Spanish 
+here 
+ 
+ 
+ 
+‘what is (this place) called here in Spanish?  
+ 
+ 
+ 
+ 
+ 
+B: 
+ma=sele 
+ 
+ 
+ 
+NEG=know:1.SG 
+ 
+ 
+ 
+‘I don’t know’ 
+ 
+A: 
+tol 
+ma=wa 
+selé 
+ 
+chan 
+lo? 
+ 
+ 
+ 
+Tol 
+NEG=also 
+know:1.SG 
+what 
+3.SG:name 
+ 
+ 
+ 
+‘in Tol you don’t know either?’ (ET-6-1:00:01:11) 
+ 
+ 
+b. 
+chan 
+po’o 
+tha-manün 
+ 
+ma=wa 
+selé-n? 
+ 
+ 
+what 
+in 
+PST-be.born:1.SG 
+NEG=also 
+know:2.SG 
+ 
+ 
+‘where he was born you don’t know either?’ (ET-27-1:00:03:05) 
+ 
+And p’a wa ‘another’ as in (66). 
+ 
+(66) 
+ 
+ke’am p’a 
+wa 
+m-wun  
+ 
+n-t-’ün 
+ 
+ 
+now 
+other also 
+FUT-measure:2.SG 
+FUT-IMPER-cut 
+ 
+ 
+‘now measure another one and cut (it)’ (HT-4-1:00:05:00) 
+ 
+But wa occurs in many contexts where the added meaning is not adverbial. This is the case in 
+(67) which is the beginning of an interview conducted between two members of the same 
+community. Although the interviewee knows the interviewer, he does not in advance know the 
+questions he is going to ask him. We do not find wa in utterances introducing a novel topic 
+which is not shared by interlocutors. 
+ 
+(67) 
+A: 
+chan 
+lo 
+ 
+ke’á? 
+ 
+ 
+what 
+3.SG:name 
+here 
+ 
+ 
+‘what is the name of (this place) here?’ 
+ 
+ 
+B: 
+San 
+Juan 
+lo 
+ 
+ke’á 
+ 
+ 
+S. 
+J. 
+3.SG:name 
+here 
+ 
+ 
+‘(this place) here is called San Juan’ 
+ 
+ 
+A: 
+ne 
+tol? 
+ 
+ 
+CONJ Tol 
+ 
+ 
+‘and in Tol?’ 
+ 
+ 
+B: 
+Hok’  
+Mo’ó 
+ 
+ 
+mountain 
+on 
+ 
+ 
+‘On the Mountain’ 
+ 
+ 
+
+ 
+34 
+ 
+A: 
+ne 
+ 
+ka’áh wa 
+tha-manün-cha 
+ 
+ 
+CONJ  
+where also 
+PST-be.born-IPFV 
+ 
+ 
+‘and where were you born?’ 
+ 
+ 
+B: 
+Laguna 
+Seca 
+po’o 
+tha-manün 
+ 
+naph mpe 
+ 
+ 
+L. 
+ 
+S. 
+in 
+PST-be.born:1.SG 
+1.SG 
+from 
+ 
+ 
+‘I was born in Laguna Seca’ 
+ 
+ 
+A: 
+chan 
+año 
+po’o? 
+ 
+ 
+what 
+year 
+in 
+ 
+ 
+‘in what year?’ 
+ 
+ 
+B: 
+1987 ka 
+nakh 
+ 
+ 
+1987 
+IRR 
+exist:doubt 
+ 
+ 
+‘1987 perhaps’ 
+ 
+ 
+A: 
+ne 
+chan 
+wa 
+lo 
+ 
+ke’á 
+c’ekh? 
+ 
+ 
+CONJ what 
+also 
+3.SG:name 
+here 
+Spanish 
+ 
+ 
+‘and what is the name of (this place) here in Spanish?’ 
+ 
+ 
+B: 
+aquí... San 
+Juan 
+ 
+ 
+here... S. 
+J. 
+ 
+ 
+‘here ... San Juan’ 
+ 
+ 
+A: 
+ne 
+tol 
+ha’a? 
+ 
+ 
+CONJ Tol 
+INTERR.TOP 
+ 
+ 
+‘and in Tol?’ 
+ 
+ 
+B: 
+Hok’  
+Mo’ó 
+ 
+ 
+mountain 
+on 
+ 
+ 
+‘On the Mountain’ 
+ 
+ 
+A: 
+ne 
+chan 
+wa 
+lya 
+ 
+hiph? 
+ 
+ 
+CONJ what 
+also 
+2.SG:name 
+2.SG 
+ 
+ 
+‘and what is your name?’ 
+ 
+It appears from (67) that wa is not used with the meaning ‘also’ to refer to an antecedent as in its 
+adverbial use. Rather, wa introduces an additional question within the same line of questioning. 
+Another use of wa as topic continuity marker is in (68). The context in (68) is less structured 
+than the series of interview questions in (67). 
+ 
+(68) 
+a. 
+‘oyn 
+hyas   
+wa 
+ 
+ 
+what  2.SG:want  
+also 
+ 
+ 
+‘what’s up with you?’ (HT-3-1:00:02:36) 
+ 
+ 
+
+ 
+35 
+b. 
+ma=thi-wí’i   
+wa  
+Maria  velé-kh  
+ 
+ 
+ 
+NEG=IMP-laugh  
+also  
+M.  
+speak-1.PL 
+ 
+ 
+‘don’t laugh Maria, let’s chat’ (HT-3-1:00:03:09) 
+ 
+In (68) a group of family members are sitting, working and playing outside of their house. 
+During this recording, which goes on for hours, neighbors stop and talk to the people outside the 
+house as they come and go. In (68b) a young girl, Maria, a friend of the speaker, stops by and 
+just stands around watching – this then elicits the remarks in (68a-b). What appears to be 
+happening is that in the discoursive context (68a) is a continuation, even though it is the first 
+utterance directed at Maria, a new participant, and this triggers the use of wa. Uttering (68a) 
+without wa would be equally grammatical, but wa builds a bridge to the discourse that preceeded 
+it. Example (68b) comes shortly after and has a similar function. 
+ 
+4.6.2.2 Interrogative topic continuity: ha’a 
+When a topic has been established in a discourse context, it is possible only to refer back to it 
+using personal pronouns. In a similar way, when asking the same question, or a question which is 
+known to the interlocutors without the need for explicit statement, the question particle or word 
+can be elided and replaced by the interrogative topic continuity marker ha’a – this is illustrated 
+in (69). (Example (69a) is a repetition of a part of (67)). 
+ 
+(69) 
+a. 
+A: 
+ne 
+chan 
+wa 
+lo 
+ 
+ke’á 
+c’ekh? 
+ 
+ 
+ 
+CONJ what 
+also 
+3.SG:name 
+here 
+Spanish 
+ 
+ 
+ 
+‘and what is the name of (this place) here in Spanish?’ 
+ 
+ 
+ 
+B: 
+aquí... San 
+Juan 
+ 
+ 
+ 
+here... S. 
+J. 
+ 
+ 
+ 
+‘here ... San Juan’ 
+ 
+ 
+ 
+A: 
+ne 
+tol 
+ha’a? 
+ 
+ 
+ 
+CONJ Tol 
+INTERR.TOP 
+ 
+ 
+ 
+‘and in Tol?’ 
+ 
+b. 
+ 
+ne 
+lokopyáya 
+ha’a? 
+ 
+ 
+ 
+CONJ  afterwards  
+INTERR.TOP 
+ 
+ 
+ 
+‘and what happened afterwards?’  
+ 
+‘and what should I do afterwards?’ 
+ 
+c. 
+ 
+ne 
+kina 
+ha’a? 
+ 
+ 
+ 
+CONJ now 
+INTERR.TOP 
+ 
+ 
+ 
+‘and now what?’ 
+ 
+In (69a) ha’a functions elliptically to avoid repeating the question. Example (69b) is used in two 
+different context in our data, hence the two different translations, but both with the same function 
+of soliciting a continuation of a line of information – a similar function is illustrated in (69c). 
+Note that ha’a always appears at the right edge of an utterance and as such might be analyzed as 
+a sentential enclitic. 
+
+ 
+36 
+ 
+4.7 
+TAM clitics 
+ 
+There are various morpho-syntactically bound markers of tense, aspect and mood in Tol. Some 
+of them can be considered affixes and attach to the verb while others must be considered clitics 
+and attach to various different hosts within different domains. Below we will look at three 
+different clitics in terms of their distribution and function. 
+ 
+4.7.1 Irrealis ka=  
+The proclitic ka= indicates that an action or state has not been realised at the time of speech. 
+Examples are found in (70). 
+ 
+(70) 
+a. 
+chay 
+ka=püs 
+ka=thi’li-m 
+ 
+niná 
+phay 
+ 
+ 
+very 
+IRR=long.time IRR=catch-3.PL 
+DEM 
+people 
+ 
+ 
+‘they’ll take a good while to catch them, those people’ (HT-2-1>00:00:12) 
+ 
+b. 
+kina 
+kasá 
+way 
+ka=n-tün 
+ 
+ 
+DEM 
+in 
+COP 
+IRR=FUT-cut:2.SG 
+ 
+ 
+‘this is where you are going to cut’ (HT-4-1>00:00:38) 
+ 
+c. 
+ka=n-wu 
+ 
+ 
+n-t’ün 
+ 
+ 
+IRR=FUT-measure:2.SG 
+FUT-cut:2.SG 
+ 
+ 
+‘(you will) measure and cut!’ (HT-4-1>00:01:38) 
+ 
+d. 
+hay 
+ka=üsüs 
+nakh=cha 
+ 
+ 
+HEY 
+IRR=good 
+could.be=IPFV 
+ 
+ 
+‘how good that would be!’ (HT-5-1>00:12:45) 
+ 
+As in (70-b-c) the irrealis proclitic often co-occurs with the future prefix n-, although both can 
+appear on their own. 
+ 
+4.7.2 Pluractional 
+=pan 
+In section 3.1 above we saw the suffx -pan used for pluralizing nouns denoting human and other 
+prominent entities. There is a homophonous enclitic =pan, which is used to indicate 
+pluractionality (verbal number) as shown in (71). 
+ 
+(71) 
+a. 
+p’iyom la 
+m-palam=pan  
+leké 
+ 
+ 
+paca 
+AUX 
+FUT-look.for=PLUR 
+go:FUT:3.SG 
+ 
+ 
+‘we will go looking for paca’ (HT-5-1>00:04:33) 
+ 
+ 
+b. 
+hasea la 
+hay=pan 
+ka 
+ 
+ 
+clean 
+AUX 
+do:3.PL=PLUR IRR 
+ 
+ 
+‘they are cleaning away grass’ (HT-3-1>00:07:51) 
+ 
+ 
+c. 
+ma=la  
+nün=pan 
+ 
+ 
+NEG=AUX 
+sting:3.PL=PLUR 
+
+ 
+37 
+ 
+pahal la 
+la-s=pan 
+ 
+muekh  
+huph 
+very 
+AUX 
+bite:3.PL-?=PLUR 
+MUEKH 
+3.PL 
+ 
+‘they do not sting, but they really bite’ (HT-7-1>00:04:03) 
+ 
+In these examples =pan is added as an enclitic to the right edge of the verb phrase to indicate 
+that an action not only takes place in a single place and not just one time; instead it is an action 
+that must be repeated several times and by several S/A arguments, in order to achieve its 
+intended goal, as when one goes hunting (71a), as when a machete is used for cutting grass 
+(71b), and in as when a swarm of bees bite a person several times (71c). 
+ 
+4.7.3 Imperfective past and irrealis =cha 
+A commonly occurring grammatical element, mostly found at the right edge of predicates, is 
+cha. It has earlier been analyzed by Holt as an imperfect suffix but was only dealt with in the 
+briefest terms possible: “The imperfect-suffix -cha can apparently be added to any present-tense 
+verb-form (?); e.g. hák-cha ‘s/he came’; hós-cha ‘s/he wanted’.” (1999: 30). Holt is unsure about 
+his analysis, as indicated by the question mark in the above quotation, and for good reason, 
+because =cha is not confined to verbs. This is true even in Holt’s own data, as hos ‘his/her heart’ 
+is morphologically nominal in spite of acting as a predicate meaning ‘want’. Some additional 
+examples are shown in (72). 
+ 
+(72) 
+a. 
+naph la 
+the-pyal=cha 
+ 
+ 
+1.SG 
+AUX 
+PST-seek:1.SG=IPFV 
+ 
+ 
+‘I was looking for him’ (field notes) 
+ 
+ 
+b. 
+David hépa=cha 
+huph Israel mo’ó püná 
+ 
+ 
+D. 
+king=IPFV 
+3.SG 
+I. 
+in 
+long.ago 
+ 
+ 
+‘David was king of Israel long ago’ (Mateo 1:6) 
+ 
+ 
+c. 
+‘üsüs=cha 
+pahal huph the-velá 
+ 
+ 
+good=IPFV 
+most 
+3.SG 
+PST-speak:3.SG 
+ 
+ 
+‘he spoke the best (that anyone has ever spoken)’ (Juan 7:46) 
+ 
+ 
+d. 
+niná 
+botella pe 
+mpes=cha 
+ 
+ 
+DEM 
+bottle stone from=IPFV 
+ 
+ 
+‘the bottle was made from stone’ (Mateo 26:7) 
+ 
+Given that it can attach to all parts of speech, =cha should more appropriately be analyzed as a 
+clitic which can be placed on the part of speech that the speaker chooses to emphasize. It is thus 
+not part of a paradigm where an obligatory choice must be made to the exclusion of the 
+remaining members. 
+There is a strong tendency for =cha to be used with the an imperfective past meaning as 
+we have seen in the above examples. There is, however, substantial evidence that this is not its 
+only function, as shown in (73). 
+ 
+ 
+
+ 
+38 
+(73) 
+a. 
+naph ka 
+kusku  
+velel=cha 
+ 
+woway 
+ 
+ 
+1.SG 
+IRR 
+say 
+ 
+speak:1.SG=IRR 
+child 
+ 
+ 
+‘I would have scolded the child’ (field notes) 
+ 
+ 
+b. 
+nin 
+nakh 
+ 
+po 
+yuph 
+‘u-kul=cha 
+ 
+ 
+thus 
+exist:doubt 
+EMPH 3.PL 
+come:3.pl=irr 
+ 
+ 
+‘may they come!’ (fieldnotes) 
+ 
+ 
+c. 
+ma=sele=cha  
+chan 
+ora 
+hak’=cha 
+ 
+pwekeph 
+ 
+ 
+NEG=know:3SG=IRR what 
+time 
+come:3SG=IRR  
+thief 
+ 
+ 
+‘he doesn’t know what time the theif will come’ (Mateo 24:43) 
+ 
+In the above examples =cha is used to encode irrealis expressed as past conditional (73a), 
+hortative mood (73b) and doubt modality (73c) respectively. The question that then presents 
+itself is whether these are alternate meanings in addition to the imperfective meaning we saw 
+above, or whether we need to revise the analysis of =cha to a single function that entails all of 
+the above examples. A quick survey of the typological literature reveals that the use of 
+imperfective past to express counterfactuality is not uncommon cross-linguistically. The use of 
+imperfective past marking in Slavic languages to express ‘would have’ is a case in point – such 
+alternate uses have been called ‘fake imperfective’ (Iatridou 2000; Grønn 2013). In English and 
+other Germanic languages we find perfective past constructions expressing counterfactuality as 
+in the conditional if you had told me, I would have come. Similarly, English plural past copula 
+were is used to mark subjunctive as in I wish you were here. 
+ 
+ 
+5 Conclusion 
+ 
+In the present chapter we have intended to provide a brief sketch of Tol with particular 
+focus on areas, which have previously received little or no attention. We have ... 
+ 
+ 
+ 
+An overview of typological features of Tol are given in Table 7. 
+ 
+Table 7: Typological features of Tol. 
+Category 
+Structural feature 
+Function 
+Possession 
+Nominal pre- and 
+infixation 
+Person and number of possessor 
+Core arguments 
+Verbal pre-, in- and 
+suffixation 
+Person and number of S/A argument 
+P argument not indexed on verb 
+Oblique arguments 
+Postpositions 
+Introducing oblique arguments 
+Gender 
+NA 
+NA 
+Nominal number 
+Prefix, enclitic or particle 
+Number of animate entities of NP 
+Verbal number 
+Enclitic 
+Pluractional or distributive 
+Tense-aspect 
+Clitics, prefixes and non-
+Future, past, perfective 
+
+ 
+39 
+linear marking 
+Alignment 
+Accusative 
+Verb marking, no case marking 
+Focus/ topic 
+Nominal suffix 
+Discoursive prominence 
+Plosive contrasts 
+Three way: plain / 
+aspirated / glottalized 
+Phonologically distinctive 
+Constituent order 
+SOV / right-headed 
+Unmarked constituent order.  
+Right headed subordinate clauses. 
+Postpositional phrases. 
+ 
+ 
+Future research should ... 
+ 
+ 
+Acknowledgements 
+ 
+We would like to thank our Tolpan friends who have made fieldwork and research possible. 
+Steffen would also like to thank The Hans Rausing Foundation/ARCADIA for funding his 
+fieldwork project through grant SG0137. 
+ 
+ 
+References 
+ 
+Campbell, Lyle 
+1997 American Indian Languages: the Historical Linguistics of Native America. 
+Oxford: Oxford University Press. 
+Campbell, Lyle and David Oltrogge 
+1980 Proto-Tol (Jicaque). International Journal of American Linguistics 46(3): 205–
+223. 
+Chapman, Anne 
+1992 Masters of the Animals: Oral Traditions of the Tolupan Indians, Honduras. 
+Yverdon/Philadephia: Gordon and Breach. 
+Conzemius, Edward 
+1923 The Jicaques of Honduras. International Journal of American Linguistics 2(3/4): 
+163–170. 
+Dennis, Ronald K. 
+1992 La conjugación del verbo en idioma tol (jicaque). Tegucigalpa, D.C., Honduras: 
+Instituto Hondureño de Antropología e Historia e Instituto Lingüístico de Verano. 
+Dennis, Ronald K. and Margaret Royce de Dennis 
+1983 Diccionario tol (jicaque)-español y español-tol (jicaque). Tegucigalpa, Honduras: 
+Instituto Lingüístico de Verano en colaboración con el Instituto Hondureño de 
+Antropología e Historia. 
+Dennis, Ronald K. and Ilah Fleming 
+1976 La lengua tol (Jicaque): los sustantivos. In Las fronteras de Mesoamérica. XIV 
+Mesa Redonda, Sociedad Mexicana de Antropología, 2:375-80.  
+Dixon, R. B. and Alfred L. Kroeber 
+ 
+1913 New linguistic families in California. American Anthropologist 15(4): 647–655. 
+
+ 
+40 
+Fleming, Ilah, Ronald K. Dennis, and Margaret Dennis 
+ 
+1975 El alfabeto tol (jicaque). Yax Kin 1(1): 12–18. 
+Greenberg, Joseph and Morris Swadesh 
+1953 Jicaque as a Hokan language. International Journal of American Linguistics 19: 
+216–222. 
+Grønn, Atle 
+2013 Aspect and tense in counterfactual main clauses: fake or real? In Diachronic and 
+Typological Perspectives on Verbs. Studies in Language Companion Series, 
+edited by Folke Josephson and Ingmar Söhrman, 134:133–58. Amsterdam: John 
+Benjamins Publishing Company. 
+Haurholm-Larsen, Steffen 
+2012 ¿A quién le importa? Una encuesta sociolingüística de la lengua tol o jicaque de 
+Honduras. Paper presented at the 54th International Congress of Americanists, 
+Vienna. 
+Holt, Dennis Graham 
+1999 Tol (Jicaque). München: LINCOM Europa. 
+Iatridou, Sabine 
+2000 The grammatical ingredients of counterfactuality. Linguistic Inquiry 31(2): 231–
+270. 
+Kaufman, Terrence 
+2006 Hokan languages. In Concise Encyclopedia of Languages of the World. Edited by 
+Keith Brown and Sarah Ogilvie, 365-372, Oxford: Elsevier. 
+Lambrecht, Knud 
+1994 Information Structure and Sentence Form: Topic, Focus, and the Mental 
+Representations of Discourse Referents. Cambridge: Cambridge University Press. 
+Lehmann, Walter 
+1920 Zentral-Amerika: Die Sprachen Zentral-Amerikas in ihren Beziehungen 
+zueinander, sowie zu Süd-Amerika und Mexiko. Vol. 2. Berlin: Reimer. 
+Lentz, David L. 
+1986 Ethnobotany of the Jicaque of Honduras. Economic Botany 40(2): 210–219. 
+Membreño, Alberto 
+1897 Hondureñismos. Tegucigalpa, Honduras: Editorial Guaymuras. 
+Molina, Alonso de 
+1571 Vocabvlario en lengva mexicana y castellana. Mexico: Antonio de Spinosa. 
+Oltrogge, David Frederick 
+1977a La etnoentomología de algunas categorías del orden himenóptero entre los 
+jicaques (toles). In Helen L. Neuenswander and Dean E. Arnold (eds.), Estudios 
+cognitivos del sur de Mesoamérica, 155–73. Dallas: Summer Institute of 
+Linguistics Museum of Anthropology. 
+1977b Proto-Jicaque-Subtiaba-Tequistlateco: A comparative reconstruction. In Irvine 
+Davis and Virgil Poulter (eds.), Two Studies in Middle American Comparative 
+Linguistics, 1–52. Dallas: Summer Institute of Linguistics and the University of 
+Texas at Arlington. 
+Shaw, Mary 
+ 
+1971 According to Our Ancestors: Folk Texts from Guatemala and Honduras. Norman: 
+Summer Institute of Linguistics of the University of Oklahoma. 
+
+ 
+41 
+Suárez, Jorge A. 
+1983 The Mesoamerican Indian Languages. Cambridge: Cambridge University Press. 
+Von Hagen, Victor Wolfgang 
+1943 The Jicaque (Torrupan) Indians of Honduras. New York: Museum of the 
+American Indian, Heye foundation. 
+Wycliffe Bible Translators 
+2010 Dios tjevele jupj ‘üsüs la qjuisiji Jesucristo mpes: el Nuevo Testamento en tol. 
+Second Edition. Colorado Springs: Sociedad Bíblica Internacional. 
+Yasugi, Yoshiho 
+1995 Native Middle American Languages: An Areal-Typological Perspective. Osaka: 
+National Museum of Ethnology. 
+ 

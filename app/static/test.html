@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tol Translator — Grammar Test Suite</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .test-container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+    .score-banner {
+      display: flex; gap: 2rem; padding: 1.5rem 2rem;
+      background: linear-gradient(135deg, #1e3a5f 0%, #2d5a27 100%);
+      border-radius: 12px; color: #fff; margin-bottom: 2rem;
+      flex-wrap: wrap; align-items: center;
+    }
+    .score-big { font-size: 2.8rem; font-weight: 700; line-height: 1; }
+    .score-label { font-size: .85rem; opacity: .7; margin-top: .3rem; }
+    .score-stat { text-align: center; }
+    .score-stat .val { font-size: 1.5rem; font-weight: 600; }
+    .progress-bar { flex: 1; min-width: 200px; }
+    .progress-track {
+      height: 10px; background: rgba(255,255,255,.2); border-radius: 5px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; border-radius: 5px; transition: width .5s ease;
+      background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcf7f);
+    }
+
+    .test-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+      padding: 1.2rem 1.5rem; margin-bottom: 1rem;
+      transition: border-color .2s;
+    }
+    .test-card.pass { border-left: 4px solid #38a169; }
+    .test-card.partial { border-left: 4px solid #d69e2e; }
+    .test-card.fail { border-left: 4px solid #e53e3e; }
+
+    .test-header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: .8rem;
+    }
+    .test-en { font-size: 1.1rem; font-weight: 600; color: #1a202c; }
+    .test-badge {
+      font-size: .75rem; font-weight: 600; padding: .25rem .6rem;
+      border-radius: 12px; text-transform: uppercase; letter-spacing: .5px;
+    }
+    .badge-pass { background: #c6f6d5; color: #22543d; }
+    .badge-partial { background: #fefcbf; color: #744210; }
+    .badge-fail { background: #fed7d7; color: #742a2a; }
+
+    .test-row { display: grid; grid-template-columns: 80px 1fr; gap: .3rem .8rem; margin-bottom: .4rem; font-size: .92rem; }
+    .test-label { color: #718096; font-weight: 500; text-align: right; }
+    .test-val { color: #2d3748; }
+    .test-val.expected { color: #276749; font-family: 'Courier New', monospace; }
+    .test-val.actual { color: #2b6cb0; font-family: 'Courier New', monospace; }
+
+    .test-meta {
+      display: flex; gap: 1rem; margin-top: .7rem; font-size: .8rem; color: #a0aec0;
+      flex-wrap: wrap;
+    }
+    .test-meta span { background: #f7fafc; padding: .15rem .5rem; border-radius: 4px; }
+
+    .filter-bar {
+      display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: center; flex-wrap: wrap;
+    }
+    .filter-bar label { font-weight: 500; color: #4a5568; font-size: .9rem; }
+    .filter-bar select, .filter-bar button {
+      padding: .4rem .8rem; border: 1px solid #cbd5e0; border-radius: 6px;
+      font-size: .9rem; background: #fff; cursor: pointer;
+    }
+    .filter-bar button:hover { background: #edf2f7; }
+
+    .loading { text-align: center; padding: 3rem; color: #a0aec0; font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1><span class="logo-icon">🌿</span> Tol Translator</h1>
+      <p class="subtitle">Grammar Test Suite</p>
+      <nav class="header-nav">
+        <a href="/" class="nav-link">Translator</a>
+        <a href="/dictionary" class="nav-link">Dictionary</a>
+        <a href="/bible" class="nav-link">Dios Vele</a>
+        <a href="/test" class="nav-link nav-active">Grammar Tests</a>
+        <a href="/learn" class="nav-link">Aprende</a>
+        <a href="/sources" class="nav-link">Sources</a>
+      </nav>
+    </header>
+
+    <main class="test-container">
+      <div class="score-banner" id="score-banner">
+        <div>
+          <div class="score-big" id="pass-rate">--</div>
+          <div class="score-label">Pass Rate</div>
+        </div>
+        <div class="score-stat">
+          <div class="val" id="passed-count">--</div>
+          <div class="score-label">Passed</div>
+        </div>
+        <div class="score-stat">
+          <div class="val" id="total-count">--</div>
+          <div class="score-label">Total</div>
+        </div>
+        <div class="progress-bar">
+          <div class="score-label" style="margin-bottom:.3rem">Word Match Coverage</div>
+          <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0"></div></div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <label>Filter:</label>
+        <select id="filter-select">
+          <option value="all">All</option>
+          <option value="pass">Passed (>=50%)</option>
+          <option value="partial">Partial (20-49%)</option>
+          <option value="fail">Failed (<20%)</option>
+        </select>
+        <button id="rerun-btn">Re-run Tests</button>
+      </div>
+
+      <div id="results-container">
+        <div class="loading">Running grammar tests...</div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Grammar test sentences sourced from Holt (1999), Haurholm-Larsen & Pynes, and other Tol grammar references</p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline">View all sources</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const container = document.getElementById("results-container");
+    const filterSelect = document.getElementById("filter-select");
+    let allResults = [];
+
+    async function loadTests() {
+      container.innerHTML = '<div class="loading">Running grammar tests...</div>';
+      try {
+        const resp = await fetch("/api/test-sentences");
+        const data = await resp.json();
+        allResults = data.results;
+
+        document.getElementById("pass-rate").textContent = data.pass_rate + "%";
+        document.getElementById("passed-count").textContent = data.passed;
+        document.getElementById("total-count").textContent = data.total;
+
+        const avgScore = allResults.reduce((a, r) => a + r.match_score, 0) / Math.max(allResults.length, 1);
+        document.getElementById("progress-fill").style.width = (avgScore * 100) + "%";
+
+        renderResults(allResults);
+      } catch (e) {
+        container.innerHTML = '<div class="loading">Error loading tests: ' + e.message + '</div>';
+      }
+    }
+
+    function renderResults(results) {
+      if (!results.length) {
+        container.innerHTML = '<div class="loading">No test sentences match this filter.</div>';
+        return;
+      }
+
+      container.innerHTML = results.map(r => {
+        const level = r.match_score >= 0.5 ? "pass" : r.match_score >= 0.2 ? "partial" : "fail";
+        const badgeClass = level === "pass" ? "badge-pass" : level === "partial" ? "badge-partial" : "badge-fail";
+        const badgeText = level === "pass" ? "Pass" : level === "partial" ? "Partial" : "Fail";
+        const pct = Math.round(r.match_score * 100);
+
+        return `
+          <div class="test-card ${level}">
+            <div class="test-header">
+              <span class="test-en">${esc(r.english)}</span>
+              <span class="test-badge ${badgeClass}">${badgeText} ${pct}%</span>
+            </div>
+            <div class="test-row">
+              <span class="test-label">Expected:</span>
+              <span class="test-val expected">${esc(r.tol_expected)}</span>
+            </div>
+            <div class="test-row">
+              <span class="test-label">Actual:</span>
+              <span class="test-val actual">${esc(r.tol_actual)}</span>
+            </div>
+            ${r.spanish ? `<div class="test-row"><span class="test-label">Spanish:</span><span class="test-val">${esc(r.spanish)}</span></div>` : ''}
+            <div class="test-meta">
+              <span>Method: ${esc(r.method)}</span>
+              <span>Conf: ${r.confidence}</span>
+              ${r.grammar_notes ? `<span>${esc(r.grammar_notes)}</span>` : ''}
+              ${r.source ? `<span>Source: ${esc(r.source)}</span>` : ''}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function esc(s) { return (s || "").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+
+    filterSelect.addEventListener("change", () => {
+      const v = filterSelect.value;
+      if (v === "all") renderResults(allResults);
+      else if (v === "pass") renderResults(allResults.filter(r => r.match_score >= 0.5));
+      else if (v === "partial") renderResults(allResults.filter(r => r.match_score >= 0.2 && r.match_score < 0.5));
+      else renderResults(allResults.filter(r => r.match_score < 0.2));
+    });
+
+    document.getElementById("rerun-btn").addEventListener("click", loadTests);
+
+    loadTests();
+  </script>
+</body>
+</html>

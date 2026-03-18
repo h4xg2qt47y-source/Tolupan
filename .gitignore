@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Audio data (too large for git — rebuild locally)
+Tol Audio/
+Tol_Chapter_Audio/
+English_Audio/
+TTS_Dataset/
+TTS_Dataset_v2/
+TTS_Dataset_old_with_music/
+
+# TTS models (too large for git — retrain locally)
+TTS_Model/
+TTS_Model_Archive/
+TTS_Model_old_with_music/
+
+# Binaries
+ffmpeg
+
+# Archives
+*.zip
+
+# Empty root-level db placeholder
+/tol.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

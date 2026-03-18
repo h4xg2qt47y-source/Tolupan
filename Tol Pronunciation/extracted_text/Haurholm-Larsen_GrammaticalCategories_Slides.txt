@@ -1,0 +1,556 @@
+Exploring grammatical categories of Tol 
+– a journey into the unknown 
+State of the Art of Mesoamerican Linguistics , 6.–7. December 2014 
+Max Planck Institute for Evolutionary Anthropology, Leipzig  
+Steffen Haurholm-Larsen, Universität Bern 
+ 
+
+Outline of talk 
+!  Introductory remarks: 
+!  The language, the people and history of research 
+!  Noun suffixes 
+!  Imperfect aspect enclitic 
+!  Information structure particles 
+
+Jicaquean 
+† Western Jicaque 
+ Location> El Palmar 
+   Tol (Eastern Jicaque) 
+ Location> Montaña de la flor 
+
+www.muturzikin.com/cartesamerique/ameriquecentrale.htm 
+El Palmar 
+Montaña de la flor 
+
+Holt 1999 
+
+Holt 1999 
+ 
+
+Tol – a profile 
+!  SOV (consistently head final) 
+!  Pronouns > different orders for emphasis 
+!  Inflection (verbs, nouns) 
+!  Person, number, tense > poly-exponential 
+!  Pre-, in- and suffixation and ablaut 
+!  Independent pronouns (suppletive paradigms) 
+!  Tense is also expressed by particles 
+!  Number is only marked in NP’s with animate referents 
+
+m-wayúm
+ 
+ 'my husband' 
+w-y-ayúm
+ 
+ 'your husband' 
+woyúm
+ 
+ 'her husband' 
+khis wayúm  
+ 'our husband' 
+his wayúm
+ 
+ 'your husband' 
+his wayúm
+ 
+ 'their husband' 
+ 
+ 
+
+!  naph üsü  müüs  
+ 'I am drinking water' 
+!  hiph üsü müs
+ 
+ 'you are drinking water' 
+!  huph üsü mü
+ 
+ 'he is drinking water' 
+!  kuph üsü miskhékh
+ 'we are drinking water' 
+!  nun üsü müskhé  
+ 'you are drinking water' 
+!  yuph üsü miün  
+ 'they are drinking water' 
+
+Tol – a profile 
+!  SOV (consistently head final) 
+!  Pronouns > different orders for emphasis 
+!  Inflection (verbs, nouns) 
+!  Person, number, tense > poly-exponential 
+!  Pre-, in- and suffixation and ablaut 
+!  Independent pronouns (suppletive paradigms) 
+!  Tense is also expressed by particles 
+!  Number is only marked in NP’s with animate referents 
+!  ne- 
+!  -pan 
+!  withákh 
+
+Tol vs. Jicaque 
+!  Used for the people, language family and language 
+!  Jicaque (older literature) 
+!  Used by settlers from New Spain 
+!  Meaning: non-sedentary people of various ethnicities 
+!  Etymology: Nahuatl xikkawa 'to let oneself decay' 
+xikkaw-keh [ikkahkeh] ! Sp. jicaque 
+!  Autodenomination 
+!  Tol 
+!  Tol-pan [torupan] (plural form for humans) 
+
+The tolpan people 
+!  Believed to have migrated from the north coast due 
+to pressure from colonial power 
+
+www.muturzikin.com/cartesamerique/ameriquecentrale.htm 
+El Palmar 
+Montaña de la flor 
+
+The tolpan people 
+!  Believed to have migrated from the north coast due 
+to pressure from colonial power 
+!  Organized into 6 tribes  
+!  San Juan > the great majority of speakers 
+!  Closest contact to main road / surrounding society 
+!  Ceiba > small number of speakers 
+!  Survey > almost 500 L1 speakers 
+!  Spanish >  minor role 
+!  high level of language tolerance (Haurholm-Larsen, 
+2012) 
+
+Research history 
+!  Early descriptions (1897-1923) 
+!  Word lists 
+!  Membreño (1897) 
+!  Lehmann (1920) 
+!  Conzemius (1923) 
+
+Research history 
+!  Comparative studies (1953-1995) 
+!  Greenberg and Swadesh (1953) 
+!  Oltrogge (1977) 
+!  Campbell and Oltrogge (1980) 
+!  Yasugi (1995) 
+
+Research history 
+!  Later descriptive work 
+!  Nouns
+ 
+ Dennis and Flemming (1976) 
+!  Dictionary
+ Dennis and Dennis (1983) 
+!  Verbs
+ 
+ Dennis (1990) 
+!  Summary / 
+ Holt (1999) 
+grammar sketch
+ 
+  
+
+Genetic relationships 
+!  Classification of Tol still an open question 
+!  Before 1953  
+!  Tol was considered an isolate 
+!  Greenberg and Swadesh (1953)  
+!  add Tol to the Hokan stock (Dixon and Kroeber (1913)) 
+
+Genetic relationships 
+!  Oltrogge (1977)  
+!  Tol-Tequistlatec-Subtiaba 
+!  Hokan and Otomanguean ties left open 
+!  Campbell and Oltrogge (1980) 
+!  not Hokan 
+!  Tequistlatec probable 
+
+Genetic relationships 
+!  Hokan affiliation supported by 
+!  Dennis and Flemming (1975) 
+!  Kaufman (2006) (no mention of Tol-Tequistlatec-
+Subtiaba hypothesis) 
+!  Tequistlatec-Subtiaba supported by 
+!  Suarez (1983) 
+
+Genetic relationships 
+!  Yasugi (1995) 
+!  Doubts both Hokan and Tequistlatec-Subtiaba 
+connection 
+xxxxxxxxxxxx    End of introduction   xxxxxxxxxxx 
+ 
+And now to the noun suffixes... 
+
+Noun suffixes 
+!  Most nouns take suffixes which are of three shapes 
+!  -(sV)s 
+!  -(V)N 
+!  -(V)kh 
+!  Nouns that never take suffixes refer to: 
+!  Body parts 
+!  Kinship terms 
+
+Noun suffixes 
+Short form 
+Long form 
+Gloss 
+-(s)Vs forms!
+ !
+ !
+wa!
+wo-sís!
+house!
+awa!
+owú&s!
+owü&s!
+)ire!
+ulúla!
+ululá-s!
+racoon!
+malán!
+malan-ás!
+pig!
+wáka!
+woko-sás!
+cow!
+püá!
+püá&s!
+puma!
+khísya!
+khisyá-s!
+grass!
+nu!
+nu&s!
+pumpkin!
+khele!
+khelé&s!
+bone!
+pis!
+pis-ís  
+pwis-ís!
+meat!
+os!
+os-ís!
+blood!
+
+Noun suffixes 
+Short form 
+Long form 
+Gloss 
+"(V)N!forms!
+!!
+!!
+sith!
+sith&ím!
+avocado!
+til!
+til&ím!
+tapir!
+yom!
+yom&én!
+man!
+keph!
+keph&án!
+woman!
+pe!
+pe&n!/!pwe&n!
+stone!
+cech!
+cech&ém!
+tortilla!
+tüt!
+tüt&üm!
+louse!
+khul!
+khul&ún!
+)ish!
+
+Noun suffixes 
+Short form 
+Long form 
+Gloss 
+"(V)kh!forms!
+!!
+!!
+khan!
+khon&íkh!
+bed!
+phul!
+phul&ákh!
+star!
+luph!
+luph&úkh!
+hail!
+chin!
+chin&ákh!
+bean!
+chew!
+chew&ékh!
+scorpion!
+mac!
+mac&íkh!
+pozol!
+
+Noun suffixes 
+Dennis and Flemming (1976) 
+"Los sufijos realizan relaciones sintácticas que 
+no son muy bien entendidas  todavía" 
+ 
+"… a veces se encuentran formas con sufijos 
+cuando el sustantivo se refiere a un objeto o una 
+persona que no sean sujeto el verbo. Sin 
+embargo hay casos en los cuales esto no 
+ocurre." 
+ 
+"… estos no representan tres morfemas 
+distintos, sino que son formas alternas de un 
+solo morfema." 
+ 
+
+Noun suffixes 
+Holt (1999) 
+"In many (but not all) instances in which a noun 
+serves as the grammatical object of a sentence, 
+the noun will appear with an added object-
+suffix…this process generally does not take 
+place with inalienably possessed nouns (body-
+parts and kinship terms, etc.) and a few others." 
+ 
+"There are three lexically determined forms of 
+the objective suffix –kh, -s and –m/-n depending 
+on the particular noun involved." 
+ 
+
+The sum of the above quotes 
+1)  the three forms of noun suffix are allomorphs of a 
+single morpheme  
+2)  they mark grammatical object or non-subject 
+argument 
+3)  the marking is not obligatory 
+4)  obligatorily possessed nouns do not take a suffix 
+
+Questions  
+!  Are the three noun suffixes allomorphs of a single 
+morpheme? 
+!  Are these suffixes really object/non-subject 
+marking? 
+!  If not, what are they? 
+!  Are they really optional 
+!  if not, what are the conditioning factors?  
+
+Are the three noun suffixes 
+allomorphs of a single morpheme? 
+ 
+!  So far I have found no noun which takes more than 
+one of the three suffixes. 
+!  Nouns ending in vowel > -(sV)s 
+!  pe-n only exception 
+
+Are the three noun suffixes 
+allomorphs of a single morpheme? 
+ 
+!  yom / yom-én
+ 'man' 
+!  ne-yóm
+ 
+ 'men' 
+!  no-yom-és  
+ 'men' 
+ * no-yom-én 
+!  see (1) 
+
+Are these suffixes really object 
+markers? 
+!  yom 
+ /
+ yom-én 
+!  wáka
+ /
+ woko-sás 
+!  phul 
+ /
+ phul-ákh 
+
+Are these suffixes really object 
+markers? 
+!  yom-én
+ 'man' 
+!  woko-sás
+ 'cow' 
+!  phul-ákh
+ 'star' 
+If these suffixed forms are optional object markers, 
+they may be absent even in O function, but they 
+should always be absent in A or S function. 
+However, this is not the case as shown in (2) 
+
+Attested argument 
+functions of suffixed nouns 
+A 
+S 
+O 
+yom-en          'man' 
+yes 
+yes 
+no 
+woko-sás       'cow' 
+no 
+yes 
+yes 
+phul-akh         'star' 
+no 
+yes 
+yes 
+
+Attested argument 
+functions of bare nouns 
+A 
+S 
+O 
+yom 
+yes 
+yes 
+yes 
+waka 
+no 
+yes 
+yes 
+phul 
+yes 
+yes 
+yes 
+
+If the suffixes are not case 
+markers, what are they? 
+Looking at yom(-en) in a sample text: 
+!  definiteness 
+!  specificity 
+!  topic vs. comment 
+!  spatial deixis 
+
+yom-en in a sample text: 
+ 
+!  always definite 
+!  always specific 
+!  always topic 
+!  yom can be indefinite and unspecific or both 
+!  yom can be used either in topics or comments 
+
+niná + noun (-suffix) 
+short 
+long 
+total long 
+man 
+12 
+121 
+196 
+men 
+5 
+19 
+54 
+woman 
+3 
+7 
+46 
+child 
+4 
+0 
+19 
+stone 
+11 
+5 
+77 
+book 
+8 
+2 
+471 
+day 
+0 
+2 
+375 
+
+Imperfective past cha 
+!  "The imperfect-suffix -cha can apparently be added to 
+any present-tense verb-form (?); e.g. hák-cha 's/he 
+came'; hós-cha 's/he wanted'." Holt (1999:30) 
+!  Clitic 
+!  Can also appear on other parts of speech, cf. (5) 
+!  Does not affect stress pattern 
+!  the-véle-cha 'he said'
+ (not the-velé-cha)   
+!  compatible with other tense-aspect markers 
+
+Irrealis use of cha 
+!  past conditional (6a) 
+!  hortative (6b) 
+!  dubiative (6c) 
+
+Discourse organizing clitics 
+!  ne  'and' 'but' 'because / for that reason' 
+!  wa 'also' 'and then' 
+!  ha 'ATTENTION' 
+
+Discourse organizing clitics 
+!  ne  
+!  is a coordinating connective 
+!  main clauses (7) 
+!  subordinate clauses (8) 
+!  Interrogative sequences (9) 
+!  Interrogative constructions ne ... ha (9b) 
+
+Discourse organizing clitics 
+!  wa points to an antecedent 
+!  adverbial (10) 
+!  'not either' (11) 
+!  'another' (12) 
+!  topical (13) 
+!  all-new sentences (14) 
+
+Discourse organizing clitics 
+!  ha 
+!  regain attention 
+!  series of questions ne ... ha  (15) 
+!  imperative constructions (16) 
+!  "pay attention now (again)" 
+!  purely pragmatic -> does not show up in written 
+text or elicitation 
+!  contrast (14c) with (14k) – slight difference in 
+meaning 
+
+References 
+Campbell, Lyle. 1997. American Indian Languages. Oxford University Press. 
+Campbell, Lyle, and David Oltrogge. 1980. Proto-Tol (Jicaque). International Journal of American Linguistics 46(3): 205–223. 
+Chapman, Anne. 1992. Masters of Animals: Oral Traditions of the Tolupan Indians, Honduras. Taylor & Francis. 
+Conzemius, Edward. 1923. The Jicaques of Honduras. International Journal of American Linguistics 2(3/4): 163–170. 
+Dennis, Ronald K. 1990. La conjugación del verbo en idioma tol (jicaque). Tegucigalpa, D.C., Honduras: Instituto Hondureño de 
+Antropología e Historia ; Instituto Lingüístico de Verano. 
+Dennis, Ronald K, and Margaret Royce de Dennis. 1983. Diccionario tol (jicaque)-español y español-tol (jicaque). Tegucigalpa, 
+Honduras: Instituto Lingüístico de Verano en colaboración con el Instituto Hondureño de Antropología e Historia. 
+Dennis, Ronald K, and Ilah Flemming. 1976. La Lengua Tol (Jicaque): Los Sustantivos. In Las fronteras de Mesoamérica. Sociedad 
+Mexicana de Antropología, ed. México: La Sociedad.  
+Dixon, R. B., and Alfred L. Kroeber. 1913. New Linguistic Families in California. American Anthropologist 15(4): 647–655. 
+Greenberg, Joseph Harold, and Morris Swadesh. 1953.
+ Jicaque as a Hokan Language. Berkeley, CA: California Indian 
+Library Collections [distributor]. 
+Grønn, Atle. 2013. Aspect and Tense in Counterfactual Main Clauses: Fake or Real? In Studies in Language Companion Series. Folke 
+Josephson and Ingmar Söhrman, eds. Pp. 133–158. Amsterdam: John Benjamins  
+Von Hagen, Victor Wolfgang. 1943. The Jicaque (Torrupan) Indians of Honduras,. New York: Museum of the American Indian, Heye 
+foundation. 
+Haurholm-Larsen, Steffen. 2012 ¿A Quién Le Importa? Una Encuesta Sociolingüística de La Lengua Tol O Jicaque de Honduras. In . 
+Vienna. 
+Holt, Dennis Graham. 1999. Tol (Jicaque). München: LINCOM Europa. 
+Iatridou, Sabine. 2000. The Grammatical Ingredients of Counterfactuality. Linguistic Inquiry 31(2): 231–270. 
+Kaufman, Terrence. 2006. Hokan Languages. In Concise Encyclopedia of Languages of the World. Elsevier. 
+Lehmann, Walter. 1920. Zentral-Amerika 1. Die Sprachen Zentral-Amerikas in ihren Beziehungen zueinander, sowie zu Süd-
+Amerika und Mexiko . Berlin: Reimer. 
+Membreño, Alberto. 1897. Hondureñismos. Tegucigalpa, Honduras: Editorial Guaymuras. 
+Oltrogge, David Frederick. 1977. Proto-Jicaque-Subtiaba-Tequistlateco: A Comparative Reconstruction. In Two Studies in Middle 
+American Comparative Linguistics. Irvine Davis and Virgil Poulter, eds. [Dallas, TX]: Summer Institute of Linguistics. 
+Suarez, Jorge A. 1983. The Mesoamerican Indian Languages. Cambridge University Press. 
+Yasugi, Yoshiho. 1995
+ Native Middle American Languages: An Areal-Typological Perspective. National Museum of Ethnology. 
+ 
+
+Thank you!   
+The Hans Rausing 
+Endangered 
+Languages Project 
+ 
+Through Arcadia 
+ 
