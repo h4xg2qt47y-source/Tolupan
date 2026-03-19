@@ -4,7 +4,7 @@ const API = '';
 const LANG_LABELS = { tol: 'Tol', es: 'Español', en: 'English' };
 const SPEECH_LANG_CODES = { en: 'en-US', es: 'es-HN' };
 
-let sourceLang = 'en';
+let sourceLang = (localStorage.getItem("tol_site_lang") || "es") === "es" ? "es" : "en";
 let targetLang = 'tol';
 let isRecording = false;
 let recognition = null;
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('dict-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') dictSearch();
   });
+  activateFlag('source-flags', sourceLang);
   updateLabels();
   loadStats();
 
@@ -33,6 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const l = window.siteLang();
     document.getElementById("input-text").placeholder = l === "es" ? "Escribe o habla…" : "Type or speak…";
     document.getElementById("dict-input").placeholder = l === "es" ? "Buscar palabra…" : "Search word…";
+
+    const newSource = l === "es" ? "es" : "en";
+    if (sourceLang === "es" || sourceLang === "en") {
+      sourceLang = newSource;
+      activateFlag("source-flags", sourceLang);
+      updateLabels();
+    }
   });
 });
 
