@@ -92,7 +92,8 @@ const UI = {
   },
 };
 
-let uiLang = localStorage.getItem("tol_learn_lang") || "es";
+function _getSiteLang() { return (typeof siteLang === "function" ? siteLang() : null) || localStorage.getItem("tol_site_lang") || "es"; }
+let uiLang = _getSiteLang();
 function t() { return UI[uiLang]; }
 function catName(cat) { return t().catNames[cat] || cat; }
 function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
@@ -235,12 +236,6 @@ function esc(s) {
 
 /* ====== HOME SCREEN ====== */
 
-function toggleLang() {
-  uiLang = uiLang === "es" ? "en" : "es";
-  localStorage.setItem("tol_learn_lang", uiLang);
-  showHome();
-}
-
 async function showHome() {
   let cats = {};
   try {
@@ -258,15 +253,7 @@ async function showHome() {
     ? `<span style="font-size:.65rem;background:rgba(255,255,255,.2);padding:.15rem .4rem;border-radius:8px;">${L.tolAudioActive}</span>`
     : `<span style="font-size:.65rem;background:rgba(255,255,255,.15);padding:.15rem .4rem;border-radius:8px;opacity:.7;">${L.tolAudioTraining}</span>`;
 
-  const otherLang = uiLang === "es" ? "🇺🇸 English" : "🇪🇸 Español";
-
   let html = `<div class="learn-home">
-
-    <div class="lang-toggle-wrap">
-      <button class="lang-toggle-btn" onclick="toggleLang()">
-        ${L.toggleLabel} ⇄ ${otherLang}
-      </button>
-    </div>
 
     <div class="streak-bar">
       <div class="streak-item">
@@ -832,7 +819,11 @@ function shuffleFlashcards() {
 
 checkTolTts().then(() => showHome());
 
-// Pre-load speech synthesis voices
+window.addEventListener("sitelangchange", (e) => {
+  uiLang = e.detail.lang;
+  showHome();
+});
+
 if (window.speechSynthesis) {
   window.speechSynthesis.getVoices();
   window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();

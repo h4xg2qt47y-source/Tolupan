@@ -232,17 +232,6 @@
 .diff-btn.medium:hover, .diff-btn.medium.active { background: var(--learn-orange); border-color: var(--learn-orange); }
 .diff-btn.hard:hover, .diff-btn.hard.active { background: var(--learn-red); border-color: var(--learn-red); }
 
-/* ---- LANGUAGE TOGGLE ---- */
-.lang-toggle-wrap { text-align: center; margin-bottom: 1rem; }
-.lang-toggle-btn {
-  display: inline-flex; align-items: center; gap: .4rem;
-  padding: .45rem 1.2rem; border-radius: 25px;
-  border: 2px solid var(--learn-green); background: #fff;
-  color: var(--learn-green); font-weight: 700; font-size: .85rem;
-  cursor: pointer; transition: var(--learn-transition);
-}
-.lang-toggle-btn:hover { background: var(--learn-green); color: #fff; transform: scale(1.03); }
-
 /* ---- AUDIO BUTTONS ---- */
 .audio-btn {
   display: inline-flex; align-items: center; justify-content: center;
