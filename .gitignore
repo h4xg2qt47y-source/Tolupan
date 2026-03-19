@@ -23,6 +23,8 @@ TTS_Dataset_old_with_music/
 
 # TTS models (too large for git — retrain locally)
 TTS_Model/
+TTS_Model_v2/
+TTS_Model_v1_archive/
 TTS_Model_Archive/
 TTS_Model_old_with_music/
 
@@ -35,6 +37,7 @@ ffmpeg
 # Database (the full .db is rebuilt from compressed parts at deploy time)
 /tol.db
 app/data/tol.db
+app/data/feedback_inbox.jsonl
 
 # IDE / editor
 .idea/

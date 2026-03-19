@@ -4,9 +4,16 @@ FastAPI backend serving the translation engine and static frontend.
 """
 
 import re
+import os
+import json
+import smtplib
+import ssl
+import uuid
+from datetime import datetime, timezone
+from email.message import EmailMessage
 import sqlite3
 import logging
-from typing import Optional
+from typing import Optional, Tuple
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -25,7 +32,10 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 translator = TolTranslator()
 
 STATIC_DIR = Path(__file__).parent / "static"
-DB_PATH = Path(__file__).parent / "data" / "tol.db"
+DATA_DIR = Path(__file__).parent / "data"
+DB_PATH = DATA_DIR / "tol.db"
+FEEDBACK_INBOX = DATA_DIR / "feedback_inbox.jsonl"
+FEEDBACK_EMAIL_DEFAULT = "tooling_village_30@icloud.com"
 
 
 def _db():
@@ -53,6 +63,11 @@ async def root():
 @app.get("/dictionary")
 async def dictionary_page():
     return FileResponse(str(STATIC_DIR / "dictionary.html"))
+
+
+@app.get("/feedback")
+async def feedback_page():
+    return FileResponse(str(STATIC_DIR / "feedback.html"))
 
 
 @app.post("/api/translate")
@@ -876,6 +891,97 @@ async def learn_verb_challenge(count: int = Query(default=5, le=15)):
             "options": options,
         })
     return {"questions": questions}
+
+
+class FeedbackSubmit(BaseModel):
+    """User feedback for translations, dictionary, bugs, and feature ideas."""
+
+    category: str = "other"
+    from_page: str = "unknown"
+    contact: Optional[str] = None
+    notes: str = ""
+    structured: dict = {}
+    cursor_block: str
+    website: str = ""  # honeypot — must be empty
+
+
+def _append_feedback_record(record: dict) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    line = json.dumps(record, ensure_ascii=False) + "\n"
+    with open(FEEDBACK_INBOX, "a", encoding="utf-8") as f:
+        f.write(line)
+
+
+def _send_feedback_email(subject: str, body: str) -> Tuple[bool, Optional[str]]:
+    """Send via SMTP if FEEDBACK_SMTP_* env vars are set. Returns (ok, error_message)."""
+    to_addr = os.environ.get("FEEDBACK_EMAIL_TO", FEEDBACK_EMAIL_DEFAULT).strip()
+    host = os.environ.get("FEEDBACK_SMTP_HOST", "").strip()
+    user = os.environ.get("FEEDBACK_SMTP_USER", "").strip()
+    password = os.environ.get("FEEDBACK_SMTP_PASSWORD", "").strip()
+    if not host or not user or not password:
+        return False, "SMTP not configured (set FEEDBACK_SMTP_HOST, FEEDBACK_SMTP_USER, FEEDBACK_SMTP_PASSWORD)"
+    port = int(os.environ.get("FEEDBACK_SMTP_PORT", "587"))
+    from_addr = os.environ.get("FEEDBACK_EMAIL_FROM", user).strip()
+    msg = EmailMessage()
+    msg["Subject"] = subject[:900]
+    msg["From"] = from_addr
+    msg["To"] = to_addr
+    msg.set_content(body)
+    try:
+        context = ssl.create_default_context()
+        with smtplib.SMTP(host, port, timeout=30) as server:
+            server.starttls(context=context)
+            server.login(user, password)
+            server.send_message(msg)
+        return True, None
+    except Exception as e:
+        logger.exception("Feedback email SMTP failed")
+        return False, str(e)
+
+
+@app.post("/api/feedback")
+async def submit_feedback(req: FeedbackSubmit):
+    # Honeypot: silently accept but do not store or email
+    if req.website and req.website.strip():
+        return {"ok": True, "emailed": False, "stored": False}
+
+    rid = str(uuid.uuid4())
+    ts = datetime.now(timezone.utc).isoformat()
+    record = {
+        "id": rid,
+        "ts": ts,
+        "category": req.category,
+        "from_page": req.from_page,
+        "contact": (req.contact or "").strip() or None,
+        "notes": (req.notes or "").strip(),
+        "structured": req.structured or {},
+        "cursor_block": (req.cursor_block or "").strip(),
+    }
+    _append_feedback_record(record)
+
+    subject = f"[Tol app feedback] {req.category} — {req.from_page} ({rid[:8]})"
+    body = (
+        f"Feedback ID: {rid}\n"
+        f"Time (UTC): {ts}\n"
+        f"Category: {req.category}\n"
+        f"Page: {req.from_page}\n"
+        f"Contact: {record['contact'] or '(none)'}\n"
+        f"\n--- Notes ---\n{req.notes.strip() or '(none)'}\n"
+        f"\n--- Structured fields (JSON) ---\n{json.dumps(req.structured or {}, indent=2, ensure_ascii=False)}\n"
+        f"\n--- Cursor / maintainer block ---\n\n{req.cursor_block.strip()}\n"
+    )
+
+    emailed, err = _send_feedback_email(subject, body)
+    if not emailed:
+        logger.info("Feedback %s saved locally; email skipped: %s", rid, err)
+
+    return {
+        "ok": True,
+        "id": rid,
+        "emailed": emailed,
+        "stored": True,
+        "email_error": err if not emailed else None,
+    }
 
 
 class TTSRequest(BaseModel):

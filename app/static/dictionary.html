@@ -6,6 +6,7 @@
   <title>Tol Dictionary — Tolupan ↔ English ↔ Español</title>
   <link rel="stylesheet" href="/static/style.css" />
   <link rel="stylesheet" href="/static/dictionary.css" />
+  <link rel="stylesheet" href="/static/feedback.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -33,6 +34,13 @@
         </div>
       </div>
 
+      <div class="feedback-cta-strip" id="dictionary-feedback-strip">
+        <p data-es="¿Una entrada del diccionario está mal o incompleta? Envía la palabra y la corrección." data-en="Is a dictionary entry wrong or incomplete? Send the word and your correction.">
+          ¿Una entrada del diccionario está mal o incompleta? Envía la palabra y la corrección.
+        </p>
+        <a href="/feedback" id="dictionary-feedback-link" data-es="Comentario / corrección" data-en="Feedback / correction">Comentario / corrección</a>
+      </div>
+
       <div id="results-info" class="results-info"></div>
       <div id="results" class="results"></div>
       <div id="pagination" class="pagination"></div>
@@ -47,7 +55,7 @@
 
     <footer>
       <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
-      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a> · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a> · <a href="/feedback" style="color:inherit;text-decoration:underline" data-es="Comentarios" data-en="Feedback">Comentarios</a> · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
     </footer>
   </div>
   <script src="/static/i18n.js"></script>

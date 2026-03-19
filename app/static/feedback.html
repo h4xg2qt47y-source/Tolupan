@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback — Tol Project</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/feedback.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app feedback-app">
+    <header>
+      <h1>
+        <span class="logo-icon">💬</span>
+        <span data-es="Comentarios y correcciones" data-en="Feedback & corrections">Comentarios y correcciones</span>
+      </h1>
+      <p class="subtitle" data-es="Ayúdanos a mejorar traducciones, datos y la aplicación" data-en="Help us improve translations, data, and the app">Ayúdanos a mejorar traducciones, datos y la aplicación</p>
+      <nav class="header-nav">
+        <a href="/" class="nav-link" data-es="Traductor" data-en="Translator">Traductor</a>
+        <a href="/dictionary" class="nav-link" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
+        <a href="/bible" class="nav-link">Dios Vele</a>
+        <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="feedback-lead">
+        <p data-es="Tu opinión se usa para corregir el diccionario, textos paralelos y el código. Sé concreto: cuanto más contexto des, más fácil es actuar." data-en="Your input helps fix the dictionary, parallel texts, and code. The more specific you are, the faster we can act.">
+          Tu opinión se usa para corregir el diccionario, textos paralelos y el código. Sé concreto: cuanto más contexto des, más fácil es actuar.
+        </p>
+        <ul id="feedback-tips-list">
+          <li data-es="Traducción incorrecta: qué escribiste, idiomas, qué mostró la app y qué debería decir." data-en="Wrong translation: what you typed, languages, what the app showed, and what it should say.">Traducción incorrecta: qué escribiste, idiomas, qué mostró la app y qué debería decir.</li>
+          <li data-es="Diccionario: palabra buscada, entrada que ves, corrección o fuente (libro, hablante…)." data-en="Dictionary: search word, entry you see, correction or source (book, speaker…).">Diccionario: palabra buscada, entrada que ves, corrección o fuente (libro, hablante…).</li>
+          <li data-es="Fallo o idea: pestaña, pasos, qué esperabas y qué pasó." data-en="Bug or idea: tab, steps, what you expected vs what happened.">Fallo o idea: pestaña, pasos, qué esperabas y qué pasó.</li>
+        </ul>
+        <p class="hint" data-es="El bloque inferior se puede copiar y pegar en Cursor u otra herramienta para pedir cambios en código o en la base de datos." data-en="The block below can be copied into Cursor (or similar) to request code or database updates.">
+          El bloque inferior se puede copiar y pegar en Cursor u otra herramienta para pedir cambios en código o en la base de datos.
+        </p>
+      </div>
+
+      <form class="feedback-form" id="feedback-form" autocomplete="on">
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <label for="fb-category" data-es="Tipo de comentario" data-en="Type of feedback">Tipo de comentario</label>
+        <select id="fb-category" name="category" required>
+          <option value="translation_wrong" data-es="Traducción incorrecta o poco natural" data-en="Wrong or unnatural translation">Traducción incorrecta o poco natural</option>
+          <option value="dictionary_entry" data-es="Entrada del diccionario" data-en="Dictionary entry">Entrada del diccionario</option>
+          <option value="bug" data-es="Algo no funciona (error)" data-en="Something is broken (bug)">Algo no funciona (error)</option>
+          <option value="feature" data-es="Idea o función que falta" data-en="Missing feature / idea">Idea o función que falta</option>
+          <option value="other" data-es="Otro" data-en="Other">Otro</option>
+        </select>
+
+        <label for="fb-page" data-es="¿Desde qué parte de la app?" data-en="Which part of the app?">¿Desde qué parte de la app?</label>
+        <select id="fb-page" name="from_page" required>
+          <option value="translator">Translator</option>
+          <option value="dictionary">Dictionary</option>
+          <option value="bible">Dios Vele (Bible)</option>
+          <option value="learn">Learn</option>
+          <option value="other" data-es="Otra / no estoy seguro" data-en="Other / not sure">Otra / no estoy seguro</option>
+        </select>
+
+        <label for="fb-source-text" data-es="Texto original (lo que escribí o busqué)" data-en="Source text (what I typed or searched)">Texto original (lo que escribí o busqué)</label>
+        <textarea id="fb-source-text" name="source_text" rows="2" placeholder=""></textarea>
+        <p class="hint" data-es="En el traductor: el texto de entrada. En el diccionario: la búsqueda." data-en="Translator: input text. Dictionary: your search query.">En el traductor: el texto de entrada. En el diccionario: la búsqueda.</p>
+
+        <label for="fb-shown" data-es="Qué mostró la app (traducción o entrada)" data-en="What the app showed (translation or entry)">Qué mostró la app (traducción o entrada)</label>
+        <textarea id="fb-shown" name="shown" rows="2" placeholder=""></textarea>
+
+        <label for="fb-expected" data-es="Qué debería decir o cómo corregirlo" data-en="What it should say, or the correction">Qué debería decir o cómo corregirlo</label>
+        <textarea id="fb-expected" name="expected" rows="3" placeholder=""></textarea>
+        <p class="hint" data-es="Si no estás seguro, describe con tus palabras o indica una fuente." data-en="If unsure, describe in your own words or cite a source.">Si no estás seguro, describe con tus palabras o indica una fuente.</p>
+
+        <label for="fb-langs" data-es="Idiomas (ej. es→tol)" data-en="Languages (e.g. es→tol)">Idiomas (ej. es→tol)</label>
+        <input type="text" id="fb-langs" name="langs" placeholder="es → tol" />
+
+        <label for="fb-steps" data-es="Pasos para reproducir (si es un fallo)" data-en="Steps to reproduce (if reporting a bug)">Pasos para reproducir (si es un fallo)</label>
+        <textarea id="fb-steps" name="steps" rows="2" placeholder="1. … 2. …"></textarea>
+
+        <label for="fb-notes" data-es="Notas adicionales (contexto, capítulo bíblico, etc.)" data-en="Extra notes (context, Bible chapter, etc.)">Notas adicionales (contexto, capítulo bíblico, etc.)</label>
+        <textarea id="fb-notes" name="notes" rows="2"></textarea>
+
+        <label for="fb-contact" data-es="Contacto (opcional, si quieres respuesta)" data-en="Contact (optional, if you want a reply)">Contacto (opcional, si quieres respuesta)</label>
+        <input type="email" id="fb-contact" name="contact" placeholder="correo@ejemplo.com" />
+
+        <div class="cursor-preview-wrap">
+          <h3 data-es="Bloque para Cursor / mantenedores (se envía con el formulario)" data-en="Block for Cursor / maintainers (submitted with the form)">Bloque para Cursor / mantenedores (se envía con el formulario)</h3>
+          <textarea id="cursor-block" readonly></textarea>
+          <div class="feedback-actions">
+            <button type="button" class="btn-secondary" id="btn-copy-cursor" data-es="Copiar bloque" data-en="Copy block">Copiar bloque</button>
+            <button type="button" class="btn-secondary" id="btn-refresh-block" data-es="Actualizar bloque" data-en="Refresh block">Actualizar bloque</button>
+          </div>
+        </div>
+
+        <div class="feedback-actions">
+          <button type="submit" class="btn-primary" id="btn-submit" data-es="Enviar comentario" data-en="Send feedback">Enviar comentario</button>
+          <button type="button" class="btn-secondary" id="btn-mailto" data-es="Abrir correo (si no hay conexión al servidor)" data-en="Open email app (if server is offline)">Abrir correo</button>
+        </div>
+      </form>
+
+      <div id="feedback-status"></div>
+    </main>
+
+    <footer>
+      <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
+      <p class="small">
+        <a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a>
+        · <a href="/feedback" style="color:inherit;text-decoration:underline" data-es="Comentarios" data-en="Feedback">Comentarios</a>
+        · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="/static/i18n.js"></script>
+  <script src="/static/feedback-app.js"></script>
+</body>
+</html>

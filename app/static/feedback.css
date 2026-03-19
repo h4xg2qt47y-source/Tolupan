@@ -1,0 +1,185 @@
+/* Feedback page */
+.feedback-app main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+}
+
+.feedback-lead {
+  background: linear-gradient(135deg, rgba(45, 90, 39, 0.12) 0%, rgba(30, 58, 95, 0.1) 100%);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.feedback-lead ul {
+  margin: 0.75rem 0 0 1.1rem;
+  padding: 0;
+}
+
+.feedback-lead li { margin-bottom: 0.45rem; }
+
+.feedback-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 1rem 0 0.35rem;
+  color: var(--text, #1a202c);
+}
+
+.feedback-form select,
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border, #cbd5e0);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.feedback-form textarea { min-height: 88px; resize: vertical; }
+
+.feedback-form .hint {
+  font-size: 0.78rem;
+  color: var(--text-muted, #718096);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.cursor-preview-wrap {
+  margin-top: 1.75rem;
+  border: 1px dashed var(--border, #cbd5e0);
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--surface-2, #f8fafc);
+}
+
+.cursor-preview-wrap h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted, #4a5568);
+}
+
+#cursor-block {
+  width: 100%;
+  min-height: 220px;
+  font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, monospace;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  padding: 0.75rem;
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.feedback-actions button {
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent, #2d5a27);
+  color: #fff;
+}
+
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btn-secondary {
+  background: var(--surface, #edf2f7);
+  color: var(--text, #2d3748);
+  border: 1px solid var(--border, #cbd5e0) !important;
+}
+
+#feedback-status {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+#feedback-status.show { display: block; }
+
+#feedback-status.ok {
+  background: #c6f6d5;
+  color: #22543d;
+  border: 1px solid #9ae6b4;
+}
+
+#feedback-status.warn {
+  background: #fefcbf;
+  color: #744210;
+  border: 1px solid #f6e05e;
+}
+
+#feedback-status.err {
+  background: #fed7d7;
+  color: #742a2a;
+  border: 1px solid #fc8181;
+}
+
+/* Prominent CTA strips on Translator / Dictionary */
+.feedback-cta-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.85rem 1.15rem;
+  margin: 1.25rem 0;
+  background: linear-gradient(90deg, rgba(45, 90, 39, 0.14), rgba(30, 58, 95, 0.12));
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.feedback-cta-strip p {
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+  line-height: 1.45;
+}
+
+.feedback-cta-strip a {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--accent, #2d5a27);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border, #cbd5e0);
+  transition: 0.15s ease;
+}
+
+.feedback-cta-strip a:hover {
+  border-color: var(--accent, #2d5a27);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}

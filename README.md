@@ -9,6 +9,7 @@ A web application for preserving and teaching the **Tol language** (ISO 639-3: `
 - **Dios Vele (Bible)** — Side-by-side New Testament reader (Tol, Spanish, English) with chapter-level audio playback for Tol and English.
 - **Aprende (Learn)** — Gamified vocabulary learning tab with quizzes, matching games, and flashcards. Supports Spanish ↔ Tol and English ↔ Tol modes. Uses only verified translations.
 - **Sources** — Catalog of all reference PDFs, websites, and datasets used in the project.
+- **Feedback** — Report wrong translations, dictionary fixes, bugs, and ideas; generates a Cursor-friendly text block and emails maintainers when SMTP is configured.
 - **TTS Engine** — Custom Coqui VITS text-to-speech model trained on ~20 hours of Tol New Testament audio, with dynamic-programming verse alignment.
 
 ## Project Structure
@@ -57,6 +58,23 @@ uvicorn server:app --reload --port 8000
 ```
 
 Then open http://localhost:8000 in your browser.
+
+## User feedback (email)
+
+The **Feedback** page (`/feedback`) POSTs to `/api/feedback`. Every submission is appended to `app/data/feedback_inbox.jsonl` on the server.
+
+To **also send email** (e.g. to `tooling_village_30@icloud.com`), set SMTP environment variables on the host (Railway, etc.):
+
+| Variable | Example |
+|----------|---------|
+| `FEEDBACK_EMAIL_TO` | `tooling_village_30@icloud.com` (default if unset) |
+| `FEEDBACK_SMTP_HOST` | `smtp.mail.me.com` (iCloud) or your provider |
+| `FEEDBACK_SMTP_PORT` | `587` |
+| `FEEDBACK_SMTP_USER` | full email for the sending account |
+| `FEEDBACK_SMTP_PASSWORD` | app-specific password |
+| `FEEDBACK_EMAIL_FROM` | optional; defaults to `FEEDBACK_SMTP_USER` |
+
+Without SMTP, feedback is still stored locally and the UI offers **mailto** + copy-to-clipboard.
 
 ## Data Sources
 

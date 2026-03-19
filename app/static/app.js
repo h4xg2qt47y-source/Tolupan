@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   bindFlags('target-flags', lang => { targetLang = lang; updateLabels(); });
   document.getElementById('swap-btn').addEventListener('click', swapLangs);
   document.getElementById('translate-btn').addEventListener('click', doTranslate);
+  const tfl = document.getElementById('translator-feedback-link');
+  if (tfl) tfl.addEventListener('click', goTranslatorFeedback);
   document.getElementById('mic-btn').addEventListener('click', toggleRecording);
   document.getElementById('clear-btn').addEventListener('click', clearInput);
   document.getElementById('speak-btn').addEventListener('click', speakOutput);
@@ -154,6 +156,36 @@ function displayResult(data) {
 
   metaEl.innerHTML = metaHTML;
   metaEl.className = 'meta-row visible';
+}
+
+function getTranslatorOutputPlain() {
+  const out = document.getElementById('output-text');
+  if (!out || out.querySelector('.placeholder')) return '';
+  const ranks = out.querySelectorAll('.translation-candidate .rank-text');
+  if (ranks.length) {
+    return Array.from(ranks).map((p) => p.textContent.trim()).join('\n--- alternative ---\n');
+  }
+  return out.innerText.trim();
+}
+
+function goTranslatorFeedback(ev) {
+  if (ev && (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0)) return;
+  if (ev) ev.preventDefault();
+  const input = document.getElementById('input-text').value.trim();
+  const shown = getTranslatorOutputPlain();
+  try {
+    sessionStorage.setItem(
+      'tol_feedback_prefill',
+      JSON.stringify({
+        from_page: 'translator',
+        category: 'translation_wrong',
+        source_text: input,
+        shown: shown || '',
+        langs: `${sourceLang} → ${targetLang}`,
+      })
+    );
+  } catch (_) {}
+  window.location.href = '/feedback';
 }
 
 /* ---- Speech Recognition ---- */

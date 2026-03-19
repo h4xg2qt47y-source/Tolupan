@@ -22,6 +22,9 @@
     if (params.get('word')) openWord(params.get('word'));
     if (params.get('q')) { $('q').value = params.get('q'); doSearch(); }
     else showWelcome();
+
+    const dfl = $('dictionary-feedback-link');
+    if (dfl) dfl.addEventListener('click', goDictionaryFeedback);
   });
 
   /* ── Stats (fast, one query) ── */
@@ -200,6 +203,27 @@
     return p;
   }
 
+  function goDictionaryFeedback(ev) {
+    if (ev && (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0)) return;
+    if (ev) ev.preventDefault();
+    const q = $('q').value.trim();
+    const summary = ($('results') && $('results').innerText || '').trim().slice(0, 4000);
+    try {
+      sessionStorage.setItem(
+        'tol_feedback_prefill',
+        JSON.stringify({
+          from_page: 'dictionary',
+          category: 'dictionary_entry',
+          source_text: q,
+          shown: summary || '(no search results on screen — describe in the form)',
+          langs: 'dictionary',
+        })
+      );
+    } catch (_) {}
+    window.location.href = '/feedback';
+  }
+
   window.dictGoPage = function(p) { page = p; doSearch(); window.scrollTo(0,0); };
   window.openWord = openWord;
+  window.goDictionaryFeedback = goDictionaryFeedback;
 })();

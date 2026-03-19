@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tol Translator — Tolupan ↔ English ↔ Español</title>
   <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/feedback.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -107,6 +108,13 @@
         </div>
       </div>
 
+      <div class="feedback-cta-strip" id="translator-feedback-strip">
+        <p data-es="¿La traducción no cuadra o falta una palabra? Cuéntanos para mejorar el diccionario y el motor." data-en="Translation off or missing a word? Tell us so we can improve the dictionary and engine.">
+          ¿La traducción no cuadra o falta una palabra? Cuéntanos para mejorar el diccionario y el motor.
+        </p>
+        <a href="/feedback" id="translator-feedback-link" data-es="Enviar comentario" data-en="Send feedback">Enviar comentario</a>
+      </div>
+
       <!-- Translate Button -->
       <button class="translate-btn" id="translate-btn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
@@ -136,7 +144,7 @@
 
     <footer>
       <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
-      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a> · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a> · <a href="/feedback" style="color:inherit;text-decoration:underline" data-es="Comentarios" data-en="Feedback">Comentarios</a> · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
     </footer>
   </div>
 
