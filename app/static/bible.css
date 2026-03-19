@@ -254,6 +254,25 @@
 }
 .verse-text { flex: 1; }
 
+.verse-tts-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px; height: 20px;
+  border: none; background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  border-radius: 50%;
+  transition: color .15s, background .15s;
+  margin-top: 1px;
+  opacity: .5;
+}
+.verse-tts-btn:hover { color: var(--accent); opacity: 1; background: var(--accent-light); }
+.verse-tts-btn.speaking { color: var(--accent); opacity: 1; animation: pulse-anim 1s ease infinite; }
+.verse-tts-btn svg { width: 13px; height: 13px; }
+
 /* ===== Copyright Footer ===== */
 .bible-copyright {
   margin-top: 2rem;

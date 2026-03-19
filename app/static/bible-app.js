@@ -8,8 +8,59 @@
 
   const SPEAKER_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
   const STOP_SVG = `<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1"/></svg>`;
+  const MINI_SPEAKER = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3z"/><path d="M16.5 12A4.5 4.5 0 0 0 14 8v8a4.47 4.47 0 0 0 2.5-4z"/></svg>`;
   const LEFT_ARROW = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
   const RIGHT_ARROW = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>`;
+
+  let ttsAvailable = false;
+  let activeTtsBtn = null;
+
+  fetch("/api/tts-status").then(r => r.json()).then(d => { ttsAvailable = d.available; }).catch(() => {});
+
+  function speakBrowser(text, langCode, btn) {
+    if (!text || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    clearTtsBtn();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = langCode;
+    utter.rate = 0.9;
+    activeTtsBtn = btn;
+    btn.classList.add("speaking");
+    utter.onend = () => clearTtsBtn();
+    utter.onerror = () => clearTtsBtn();
+    window.speechSynthesis.speak(utter);
+  }
+
+  function speakTol(text, btn) {
+    if (!text) return;
+    if (!ttsAvailable) { speakBrowser(text, "es-HN", btn); return; }
+    stopAudio();
+    clearTtsBtn();
+    activeTtsBtn = btn;
+    btn.classList.add("speaking");
+    fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    })
+      .then(r => { if (!r.ok) throw new Error(); return r.blob(); })
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        currentAudio = new Audio(url);
+        currentAudio.play().catch(() => {});
+        currentAudio.addEventListener("ended", () => {
+          clearTtsBtn();
+          URL.revokeObjectURL(url);
+          currentAudio = null;
+        });
+      })
+      .catch(() => clearTtsBtn());
+  }
+
+  function clearTtsBtn() {
+    window.speechSynthesis?.cancel();
+    if (activeTtsBtn) { activeTtsBtn.classList.remove("speaking"); activeTtsBtn = null; }
+  }
 
   /* ---- Routing ---- */
   function parseHash() {
@@ -53,6 +104,7 @@
 
   /* ---- Audio ---- */
   function stopAudio() {
+    window.speechSynthesis?.cancel();
     if (currentAudio) {
       currentAudio.pause();
       currentAudio.currentTime = 0;
@@ -63,6 +115,7 @@
       currentPlayingBtn.innerHTML = SPEAKER_SVG;
       currentPlayingBtn = null;
     }
+    clearTtsBtn();
   }
 
   function playVerse(url, btn) {
@@ -242,24 +295,30 @@
         <tbody>`;
 
     for (const v of data.verses) {
+      const tolBtn = v.tol ? `<button class="verse-tts-btn" data-tts-tol="${attr(v.tol)}" title="Listen in Tol">${MINI_SPEAKER}</button>` : "";
+      const esBtn = v.spanish ? `<button class="verse-tts-btn" data-tts-es="${attr(v.spanish)}" title="Escuchar en Español">${MINI_SPEAKER}</button>` : "";
+      const enBtn = v.english ? `<button class="verse-tts-btn" data-tts-en="${attr(v.english)}" title="Listen in English">${MINI_SPEAKER}</button>` : "";
       html += `
           <tr>
             <td data-lang="Tol">
               <div class="verse-cell-wrap">
                 <span class="verse-num">${v.verse}</span>
                 <span class="verse-text">${escHtml(v.tol)}</span>
+                ${tolBtn}
               </div>
             </td>
             <td data-lang="Español">
               <div class="verse-cell-wrap">
                 <span class="verse-num">${v.verse}</span>
                 <span class="verse-text">${escHtml(v.spanish)}</span>
+                ${esBtn}
               </div>
             </td>
             <td data-lang="English">
               <div class="verse-cell-wrap">
                 <span class="verse-num">${v.verse}</span>
                 <span class="verse-text">${escHtml(v.english)}</span>
+                ${enBtn}
               </div>
             </td>
           </tr>`;
@@ -290,6 +349,28 @@
       });
     });
 
+    $main.querySelectorAll("[data-tts-tol]").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        stopAudio();
+        speakTol(btn.dataset.ttsTol, btn);
+      });
+    });
+    $main.querySelectorAll("[data-tts-es]").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        stopAudio();
+        speakBrowser(btn.dataset.ttsEs, "es-HN", btn);
+      });
+    });
+    $main.querySelectorAll("[data-tts-en]").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        stopAudio();
+        speakBrowser(btn.dataset.ttsEn, "en-US", btn);
+      });
+    });
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -298,5 +379,10 @@
     const esc = s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     if (esc === "(see verse 1)") return `<em style="color:var(--text-muted);font-size:.8em">↑ see verse 1</em>`;
     return esc;
+  }
+
+  function attr(s) {
+    if (!s) return "";
+    return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 })();
