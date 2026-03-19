@@ -32,8 +32,9 @@ ffmpeg
 # Archives
 *.zip
 
-# Empty root-level db placeholder
+# Database (the full .db is rebuilt from compressed parts at deploy time)
 /tol.db
+app/data/tol.db
 
 # IDE / editor
 .idea/
