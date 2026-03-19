@@ -13,16 +13,14 @@
     <header>
       <h1>
         <span class="logo-icon">🌿</span>
-        Tol Translator
+        <span data-es="Traductor Tol" data-en="Tol Translator">Traductor Tol</span>
       </h1>
       <p class="subtitle">Tolupan&ensp;·&ensp;Montaña de la Flor, Honduras</p>
       <nav class="header-nav">
-        <a href="/" class="nav-link nav-active">Translator</a>
-        <a href="/dictionary" class="nav-link">Dictionary</a>
+        <a href="/" class="nav-link nav-active" data-es="Traductor" data-en="Translator">Traductor</a>
+        <a href="/dictionary" class="nav-link" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
         <a href="/bible" class="nav-link">Dios Vele</a>
-        <a href="/test" class="nav-link">Grammar Tests</a>
-        <a href="/learn" class="nav-link">Aprende</a>
-        <a href="/sources" class="nav-link">Sources</a>
+        <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
       </nav>
     </header>
 
@@ -30,7 +28,7 @@
       <!-- Language Selector Row -->
       <div class="lang-row">
         <div class="lang-panel source-panel">
-          <label class="panel-label">From</label>
+          <label class="panel-label" data-es="De" data-en="From">De</label>
           <div class="flag-group" id="source-flags">
             <button class="flag-btn" data-lang="tol" title="Tol (Tolupan)">
               <img src="/static/assets/tol-icon.png" alt="Tol" />
@@ -52,7 +50,7 @@
         </button>
 
         <div class="lang-panel target-panel">
-          <label class="panel-label">To</label>
+          <label class="panel-label" data-es="A" data-en="To">A</label>
           <div class="flag-group" id="target-flags">
             <button class="flag-btn active" data-lang="tol" title="Tol (Tolupan)">
               <img src="/static/assets/tol-icon.png" alt="Tol" />
@@ -84,7 +82,7 @@
               </button>
             </div>
           </div>
-          <textarea id="input-text" placeholder="Type or speak…" rows="5"></textarea>
+          <textarea id="input-text" placeholder="Escribe o habla…" rows="5"></textarea>
           <div class="recording-indicator" id="recording-indicator">
             <span class="pulse"></span> Listening…
           </div>
@@ -103,7 +101,7 @@
             </div>
           </div>
           <div class="output-text" id="output-text">
-            <span class="placeholder">Translation will appear here</span>
+            <span class="placeholder" data-es="La traducción aparecerá aquí" data-en="Translation will appear here">La traducción aparecerá aquí</span>
           </div>
           <div class="meta-row" id="meta-row"></div>
         </div>
@@ -112,21 +110,21 @@
       <!-- Translate Button -->
       <button class="translate-btn" id="translate-btn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-        Translate
+        <span data-es="Traducir" data-en="Translate">Traducir</span>
       </button>
 
       <!-- Dictionary Panel -->
       <details class="dict-panel">
-        <summary>Dictionary Lookup</summary>
+        <summary data-es="Búsqueda en Diccionario" data-en="Dictionary Lookup">Búsqueda en Diccionario</summary>
         <div class="dict-body">
           <div class="dict-search">
-            <input type="text" id="dict-input" placeholder="Search word…" />
+            <input type="text" id="dict-input" placeholder="Buscar palabra…" />
             <select id="dict-lang">
               <option value="tol">Tol</option>
               <option value="es">Español</option>
               <option value="en">English</option>
             </select>
-            <button class="small-btn" id="dict-btn">Search</button>
+            <button class="small-btn" id="dict-btn" data-es="Buscar" data-en="Search">Buscar</button>
           </div>
           <div class="dict-results" id="dict-results"></div>
         </div>
@@ -137,11 +135,12 @@
     </main>
 
     <footer>
-      <p>Built to preserve and share the Tol (Tolupan) language of Honduras</p>
-      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline">Sources</a>: Language Conservation Project · SIL International · ScriptureEarth · ELAR Archive</p>
+      <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a> · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
     </footer>
   </div>
 
+  <script src="/static/i18n.js"></script>
   <script src="/static/app.js"></script>
 </body>
 </html>

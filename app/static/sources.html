@@ -64,28 +64,27 @@
 <body>
   <div class="app">
     <header>
-      <h1><span class="logo-icon">🌿</span> Sources</h1>
-      <p class="subtitle">Data sources for the Tol Language Project</p>
+      <h1><span class="logo-icon">🌿</span> <span data-es="Fuentes" data-en="Sources">Fuentes</span></h1>
+      <p class="subtitle" data-es="Fuentes de datos del Proyecto de Idioma Tol" data-en="Data sources for the Tol Language Project">Fuentes de datos del Proyecto de Idioma Tol</p>
       <nav class="header-nav">
-        <a href="/" class="nav-link">Translator</a>
-        <a href="/dictionary" class="nav-link">Dictionary</a>
+        <a href="/" class="nav-link" data-es="Traductor" data-en="Translator">Traductor</a>
+        <a href="/dictionary" class="nav-link" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
         <a href="/bible" class="nav-link">Dios Vele</a>
-        <a href="/test" class="nav-link">Grammar Tests</a>
-        <a href="/learn" class="nav-link">Aprende</a>
-        <a href="/sources" class="nav-link nav-active">Sources</a>
+        <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
       </nav>
     </header>
 
     <main class="sources-page" id="sources-main">
-      <div id="loading" style="text-align:center;padding:3rem;color:var(--text-muted)">Loading sources...</div>
+      <div id="loading" style="text-align:center;padding:3rem;color:var(--text-muted)" data-es="Cargando fuentes..." data-en="Loading sources...">Cargando fuentes...</div>
     </main>
 
     <footer>
-      <p>Built to preserve and share the Tol (Tolupan) language of Honduras</p>
-      <p class="small">Data sources: Language Conservation Project · SIL International · ScriptureEarth · ELAR Archive</p>
+      <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
+      <p class="small"><a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
     </footer>
   </div>
 
+  <script src="/static/i18n.js"></script>
   <script>
     const WEB_SOURCES = [
       {

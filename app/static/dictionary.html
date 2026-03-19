@@ -12,15 +12,13 @@
 <body>
   <div class="app dict-app">
     <header>
-      <h1><span class="logo-icon">🌿</span> Tol Dictionary</h1>
-      <p class="subtitle">Search any word in Tol, English, or Spanish</p>
+      <h1><span class="logo-icon">🌿</span> <span data-es="Diccionario Tol" data-en="Tol Dictionary">Diccionario Tol</span></h1>
+      <p class="subtitle" data-es="Busca cualquier palabra en Tol, Inglés o Español" data-en="Search any word in Tol, English, or Spanish">Busca cualquier palabra en Tol, Inglés o Español</p>
       <nav class="header-nav">
-        <a href="/" class="nav-link">Translator</a>
-        <a href="/dictionary" class="nav-link nav-active">Dictionary</a>
+        <a href="/" class="nav-link" data-es="Traductor" data-en="Translator">Traductor</a>
+        <a href="/dictionary" class="nav-link nav-active" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
         <a href="/bible" class="nav-link">Dios Vele</a>
-        <a href="/test" class="nav-link">Grammar Tests</a>
-        <a href="/learn" class="nav-link">Aprende</a>
-        <a href="/sources" class="nav-link">Sources</a>
+        <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
       </nav>
     </header>
 
@@ -30,7 +28,7 @@
       <div class="search-bar">
         <div class="search-box">
           <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <input type="text" id="q" placeholder="Type a word — Tol, English, or Spanish…" autocomplete="off" autofocus />
+          <input type="text" id="q" placeholder="Escribe una palabra — Tol, Inglés o Español…" autocomplete="off" autofocus />
           <button class="clear-btn" id="clear-btn">&times;</button>
         </div>
       </div>
@@ -48,10 +46,11 @@
     </main>
 
     <footer>
-      <p>Built to preserve and share the Tol (Tolupan) language of Honduras</p>
-      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline">Sources</a>: Language Conservation Project · SIL International · ScriptureEarth · ELAR Archive</p>
+      <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras</p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Fuentes" data-en="Sources">Fuentes</a> · <a href="/test" style="color:inherit;text-decoration:underline" data-es="Pruebas de Gramática" data-en="Grammar Tests">Pruebas de Gramática</a></p>
     </footer>
   </div>
+  <script src="/static/i18n.js"></script>
   <script src="/static/dictionary-app.js"></script>
 </body>
 </html>

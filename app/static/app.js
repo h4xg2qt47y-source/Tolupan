@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   updateLabels();
   loadStats();
+
+  window.addEventListener("sitelangchange", () => {
+    const l = window.siteLang();
+    document.getElementById("input-text").placeholder = l === "es" ? "Escribe o habla…" : "Type or speak…";
+    document.getElementById("dict-input").placeholder = l === "es" ? "Buscar palabra…" : "Search word…";
+  });
 });
 
 /* ---- Flag binding ---- */

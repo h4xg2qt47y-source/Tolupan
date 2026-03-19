@@ -13,6 +13,11 @@
     bindSearch();
     bindModal();
 
+    window.addEventListener("sitelangchange", () => {
+      const l = window.siteLang();
+      $('q').placeholder = l === "es" ? "Escribe una palabra — Tol, Inglés o Español…" : "Type a word — Tol, English, or Spanish…";
+    });
+
     const params = new URLSearchParams(location.search);
     if (params.get('word')) openWord(params.get('word'));
     if (params.get('q')) { $('q').value = params.get('q'); doSearch(); }

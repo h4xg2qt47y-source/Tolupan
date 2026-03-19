@@ -78,15 +78,13 @@
 <body>
   <div class="app">
     <header>
-      <h1><span class="logo-icon">🌿</span> Tol Translator</h1>
-      <p class="subtitle">Grammar Test Suite</p>
+      <h1><span class="logo-icon">🌿</span> <span data-es="Traductor Tol" data-en="Tol Translator">Traductor Tol</span></h1>
+      <p class="subtitle" data-es="Pruebas de Gramática" data-en="Grammar Test Suite">Pruebas de Gramática</p>
       <nav class="header-nav">
-        <a href="/" class="nav-link">Translator</a>
-        <a href="/dictionary" class="nav-link">Dictionary</a>
+        <a href="/" class="nav-link" data-es="Traductor" data-en="Translator">Traductor</a>
+        <a href="/dictionary" class="nav-link" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
         <a href="/bible" class="nav-link">Dios Vele</a>
-        <a href="/test" class="nav-link nav-active">Grammar Tests</a>
-        <a href="/learn" class="nav-link">Aprende</a>
-        <a href="/sources" class="nav-link">Sources</a>
+        <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
       </nav>
     </header>
 
@@ -94,44 +92,45 @@
       <div class="score-banner" id="score-banner">
         <div>
           <div class="score-big" id="pass-rate">--</div>
-          <div class="score-label">Pass Rate</div>
+          <div class="score-label" data-es="Tasa de Aprobación" data-en="Pass Rate">Tasa de Aprobación</div>
         </div>
         <div class="score-stat">
           <div class="val" id="passed-count">--</div>
-          <div class="score-label">Passed</div>
+          <div class="score-label" data-es="Aprobadas" data-en="Passed">Aprobadas</div>
         </div>
         <div class="score-stat">
           <div class="val" id="total-count">--</div>
           <div class="score-label">Total</div>
         </div>
         <div class="progress-bar">
-          <div class="score-label" style="margin-bottom:.3rem">Word Match Coverage</div>
+          <div class="score-label" style="margin-bottom:.3rem" data-es="Cobertura de Coincidencia" data-en="Word Match Coverage">Cobertura de Coincidencia</div>
           <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0"></div></div>
         </div>
       </div>
 
       <div class="filter-bar">
-        <label>Filter:</label>
+        <label data-es="Filtrar:" data-en="Filter:">Filtrar:</label>
         <select id="filter-select">
-          <option value="all">All</option>
-          <option value="pass">Passed (>=50%)</option>
-          <option value="partial">Partial (20-49%)</option>
-          <option value="fail">Failed (<20%)</option>
+          <option value="all" data-es="Todos" data-en="All">Todos</option>
+          <option value="pass" data-es="Aprobadas (>=50%)" data-en="Passed (>=50%)">Aprobadas (>=50%)</option>
+          <option value="partial" data-es="Parcial (20-49%)" data-en="Partial (20-49%)">Parcial (20-49%)</option>
+          <option value="fail" data-es="Fallidas (<20%)" data-en="Failed (<20%)">Fallidas (&lt;20%)</option>
         </select>
-        <button id="rerun-btn">Re-run Tests</button>
+        <button id="rerun-btn" data-es="Re-ejecutar Pruebas" data-en="Re-run Tests">Re-ejecutar Pruebas</button>
       </div>
 
       <div id="results-container">
-        <div class="loading">Running grammar tests...</div>
+        <div class="loading" data-es="Ejecutando pruebas de gramática..." data-en="Running grammar tests...">Ejecutando pruebas de gramática...</div>
       </div>
     </main>
 
     <footer>
-      <p>Grammar test sentences sourced from Holt (1999), Haurholm-Larsen & Pynes, and other Tol grammar references</p>
-      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline">View all sources</a></p>
+      <p data-es="Oraciones de prueba de gramática de Holt (1999), Haurholm-Larsen & Pynes, y otras referencias de gramática Tol" data-en="Grammar test sentences sourced from Holt (1999), Haurholm-Larsen & Pynes, and other Tol grammar references">Oraciones de prueba de gramática de Holt (1999), Haurholm-Larsen & Pynes, y otras referencias de gramática Tol</p>
+      <p class="small"><a href="/sources" style="color:inherit;text-decoration:underline" data-es="Ver todas las fuentes" data-en="View all sources">Ver todas las fuentes</a></p>
     </footer>
   </div>
 
+  <script src="/static/i18n.js"></script>
   <script>
     const container = document.getElementById("results-container");
     const filterSelect = document.getElementById("filter-select");
