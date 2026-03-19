@@ -1,8 +1,70 @@
 /* Feedback page */
 .feedback-app main {
-  max-width: 720px;
+  max-width: 520px;
   margin: 0 auto;
   padding: 0 1.25rem 2.5rem;
+}
+
+.feedback-one-liner {
+  text-align: center;
+  color: var(--text-muted, #718096);
+  font-size: 0.92rem;
+  margin: 0 0 1rem;
+}
+
+.feedback-details {
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: var(--surface, #fff);
+}
+
+.feedback-details summary {
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent, #2d5a27);
+  list-style: none;
+}
+.feedback-details summary::-webkit-details-marker { display: none; }
+.feedback-details summary::before {
+  content: "▸ ";
+  opacity: 0.6;
+}
+.feedback-details[open] summary::before {
+  content: "▾ ";
+}
+
+.feedback-details-body {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--border, #edf2f7);
+  font-size: 0.9rem;
+}
+
+.feedback-tips .feedback-details-body ul {
+  margin: 0.5rem 0 0 1.1rem;
+  padding: 0;
+}
+.feedback-tips li { margin-bottom: 0.35rem; }
+
+.feedback-form-simple #fb-quick {
+  min-height: 120px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.feedback-form-simple label[for="fb-quick"] {
+  margin-top: 0;
+}
+
+.feedback-actions-main {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-advanced .cursor-preview-wrap {
+  margin-top: 1rem;
 }
 
 .feedback-lead {
