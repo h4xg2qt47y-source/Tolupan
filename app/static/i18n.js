@@ -9,7 +9,8 @@
   const KEY = "tol_site_lang";
   let lang = localStorage.getItem(KEY) || "es";
 
-  const FLAG_ES = '<svg viewBox="0 0 36 24" width="20" height="14" style="vertical-align:middle"><rect width="36" height="24" fill="#fff"/><rect width="36" height="8" fill="#0051AB"/><rect y="16" width="36" height="8" fill="#0051AB"/></svg>';
+  const S = '0,-1.4 .33,-.45 1.33,-.43 .53,.17 .82,1.13 0,.56 -.82,1.13 -.53,.17 -1.33,-.43 -.33,-.45';
+  const FLAG_ES = '<svg viewBox="0 0 36 24" width="20" height="14" style="vertical-align:middle"><rect width="36" height="24" fill="#fff"/><rect width="36" height="8" fill="#0051AB"/><rect y="16" width="36" height="8" fill="#0051AB"/><g fill="#0051AB"><polygon points="' + S + '" transform="translate(14,10)"/><polygon points="' + S + '" transform="translate(22,10)"/><polygon points="' + S + '" transform="translate(18,12)"/><polygon points="' + S + '" transform="translate(14,14)"/><polygon points="' + S + '" transform="translate(22,14)"/></g></svg>';
   const FLAG_EN = '<svg viewBox="0 0 36 24" width="20" height="14" style="vertical-align:middle"><rect width="36" height="24" fill="#B31942"/><rect y="1.85" width="36" height="1.85" fill="#fff"/><rect y="5.54" width="36" height="1.85" fill="#fff"/><rect y="9.23" width="36" height="1.85" fill="#fff"/><rect y="12.92" width="36" height="1.85" fill="#fff"/><rect y="16.62" width="36" height="1.85" fill="#fff"/><rect y="20.31" width="36" height="1.85" fill="#fff"/><rect width="14.4" height="12.92" fill="#002868"/></svg>';
 
   function applyLang() {
