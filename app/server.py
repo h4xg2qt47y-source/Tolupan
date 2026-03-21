@@ -511,6 +511,65 @@ async def bible_page():
     return FileResponse(str(STATIC_DIR / "bible.html"))
 
 
+@app.get("/api/bible/search")
+async def bible_search(q: str = ""):
+    """Search Bible verses across all three languages. Returns 10 random matches."""
+    import random as _random
+    q = q.strip()
+    if not q:
+        return {"results": [], "total": 0, "query": ""}
+
+    conn = _db()
+    q_lower = q.lower()
+    like = f"%{q_lower}%"
+
+    rows = conn.execute(
+        """SELECT source, tol, spanish, english FROM parallel_sentences
+           WHERE source LIKE 'bible_align:%' AND source LIKE '%:%:%'
+             AND (LOWER(tol) LIKE ? OR LOWER(spanish) LIKE ? OR LOWER(english) LIKE ?)
+           LIMIT 500""",
+        [like, like, like],
+    ).fetchall()
+    conn.close()
+
+    parsed = []
+    for r in rows:
+        m = re.match(r"bible_align:([A-Z0-9]+?)(\d{2}):(\d+)", r["source"])
+        if not m or int(m.group(3)) == 0:
+            continue
+        book_code = m.group(1)
+        chapter = int(m.group(2))
+        verse = int(m.group(3))
+        names = NT_BOOK_NAMES.get(book_code, {"tol": book_code, "es": book_code, "en": book_code})
+
+        matched_langs = []
+        if q_lower in (r["tol"] or "").lower():
+            matched_langs.append("tol")
+        if q_lower in (r["spanish"] or "").lower():
+            matched_langs.append("spanish")
+        if q_lower in (r["english"] or "").lower():
+            matched_langs.append("english")
+
+        parsed.append({
+            "book": book_code,
+            "chapter": chapter,
+            "verse": verse,
+            "names": names,
+            "ref": f"{names['en']} {chapter}:{verse}",
+            "tol": r["tol"] or "",
+            "spanish": r["spanish"] or "",
+            "english": r["english"] or "",
+            "matched_langs": matched_langs,
+        })
+
+    total = len(parsed)
+    if total > 10:
+        parsed = _random.sample(parsed, 10)
+    parsed.sort(key=lambda v: (NT_BOOK_ORDER.index(v["book"]) if v["book"] in NT_BOOK_ORDER else 99, v["chapter"], v["verse"]))
+
+    return {"results": parsed, "total": total, "query": q}
+
+
 @app.get("/api/bible/books")
 async def bible_books():
     """Return all NT books with chapter counts."""

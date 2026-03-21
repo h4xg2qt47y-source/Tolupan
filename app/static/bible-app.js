@@ -62,10 +62,14 @@
     if (activeTtsBtn) { activeTtsBtn.classList.remove("speaking"); activeTtsBtn = null; }
   }
 
+  /* ---- Search state ---- */
+  let searchDebounce = null;
+
   /* ---- Routing ---- */
   function parseHash() {
     const h = location.hash.replace(/^#\/?/, "");
     if (!h) return { view: "books" };
+    if (h.startsWith("search/")) return { view: "search", query: decodeURIComponent(h.slice(7)) };
     const parts = h.split("/");
     if (parts.length === 1) return { view: "chapters", book: parts[0].toUpperCase() };
     if (parts.length === 2) return { view: "read", book: parts[0].toUpperCase(), chapter: parseInt(parts[1], 10) };
@@ -82,7 +86,8 @@
   function route() {
     stopAudio();
     const state = parseHash();
-    if (state.view === "chapters") showChapterList(state.book);
+    if (state.view === "search") showSearchResults(state.query);
+    else if (state.view === "chapters") showChapterList(state.book);
     else if (state.view === "read") showChapter(state.book, state.chapter);
     else showBookList();
   }
@@ -158,6 +163,16 @@
 
     let html = `<div class="bible-breadcrumb"><span>Dios Vele — New Testament</span></div>`;
 
+    html += `
+      <div class="bible-search-bar">
+        <div class="bible-search-wrap">
+          <svg class="bible-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="bible-search-input" class="bible-search-input"
+                 placeholder="Search verses in Tol, Spanish, or English…" autocomplete="off" />
+        </div>
+        <p class="bible-search-hint">Try: "quelel", "love", "beautiful", "Dios", "corazón"</p>
+      </div>`;
+
     for (const sec of sections) {
       if (!sec.books.length) continue;
       html += `<h3 style="font-size:.85rem;color:var(--text-muted);margin:1.25rem 0 .5rem;font-weight:600;">${sec.title}</h3>`;
@@ -179,6 +194,125 @@
     $main.querySelectorAll(".book-card").forEach(card => {
       card.addEventListener("click", () => navigate(card.dataset.book));
     });
+
+    const searchInput = document.getElementById("bible-search-input");
+    if (searchInput) {
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const q = searchInput.value.trim();
+          if (q.length >= 2) navigate(`search/${encodeURIComponent(q)}`);
+        }
+      });
+      searchInput.addEventListener("input", () => {
+        clearTimeout(searchDebounce);
+        const q = searchInput.value.trim();
+        if (q.length >= 3) {
+          searchDebounce = setTimeout(() => navigate(`search/${encodeURIComponent(q)}`), 600);
+        }
+      });
+    }
+  }
+
+  /* ---- Search Results View ---- */
+  async function showSearchResults(query) {
+    $main.innerHTML = `<div class="bible-loading">Searching for "${escHtml(query)}"...</div>`;
+
+    let data;
+    try {
+      const res = await fetch(`/api/bible/search?q=${encodeURIComponent(query)}`);
+      data = await res.json();
+    } catch {
+      $main.innerHTML = `<div class="bible-loading">Search failed. Please try again.</div>`;
+      return;
+    }
+
+    let html = `
+      <div class="bible-breadcrumb">
+        <a onclick="location.hash=''">Dios Vele</a>
+        <span class="sep">›</span>
+        <span>Search</span>
+      </div>
+      <div class="bible-search-bar">
+        <div class="bible-search-wrap">
+          <svg class="bible-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="bible-search-input" class="bible-search-input"
+                 placeholder="Search verses in Tol, Spanish, or English…" value="${attr(query)}" autocomplete="off" />
+        </div>
+      </div>`;
+
+    if (!data.results.length) {
+      html += `<div class="bible-search-empty">No verses found matching "<strong>${escHtml(query)}</strong>"</div>`;
+    } else {
+      html += `<div class="bible-search-meta">Found <strong>${data.total}</strong> verse${data.total !== 1 ? "s" : ""} matching "<strong>${escHtml(query)}</strong>"${data.total > 10 ? " — showing 10 random results" : ""}</div>`;
+
+      for (const v of data.results) {
+        const refLabel = `${v.names.en} ${v.chapter}:${v.verse}`;
+        const chapterLink = `${v.book}/${v.chapter}`;
+
+        html += `
+          <div class="search-result-card">
+            <div class="search-result-ref">
+              <a class="search-ref-link" data-nav="${chapterLink}" title="Open ${v.names.en} ${v.chapter}">${refLabel}</a>
+              <span class="search-lang-badges">${v.matched_langs.map(l => `<span class="lang-badge lang-${l}">${l === "tol" ? "Tol" : l === "spanish" ? "ES" : "EN"}</span>`).join("")}</span>
+            </div>
+            <div class="search-result-verses">
+              <div class="search-verse-col search-verse-tol">
+                <div class="search-verse-lang">Tol</div>
+                <div class="search-verse-text">${highlightMatch(v.tol, query)}</div>
+              </div>
+              <div class="search-verse-col search-verse-es">
+                <div class="search-verse-lang">Español</div>
+                <div class="search-verse-text">${highlightMatch(v.spanish, query)}</div>
+              </div>
+              <div class="search-verse-col search-verse-en">
+                <div class="search-verse-lang">English</div>
+                <div class="search-verse-text">${highlightMatch(v.english, query)}</div>
+              </div>
+            </div>
+          </div>`;
+      }
+    }
+
+    $main.innerHTML = html;
+
+    $main.querySelectorAll("[data-nav]").forEach(el => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        navigate(el.dataset.nav);
+      });
+    });
+
+    const searchInput = document.getElementById("bible-search-input");
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const q = searchInput.value.trim();
+          if (q.length >= 2) navigate(`search/${encodeURIComponent(q)}`);
+        }
+      });
+      searchInput.addEventListener("input", () => {
+        clearTimeout(searchDebounce);
+        const q = searchInput.value.trim();
+        if (q.length >= 3) {
+          searchDebounce = setTimeout(() => navigate(`search/${encodeURIComponent(q)}`), 600);
+        }
+      });
+    }
+  }
+
+  function highlightMatch(text, query) {
+    if (!text || !query) return escHtml(text);
+    const escaped = escHtml(text);
+    const qEsc = escHtml(query).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    try {
+      return escaped.replace(new RegExp(`(${qEsc})`, "gi"), `<mark class="search-highlight">$1</mark>`);
+    } catch {
+      return escaped;
+    }
   }
 
   /* ---- Chapter List View ---- */

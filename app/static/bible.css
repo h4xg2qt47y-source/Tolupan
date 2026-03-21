@@ -293,6 +293,144 @@
 .bible-copyright p { margin-bottom: .35rem; }
 .bible-copyright p:last-child { margin-bottom: 0; }
 
+/* ===== Bible Verse Search ===== */
+.bible-search-bar {
+  margin-bottom: 1.25rem;
+}
+.bible-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.bible-search-icon {
+  position: absolute;
+  left: .85rem;
+  width: 18px;
+  height: 18px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.bible-search-input {
+  width: 100%;
+  padding: .7rem .85rem .7rem 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: .9rem;
+  color: var(--text);
+  transition: var(--transition);
+  outline: none;
+}
+.bible-search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+.bible-search-input::placeholder {
+  color: var(--text-muted);
+  font-size: .82rem;
+}
+.bible-search-hint {
+  font-size: .72rem;
+  color: var(--text-muted);
+  margin-top: .35rem;
+  padding-left: .2rem;
+}
+.bible-search-meta {
+  font-size: .82rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  padding-left: .1rem;
+}
+.bible-search-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+  font-size: .95rem;
+}
+
+/* Search result cards */
+.search-result-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: .75rem;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+.search-result-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+}
+
+.search-result-ref {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .55rem 1rem;
+  background: var(--surface-alt, var(--surface));
+  border-bottom: 1px solid var(--border);
+}
+.search-ref-link {
+  font-weight: 600;
+  font-size: .88rem;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.search-ref-link:hover {
+  text-decoration: underline;
+}
+
+.search-lang-badges {
+  display: flex;
+  gap: .3rem;
+}
+.lang-badge {
+  font-size: .6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: .1rem .4rem;
+  border-radius: 8px;
+}
+.lang-badge.lang-tol { background: #e8f5e9; color: #2e7d32; }
+.lang-badge.lang-spanish { background: #fff3e0; color: #e65100; }
+.lang-badge.lang-english { background: #e3f2fd; color: #1565c0; }
+
+.search-result-verses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+.search-verse-col {
+  padding: .65rem 1rem;
+}
+.search-verse-col:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+.search-verse-lang {
+  font-size: .6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--accent);
+  margin-bottom: .3rem;
+}
+.search-verse-text {
+  font-size: .82rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+mark.search-highlight {
+  background: #fff176;
+  color: inherit;
+  padding: .05em .15em;
+  border-radius: 2px;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .verse-table thead th,
@@ -305,6 +443,14 @@
   .bible-app { padding: 1rem .75rem; }
   .book-list { grid-template-columns: 1fr; }
   .chapter-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); }
+
+  .search-result-verses {
+    grid-template-columns: 1fr;
+  }
+  .search-verse-col:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
 
   .verse-table,
   .verse-table thead,
