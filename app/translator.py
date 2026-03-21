@@ -93,13 +93,13 @@ def tol_phonetic_score(expected: str, actual: str) -> float:
 # ── Tol Grammar Constants ──────────────────────────────────────────────────
 
 TOL_PRONOUNS = {
-    "i": "naph", "me": "naph",
-    "you": "hiph",
-    "he": "huph", "him": "huph",
-    "she": "huph", "her": "huph",
-    "it": "huph",
-    "we": "kuph", "us": "kuph",
-    "they": "yuph", "them": "yuph",
+    "i": "napj", "me": "napj",
+    "you": "nun",
+    "he": "jupj", "him": "jupj",
+    "she": "jupj", "her": "jupj",
+    "it": "jupj",
+    "we": "cupj", "us": "cupj",
+    "they": "yupj", "them": "yupj",
 }
 
 # Map subject pronouns to person codes for verb conjugation
@@ -116,10 +116,10 @@ EN_PRONOUN_PERSON = {
 # 3sg before m,w,p,b,l → ho-; before k,g,t,'(glottal),h,vowels → hu-
 TOL_POSSESSIVES = {
     "my": "na-", "mine": "na-",
-    "your": "he-", "yours": "he-",
-    "his": "hu-", "her": "hu-", "its": "hu-",
-    "our": "ka-", "ours": "ka-",
-    "their": "sya-", "theirs": "sya-",
+    "your": "nu-", "yours": "nu-",
+    "his": "jupj", "her": "jupj", "its": "jupj",
+    "our": "cupj", "ours": "cupj",
+    "their": "yupj", "theirs": "yupj",
 }
 
 _1SG_M = set("pb")
@@ -128,7 +128,7 @@ _3SG_HO = set("mwpbl")
 
 
 def tol_possessive_prefix(en_possessive: str, tol_stem: str) -> str:
-    """Select the correct possessive prefix based on the stem's first phoneme."""
+    """Select the correct possessive form based on the stem's first phoneme."""
     poss = en_possessive.lower()
     first = ""
     for c in tol_stem:
@@ -139,15 +139,16 @@ def tol_possessive_prefix(en_possessive: str, tol_stem: str) -> str:
         return tol_stem
 
     if poss in ("my", "mine"):
-        if first in _1SG_M:
-            return "m-" + tol_stem
-        if first in _1SG_N:
-            return "n-" + tol_stem
-        return "na-" + tol_stem
+        return "napj " + tol_stem
+    if poss in ("your", "yours"):
+        return "nun " + tol_stem
+    # 3sg, 1pl, 3pl use standalone pronoun + noun (not prefix)
     if poss in ("his", "her", "its"):
-        if first in _3SG_HO:
-            return "ho-" + tol_stem
-        return "hu-" + tol_stem
+        return "jupj " + tol_stem
+    if poss in ("our", "ours"):
+        return "cupj " + tol_stem
+    if poss in ("their", "theirs"):
+        return "yupj " + tol_stem
     prefix = TOL_POSSESSIVES.get(poss, "")
     if prefix:
         return prefix + tol_stem
@@ -163,9 +164,9 @@ TOL_POSTPOSITIONS = {
     # mpes: cause, purpose, instrument
     "for": "mpes", "because": "mpes",
     # spatial
-    "from": "napé",
+    "from": "lal",
     "under": "'alá", "below": "'alá", "beneath": "'alá",
-    "above": "hay", "over": "hay",
+    # "above"/"over" removed — Tol uses different constructions
     "behind": "phyapha'a",
     "after": "khüil",
     "around": "t'asiyú",
@@ -174,7 +175,7 @@ TOL_POSTPOSITIONS = {
 # Words that introduce prepositional phrases in English
 EN_PREPOSITIONS = {
     "to", "in", "at", "on", "inside", "into", "with", "for", "because",
-    "from", "around", "under", "below", "beneath", "above", "over",
+    "from", "around", "under", "below", "beneath",
     "behind", "after", "than",
 }
 
@@ -198,28 +199,65 @@ TOL_WHEN = "na"  # adverbial subordinator 'when', placed at clause end
 TOL_QUESTION_MARKER = "nku"
 
 TOL_QUESTION_WORDS = {
-    "what": "chan", "which": "chan",
-    "who": "phakh", "whom": "phakh",
-    "where": "ka'ah",
+    "what": "tsjan", "which": "tsjan",
+    "who": "pjacj", "whom": "pjacj",
+    "where": "jolaj",
     "when": "'ona",
-    "how": "'oyn",
-    "why": "chanmpes",
+    "how": "tsjan",
+    "why": "tsjan mpes",
     "how many": "nol", "how much": "nol",
 }
 
 TOL_NEGATION = "ma"
-TOL_NEG_COPULA = "tulukh"
+TOL_NEG_COPULA = "tulucj"
 
 EN_STOPWORDS = {
     "a", "an", "the", "is", "are", "was", "were", "am", "be", "been",
     "being", "do", "does", "did", "will", "would", "shall", "should",
     "can", "could", "may", "might", "must", "have", "has", "had",
-    "having", "of", "that", "this", "these", "those", "which",
-    "there", "here", "very", "just", "also", "too", "so",
-    "when", "then", "order", "more", "like", "as",
+    "having", "of", "this",
+    "there", "here", "very", "so",
+    "then", "order", "more", "like", "as",
+    "but", "yet", "or", "both", "either",
+    "if", "although", "though", "while", "however", "therefore",
+    "about", "upon", "through", "before", "between", "up", "down",
+    "away", "out", "off", "back", "own", "by", "let's", "lets",
+    "himself", "herself", "itself", "themselves", "ourselves", "yourself",
 }
 
-EN_NEGATION_WORDS = {"not", "no", "never", "neither", "nor", "don't", "doesn't", "didn't", "won't", "can't", "isn't", "aren't", "wasn't", "weren't", "haven't", "hasn't", "hadn't"}
+EN_NEGATION_WORDS = {
+    "not", "no", "never", "neither", "nor",
+    "don't", "doesn't", "didn't", "won't", "can't", "isn't", "aren't",
+    "wasn't", "weren't", "haven't", "hasn't", "hadn't",
+    "dont", "doesnt", "didnt", "wont", "cant", "isnt", "arent",
+    "wasnt", "werent", "havent", "hasnt", "hadnt",
+    "wouldn't", "couldn't", "shouldn't",
+    "wouldnt", "couldnt", "shouldnt",
+}
+
+# Common English words that map to Tol function words (not in dictionary, but frequent)
+EN_TO_TOL_FUNCTION = {
+    "also": "wa", "even": "wa",
+    "when": "na", "then": "lovin",
+    "all": "pjü", "every": "pjü",
+    "again": "niswá", "already": "lovin",
+    "still": "más", "now": "quinam",
+    "only": "p'in", "just": "p'in",
+    "many": "pülücj", "much": "pülücj",
+    "other": "p'a", "another": "p'a",
+    "because": "mpes",
+    "and": "jis",
+    "people": "gente", "person": "gente",
+    "things": "'yüsa", "thing": "'yüsa",
+    "those": "nin", "these": "nin",
+    "one": "jin", "some": "nepénowa",
+    "true": "t'üc'", "truly": "t'üc'",
+    "same": "nin",
+    "great": "pajal", "good": "'üsüs",
+}
+
+# Relative pronouns that map to Tol "nin" when used mid-sentence
+EN_RELATIVE_PRONOUNS = {"who", "whom", "which", "that"}
 
 EN_BE_FORMS = {"is", "are", "was", "were", "am", "be", "been", "being"}
 
@@ -228,7 +266,27 @@ class TolTranslator:
     def __init__(self):
         self.conn = sqlite3.connect(str(DB_PATH), check_same_thread=False)
         self.conn.row_factory = sqlite3.Row
+        self._build_bible_word_freq()
         self._build_lookup_caches()
+
+    def _build_bible_word_freq(self):
+        """Build a frequency index of Tol words from the Bible corpus."""
+        from collections import Counter as _Counter
+        rows = self.conn.execute(
+            "SELECT tol FROM parallel_sentences WHERE source LIKE 'bible_align:%' AND tol IS NOT NULL AND tol != ''"
+        ).fetchall()
+        words = []
+        for r in rows:
+            words.extend(r["tol"].lower().split())
+        self._tol_bible_freq = _Counter(words)
+
+    def _tol_word_bible_score(self, tol_text: str) -> int:
+        """Return sum of Bible frequencies for words in a Tol phrase."""
+        total = 0
+        for w in tol_text.lower().split():
+            w_clean = w.strip(".,;:!?")
+            total += self._tol_bible_freq.get(w_clean, 0)
+        return total
 
     def _build_lookup_caches(self):
         self.tol_to_spanish = {}
@@ -286,13 +344,31 @@ class TolTranslator:
             for r in self.conn.execute("SELECT english, tol, confidence, source FROM direct_en_tol"):
                 eng = r["english"].lower().strip()
                 priority = source_priority.get(r["source"] or "", 0)
-                entry = {"tol": r["tol"], "confidence": r["confidence"], "_priority": priority, "source": r["source"] or ""}
+                bible_freq = self._tol_word_bible_score(r["tol"])
+                entry = {"tol": r["tol"], "confidence": r["confidence"], "_priority": priority,
+                         "source": r["source"] or "", "_bible_freq": bible_freq}
                 self.direct_en_tol_all[eng].append(entry)
                 existing = self.direct_en_tol.get(eng)
-                if (not existing
-                    or priority > existing.get("_priority", 0)
-                    or (priority == existing.get("_priority", 0) and r["confidence"] > existing.get("confidence", 0))):
+                if not existing:
                     self.direct_en_tol[eng] = entry
+                elif priority > existing.get("_priority", 0):
+                    self.direct_en_tol[eng] = entry
+                elif priority == existing.get("_priority", 0):
+                    if r["confidence"] > existing.get("confidence", 0):
+                        self.direct_en_tol[eng] = entry
+                    elif (r["confidence"] == existing.get("confidence", 0)
+                          and bible_freq > existing.get("_bible_freq", 0)):
+                        self.direct_en_tol[eng] = entry
+
+            # Post-process: if top pick has 0 Bible frequency, swap with best attested alternative
+            for eng, entry in list(self.direct_en_tol.items()):
+                if entry.get("_bible_freq", 0) > 0:
+                    continue
+                candidates = self.direct_en_tol_all.get(eng, [])
+                attested = [c for c in candidates if c.get("_bible_freq", 0) > 0 and c["_priority"] >= 4]
+                if attested:
+                    best = max(attested, key=lambda c: (c["_priority"], c["confidence"], c["_bible_freq"]))
+                    self.direct_en_tol[eng] = best
 
         # English ↔ Spanish local dictionary
         self.eng_to_spa = defaultdict(list)
@@ -379,7 +455,13 @@ class TolTranslator:
         # Pronouns/grammar words are handled by grammar engine
         if w in TOL_PRONOUNS or w in TOL_POSSESSIVES or w in TOL_POSTPOSITIONS or w in TOL_QUESTION_WORDS:
             return None
-        if w in EN_STOPWORDS or w in EN_NEGATION_WORDS:
+        if w in EN_RELATIVE_PRONOUNS:
+            return {"tol": "nin", "confidence": 0.7, "method": "function_word"}
+        if w in EN_NEGATION_WORDS:
+            return None
+        if w in EN_TO_TOL_FUNCTION:
+            return {"tol": EN_TO_TOL_FUNCTION[w], "confidence": 0.7, "method": "function_word"}
+        if w in EN_STOPWORDS:
             return None
 
         if w in self.direct_en_tol:
@@ -391,7 +473,8 @@ class TolTranslator:
 
         if w in self.inferred_en_to_tol:
             best = max(self.inferred_en_to_tol[w], key=lambda x: x["confidence"])
-            return {"tol": best["tol"], "confidence": best["confidence"], "method": "inferred"}
+            if best["confidence"] >= 0.75 and self._tol_word_bible_score(best["tol"]) > 0:
+                return {"tol": best["tol"], "confidence": best["confidence"], "method": "inferred"}
 
         return None
 
@@ -478,11 +561,19 @@ class TolTranslator:
                 continue
             if w in EN_PREPOSITIONS:
                 pass  # handled below by phase logic
+            elif w in EN_TO_TOL_FUNCTION:
+                word_map[i] = EN_TO_TOL_FUNCTION[w]
+                roles[i] = ROLE_OBJ
+                continue
             elif w in EN_STOPWORDS and w not in TOL_PRONOUNS:
                 roles[i] = "skip"
                 continue
             if w in EN_NEGATION_WORDS:
                 roles[i] = "neg"
+                continue
+            if w in EN_RELATIVE_PRONOUNS and i > 0:
+                word_map[i] = "nin"
+                roles[i] = ROLE_OBJ
                 continue
             if w in TOL_QUESTION_WORDS:
                 roles[i] = "question"
@@ -759,19 +850,151 @@ class TolTranslator:
     # ── Spanish → Tol ─────────────────────────────────────────────────────
 
     _SPA_STOPWORDS = {
+        # Articles and determiners
         "el", "la", "los", "las", "un", "una", "unos", "unas",
+        "este", "esta", "estos", "estas", "ese", "esa", "esos", "esas",
+        "esto", "eso", "aquel", "aquella", "aquellos", "aquellas",
+        # Prepositions
         "de", "del", "al", "a", "en", "con", "por", "para",
-        "es", "son", "está", "están", "ser", "fue", "era",
-        "y", "o", "pero", "que", "como", "muy", "más", "no",
-        "yo", "tú", "él", "ella", "nosotros", "ellos", "ellas",
-        "mi", "tu", "su", "nuestro", "nuestra", "sus", "mis",
-        "se", "lo", "le", "me", "te", "nos", "les",
-        "este", "esta", "ese", "esa", "esto", "eso",
+        "sobre", "entre", "hasta", "desde", "hacia", "según", "sin",
+        "tras", "durante", "mediante", "contra",
+        # Conjunctions / discourse markers
+        "y", "o", "e", "pero", "sino", "ni", "pues", "aunque", "mientras",
+        "luego", "mas",
+        # Pronouns (subject, object, reflexive)
+        "yo", "tú", "él", "ella", "nosotros", "vosotros", "ellos", "ellas",
+        "me", "te", "se", "lo", "la", "le", "nos", "os", "les",
+        "mí", "ti", "sí", "consigo",
+        # Possessives
+        "mi", "tu", "su", "mis", "tus", "sus",
+        "nuestro", "nuestra", "nuestros", "nuestras",
+        "vuestro", "vuestra", "vuestros", "vuestras",
+        # Copula / auxiliary verb forms
+        "es", "son", "está", "están", "ser", "era", "eran",
+        "sido", "siendo", "ha", "han", "he", "has", "había", "habían",
+        "haber", "habiendo", "haya", "hayan",
+        "tiene", "tienen", "tenía", "tenían", "teniendo", "tienes",
+        "puede", "pueden", "podía", "podían",
+        "estaba", "estaban", "soy", "somos", "sois", "esté", "estamos",
+        "sea", "sean", "fuese", "fuera",
+        # Common adverbs/function words
+        "muy", "más", "tan", "ya", "aun",
+        "como", "así", "aquí", "allí",
+        "oh", "ay", "tanto", "tales", "mismo", "misma", "mismos", "mismas",
+        "bien", "acerca", "medio", "manera",
+        "dentro", "juntamente", "sé",
+        # Relative pronouns
+        "que", "cual", "cuales", "cuyo", "cuya", "cuyos", "quienes",
+    }
+
+    _SPA_TO_TOL_FUNCTION = {
+        # Question words
+        "qué": "tsjan", "quién": "pjacj", "quien": "pjacj",
+        "dónde": "jolaj", "cuándo": "'ona", "cuánto": "nol",
+        "cómo": "tsjan",
+        # Common verbs → Bible-attested Tol forms
+        "dijo": "tjevele", "dijeron": "tjowelepj", "dice": "tjevele",
+        "diciendo": "tjevele", "decía": "tjevele", "decir": "tjevele",
+        "hablar": "tjevele", "habló": "tjevele", "hablando": "tjevele",
+        "vino": "tjiquil", "vinieron": "tjiquil", "viene": "jac'", "venir": "tjiquil",
+        "dio": "tje'yaya", "dieron": "tje'yaya", "dar": "tje'yaya", "dando": "tje'yaya",
+        "hizo": "tjiji", "hicieron": "tjiji", "hecho": "tjiji", "hacen": "tjiji", "hacer": "tjiji",
+        "fue": "tjemey", "fueron": "tjemey", "ido": "tjemey", "ir": "tjemey",
+        "salió": "tjemey", "salieron": "tjemey", "salir": "tjemey",
+        "vio": "tjinyuca", "vieron": "tjinyuca", "ver": "tjinyuca",
+        "oyó": "tjapjacas", "oyeron": "tjapjacas", "oír": "tjapjacas",
+        "envió": "tjejyama", "enviado": "tjejyama", "enviar": "tjejyama",
+        "entrar": "cjuwá", "entró": "cjuwá", "entraron": "cjuwá",
+        "tomar": "ta'es", "tomó": "ta'es", "tomaron": "ta'es",
+        "morir": "cjüele", "murió": "cjüele", "muerto": "cjüele",
+        "creer": "japon", "creyeron": "japon", "cree": "japon",
+        "recibir": "ma'ayas", "recibió": "ma'ayas", "recibieron": "ma'ayas",
+        "conocer": "yas", "conoció": "yas", "saber": "yas", "sabéis": "solejé",
+        "llamar": "tjacuwis", "llamó": "tjacuwis", "llamado": "tjacuwis",
+        "escribir": "tepyaca", "enseñar": "lajay", "enseñaba": "lajay",
+        "mirando": "tjinyuca", "mirar": "tjinyuca",
+        "llegó": "tjiquil", "llegaron": "tjiquil",
+        "puso": "tjiji", "haciendo": "tjiji",
+        "saliendo": "tjemey",
+        # Adverbs / function → Tol
+        "también": "wa", "entonces": "mpes", "después": "lovin",
+        "antes": "püna", "siempre": "lovin", "nunca": "ma",
+        "cada": "pjü", "otro": "p'a", "otra": "p'a", "otros": "p'a", "otras": "p'a",
+        "todo": "pjü", "todos": "pjü", "toda": "pjü", "todas": "pjü",
+        "cuando": "na", "donde": "ne'aj", "delante": "ne",
+        "mucho": "pülücj", "muchos": "pülücj", "muchas": "pülücj", "mucha": "pülücj",
+        "gran": "pajal", "aún": "custjay",
+        "ninguno": "ma", "ninguna": "ma",
+        "alguno": "nepénowa", "alguna": "nepénowa",
+        "cierto": "t'üc'", "verdaderamente": "t'üc'",
+        "mirad": "tjajama",
+        # Negation
+        "no": "ma", "nada": "tulucj", "nadie": "ma",
+        # Nouns: Bible-attested Tol forms
+        "dios": "dios", "jesús": "jesús", "jesucristo": "jesucristo",
+        "cristo": "jesucristo",
+        "señor": "jepa",
+        "padre": "papay", "madre": "napay",
+        "hijo": "jatjam", "hijos": "ts'uyupj", "hija": "jucucus",
+        "hermano": "catjam", "hermanos": "natjampan",
+        "hombre": "yom", "hombres": "niyom",
+        "mujer": "quepj", "mujeres": "quepan",
+        "espíritu": "cjües", "santo": "cjües",
+        "pueblo": "gente", "gente": "gente",
+        "casa": "wo", "templo": "wo",
+        "cielo": "tsjun", "cielos": "tsjun",
+        "tierra": "nosis", "mundo": "nosis",
+        "día": "jawas", "días": "ts'ac'", "noche": "püste",
+        "vida": "mpatjam", "muerte": "cjüele", "muertos": "müjünsücj",
+        "agua": "'üsǘ", "pan": "pansas",
+        "nombre": "ló", "palabra": "tjevelá", "palabras": "tjevelé",
+        "camino": "jümücj",
+        "mano": "mos", "manos": "mos", "cuerpo": "jüp'üy",
+        "ojo": "nyuc", "ojos": "nyuc", "corazón": "yola",
+        "sangre": "'os", "carne": "p'üy",
+        "ley": "tjijyü'tá", "rey": "jepa", "reino": "jütüta",
+        "gloria": "püné", "gracia": "najas", "paz": "nujola",
+        "verdad": "t'üc'", "fe": "tepyona",
+        "pecado": "malala", "pecados": "malala",
+        "mal": "malala", "malo": "malala",
+        "bueno": "'üsüs", "grande": "pajal", "nuevo": "seyasa",
+        "primero": "mwalá",
+        "poder": "liji",
+        "hora": "las", "ciudad": "patja", "puerta": "vilicj",
+        "mar": "'üsǘ", "cosa": "javelepj", "cosas": "javelepj",
+        "ángel": "ángel", "ángeles": "angelpan",
+        "escrito": "tepyaca",
+        "doce": "dóceya", "voz": "pjactsja",
+        "tiempo": "püna",
+        "obras": "lajay", "causa": "mpes",
+        "varones": "niyom",
+        # Religious roles → Bible-attested
+        "discípulo": "discípulo", "discípulos": "discipulopan",
+        "judíos": "judiopan", "fariseos": "fariseopan",
+        "sacerdote": "sacerdote", "sacerdotes": "sacerdote",
+        "profeta": "profeta", "profetas": "profetapan",
+        "apóstol": "apóstol", "apóstoles": "apostolpan",
+        "siervo": "jomozo", "siervos": "jomozopan",
+        "iglesia": "majaman",
+        # Proper nouns
+        "jerusalén": "jerusalén", "pedro": "pedro", "pablo": "pablo",
+        "juan": "juan", "moisés": "moisés", "david": "david",
+        "abraham": "abraham", "israel": "israel",
+        "galilea": "galilea", "judea": "judea",
+        "pilato": "pilato", "herodes": "herodes",
+        "simón": "simón", "jacobo": "jacobo", "josé": "josé",
+        "felipe": "felipe", "bernabé": "bernabé", "timoteo": "timoteo",
+        "antioquía": "antioquía", "samaria": "samaria",
     }
 
     def _spanish_to_tol(self, text: str) -> dict:
         text_lower = text.lower().strip()
         candidates = []
+
+        # 0. Function-word single-word quick check
+        if text_lower in self._SPA_TO_TOL_FUNCTION:
+            tol = self._SPA_TO_TOL_FUNCTION[text_lower]
+            candidates.append({"text": tol, "method": "function_word", "confidence": 0.80})
 
         # 1. Full-phrase dictionary lookup
         if text_lower in self.spanish_to_tol:
@@ -784,24 +1007,37 @@ class TolTranslator:
                 "translations": [{"text": entry["tol"], "method": "dictionary", "confidence": 0.95}],
             }
 
-        # 2. Full-phrase inferred
+        # 2. Full-phrase inferred (only if Bible-attested and high confidence)
         if text_lower in self.inferred_es_to_tol:
             best = max(self.inferred_es_to_tol[text_lower], key=lambda x: x["confidence"])
-            candidates.append({"text": best["tol"], "method": "synonym_inferred", "confidence": best["confidence"]})
+            if best["confidence"] >= 0.75 and self._tol_word_bible_score(best["tol"]) > 0:
+                candidates.append({"text": best["tol"], "method": "synonym_inferred", "confidence": best["confidence"]})
 
         # 3. Word-by-word translation (try BEFORE corpus to avoid false positives)
         original_words = text.strip().split()
-        words = text_lower.split()
+        words = [re.sub(r'[.,;:!?¿¡"""\u201c\u201d\(\)\[\]]', '', w) for w in text_lower.split()]
         if len(words) > 1:
             translated, untranslated = [], []
             for i, w in enumerate(words):
-                if w in self._SPA_STOPWORDS:
+                if not w:
                     continue
-                if w in self.spanish_to_tol:
+                if w in self._SPA_TO_TOL_FUNCTION:
+                    translated.append(self._SPA_TO_TOL_FUNCTION[w])
+                elif w in self._SPA_STOPWORDS:
+                    continue
+                elif w in self.spanish_to_tol:
                     translated.append(self.spanish_to_tol[w]["tol"])
                 elif w in self.inferred_es_to_tol:
                     best = max(self.inferred_es_to_tol[w], key=lambda x: x["confidence"])
-                    translated.append(best["tol"])
+                    if best["confidence"] >= 0.75 and self._tol_word_bible_score(best["tol"]) > 0:
+                        translated.append(best["tol"])
+                    else:
+                        orig = original_words[i] if i < len(original_words) else w
+                        if orig and orig[0].isupper():
+                            translated.append(orig)
+                        else:
+                            translated.append(f"[{w}]")
+                            untranslated.append(w)
                 else:
                     orig = original_words[i] if i < len(original_words) else w
                     if orig and orig[0].isupper():
@@ -810,7 +1046,7 @@ class TolTranslator:
                         translated.append(f"[{w}]")
                         untranslated.append(w)
 
-            content_words = [w for w in words if w not in self._SPA_STOPWORDS]
+            content_words = [w for w in words if w not in self._SPA_STOPWORDS or w in self._SPA_TO_TOL_FUNCTION]
             coverage = (len(content_words) - len(untranslated)) / max(len(content_words), 1)
             if translated and coverage > 0:
                 wbw_text = " ".join(translated)
@@ -1016,6 +1252,14 @@ class TolTranslator:
                 continue
 
             if w in TOL_PRONOUNS or w in TOL_POSSESSIVES or w in TOL_POSTPOSITIONS or w in TOL_QUESTION_WORDS:
+                continue
+            if w in EN_RELATIVE_PRONOUNS:
+                word_map[idx] = "nin"
+                methods_used.add("function_word")
+                continue
+            if w in EN_TO_TOL_FUNCTION:
+                word_map[idx] = EN_TO_TOL_FUNCTION[w]
+                methods_used.add("function_word")
                 continue
             if w in EN_STOPWORDS or w in EN_NEGATION_WORDS:
                 continue
