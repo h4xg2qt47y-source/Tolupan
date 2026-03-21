@@ -24,9 +24,17 @@ TTS_Dataset_old_with_music/
 # TTS models (too large for git — retrain locally)
 TTS_Model/
 TTS_Model_v2/
+TTS_Model_v3/
 TTS_Model_v1_archive/
 TTS_Model_Archive/
 TTS_Model_old_with_music/
+
+# Verified TTS training data (too large for git — rebuild locally)
+TTS_Verified/
+TTS_Verified_MAT01/
+
+# Word-level audio clips (rebuild locally)
+Word_Audio_MAT01/
 
 # Binaries
 ffmpeg

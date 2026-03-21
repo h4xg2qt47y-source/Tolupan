@@ -28,6 +28,7 @@ APP_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = APP_DIR.parent
 
 MODEL_DIRS = [
+    PROJECT_DIR / "TTS_Model_v3",
     PROJECT_DIR / "TTS_Model_v2",
     PROJECT_DIR / "TTS_Model",
     PROJECT_DIR / "TTS_Model_v1_archive",

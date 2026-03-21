@@ -111,6 +111,13 @@
   font-size: .6rem; font-weight: 700; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
 }
+.p-stack {
+  display: flex; flex-direction: column; gap: .15rem; flex: 1; min-width: 0;
+}
+.p-primary.p-en { font-weight: 600; color: var(--text); }
+.p-secondary.p-es { font-size: .92em; color: var(--text-muted); }
+.p-primary.p-es { font-weight: 600; color: var(--text); }
+.p-secondary.p-en { font-size: .92em; color: var(--text-muted); }
 .p-en { font-weight: 500; flex: 1; }
 .p-es { color: var(--text-muted); flex: 1; }
 .p-cat-tag {

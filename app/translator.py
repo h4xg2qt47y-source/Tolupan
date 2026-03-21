@@ -236,7 +236,12 @@ class TolTranslator:
         self.tol_to_english = {}
         self.english_to_tol = {}
 
-        rows = self.conn.execute("SELECT tol, spanish, english, category FROM dictionary").fetchall()
+        _dict_source_priority = {
+            "SIL_Dictionary_OCR": 5,
+            "Elicited_Grammar_Aurelio": 4,
+        }
+        _en_tol_source: dict[str, int] = {}
+        rows = self.conn.execute("SELECT tol, spanish, english, category, source FROM dictionary").fetchall()
         for r in rows:
             tol_lower = r["tol"].lower().strip()
             spa_lower = r["spanish"].lower().strip()
@@ -249,7 +254,14 @@ class TolTranslator:
             if r["english"]:
                 eng_lower = r["english"].lower().strip()
                 self.tol_to_english[tol_lower] = r["english"]
-                self.english_to_tol[eng_lower] = r["tol"]
+                src_pri = _dict_source_priority.get(r["source"] or "", 1)
+                if src_pri >= _en_tol_source.get(eng_lower, 0):
+                    self.english_to_tol[eng_lower] = r["tol"]
+                    _en_tol_source[eng_lower] = src_pri
+                for kw in self._extract_en_keywords(eng_lower):
+                    if src_pri >= _en_tol_source.get(kw, 0):
+                        self.english_to_tol[kw] = r["tol"]
+                        _en_tol_source[kw] = src_pri
 
         rows = self.conn.execute("SELECT tol_form, spanish_form FROM verb_conjugations").fetchall()
         for r in rows:
@@ -260,11 +272,12 @@ class TolTranslator:
             if spa_lower not in self.spanish_to_tol:
                 self.spanish_to_tol[spa_lower] = {"tol": r["tol_form"], "english": "", "category": "verbo"}
 
-        # Direct English → Tol — priority: grammar_pdf > dictionary > nt_statistical > chain > inferred
+        # Direct English → Tol — priority: sil_dictionary > grammar_pdf > dictionary > nt_statistical > chain > inferred
         self.direct_en_tol = {}
         self.direct_en_tol_all = defaultdict(list)  # all candidates per English word
         if self._table_exists("direct_en_tol"):
             source_priority = {
+                "sil_dictionary_verified": 7,
                 "grammar_pdf_verified": 6, "dictionary_direct": 5,
                 "nt_statistical_alignment": 4, "nt_phrase_alignment": 3,
                 "en_spa_tol_chain": 2, "nt_spa_chain_alignment": 2,
@@ -323,6 +336,33 @@ class TolTranslator:
                         "spanish": r["source_word"], "confidence": r["confidence"], "path": r["path"]
                     })
 
+    @staticmethod
+    def _extract_en_keywords(eng: str) -> list[str]:
+        """Extract clean single keywords from a dictionary English gloss like 'capture: I capture'."""
+        eng = re.sub(r"\s*\([^)]*\)\s*", " ", eng).strip().rstrip(".,;:!?")
+        keywords: list[str] = []
+        _stop = {"i", "he", "she", "it", "we", "they", "my", "his", "her", "its", "our", "their",
+                 "the", "a", "an", "is", "are", "to", "of", "and", "or"}
+        m = re.match(r"^(.+?):\s+(.+)$", eng)
+        if m:
+            before = m.group(1).strip().rstrip(".,;:").lower()
+            after = m.group(2).strip()
+            if before and len(before.split()) <= 2 and before not in _stop:
+                keywords.append(before)
+            vm = re.match(r"^(?:I|he|she|it|they|my|his|her)\s+(\w+)", after, re.I)
+            if vm and vm.group(1).lower() not in _stop:
+                keywords.append(vm.group(1).lower())
+        else:
+            vm = re.match(r"^I\s+(\w+)", eng, re.I)
+            if vm and vm.group(1).lower() not in _stop:
+                keywords.append(vm.group(1).lower())
+            words = eng.split()
+            if 1 <= len(words) <= 2:
+                kw = eng.lower().rstrip(".,;:")
+                if kw not in _stop and len(kw) > 1:
+                    keywords.append(kw)
+        return [k for k in dict.fromkeys(keywords) if k]
+
     def _table_exists(self, name: str) -> bool:
         return bool(self.conn.execute(
             "SELECT name FROM sqlite_master WHERE type='table' AND name=?", (name,)
@@ -369,9 +409,6 @@ class TolTranslator:
         5. Places negation particle ma= before verb, or tulukh for copular negation
         6. Outputs Subject + PP-phrases + Object + (ma=) + Verb
         """
-        if not tol_parts:
-            return " ".join(tol_parts)
-
         en_lower = [w.lower() for w in en_words]
         n = len(en_lower)
 
@@ -574,11 +611,13 @@ class TolTranslator:
 
         # Conjugate verbs if paradigm data available
         if subject_person and verb_parts and self.verb_paradigms:
+            en_word_set = set(en_lower)
             conjugated = []
             for v_tol in verb_parts:
                 matched = False
                 for en_verb, paradigm in self.verb_paradigms.items():
-                    if paradigm.get("1sg") == v_tol or paradigm.get("3sg") == v_tol or en_verb in " ".join(en_lower):
+                    tol_forms = set(paradigm.values())
+                    if v_tol in tol_forms or en_verb in en_word_set:
                         if subject_person in paradigm:
                             conjugated.append(paradigm[subject_person])
                             matched = True
@@ -624,7 +663,32 @@ class TolTranslator:
 
         result = [r for r in result if r and r.strip() and not r.startswith("[")]
 
-        return " ".join(result) if result else " ".join([p for p in tol_parts if not p.startswith("[")])
+        output = " ".join(result) if result else " ".join([p for p in tol_parts if not p.startswith("[")])
+        return self._capitalize_proper_nouns(output)
+
+    _PROPER_NOUNS = {
+        "dios": "Dios", "jesús": "Jesús", "jesucristo": "Jesucristo",
+        "cristo": "Cristo", "maría": "María", "pedro": "Pedro",
+        "pablo": "Pablo", "juan": "Juan", "santiago": "Santiago",
+        "david": "David", "abraham": "Abraham", "moisés": "Moisés",
+        "israel": "Israel", "jerusalén": "Jerusalén",
+    }
+
+    @staticmethod
+    def _capitalize_proper_nouns(text: str) -> str:
+        if not text:
+            return text
+        words = text.split()
+        result = []
+        for i, w in enumerate(words):
+            cap = TolTranslator._PROPER_NOUNS.get(w.lower())
+            if cap:
+                result.append(cap)
+            elif i == 0:
+                result.append(w[0].upper() + w[1:] if len(w) > 1 else w.upper())
+            else:
+                result.append(w)
+        return " ".join(result)
 
     # ── Main entry point ──────────────────────────────────────────────────
 
@@ -694,9 +758,22 @@ class TolTranslator:
 
     # ── Spanish → Tol ─────────────────────────────────────────────────────
 
+    _SPA_STOPWORDS = {
+        "el", "la", "los", "las", "un", "una", "unos", "unas",
+        "de", "del", "al", "a", "en", "con", "por", "para",
+        "es", "son", "está", "están", "ser", "fue", "era",
+        "y", "o", "pero", "que", "como", "muy", "más", "no",
+        "yo", "tú", "él", "ella", "nosotros", "ellos", "ellas",
+        "mi", "tu", "su", "nuestro", "nuestra", "sus", "mis",
+        "se", "lo", "le", "me", "te", "nos", "les",
+        "este", "esta", "ese", "esa", "esto", "eso",
+    }
+
     def _spanish_to_tol(self, text: str) -> dict:
         text_lower = text.lower().strip()
+        candidates = []
 
+        # 1. Full-phrase dictionary lookup
         if text_lower in self.spanish_to_tol:
             entry = self.spanish_to_tol[text_lower]
             return {
@@ -704,26 +781,22 @@ class TolTranslator:
                 "method": "dictionary",
                 "confidence": 0.95,
                 "details": {"category": entry["category"]},
+                "translations": [{"text": entry["tol"], "method": "dictionary", "confidence": 0.95}],
             }
 
+        # 2. Full-phrase inferred
         if text_lower in self.inferred_es_to_tol:
             best = max(self.inferred_es_to_tol[text_lower], key=lambda x: x["confidence"])
-            return {
-                "translation": best["tol"],
-                "method": "synonym_inferred",
-                "confidence": best["confidence"],
-                "details": {"path": best["path"]},
-            }
+            candidates.append({"text": best["tol"], "method": "synonym_inferred", "confidence": best["confidence"]})
 
-        match = self._fuzzy_match_corpus(text, "spanish")
-        if match:
-            return match
-
+        # 3. Word-by-word translation (try BEFORE corpus to avoid false positives)
         original_words = text.strip().split()
         words = text_lower.split()
         if len(words) > 1:
             translated, untranslated = [], []
             for i, w in enumerate(words):
+                if w in self._SPA_STOPWORDS:
+                    continue
                 if w in self.spanish_to_tol:
                     translated.append(self.spanish_to_tol[w]["tol"])
                 elif w in self.inferred_es_to_tol:
@@ -736,15 +809,40 @@ class TolTranslator:
                     else:
                         translated.append(f"[{w}]")
                         untranslated.append(w)
-            if len(untranslated) < len(words):
-                return {
-                    "translation": " ".join(translated),
-                    "method": "word-by-word+synonym",
-                    "confidence": round((1 - len(untranslated) / len(words)) * 0.55, 2),
-                    "details": {"untranslated": untranslated},
-                }
 
-        return {"translation": f"[Traducción no encontrada: {text}]", "method": "not_found", "confidence": 0, "details": {}}
+            content_words = [w for w in words if w not in self._SPA_STOPWORDS]
+            coverage = (len(content_words) - len(untranslated)) / max(len(content_words), 1)
+            if translated and coverage > 0:
+                wbw_text = " ".join(translated)
+                wbw_conf = round(coverage * 0.7, 2)
+                candidates.append({"text": wbw_text, "method": "word-by-word+synonym", "confidence": wbw_conf})
+
+        # 4. Corpus fuzzy match (only if word-by-word coverage is low)
+        best_wbw_conf = max((c["confidence"] for c in candidates), default=0)
+        if best_wbw_conf < 0.6:
+            match = self._fuzzy_match_corpus(text, "spanish")
+            if match:
+                seen = {tol_phonetic_normalize(c["text"]) for c in candidates}
+                if tol_phonetic_normalize(match["translation"]) not in seen:
+                    candidates.append({"text": match["translation"], "method": "corpus_match",
+                                       "confidence": match["confidence"]})
+
+        if not candidates:
+            if len(words) == 1:
+                return {"translation": f"[Traducción no encontrada: {text}]", "method": "not_found",
+                        "confidence": 0, "details": {}, "translations": []}
+            return {"translation": f"[Traducción no encontrada: {text}]", "method": "not_found",
+                    "confidence": 0, "details": {}, "translations": []}
+
+        candidates.sort(key=lambda c: -c["confidence"])
+        best = candidates[0]
+        return {
+            "translation": best["text"],
+            "method": best["method"],
+            "confidence": best["confidence"],
+            "details": {},
+            "translations": candidates[:3],
+        }
 
     # ── Tol → English ─────────────────────────────────────────────────────
 
@@ -1106,7 +1204,7 @@ class TolTranslator:
                 best_score = score
                 best_match = r
 
-        if best_score >= 0.55 and best_match:
+        if best_score >= 0.75 and best_match:
             target_field = "spanish" if field == "tol" else "tol"
             return {
                 "translation": best_match[target_field],

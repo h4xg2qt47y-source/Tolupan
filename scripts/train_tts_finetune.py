@@ -47,8 +47,8 @@ BASE = _project_root()
 sys.path.insert(0, str(BASE / "scripts"))
 from tts_progress_writer import make_on_train_step_end
 
-DATASET_DIR = BASE / "TTS_Dataset_v2"
-OUTPUT_DIR = BASE / "TTS_Model_v2"
+DATASET_DIR = BASE / "TTS_Verified"
+OUTPUT_DIR = BASE / "TTS_Model_v3"
 
 ES_MODEL_NAME = "tts_models/es/css10/vits"
 
@@ -112,6 +112,7 @@ def main():
     config.save_step = 500
     config.save_best_after = 250
     config.save_n_checkpoints = 5
+    config.test_sentences = []
 
     # Point to our Tol dataset
     config.datasets = [BaseDatasetConfig(
@@ -192,19 +193,29 @@ def main():
         print(f"  ({skipped_missing} keys in Spanish not present in Tol model)")
 
     # ── 3. Resume from existing fine-tune checkpoint if available ────
+    # Coqui creates dated folders like "-March-19-2026_12+20PM-a47dbf5", not "run-*".
+    # Skip empty newest folders: pick the latest run dir that actually has weights.
     run_dirs = sorted(
-        OUTPUT_DIR.glob("run-*"),
-        key=lambda p: p.stat().st_mtime, reverse=True,
+        (p for p in OUTPUT_DIR.iterdir() if p.is_dir()),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
     )
     restore_path = None
-    if run_dirs:
+    for run_dir in run_dirs:
         ckpts = sorted(
-            run_dirs[0].glob("checkpoint_*.pth"),
-            key=lambda p: p.stat().st_mtime, reverse=True,
+            run_dir.glob("checkpoint_*.pth"),
+            key=lambda p: p.stat().st_mtime,
+            reverse=True,
         )
         if ckpts:
             restore_path = str(ckpts[0])
             print(f"  Resuming fine-tune from: {restore_path}")
+            break
+        best = run_dir / "best_model.pth"
+        if best.is_file():
+            restore_path = str(best)
+            print(f"  Resuming fine-tune from: {restore_path}")
+            break
 
     # ── 4. Launch training ───────────────────────────────────────────
     trainer = Trainer(

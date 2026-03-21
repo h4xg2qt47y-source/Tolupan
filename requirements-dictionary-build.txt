@@ -1,0 +1,4 @@
+# Install only when running scripts/build_en_tol_dictionary.py locally:
+#   pip install -r requirements-dictionary-build.txt
+fpdf2>=2.7.0
+argostranslate>=1.9.0

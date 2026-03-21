@@ -62,6 +62,7 @@
 | File | Description | Size | Source |
 |------|-------------|------|--------|
 | `DiccTol_Jicaque_Espanol_Dennis_1983.pdf` | **Tol-Spanish / Spanish-Tol Dictionary** (Dennis & Dennis, 1983, 139 pages) | 8.2 MB | Local + SIL |
+| `English_Tol_Dictionary_Dennis_1983.pdf` | **English–Tol** companion (same headwords; English glosses via Argos es→en from OCR) | — | Generated (`scripts/build_en_tol_dictionary.py`) |
 | `Tol_NT_Wycliffe_803p.pdf` | Tol New Testament, Wycliffe edition (803 pages, more detailed) | 8.1 MB | Local |
 | `Tol_NT_Complete.pdf` | Tol New Testament, eBible edition (483 pages, text-extractable) | 3.9 MB | eBible.org |
 | `Tol_NT_Marcos.pdf` | Gospel of Mark in Tol | 393 KB | eBible.org |

@@ -16,6 +16,14 @@
     window.addEventListener("sitelangchange", () => {
       const l = window.siteLang();
       $('q').placeholder = l === "es" ? "Escribe una palabra — Tol, Inglés o Español…" : "Type a word — Tol, English, or Spanish…";
+      const ov = $('word-overlay');
+      if (ov && ov.classList.contains('open')) {
+        const u = new URL(location.href);
+        const w = u.searchParams.get('word');
+        if (w) openWord(w);
+      }
+      const qq = $('q').value.trim();
+      if (qq) { page = 1; doSearch(); }
     });
 
     const params = new URLSearchParams(location.search);
@@ -98,6 +106,7 @@
 
   /* ── Render result cards ── */
   function renderCards(entries) {
+    const lang = typeof window.siteLang === 'function' ? window.siteLang() : 'es';
     let html = '';
     for (const e of entries) {
       const cats = [...new Set(e.meanings.map(m => m.category).filter(Boolean))];
@@ -108,9 +117,15 @@
       html += `<div class="d-head"><span class="d-hw">${esc(e.headword)}</span>`;
       for (const c of cats) html += `<span class="d-cat">${esc(c)}</span>`;
       html += `</div><div class="d-defs">`;
-      if (en) html += `<span class="d-lang">EN</span>${esc(en)}`;
-      if (en && es) html += ' · ';
-      if (es) html += `<span class="d-lang">ES</span>${esc(es)}`;
+      if (lang === 'en') {
+        if (en) html += `<span class="d-lang">EN</span>${esc(en)}`;
+        if (en && es) html += ' · ';
+        if (es) html += `<span class="d-lang">ES</span>${esc(es)}`;
+      } else {
+        if (es) html += `<span class="d-lang">ES</span>${esc(es)}`;
+        if (es && en) html += ' · ';
+        if (en) html += `<span class="d-lang">EN</span>${esc(en)}`;
+      }
       html += `</div></div>`;
     }
     $('results').innerHTML = html;
@@ -147,27 +162,44 @@
   }
 
   function renderPanel(e) {
+    const lang = typeof window.siteLang === 'function' ? window.siteLang() : 'es';
+    const mt = lang === 'es' ? 'Significados' : 'Meanings';
+    const ex = lang === 'es' ? 'Oraciones de ejemplo' : 'Example sentences';
+
     let h = `<div class="p-hw">${esc(e.headword)}</div>`;
 
     if (e.meanings.length) {
-      h += '<div class="p-section"><div class="p-section-title">Meanings</div>';
+      h += `<div class="p-section"><div class="p-section-title">${mt}</div>`;
       e.meanings.forEach((m, i) => {
-        h += `<div class="p-def"><span class="p-num">${i+1}</span>` +
-          `<span class="p-en">${esc(m.english) || '<em style="color:var(--text-muted)">—</em>'}</span>` +
-          `<span class="p-es">${esc(m.spanish) || '<em style="color:var(--text-muted)">—</em>'}</span>` +
+        const stack = lang === 'en'
+          ? `<div class="p-stack">` +
+            `<span class="p-primary p-en">${esc(m.english) || '<em style="color:var(--text-muted)">—</em>'}</span>` +
+            `<span class="p-secondary p-es">${esc(m.spanish) || '<em style="color:var(--text-muted)">—</em>'}</span></div>`
+          : `<div class="p-stack">` +
+            `<span class="p-primary p-es">${esc(m.spanish) || '<em style="color:var(--text-muted)">—</em>'}</span>` +
+            `<span class="p-secondary p-en">${esc(m.english) || '<em style="color:var(--text-muted)">—</em>'}</span></div>`;
+        h += `<div class="p-def"><span class="p-num">${i+1}</span>${stack}` +
           (m.category ? `<span class="p-cat-tag">${esc(m.category)}</span>` : '') +
           `</div>`;
       });
       h += '</div>';
     }
 
-    h += '<div class="p-section"><div class="p-section-title">Example Sentences</div>';
+    h += `<div class="p-section"><div class="p-section-title">${ex}</div>`;
     if (e.samples && e.samples.length) {
       for (const s of e.samples) {
         h += '<div class="p-sample">';
         h += `<div class="p-s-label">Tol</div><div class="p-s-text p-s-tol">${esc(s.tol)}</div>`;
-        if (s.english) h += `<div class="p-s-label">English</div><div class="p-s-text">${esc(s.english)}</div>`;
-        if (s.spanish) h += `<div class="p-s-label">Español</div><div class="p-s-text">${esc(s.spanish)}</div>`;
+        if (lang === 'en') {
+          if (s.english) {
+            h += `<div class="p-s-label">English</div><div class="p-s-text">${esc(s.english)}</div>`;
+          } else if (s.spanish) {
+            h += `<div class="p-s-label">Español</div><div class="p-s-text">${esc(s.spanish)}</div>`;
+          }
+        } else {
+          if (s.spanish) h += `<div class="p-s-label">Español</div><div class="p-s-text">${esc(s.spanish)}</div>`;
+          if (s.english) h += `<div class="p-s-label">English</div><div class="p-s-text">${esc(s.english)}</div>`;
+        }
         if (s.source) h += `<div class="p-s-src">${esc(s.source)}</div>`;
         h += '</div>';
       }
