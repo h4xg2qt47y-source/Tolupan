@@ -126,12 +126,38 @@
         if (es && en) html += ' · ';
         if (en) html += `<span class="d-lang">EN</span>${esc(en)}`;
       }
+      html += `</div>`;
+      html += `<div class="d-rate">`;
+      html += `<button class="d-rate-btn" data-w="${esc(e.headword_lower)}" data-en="${esc(en)}" data-es="${esc(es)}" data-rating="1" title="Good">👍</button>`;
+      html += `<button class="d-rate-btn" data-w="${esc(e.headword_lower)}" data-en="${esc(en)}" data-es="${esc(es)}" data-rating="-1" title="Bad">👎</button>`;
       html += `</div></div>`;
     }
     $('results').innerHTML = html;
 
     $('results').querySelectorAll('.d-card').forEach(card => {
-      card.addEventListener('click', () => openWord(card.dataset.w));
+      card.addEventListener('click', e => {
+        if (e.target.closest('.d-rate-btn')) return;
+        openWord(card.dataset.w);
+      });
+    });
+    $('results').querySelectorAll('.d-rate-btn').forEach(btn => {
+      btn.addEventListener('click', async e => {
+        e.stopPropagation();
+        const lang = typeof window.siteLang === 'function' ? window.siteLang() : 'en';
+        const tol = btn.dataset.w;
+        const toText = lang === 'en' ? btn.dataset.en : btn.dataset.es;
+        const rating = parseInt(btn.dataset.rating);
+        const card = btn.closest('.d-card');
+        card.querySelectorAll('.d-rate-btn').forEach(b => b.disabled = true);
+        card.style.borderColor = rating === 1 ? '#22c55e' : '#f59e0b';
+        try {
+          await fetch('/api/rate', {
+            method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({table: 'dictionary', tol, from_lang: 'tol', to_lang: lang,
+              from_text: tol, to_text: toText, rating}),
+          });
+        } catch(err) { console.error(err); }
+      });
     });
   }
 

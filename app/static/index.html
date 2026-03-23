@@ -22,6 +22,7 @@
         <a href="/dictionary" class="nav-link" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
         <a href="/bible" class="nav-link">Dios Vele</a>
         <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
+        <a href="/train" class="nav-link" data-es="Entrenar" data-en="Train">Entrenar</a>
       </nav>
     </header>
 
@@ -105,6 +106,12 @@
             <span class="placeholder" data-es="La traducción aparecerá aquí" data-en="Translation will appear here">La traducción aparecerá aquí</span>
           </div>
           <div class="meta-row" id="meta-row"></div>
+          <div class="rating-row" id="translation-rating" style="display:none">
+            <span data-es="¿Buena traducción?" data-en="Good translation?">Good translation?</span>
+            <button class="rating-btn thumbs-up" data-rating="1" title="Good">👍</button>
+            <button class="rating-btn thumbs-down" data-rating="-1" title="Bad">👎</button>
+            <span class="rating-feedback" id="rating-feedback"></span>
+          </div>
         </div>
       </div>
 

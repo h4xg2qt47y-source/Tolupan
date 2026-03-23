@@ -288,11 +288,48 @@ class TolTranslator:
             total += self._tol_bible_freq.get(w_clean, 0)
         return total
 
+    @staticmethod
+    def _strip_apostrophes(text: str) -> str:
+        """Remove leading/embedded apostrophes for fuzzy Tol matching."""
+        return text.replace("'", "").replace("\u2019", "").replace("\u02bc", "")
+
+    def _tol_lookup_spa(self, word: str) -> Optional[dict]:
+        """Apostrophe-insensitive Tol→Spanish lookup.
+
+        Try: exact → with leading apostrophe → stripped index.
+        """
+        if word in self.tol_to_spanish:
+            return self.tol_to_spanish[word]
+        prefixed = "'" + word
+        if prefixed in self.tol_to_spanish:
+            return self.tol_to_spanish[prefixed]
+        stripped = self._strip_apostrophes(word)
+        if stripped != word:
+            return self._tol_no_apos_spa.get(stripped)
+        return None
+
+    def _tol_lookup_en(self, word: str) -> Optional[str]:
+        """Apostrophe-insensitive Tol→English lookup.
+
+        Try: exact → with leading apostrophe → stripped index.
+        """
+        if word in self.tol_to_english:
+            return self.tol_to_english[word]
+        prefixed = "'" + word
+        if prefixed in self.tol_to_english:
+            return self.tol_to_english[prefixed]
+        stripped = self._strip_apostrophes(word)
+        if stripped != word:
+            return self._tol_no_apos_en.get(stripped)
+        return None
+
     def _build_lookup_caches(self):
         self.tol_to_spanish = {}
         self.spanish_to_tol = {}
         self.tol_to_english = {}
         self.english_to_tol = {}
+        self._tol_no_apos_spa = {}
+        self._tol_no_apos_en = {}
 
         _dict_source_priority = {
             "SIL_Dictionary_OCR": 5,
@@ -303,15 +340,19 @@ class TolTranslator:
         for r in rows:
             tol_lower = r["tol"].lower().strip()
             spa_lower = r["spanish"].lower().strip()
-            self.tol_to_spanish[tol_lower] = {
-                "spanish": r["spanish"], "english": r["english"] or "", "category": r["category"] or ""
-            }
+            entry_spa = {"spanish": r["spanish"], "english": r["english"] or "", "category": r["category"] or ""}
+            self.tol_to_spanish[tol_lower] = entry_spa
+            tol_stripped = self._strip_apostrophes(tol_lower)
+            if tol_stripped not in self._tol_no_apos_spa:
+                self._tol_no_apos_spa[tol_stripped] = entry_spa
             self.spanish_to_tol[spa_lower] = {
                 "tol": r["tol"], "english": r["english"] or "", "category": r["category"] or ""
             }
             if r["english"]:
                 eng_lower = r["english"].lower().strip()
                 self.tol_to_english[tol_lower] = r["english"]
+                if tol_stripped not in self._tol_no_apos_en:
+                    self._tol_no_apos_en[tol_stripped] = r["english"]
                 src_pri = _dict_source_priority.get(r["source"] or "", 1)
                 if src_pri >= _en_tol_source.get(eng_lower, 0):
                     self.english_to_tol[eng_lower] = r["tol"]
@@ -389,6 +430,8 @@ class TolTranslator:
                 if verb not in self.verb_paradigms:
                     self.verb_paradigms[verb] = {}
                 self.verb_paradigms[verb][r["person"]] = r["tol_form"]
+
+        self._en_known_verbs = self._build_english_verb_set()
 
         # Synonym-inferred translations
         self.inferred_en_to_tol = defaultdict(list)
@@ -482,280 +525,254 @@ class TolTranslator:
 
     def _apply_tol_grammar(self, en_words: list, tol_parts: list, word_map: dict) -> str:
         """
-        Restructure translated words according to Tol grammar rules.
+        Restructure English SVO into Tol SOV using attested Tol grammar rules.
 
-        Tol is SOV with postpositions. The grammar engine:
-        1. Identifies subject, verb, and object from English SVO structure
-        2. Detects English verbs via a simple heuristic (position after subject, BE forms)
-        3. Converts prepositions to postpositions (noun + postposition)
-        4. Places question words sentence-initially
-        5. Places negation particle ma= before verb, or tulukh for copular negation
-        6. Outputs Subject + PP-phrases + Object + (ma=) + Verb
+        Based on the framework from Pinhanez et al. (2024) "Harnessing AI to
+        Vitalize Endangered Indigenous Languages" — apply minimal, well-attested
+        grammar transformations rather than complex heuristics.
+
+        Tol (Jicaque) grammar rules applied (Holt grammar, Dennis 1983):
+          1. Basic word order: SOV (Subject – Object – Verb)
+          2. Postpositions follow their noun phrase (English "in house" → "wo nt'a")
+          3. Negation: ma precedes verb; tulucj for negative copula
+          4. Question words: sentence-initial position
+          5. Possessives: pronoun precedes possessed noun
+          6. Adjectives: typically follow the noun in Tol
+          7. Copula "way" for equative sentences; omitted for predicate adjectives
+          8. Drop English articles (a, an, the) — Tol has no articles
         """
         en_lower = [w.lower() for w in en_words]
         n = len(en_lower)
+        if n == 0:
+            return ""
 
         is_negated = any(w in EN_NEGATION_WORDS for w in en_lower)
         has_be = any(w in EN_BE_FORMS for w in en_lower)
 
-        # "has no X" / "have no X" → X tulukh (negative existential)
-        en_has_forms = {"has", "have", "had"}
-        has_no_pattern = is_negated and any(w in en_has_forms for w in en_lower) and not has_be
-
-        # Find the verb position in English. In SVO, verb follows the first noun phrase.
-        # Strategy: scan left-to-right; first content word = subject, first BE/auxiliary or
-        # content word after subject = verb, rest = object/complements.
-        en_verb_forms = EN_BE_FORMS | {"go", "goes", "went", "gone", "going",
-            "come", "comes", "came", "coming", "see", "sees", "saw", "seen", "seeing",
-            "eat", "eats", "ate", "eaten", "eating", "drink", "drinks", "drank", "drunk", "drinking",
-            "kill", "kills", "killed", "killing", "speak", "speaks", "spoke", "spoken", "speaking",
-            "say", "says", "said", "saying", "walk", "walks", "walked", "walking",
-            "live", "lives", "lived", "living", "sleep", "sleeps", "slept", "sleeping",
-            "work", "works", "worked", "working", "run", "runs", "ran", "running",
-            "sit", "sits", "sat", "sitting", "stand", "stands", "stood", "standing",
-            "die", "dies", "died", "dying", "give", "gives", "gave", "given", "giving",
-            "take", "takes", "took", "taken", "taking", "make", "makes", "made", "making",
-            "know", "knows", "knew", "known", "knowing", "think", "thinks", "thought", "thinking",
-            "want", "wants", "wanted", "wanting", "need", "needs", "needed", "needing",
-            "like", "likes", "liked", "liking", "love", "loves", "loved", "loving",
-            "put", "puts", "putting", "get", "gets", "got", "gotten", "getting",
-            "find", "finds", "found", "finding", "tell", "tells", "told", "telling",
-            "call", "calls", "called", "calling", "try", "tries", "tried", "trying",
-            "leave", "leaves", "left", "leaving", "bring", "brings", "brought", "bringing",
-            "fall", "falls", "fell", "fallen", "falling", "burn", "burns", "burned", "burning",
-            "cut", "cuts", "cutting", "plant", "plants", "planted", "planting",
-            "split", "splits", "splitting", "carry", "carries", "carried", "carrying",
-            "teach", "teaches", "taught", "teaching", "learn", "learns", "learned", "learning",
-            "buy", "buys", "bought", "buying", "sell", "sells", "sold", "selling",
-            "write", "writes", "wrote", "written", "writing",
-            "read", "reads", "reading", "sing", "sings", "sang", "sung", "singing",
-            "play", "plays", "played", "playing", "help", "helps", "helped", "helping",
-            "open", "opens", "opened", "opening", "close", "closes", "closed", "closing",
-            "break", "breaks", "broke", "broken", "breaking",
-            "hold", "holds", "held", "holding", "build", "builds", "built", "building",
-            "born", "roam", "roams", "roamed"}
-
-        # Pre-process possessives: merge "my X" → prefix+X in word_map
+        # --- Phase 1: Possessive merging (before role assignment) ---
         for i, w in enumerate(en_lower):
             if w in TOL_POSSESSIVES:
                 for j in range(i + 1, n):
-                    wj = en_lower[j]
-                    if wj in EN_STOPWORDS:
+                    if en_lower[j] in EN_STOPWORDS:
                         continue
                     tol_noun = word_map.get(j)
                     if tol_noun and not tol_noun.startswith("["):
                         word_map[j] = tol_possessive_prefix(w, tol_noun)
                     break
 
-        # Classify each English word
-        ROLE_SUBJ = "S"
-        ROLE_VERB = "V"
-        ROLE_OBJ = "O"
-
+        # --- Phase 2: Role assignment using simple SVO state machine ---
+        S, V, O = "S", "V", "O"
         roles = {}
-        phase = "pre_subj"  # pre_subj → subj → verb → obj
+        phase = "pre_subj"
 
         for i, w in enumerate(en_lower):
             if w in TOL_POSSESSIVES:
                 roles[i] = "skip"
                 continue
-            if w in EN_PREPOSITIONS:
-                pass  # handled below by phase logic
-            elif w in EN_TO_TOL_FUNCTION:
-                word_map[i] = EN_TO_TOL_FUNCTION[w]
-                roles[i] = ROLE_OBJ
-                continue
-            elif w in EN_STOPWORDS and w not in TOL_PRONOUNS:
-                roles[i] = "skip"
-                continue
             if w in EN_NEGATION_WORDS:
                 roles[i] = "neg"
                 continue
+            if w in TOL_QUESTION_WORDS:
+                roles[i] = "Q"
+                continue
             if w in EN_RELATIVE_PRONOUNS and i > 0:
                 word_map[i] = "nin"
-                roles[i] = ROLE_OBJ
+                roles[i] = O
                 continue
-            if w in TOL_QUESTION_WORDS:
-                roles[i] = "question"
+            if w in EN_TO_TOL_FUNCTION:
+                word_map[i] = EN_TO_TOL_FUNCTION[w]
+                roles[i] = O
                 continue
+            if w in EN_STOPWORDS and w not in TOL_PRONOUNS and w not in EN_PREPOSITIONS:
+                roles[i] = "skip"
+                continue
+            if w in EN_PREPOSITIONS:
+                roles[i] = "prep"
+                continue
+
+            is_verb = (w in EN_BE_FORMS
+                       or w in self._en_known_verbs
+                       or (word_map.get(i) and self._is_tol_verb(word_map.get(i, ""))))
 
             if phase == "pre_subj":
-                if w in EN_PREPOSITIONS:
-                    roles[i] = "prep"
-                elif w in TOL_PRONOUNS or word_map.get(i):
-                    roles[i] = ROLE_SUBJ
-                    phase = "subj"
-                elif w in en_verb_forms:
-                    roles[i] = ROLE_VERB
+                if is_verb:
+                    roles[i] = V
                     phase = "obj"
+                elif w in TOL_PRONOUNS or word_map.get(i):
+                    roles[i] = S
+                    phase = "subj"
                 else:
-                    roles[i] = ROLE_SUBJ
+                    roles[i] = S
                     phase = "subj"
             elif phase == "subj":
-                if w in en_verb_forms:
-                    roles[i] = ROLE_VERB
+                if is_verb:
+                    roles[i] = V
                     phase = "obj"
-                elif w in EN_PREPOSITIONS:
-                    roles[i] = "prep"
                 else:
-                    roles[i] = ROLE_SUBJ
+                    roles[i] = S
             elif phase == "obj":
-                if w in EN_PREPOSITIONS:
-                    roles[i] = "prep"
-                else:
-                    roles[i] = ROLE_OBJ
+                roles[i] = O
 
-        # Build output parts
-        question_parts = []
-        subject_parts = []
-        verb_parts = []
-        object_parts = []
-        pp_phrases = []
+        # --- Phase 3: Collect parts by role ---
+        question_parts, subject_parts, verb_parts, object_parts, pp_phrases = [], [], [], [], []
 
         i = 0
         while i < n:
             w = en_lower[i]
             role = roles.get(i, "skip")
 
-            if role == "question":
+            if role == "Q":
                 q = w
                 if i + 1 < n and (w + " " + en_lower[i + 1]) in TOL_QUESTION_WORDS:
                     q = w + " " + en_lower[i + 1]
                     i += 1
                 question_parts.append(TOL_QUESTION_WORDS.get(q, q))
 
-            elif role == "neg":
-                pass
-
-            elif role == "skip":
-                if w in TOL_POSTPOSITIONS:
-                    postp = TOL_POSTPOSITIONS[w]
-                    pp_nouns = []
-                    j = i + 1
-                    while j < n:
-                        wj = en_lower[j]
-                        if wj in TOL_POSSESSIVES or (wj in EN_STOPWORDS and wj not in TOL_PRONOUNS):
-                            j += 1
-                            continue
-                        if word_map.get(j):
-                            pp_nouns.append(word_map[j])
-                            word_map[j] = None
-                            j += 1
-                            break
-                        elif wj in TOL_PRONOUNS:
-                            pp_nouns.append(TOL_PRONOUNS[wj])
-                            j += 1
-                            break
-                        else:
-                            break
-                    if pp_nouns:
-                        pp_phrases.append((" ".join(pp_nouns), postp))
-
-            elif role == ROLE_SUBJ:
-                if w in TOL_PRONOUNS:
-                    subject_parts.append(TOL_PRONOUNS[w])
-                elif word_map.get(i):
-                    subject_parts.append(word_map[i])
-
-            elif role == ROLE_VERB:
-                tol_v = word_map.get(i)
-                if tol_v:
-                    verb_parts.append(tol_v)
-
-            elif role == ROLE_OBJ:
-                if w in TOL_PRONOUNS:
-                    object_parts.append(TOL_PRONOUNS[w])
-                elif word_map.get(i):
-                    object_parts.append(word_map[i])
-
             elif role == "prep":
-                postp = TOL_POSTPOSITIONS.get(w, w)
-                pp_nouns = []
-                j = i + 1
-                while j < n:
-                    wj = en_lower[j]
-                    if wj in TOL_POSSESSIVES or (wj in EN_STOPWORDS and wj not in TOL_PRONOUNS):
-                        j += 1
-                        continue
-                    if word_map.get(j):
-                        pp_nouns.append(word_map[j])
-                        word_map[j] = None
-                        j += 1
-                        break
-                    elif wj in TOL_PRONOUNS:
-                        pp_nouns.append(TOL_PRONOUNS[wj])
-                        j += 1
-                        break
-                    else:
-                        break
-                if pp_nouns:
-                    pp_phrases.append((" ".join(pp_nouns), postp))
+                postp = TOL_POSTPOSITIONS.get(w, "")
+                if postp:
+                    pp_noun = self._collect_pp_noun(en_lower, word_map, i + 1, n)
+                    if pp_noun:
+                        pp_phrases.append((pp_noun, postp))
+
+            elif role == S:
+                tol_w = self._resolve_tol_word(w, i, word_map)
+                if tol_w:
+                    subject_parts.append(tol_w)
+
+            elif role == V:
+                if w not in EN_BE_FORMS:
+                    tol_v = word_map.get(i)
+                    if tol_v and not tol_v.startswith("["):
+                        verb_parts.append(tol_v)
+
+            elif role == O:
+                tol_w = self._resolve_tol_word(w, i, word_map)
+                if tol_w:
+                    object_parts.append(tol_w)
 
             i += 1
 
-        # Determine subject person for verb conjugation
+        # --- Phase 4: Verb conjugation ---
         subject_person = None
         for w in en_lower:
             if w in EN_PRONOUN_PERSON:
                 subject_person = EN_PRONOUN_PERSON[w]
                 break
 
-        # Conjugate verbs if paradigm data available
         if subject_person and verb_parts and self.verb_paradigms:
             en_word_set = set(en_lower)
             conjugated = []
             for v_tol in verb_parts:
                 matched = False
                 for en_verb, paradigm in self.verb_paradigms.items():
-                    tol_forms = set(paradigm.values())
-                    if v_tol in tol_forms or en_verb in en_word_set:
+                    if v_tol in set(paradigm.values()) or en_verb in en_word_set:
                         if subject_person in paradigm:
                             conjugated.append(paradigm[subject_person])
                             matched = True
                             break
-                if not matched:
-                    conjugated.append(v_tol)
+                conjugated.append(v_tol) if not matched else None
             verb_parts = conjugated
 
-        # Assemble in Tol SOV order
+        # --- Phase 5: Assemble in Tol SOV order ---
         result = []
-
-        if question_parts:
-            result.extend(question_parts)
-
+        result.extend(question_parts)
         result.extend(subject_parts)
-
         for noun_tol, postp in pp_phrases:
             result.append(noun_tol)
             result.append(postp)
-
         result.extend(object_parts)
 
-        # Detect comparative pattern
-        is_comparative = "than" in en_lower or "more" in en_lower
-        en_like_words = {"like", "similar", "same"}
-        is_equal = any(w in en_like_words for w in en_lower)
-
         if is_negated:
-            if has_no_pattern:
-                result.append(TOL_NEG_COPULA)
-            elif has_be and not verb_parts:
+            if has_be and not verb_parts:
                 result.append(TOL_NEG_COPULA)
             else:
                 result.append(TOL_NEGATION)
                 result.extend(verb_parts)
-        elif has_be and not verb_parts and not is_negated and object_parts:
-            if is_equal:
-                result.append(TOL_EQUAL_LIKE)
-            else:
-                result.append(TOL_COPULA)
+        elif has_be and not verb_parts and object_parts:
+            result.append(TOL_COPULA)
         else:
             result.extend(verb_parts)
 
         result = [r for r in result if r and r.strip() and not r.startswith("[")]
-
-        output = " ".join(result) if result else " ".join([p for p in tol_parts if not p.startswith("[")])
+        output = " ".join(result) if result else " ".join(p for p in tol_parts if not p.startswith("["))
         return self._capitalize_proper_nouns(output)
+
+    def _build_english_verb_set(self) -> set:
+        """Build a set of known English verb forms from paradigm data, verb conjugations, and common verbs."""
+        verbs = set(EN_BE_FORMS)
+        verbs.update(self.verb_paradigms.keys())
+        _pronoun_noise = {"i", "you", "he", "she", "it", "we", "they", "me", "him", "her", "us", "them",
+                           "my", "your", "his", "its", "our", "their", "a", "an", "the", "to", "not"}
+        if self._table_exists("verb_conjugations"):
+            for r in self.conn.execute("SELECT DISTINCT english_form FROM verb_conjugations WHERE english_form IS NOT NULL"):
+                for w in r["english_form"].lower().split():
+                    if w not in _pronoun_noise and len(w) > 1:
+                        verbs.add(w)
+        # Core verbs attested in Tol Bible translation
+        _core = {
+            "go", "goes", "went", "gone", "going", "come", "comes", "came", "coming",
+            "see", "sees", "saw", "seen", "seeing", "eat", "eats", "ate", "eaten", "eating",
+            "say", "says", "said", "saying", "speak", "speaks", "spoke", "speaking",
+            "give", "gives", "gave", "given", "giving", "take", "takes", "took", "taken",
+            "make", "makes", "made", "making", "know", "knows", "knew", "known",
+            "think", "thinks", "thought", "thinking", "want", "wants", "wanted",
+            "love", "loves", "loved", "loving", "like", "likes", "liked",
+            "die", "dies", "died", "dying", "kill", "kills", "killed",
+            "walk", "walks", "walked", "run", "runs", "ran", "running",
+            "sit", "sits", "sat", "stand", "stands", "stood",
+            "live", "lives", "lived", "living", "sleep", "sleeps", "slept",
+            "work", "works", "worked", "working",
+            "find", "finds", "found", "tell", "tells", "told",
+            "call", "calls", "called", "send", "sends", "sent",
+            "write", "writes", "wrote", "written", "read", "reads",
+            "hear", "hears", "heard", "believe", "believes", "believed",
+            "put", "puts", "get", "gets", "got", "bring", "brings", "brought",
+            "leave", "leaves", "left", "fall", "falls", "fell",
+            "hold", "holds", "held", "build", "builds", "built",
+            "open", "opens", "opened", "close", "closes", "closed",
+            "teach", "teaches", "taught", "learn", "learns", "learned",
+            "help", "helps", "helped", "pray", "prays", "prayed",
+            "born", "heal", "heals", "healed", "follow", "follows", "followed",
+            "receive", "receives", "received", "enter", "enters", "entered",
+        }
+        verbs.update(_core)
+        return verbs
+
+    def _is_tol_verb(self, tol_word: str) -> bool:
+        """Check if a Tol word is likely a verb based on paradigm data."""
+        if not tol_word or tol_word.startswith("["):
+            return False
+        for paradigm in self.verb_paradigms.values():
+            if tol_word in set(paradigm.values()):
+                return True
+        return False
+
+    def _resolve_tol_word(self, en_word: str, idx: int, word_map: dict) -> Optional[str]:
+        """Get the Tol translation for an English word at a given position."""
+        if en_word in TOL_PRONOUNS:
+            return TOL_PRONOUNS[en_word]
+        tol = word_map.get(idx)
+        if tol and not tol.startswith("["):
+            return tol
+        return None
+
+    def _collect_pp_noun(self, en_lower: list, word_map: dict, start: int, n: int) -> Optional[str]:
+        """Collect the noun phrase following a preposition for postposition conversion."""
+        j = start
+        while j < n:
+            w = en_lower[j]
+            if w in EN_STOPWORDS and w not in TOL_PRONOUNS:
+                j += 1
+                continue
+            if word_map.get(j) and not word_map[j].startswith("["):
+                noun = word_map[j]
+                word_map[j] = None
+                return noun
+            if w in TOL_PRONOUNS:
+                return TOL_PRONOUNS[w]
+            break
+        return None
 
     _PROPER_NOUNS = {
         "dios": "Dios", "jesús": "Jesús", "jesucristo": "Jesucristo",
@@ -809,11 +826,25 @@ class TolTranslator:
 
     # ── Tol → Spanish ─────────────────────────────────────────────────────
 
+    _TOL_TO_SPA_FUNCTION = {
+        "mas": "muy", "más": "muy",
+        "ma": "no", "mpes": "entonces", "wa": "también",
+        "na": "cuando", "lovin": "después", "püna": "antes",
+        "hola": "hola", "gracias": "gracias",
+    }
+
+    _TOL_TO_EN_FUNCTION = {
+        "mas": "very", "más": "very",
+        "ma": "no", "mpes": "then", "wa": "also",
+        "na": "when", "lovin": "after", "püna": "before",
+        "hola": "hello", "gracias": "thank you",
+    }
+
     def _tol_to_spanish(self, text: str) -> dict:
         text_lower = text.lower().strip()
 
-        if text_lower in self.tol_to_spanish:
-            entry = self.tol_to_spanish[text_lower]
+        entry = self._tol_lookup_spa(text_lower)
+        if entry:
             return {
                 "translation": entry["spanish"],
                 "method": "dictionary",
@@ -829,14 +860,18 @@ class TolTranslator:
         if len(words) > 1:
             translated, untranslated = [], []
             for w in words:
-                if w in self.tol_to_spanish:
-                    translated.append(self.tol_to_spanish[w]["spanish"])
-                elif w in self.inferred_tol_from_es:
-                    best = max(self.inferred_tol_from_es[w], key=lambda x: x["confidence"])
-                    translated.append(best["spanish"])
+                if w in self._TOL_TO_SPA_FUNCTION:
+                    translated.append(self._TOL_TO_SPA_FUNCTION[w])
                 else:
-                    translated.append(f"[{w}]")
-                    untranslated.append(w)
+                    hit = self._tol_lookup_spa(w)
+                    if hit:
+                        translated.append(hit["spanish"])
+                    elif w in self.inferred_tol_from_es:
+                        best = max(self.inferred_tol_from_es[w], key=lambda x: x["confidence"])
+                        translated.append(best["spanish"])
+                    else:
+                        translated.append(f"[{w}]")
+                        untranslated.append(w)
             if len(untranslated) < len(words):
                 return {
                     "translation": " ".join(translated),
@@ -844,6 +879,14 @@ class TolTranslator:
                     "confidence": round((1 - len(untranslated) / len(words)) * 0.6, 2),
                     "details": {"untranslated": untranslated},
                 }
+
+        if text_lower in self._TOL_TO_SPA_FUNCTION:
+            return {
+                "translation": self._TOL_TO_SPA_FUNCTION[text_lower],
+                "method": "function_word",
+                "confidence": 0.8,
+                "details": {},
+            }
 
         return {"translation": f"[No se encontró traducción para: {text}]", "method": "not_found", "confidence": 0, "details": {}}
 
@@ -1002,6 +1045,12 @@ class TolTranslator:
         "simón": "simón", "jacobo": "jacobo", "josé": "josé",
         "felipe": "felipe", "bernabé": "bernabé", "timoteo": "timoteo",
         "antioquía": "antioquía", "samaria": "samaria",
+        # Common greetings (loanwords/passthroughs)
+        "hola": "hola", "adiós": "adiós", "adios": "adios",
+        "gracias": "gracias",
+        # buenos/buenas for greetings: "buenos días" → "'üsüs ts'ac'"
+        "buenos": "'üsüs", "buenas": "'üsüs",
+        "tardes": "nala", "noches": "püste",
     }
 
     def _spanish_to_tol(self, text: str) -> dict:
@@ -1011,6 +1060,8 @@ class TolTranslator:
         # 0. Function-word single-word quick check
         if text_lower in self._SPA_TO_TOL_FUNCTION:
             tol = self._SPA_TO_TOL_FUNCTION[text_lower]
+            if text.strip() and text.strip()[0].isupper():
+                tol = tol[0].upper() + tol[1:] if tol else tol
             candidates.append({"text": tol, "method": "function_word", "confidence": 0.80})
 
         # 1. Full-phrase dictionary lookup
@@ -1039,7 +1090,11 @@ class TolTranslator:
                 if not w:
                     continue
                 if w in self._SPA_TO_TOL_FUNCTION:
-                    translated.append(self._SPA_TO_TOL_FUNCTION[w])
+                    tol_w = self._SPA_TO_TOL_FUNCTION[w]
+                    orig = original_words[i] if i < len(original_words) else w
+                    if orig and orig[0].isupper():
+                        tol_w = tol_w[0].upper() + tol_w[1:] if tol_w else tol_w
+                    translated.append(tol_w)
                 elif w in self._SPA_STOPWORDS:
                     continue
                 elif w in self.spanish_to_tol:
@@ -1102,9 +1157,10 @@ class TolTranslator:
     def _tol_to_english(self, text: str) -> dict:
         text_lower = text.lower().strip()
 
-        if text_lower in self.tol_to_english:
+        en_hit = self._tol_lookup_en(text_lower)
+        if en_hit:
             return {
-                "translation": self.tol_to_english[text_lower],
+                "translation": en_hit,
                 "method": "dictionary_direct",
                 "confidence": 0.9,
                 "details": {},
@@ -1118,6 +1174,50 @@ class TolTranslator:
                 "confidence": best["confidence"],
                 "details": {"path": best["path"]},
             }
+        stripped = self._strip_apostrophes(text_lower)
+        if stripped in self.inferred_tol_from_en:
+            best = max(self.inferred_tol_from_en[stripped], key=lambda x: x["confidence"])
+            return {
+                "translation": best["english"],
+                "method": "synonym_inferred",
+                "confidence": best["confidence"],
+                "details": {"path": best["path"]},
+            }
+
+        if text_lower in self._TOL_TO_EN_FUNCTION:
+            return {
+                "translation": self._TOL_TO_EN_FUNCTION[text_lower],
+                "method": "function_word",
+                "confidence": 0.8,
+                "details": {},
+            }
+
+        words = text_lower.split()
+        if len(words) > 1:
+            translated, untranslated = [], []
+            for w in words:
+                if w in self._TOL_TO_EN_FUNCTION:
+                    translated.append(self._TOL_TO_EN_FUNCTION[w])
+                else:
+                    en_w = self._tol_lookup_en(w)
+                    if en_w:
+                        translated.append(en_w)
+                    elif w in self.inferred_tol_from_en:
+                        best = max(self.inferred_tol_from_en[w], key=lambda x: x["confidence"])
+                        translated.append(best["english"])
+                    elif self._strip_apostrophes(w) in self.inferred_tol_from_en:
+                        best = max(self.inferred_tol_from_en[self._strip_apostrophes(w)], key=lambda x: x["confidence"])
+                        translated.append(best["english"])
+                    else:
+                        translated.append(f"[{w}]")
+                        untranslated.append(w)
+            if len(untranslated) < len(words):
+                return {
+                    "translation": " ".join(translated),
+                    "method": "word-by-word",
+                    "confidence": round((1 - len(untranslated) / len(words)) * 0.7, 2),
+                    "details": {"untranslated": untranslated},
+                }
 
         spa_result = self._tol_to_spanish(text)
         if spa_result["method"] == "not_found":

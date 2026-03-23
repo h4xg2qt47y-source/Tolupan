@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train The Translator — Tol</title>
+  <link rel="stylesheet" href="/static/style.css?v=3" />
+  <link rel="stylesheet" href="/static/train.css?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>
+        <span class="logo-icon">🌿</span>
+        <span data-es="Entrenar el Traductor" data-en="Train The Translator">Entrenar el Traductor</span>
+      </h1>
+      <p class="subtitle">Tolupan&ensp;·&ensp;Montaña de la Flor, Honduras</p>
+      <nav class="header-nav">
+        <a href="/" class="nav-link" data-es="Traductor" data-en="Translator">Traductor</a>
+        <a href="/dictionary" class="nav-link" data-es="Diccionario" data-en="Dictionary">Diccionario</a>
+        <a href="/bible" class="nav-link">Dios Vele</a>
+        <a href="/learn" class="nav-link" data-es="Aprende" data-en="Learn">Aprende</a>
+        <a href="/train" class="nav-link nav-active" data-es="Entrenar" data-en="Train">Entrenar</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="intro" data-es="Ayuda a mejorar el traductor calificando traducciones. Tu opinión entrena el motor." data-en="Help improve the translator by rating translations. Your feedback trains the engine.">
+        Help improve the translator by rating translations. Your feedback trains the engine.
+      </p>
+
+      <!-- Language toggle -->
+      <div class="train-controls">
+        <div class="lang-toggle">
+          <button class="lang-toggle-btn active" data-lang="en" title="English">🇺🇸 English</button>
+          <button class="lang-toggle-btn" data-lang="es" title="Español">🇭🇳 Español</button>
+        </div>
+        <div class="direction-toggle" id="direction-toggle">
+          <span id="dir-from">English</span>
+          <button class="swap-dir-btn" id="swap-dir" title="Swap direction">⇄</button>
+          <span id="dir-to">Tol</span>
+        </div>
+      </div>
+
+      <!-- Mode tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="dictionary" data-es="Diccionario Validado" data-en="Validated Dictionary">Validated Dictionary</button>
+        <button class="mode-tab" data-mode="phrases" data-es="Frases Validadas" data-en="Validated Phrases">Validated Phrases</button>
+        <button class="mode-tab" data-mode="translator" data-es="Motor Traductor" data-en="Translator Engine">Translator Engine</button>
+      </div>
+
+      <!-- Items container -->
+      <div class="train-items" id="train-items">
+        <div class="loading" data-es="Cargando..." data-en="Loading...">Loading...</div>
+      </div>
+
+      <!-- Refresh button -->
+      <button class="refresh-btn" id="refresh-btn" data-es="Cargar 10 más" data-en="Load 10 more">
+        Load 10 more
+      </button>
+
+      <!-- Progress -->
+      <div class="train-stats" id="train-stats"></div>
+    </main>
+
+    <footer>
+      <p data-es="Creado para preservar y compartir el idioma Tol (Tolupan) de Honduras" data-en="Built to preserve and share the Tol (Tolupan) language of Honduras">Built to preserve and share the Tol (Tolupan) language of Honduras</p>
+    </footer>
+  </div>
+
+  <script src="/static/i18n.js"></script>
+  <script src="/static/train-app.js?v=3"></script>
+</body>
+</html>

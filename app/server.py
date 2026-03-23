@@ -14,7 +14,8 @@ from email.message import EmailMessage
 import sqlite3
 import logging
 from typing import Optional, Tuple
-from fastapi import FastAPI, HTTPException, Query
+import random
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, Response
@@ -34,13 +35,53 @@ translator = TolTranslator()
 STATIC_DIR = Path(__file__).parent / "static"
 DATA_DIR = Path(__file__).parent / "data"
 DB_PATH = DATA_DIR / "tol.db"
+RATINGS_DB_PATH = DATA_DIR / "ratings.db"
 FEEDBACK_INBOX = DATA_DIR / "feedback_inbox.jsonl"
 FEEDBACK_EMAIL_DEFAULT = "tooling_village_30@icloud.com"
+
+FIRST_CLASS_SOURCES = {
+    "SIL_Dictionary_OCR", "SIL_Dictionary_Deep_OCR", "SIL_Example_Extraction",
+    "Elicited_Grammar_Aurelio", "curated_bible_cooccurrence",
+    "sil_dictionary_verified", "bible_align:MAT01", "grammar_pdf_verified",
+    "grammar_pdf_deep",
+}
 
 
 def _db():
     conn = sqlite3.connect(str(DB_PATH))
     conn.row_factory = sqlite3.Row
+    return conn
+
+
+def _ratings_db():
+    conn = sqlite3.connect(str(RATINGS_DB_PATH))
+    conn.row_factory = sqlite3.Row
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS dictionary_ratings (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            tol TEXT NOT NULL, from_lang TEXT NOT NULL, to_lang TEXT NOT NULL,
+            from_text TEXT NOT NULL, to_text TEXT NOT NULL,
+            rating INTEGER NOT NULL CHECK(rating IN (-1, 1)),
+            rated_at TEXT NOT NULL DEFAULT (datetime('now')),
+            ip_address TEXT, country TEXT
+        );
+        CREATE TABLE IF NOT EXISTS phrase_ratings (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            tol TEXT, from_lang TEXT NOT NULL, to_lang TEXT NOT NULL,
+            from_text TEXT NOT NULL, to_text TEXT NOT NULL,
+            rating INTEGER NOT NULL CHECK(rating IN (-1, 1)),
+            rated_at TEXT NOT NULL DEFAULT (datetime('now')),
+            ip_address TEXT, country TEXT
+        );
+        CREATE TABLE IF NOT EXISTS translator_ratings (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            from_lang TEXT NOT NULL, to_lang TEXT NOT NULL,
+            from_text TEXT NOT NULL, to_text TEXT NOT NULL, method TEXT,
+            rating INTEGER NOT NULL CHECK(rating IN (-1, 1)),
+            rated_at TEXT NOT NULL DEFAULT (datetime('now')),
+            ip_address TEXT, country TEXT
+        );
+    """)
     return conn
 
 
@@ -1068,6 +1109,154 @@ async def tts_synthesize(req: TTSRequest):
     except Exception as e:
         logger.exception("TTS synthesis failed")
         raise HTTPException(500, f"TTS synthesis error: {e}")
+
+
+# ── Ratings API ──────────────────────────────────────────────────────
+
+class RatingRequest(BaseModel):
+    table: str
+    from_lang: str
+    to_lang: str
+    from_text: str
+    to_text: str
+    rating: int
+    tol: Optional[str] = None
+    method: Optional[str] = None
+
+
+@app.post("/api/rate")
+async def submit_rating(req: RatingRequest, request: Request):
+    if req.table not in ("dictionary", "phrase", "translator"):
+        raise HTTPException(400, "table must be dictionary, phrase, or translator")
+    if req.rating not in (-1, 1):
+        raise HTTPException(400, "rating must be -1 or 1")
+
+    ip = request.headers.get("x-forwarded-for", request.client.host if request.client else "")
+    country = request.headers.get("cf-ipcountry", "")
+    now = datetime.now(timezone.utc).isoformat()
+
+    rdb = _ratings_db()
+    try:
+        if req.table == "dictionary":
+            rdb.execute(
+                "INSERT INTO dictionary_ratings (tol, from_lang, to_lang, from_text, to_text, rating, rated_at, ip_address, country) VALUES (?,?,?,?,?,?,?,?,?)",
+                (req.tol or "", req.from_lang, req.to_lang, req.from_text, req.to_text, req.rating, now, ip, country),
+            )
+        elif req.table == "phrase":
+            rdb.execute(
+                "INSERT INTO phrase_ratings (tol, from_lang, to_lang, from_text, to_text, rating, rated_at, ip_address, country) VALUES (?,?,?,?,?,?,?,?,?)",
+                (req.tol or "", req.from_lang, req.to_lang, req.from_text, req.to_text, req.rating, now, ip, country),
+            )
+        else:
+            rdb.execute(
+                "INSERT INTO translator_ratings (from_lang, to_lang, from_text, to_text, method, rating, rated_at, ip_address, country) VALUES (?,?,?,?,?,?,?,?,?)",
+                (req.from_lang, req.to_lang, req.from_text, req.to_text, req.method or "", req.rating, now, ip, country),
+            )
+        rdb.commit()
+    finally:
+        rdb.close()
+    return {"ok": True}
+
+
+# ── Train The Translator page + API ──────────────────────────────────
+
+@app.get("/train")
+async def train_page():
+    return FileResponse(str(STATIC_DIR / "train.html"))
+
+
+@app.get("/api/train/dictionary")
+async def train_dictionary_items(lang: str = "en"):
+    """Random 10 first-class dictionary entries for validation."""
+    db = _db()
+    source_list = ",".join(f"'{s}'" for s in FIRST_CLASS_SOURCES)
+    rows = db.execute(f"""
+        SELECT tol, spanish, english, category, source FROM dictionary
+        WHERE source IN ({source_list})
+          AND tol IS NOT NULL AND tol != ''
+          AND spanish IS NOT NULL AND spanish != ''
+        ORDER BY RANDOM() LIMIT 10
+    """).fetchall()
+    db.close()
+    items = []
+    for r in rows:
+        if lang == "es":
+            items.append({"tol": r["tol"], "from_lang": "tol", "to_lang": "es",
+                          "from_text": r["tol"], "to_text": r["spanish"],
+                          "category": r["category"] or "", "source": r["source"]})
+        else:
+            en = r["english"] or ""
+            items.append({"tol": r["tol"], "from_lang": "tol", "to_lang": "en",
+                          "from_text": r["tol"], "to_text": en if en else r["spanish"],
+                          "category": r["category"] or "", "source": r["source"]})
+    return {"items": items}
+
+
+@app.get("/api/train/phrases")
+async def train_phrase_items(lang: str = "en"):
+    """Random 10 validated parallel sentences for phrase rating."""
+    db = _db()
+    if lang == "es":
+        rows = db.execute("""
+            SELECT tol, spanish, english, source FROM parallel_sentences
+            WHERE tol IS NOT NULL AND tol != ''
+              AND spanish IS NOT NULL AND spanish != ''
+              AND source NOT LIKE 'bible_align:%'
+            ORDER BY RANDOM() LIMIT 10
+        """).fetchall()
+    else:
+        rows = db.execute("""
+            SELECT tol, spanish, english, source FROM parallel_sentences
+            WHERE tol IS NOT NULL AND tol != ''
+              AND english IS NOT NULL AND english != ''
+              AND source NOT LIKE 'bible_align:%'
+            ORDER BY RANDOM() LIMIT 10
+        """).fetchall()
+    db.close()
+    items = []
+    for r in rows:
+        if lang == "es":
+            items.append({"tol": r["tol"], "from_lang": "tol", "to_lang": "es",
+                          "from_text": r["tol"], "to_text": r["spanish"], "source": r["source"]})
+        else:
+            items.append({"tol": r["tol"], "from_lang": "tol", "to_lang": "en",
+                          "from_text": r["tol"], "to_text": r["english"] or r["spanish"],
+                          "source": r["source"]})
+    return {"items": items}
+
+
+@app.get("/api/train/translator")
+async def train_translator_items(lang: str = "en"):
+    """Random 10 Bible sentences (5-15 words) run through the translator for rating."""
+    db = _db()
+    col = "english" if lang == "en" else "spanish"
+    rows = db.execute(f"""
+        SELECT tol, spanish, english, source FROM parallel_sentences
+        WHERE source LIKE 'bible_align:%'
+          AND {col} IS NOT NULL AND {col} != ''
+          AND tol IS NOT NULL AND tol != ''
+    """).fetchall()
+    db.close()
+
+    candidates = []
+    for r in rows:
+        text = r[col]
+        words = text.split()
+        if 5 <= len(words) <= 15:
+            candidates.append({"text": text, "tol_ref": r["tol"], "source": r["source"]})
+
+    selected = random.sample(candidates, min(10, len(candidates)))
+    items = []
+    for c in selected:
+        result = translator.translate(c["text"], lang, "tol")
+        items.append({
+            "from_lang": lang, "to_lang": "tol",
+            "from_text": c["text"],
+            "to_text": result["translation"],
+            "method": result.get("method", ""),
+            "reference_tol": c["tol_ref"],
+        })
+    return {"items": items}
 
 
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")

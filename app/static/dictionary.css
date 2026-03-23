@@ -155,6 +155,30 @@
 .pg:disabled { opacity: .35; cursor: default; }
 .pg:disabled:hover { background: var(--surface); color: var(--text-muted); border-color: var(--border); }
 
+/* ── Dictionary rating buttons ── */
+.d-rate {
+  display: flex;
+  gap: .25rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.d-card {
+  display: flex;
+  align-items: center;
+}
+.d-rate-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: .9rem;
+  opacity: .5;
+  transition: all .2s;
+}
+.d-rate-btn:hover:not(:disabled) { opacity: 1; border-color: var(--border); }
+.d-rate-btn:disabled { opacity: .3; cursor: default; }
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .word-panel { padding: 1.25rem 1rem; }

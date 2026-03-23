@@ -103,7 +103,17 @@ async function doTranslate() {
       body: JSON.stringify({ text, source_lang: sourceLang, target_lang: targetLang }),
     });
     const data = await res.json();
+    window._lastTranslation = {
+      source_lang: sourceLang, target_lang: targetLang,
+      source_text: text, translation: data.translation, method: data.method || '',
+    };
     displayResult(data);
+    const ratingRow = document.getElementById('translation-rating');
+    if (ratingRow) {
+      ratingRow.style.display = 'flex';
+      ratingRow.querySelectorAll('.rating-btn').forEach(b => b.disabled = false);
+      document.getElementById('rating-feedback').textContent = '';
+    }
   } catch (err) {
     document.getElementById('output-text').textContent = 'Error: ' + err.message;
   } finally {
@@ -373,6 +383,35 @@ function makeClickableWords(text) {
     return `<a href="/dictionary?word=${encoded}" class="tol-word-link" onclick="event.preventDefault(); window.open('/dictionary?word=${encoded}', '_blank')" title="Look up '${esc(clean)}' in the dictionary">${esc(token)}</a>`;
   }).join('');
 }
+
+/* ---- Translation Ratings ---- */
+(function initTranslationRating() {
+  const row = document.getElementById('translation-rating');
+  if (!row) return;
+  row.querySelectorAll('.rating-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const rating = parseInt(btn.dataset.rating);
+      const fromLang = window._lastTranslation?.source_lang;
+      const toLang = window._lastTranslation?.target_lang;
+      const fromText = window._lastTranslation?.source_text;
+      const toText = window._lastTranslation?.translation;
+      const method = window._lastTranslation?.method || '';
+      if (!fromLang || !fromText || !toText) return;
+      try {
+        await fetch('/api/rate', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({table: 'translator', from_lang: fromLang, to_lang: toLang,
+            from_text: fromText, to_text: toText, method, rating}),
+        });
+        const fb = document.getElementById('rating-feedback');
+        fb.textContent = rating === 1 ? '✓ Thanks!' : '✓ Noted!';
+        fb.style.color = rating === 1 ? '#22c55e' : '#f59e0b';
+        row.querySelectorAll('.rating-btn').forEach(b => b.disabled = true);
+      } catch(e) { console.error(e); }
+    });
+  });
+})();
 
 /* ---- Stats ---- */
 async function loadStats() {

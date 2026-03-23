@@ -47,6 +47,9 @@ ffmpeg
 app/data/tol.db
 app/data/feedback_inbox.jsonl
 
+# Ratings database (user-generated data — never overwrite with code pushes)
+app/data/ratings.db
+
 # IDE / editor
 .idea/
 .vscode/
